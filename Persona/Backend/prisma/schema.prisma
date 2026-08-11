@@ -3,11 +3,69 @@
 
 // Get a free hosted Postgres database in seconds: `npx create-db`
 
-generator client {
-  provider = "prisma-client"
-  output   = "../generated/prisma"
-}
-
 datasource db {
   provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model SocialLink {
+  id           String        @id @default(uuid())
+  characterKey String        @unique
+  name         String
+  game         String
+  arcana       String
+  title        String
+  bio          String
+  availability String
+  requirements String
+  ranks        Rank[]
+  createdAt    DateTime      @default(now())
+}
+
+model Rank {
+  id           String        @id @default(uuid())
+  socialLinkId String
+  socialLink   SocialLink    @relation(fields: [socialLinkId], references: [id], onDelete: Cascade)
+  rankNumber   Int
+  isRomance    Boolean       @default(false)
+  interactions Interaction[]
+}
+
+model Interaction {
+  id           String       @id @default(uuid())
+  rankId       String
+  rank         Rank         @relation(fields: [rankId], references: [id], onDelete: Cascade)
+  prompt       String
+  options      Option[]
+}
+
+model Option {
+  id            String      @id @default(uuid())
+  interactionId String
+  interaction   Interaction @relation(fields: [interactionId], references: [id], onDelete: Cascade)
+  text          String
+  points        Int
+  withMatching  Int
+}
+
+model Persona {
+  id           String       @id @default(uuid())
+  name         String       @unique
+  game         String
+  arcana       String
+  level        Int
+  stats        Json         
+  skills       Json         
+}
+
+model Track {
+  id           String       @id @default(uuid())
+  title        String
+  game         String
+  artist       String?
+  filePath     String       
+  metadata     Json         
 }
