@@ -1,0 +1,68 @@
+.section-hint {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Accordion Rank Cards */
+.rank-dropdown-card {
+  background-color: #111;
+  border: 2px solid #333;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.rank-dropdown-card.romance-rank {
+  border-color: var(--p5-red);
+}
+
+.rank-dropdown-header {
+  width: 100%;
+  background-color: #1a1a1a;
+  border: none;
+  color: var(--p5-white);
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.rank-dropdown-header:hover {
+  background-color: #262626;
+}
+
+.romance-rank .rank-dropdown-header {
+  background-color: rgba(217, 0, 22, 0.15);
+}
+
+.rank-title-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrow-icon {
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+.arrow-icon.open {
+  transform: rotate(180deg);
+}
+
+.rank-dropdown-body {
+  padding: 1.25rem;
+  background-color: #111;
+  border-top: 1px dashed #333;
+}
+
+.romance-rank .rank-dropdown-body {
+  background-color: rgba(217, 0, 22, 0.05);
+}

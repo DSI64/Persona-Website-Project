@@ -1,0 +1,233 @@
+.roster-page {
+  width: 100%;
+  padding: 3rem 5%;
+  background-color: var(--p5-black);
+  min-height: 100vh;
+}
+
+/* Header & Filters */
+.roster-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid var(--p5-dark-gray);
+}
+
+.roster-header h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: var(--p5-white);
+  margin: 0;
+  text-transform: uppercase;
+  transform: skew(-5deg);
+  text-shadow: 3px 3px 0px var(--p5-red);
+}
+
+.filters {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--p5-white);
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.filter-group select {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  background-color: var(--p5-dark-gray);
+  color: var(--p5-white);
+  border: 2px solid var(--p5-white);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transform: skew(-5deg);
+  transition: all 0.2s ease;
+}
+
+.filter-group select:focus,
+.filter-group select:hover {
+  border-color: var(--p5-red);
+  background-color: var(--p5-black);
+}
+
+/* Character Grid */
+.roster-grid {
+  display: grid;
+  /* Auto-fits columns that are at least 220px wide */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Character Card Base Styling */
+.roster-card {
+  position: relative;
+  background-color: var(--p5-dark-gray);
+  aspect-ratio: 3 / 4; /* Perfect portrait ratio like Overwatch/Rivals */
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+  border: 4px solid transparent; /* Hidden border until hovered */
+  transform: skew(-3deg); /* Slight P5 tilt */
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-image-placeholder {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a;
+  color: #555;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+/* Character Info Block */
+.card-info {
+  background-color: var(--p5-white);
+  color: var(--p5-black);
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card-arcana {
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.card-name {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+/* ========================================= */
+/* DYNAMIC HOVER EFFECTS BASED ON GAME       */
+/* ========================================= */
+
+/* General Hover Action */
+.roster-card:hover {
+  transform: skew(-3deg) translateY(-10px);
+}
+.roster-card:hover .card-image-placeholder {
+  transform: scale(1.05); /* Slight zoom on image */
+}
+
+/* Persona 1 (Purple) */
+.roster-card[data-game="P1"]:hover {
+  border-color: #a855f7;
+  box-shadow: 0 10px 20px rgba(0, 168, 255, 0.4);
+}
+.roster-card[data-game="P1"]:hover .card-info {
+  background-color: #a855f7;
+  color: var(--p5-white);
+}
+
+/* Persona 2 (Vermilion) */
+.roster-card[data-game="P2"]:hover {
+  border-color: #ff4500;
+  box-shadow: 0 10px 20px rgba(0, 168, 255, 0.4);
+}
+.roster-card[data-game="P2"]:hover .card-info {
+  background-color: #ff4500;
+  color: var(--p5-white);
+}
+
+/* Persona 3 (Blue) */
+.roster-card[data-game="P3"]:hover {
+  border-color: #00a8ff;
+  box-shadow: 0 10px 20px rgba(0, 168, 255, 0.4);
+}
+.roster-card[data-game="P3"]:hover .card-info {
+  background-color: #00a8ff;
+  color: var(--p5-white);
+}
+
+/* Persona 3 Portable Femc (Pink) */
+.roster-card[data-game="P3P"]:hover {
+  border-color: #ff6699;
+  box-shadow: 0 10px 20px rgba(255, 102, 153, 0.2);
+}
+.roster-card[data-game="P3P"]:hover .card-info {
+  background-color: #ff6699;
+  color: var(--p5-white);
+}
+
+/* Persona 4 (Gold) */
+.roster-card[data-game="P4"]:hover {
+  border-color: #ffe600;
+  box-shadow: 0 10px 20px rgba(255, 230, 0, 0.3);
+}
+.roster-card[data-game="P4"]:hover .card-info {
+  background-color: #ffe600;
+  color: var(--p5-black);
+}
+
+.roster-card[data-game="P4G"]:hover {
+  border-color: #ffe600;
+  box-shadow: 0 10px 20px rgba(255, 230, 0, 0.3);
+}
+.roster-card[data-game="P4G"]:hover .card-info {
+  background-color: #ffe600;
+  color: var(--p5-black);
+}
+
+/* Persona 5 (Red) */
+.roster-card[data-game="P5"]:hover {
+  border-color: var(--p5-red);
+  box-shadow: 0 10px 20px rgba(217, 0, 22, 0.4);
+}
+.roster-card[data-game="P5"]:hover .card-info {
+  background-color: var(--p5-red);
+  color: var(--p5-white);
+}
+
+/* Persona 5 Royal (Deep Red) */
+.roster-card[data-game="P5R"]:hover {
+  border-color: #c1121f;
+  box-shadow: 0 10px 20px rgba(217, 0, 22, 0.4);
+}
+.roster-card[data-game="P5R"]:hover .card-info {
+  background-color: #c1121f;
+  color: var(--p5-white);
+}
+
+/* No Results Message */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  color: var(--p5-white);
+  padding: 4rem;
+  background-color: var(--p5-dark-gray);
+  transform: skew(-5deg);
+}

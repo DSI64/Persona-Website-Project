@@ -1,0 +1,95 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Persona 5 Core Palette */
+  --p5-red: #d90016;
+  --p5-black: #0a0a0a;
+  --p5-dark-gray: #1a1a1a;
+  --p5-light-gray: #e0e0e0;
+  --p5-white: #ffffff;
+}
+
+/* Core Layout - Edge to Edge */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: var(--p5-black);
+  color: var(--p5-white);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* Header & Navigation Fixes */
+.app-header {
+  background-color: var(--p5-black);
+  border-bottom: 3px solid var(--p5-red); /* Sharp P5 red underline */
+}
+
+.header-content {
+  width: 100%;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on tiny screens */
+  gap: 1rem;
+}
+
+/* Assuming your links are inside a nav tag or flex container */
+nav {
+  display: flex;
+  gap: 1.5rem; /* THIS FIXES THE SQUISHED BUTTONS */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--p5-white);
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s, transform 0.2s;
+}
+
+nav a:hover {
+  color: var(--p5-red);
+  transform: skew(-10deg); /* P5 slanted text effect */
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0; 
+  margin: 0;
+}
+
+/* Add this to the bottom of App.css */
+@media (max-width: 850px) {
+  .header-content {
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  nav {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  nav a {
+    font-size: 1.1rem; /* Slightly smaller text for mobile */
+  }
+}

@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;700;900&display=swap");
+
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--p5-red);
+  /* Sharp diagonal two-tone background */
+  background-image: linear-gradient(110deg, var(--p5-red) 40%, var(--p5-black) 40%);
+  color: var(--p5-white);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Halftone dot pattern overlay (Classic P5 comic effect) */
+.landing-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.15;
+  background-image: radial-gradient(var(--p5-black) 2px, transparent 2px);
+  background-size: 8px 8px;
+}
+
+.hero-stage {
+  position: relative;
+  z-index: 1;
+  padding: clamp(4rem, 8vw, 8rem) 5% 4rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--p5-black);
+  background-color: var(--p5-white);
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 900;
+  transform: skew(-10deg); /* Angled tag */
+}
+
+.hero-stage h1 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 0.9;
+  font-size: clamp(3.5rem, 10vw, 7.5rem);
+  margin: 1rem 0;
+  color: var(--p5-white);
+  text-shadow: 4px 4px 0px var(--p5-black); /* Hard block shadow */
+  transform: rotate(-2deg); /* Slight chaotic tilt */
+}
+
+.hero-copy {
+  margin: 1rem 0 0;
+  max-width: 40rem;
+  color: var(--p5-white);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 700;
+  background-color: var(--p5-black); /* Text highlighting block */
+  padding: 0.5rem 1rem;
+  transform: skew(-5deg);
+}
+
+/* P5 Themed Buttons (Sharp, blocky, solid shadows) */
+.hero-actions {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.primary-action,
+.secondary-action {
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  font-weight: 900;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  transform: skew(-10deg); /* Angled buttons */
+  cursor: pointer;
+  border: 3px solid var(--p5-black);
+}
+
+.primary-action {
+  color: var(--p5-white);
+  background-color: var(--p5-black);
+  box-shadow: 6px 6px 0px var(--p5-white);
+}
+
+.secondary-action {
+  color: var(--p5-black);
+  background-color: var(--p5-white);
+  box-shadow: 6px 6px 0px var(--p5-black);
+}
+
+.primary-action:hover {
+  background-color: var(--p5-white);
+  color: var(--p5-red);
+  box-shadow: 6px 6px 0px var(--p5-black);
+  transform: skew(-10deg) translate(-3px, -3px);
+}
+
+.secondary-action:hover {
+  background-color: var(--p5-black);
+  color: var(--p5-white);
+  box-shadow: 6px 6px 0px var(--p5-white);
+  transform: skew(-10deg) translate(-3px, -3px);
+}
+
+/* === DAILY CHARACTER BANNER === */
+.daily-character-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--p5-light-gray);
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  z-index: 2;
+  border-top: 6px solid var(--p5-black);
+  border-bottom: 6px solid var(--p5-black);
+}
+
+/* Image Side with Jagged Cut */
+.daily-char-image {
+  background: var(--p5-red);
+  /* This creates the jagged, ripped paper/angled cut effect on the right side of the image */
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  color: var(--p5-black);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  transform: rotate(-10deg);
+  opacity: 0.5;
+}
+
+/* Info Side */
+.daily-char-info {
+  padding: 4rem 10% 4rem 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--p5-black);
+}
+
+.daily-char-info h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  margin: 0.5rem 0 1rem;
+  color: var(--p5-black);
+  text-shadow: 3px 3px 0px var(--p5-white);
+  transform: rotate(-2deg);
+}
+
+.char-stats {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+.char-stats li {
+  padding: 0.75rem 0;
+  border-bottom: 2px dashed var(--p5-dark-gray);
+  font-size: 1.1rem;
+}
+
+.char-stats strong {
+  background-color: var(--p5-black);
+  color: var(--p5-white);
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+}
+
+.char-desc {
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--p5-red);
+  padding-left: 1rem;
+}
+
+/* === SPOTLIGHT SECTION === */
+.spotlight-section {
+  padding: 4rem 5%;
+  width: 100%;
+  background-color: var(--p5-black);
+  position: relative;
+  z-index: 1;
+}
+
+.spotlight-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spotlight-card {
+  padding: 2rem;
+  background-color: var(--p5-white);
+  color: var(--p5-black);
+  border: 4px solid var(--p5-black);
+  box-shadow: 8px 8px 0px var(--p5-red);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.spotlight-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px var(--p5-red);
+}
+
+.spotlight-tag {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--p5-white);
+  background-color: var(--p5-red);
+  transform: skew(-10deg);
+}
+
+.spotlight-card h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  color: var(--p5-black);
+}
+
+.spotlight-card p {
+  margin: 0;
+  font-weight: 700;
+  color: var(--p5-black);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 900px) {
+  .daily-character-banner {
+    grid-template-columns: 1fr;
+  }
+  .daily-char-image {
+    height: 350px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  }
+}

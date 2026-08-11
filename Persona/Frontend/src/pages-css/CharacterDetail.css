@@ -1,0 +1,335 @@
+/* src/pages-css/CharacterDetail.css */
+
+:root {
+  --p5-black: #000000;
+  --p5-white: #ffffff;
+  --p5-dark-gray: #1a1a1a;
+  --p5-red: #d90016;
+}
+
+.detail-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--p5-black);
+  color: var(--p5-white);
+  padding: 2rem 5% 4rem 5%;
+  box-sizing: border-box;
+}
+
+.detail-nav-bar {
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  background-color: var(--p5-dark-gray);
+  color: var(--p5-white);
+  border: 2px solid var(--p5-white);
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  transform: skew(-5deg);
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: var(--p5-red);
+  border-color: var(--p5-red);
+}
+
+/* Split Screen Layout */
+.detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .detail-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Left Column Styling */
+.detail-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Adapted for Image Carousel */
+.detail-image-carousel-box {
+  background-color: var(--p5-dark-gray);
+  border: 4px solid var(--p5-white);
+  aspect-ratio: 3 / 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--p5-white);
+  transform: skew(-2deg);
+  box-shadow: 8px 8px 0px var(--p5-red);
+}
+
+.carousel-image-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.carousel-arrow {
+  background-color: transparent;
+  color: var(--p5-white);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.1s;
+}
+
+.carousel-arrow:hover {
+  color: var(--p5-red);
+}
+
+.carousel-arrow:active {
+  transform: scale(0.9);
+}
+
+.carousel-counter {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.detail-info-box {
+  background-color: var(--p5-dark-gray);
+  border: 2px solid #333;
+  padding: 2rem;
+  transform: skew(-2deg);
+}
+
+.detail-arcana-tag {
+  background-color: var(--p5-red);
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 0.2rem 0.6rem;
+  display: inline-block;
+}
+
+.detail-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  margin: 0.5rem 0 0 0;
+  line-height: 1;
+}
+
+.detail-subtitle {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin: 0 0 1.5rem 0;
+}
+
+.detail-bio-block h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.3rem;
+  border-left: 3px solid var(--p5-red);
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.detail-bio-block p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.detail-meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  border-top: 1px dashed #444;
+  padding-top: 1rem;
+}
+
+.detail-meta-list strong {
+  color: #ffe600;
+}
+
+/* Right Column Styling (Records/Sections Dropdowns) */
+.detail-right-column {
+  background-color: var(--p5-dark-gray);
+  border: 4px solid var(--p5-white);
+  padding: 2rem;
+  transform: skew(-2deg);
+  box-shadow: -8px 8px 0px #333;
+}
+
+.ranks-header-wrap h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.2rem;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: 0.05em;
+}
+
+.ranks-header-wrap p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+}
+
+.detail-ranks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-rank-card {
+  background-color: #111;
+  border: 2px solid #333;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.detail-rank-card:hover {
+  border-color: #555;
+}
+
+.detail-rank-btn {
+  width: 100%;
+  background-color: #1a1a1a;
+  border: none;
+  color: var(--p5-white);
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.detail-rank-btn:hover {
+  background-color: #262626;
+}
+
+.rank-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrow-icon {
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+.arrow-icon.open {
+  transform: rotate(180deg);
+}
+
+.detail-rank-content {
+  padding: 1.25rem;
+  background-color: #111;
+  border-top: 1px dashed #333;
+}
+
+.rank-prompt {
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.not-found-page {
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: var(--p5-black);
+  color: var(--p5-white);
+  min-height: 100vh;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+}
+
+/* Dynamic Game Theme Variables */
+.detail-page[data-game="P1"] { --game-accent: #a855f7; }
+.detail-page[data-game="P2"] { --game-accent: #ff4500; }
+.detail-page[data-game="P3"] { --game-accent: #00a8ff; }
+.detail-page[data-game="P4"] { --game-accent: #ffe600; }
+.detail-page[data-game="P5"] { --game-accent: var(--p5-red, #d90016); }
+
+/* Override default button styling to render persona tag as inline text */
+.persona-link-tag {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+/* Hover effect dynamically shifts to the respective game's accent color */
+.persona-link-tag:hover {
+  color: var(--game-accent, #ff4500);
+  text-decoration-color: var(--game-accent, #ff4500);
+}
+
+.detail-divider {
+  border: none;
+  border-top: 2px dashed #444;
+  margin: 1.5rem 0;
+}
+
+/* ==========================================
+   GAME-SPECIFIC THEME OVERRIDES FOR DETAIL PAGE
+   ========================================== */
+
+/* Persona 1 (Purple) */
+.detail-page[data-game="P1"] .detail-image-carousel-box { box-shadow: 8px 8px 0px #a855f7; }
+.detail-page[data-game="P1"] .detail-arcana-tag { background-color: #a855f7; }
+.detail-page[data-game="P1"] .detail-bio-block h3 { border-left-color: #a855f7; }
+
+/* Persona 2 (Vermilion / Orange) - Covers standard P2 tag from your DB */
+.detail-page[data-game="P2"] .detail-image-carousel-box { box-shadow: 8px 8px 0px #ff4500; }
+.detail-page[data-game="P2"] .detail-arcana-tag { background-color: #ff4500; }
+.detail-page[data-game="P2"] .detail-bio-block h3 { border-left-color: #ff4500; }
+
+/* Persona 3 (Blue) */
+.detail-page[data-game="P3"] .detail-image-carousel-box { box-shadow: 8px 8px 0px #00a8ff; }
+.detail-page[data-game="P3"] .detail-arcana-tag { background-color: #00a8ff; }
+.detail-page[data-game="P3"] .detail-bio-block h3 { border-left-color: #00a8ff; }
+
+/* Persona 4 (Gold) */
+.detail-page[data-game="P4"] .detail-image-carousel-box { box-shadow: 8px 8px 0px #ffe600; }
+.detail-page[data-game="P4"] .detail-arcana-tag { background-color: #ffe600; color: var(--p5-black); }
+.detail-page[data-game="P4"] .detail-bio-block h3 { border-left-color: #ffe600; }
+
+/* Persona 5 (Red - Default) */
+.detail-page[data-game="P5"] .detail-image-carousel-box { box-shadow: 8px 8px 0px var(--p5-red); }
+.detail-page[data-game="P5"] .detail-arcana-tag { background-color: var(--p5-red); }
+.detail-page[data-game="P5"] .detail-bio-block h3 { border-left-color: var(--p5-red); }

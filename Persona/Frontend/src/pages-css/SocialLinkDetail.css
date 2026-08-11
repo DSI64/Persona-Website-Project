@@ -1,0 +1,298 @@
+.detail-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--p5-black);
+  color: var(--p5-white);
+  padding: 2rem 5% 4rem 5%;
+  box-sizing: border-box;
+}
+
+.detail-nav-bar {
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  background-color: var(--p5-dark-gray);
+  color: var(--p5-white);
+  border: 2px solid var(--p5-white);
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  transform: skew(-5deg);
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: var(--p5-red);
+  border-color: var(--p5-red);
+}
+
+/* Split Screen Layout */
+.detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .detail-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Left Column Styling */
+.detail-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-image-box {
+  background-color: var(--p5-dark-gray);
+  border: 4px solid var(--p5-white);
+  aspect-ratio: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
+  color: #666;
+  text-transform: uppercase;
+  transform: skew(-2deg);
+  box-shadow: 8px 8px 0px var(--p5-red);
+}
+
+.detail-info-box {
+  background-color: var(--p5-dark-gray);
+  border: 2px solid #333;
+  padding: 2rem;
+  transform: skew(-2deg);
+}
+
+.detail-arcana-tag {
+  background-color: var(--p5-red);
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 0.2rem 0.6rem;
+  display: inline-block;
+}
+
+.detail-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  margin: 0.5rem 0 0 0;
+  line-height: 1;
+}
+
+.detail-subtitle {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin: 0 0 1.5rem 0;
+}
+
+.detail-bio-block h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.3rem;
+  border-left: 3px solid var(--p5-red);
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-bio-block p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.detail-meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  border-top: 1px dashed #444;
+  padding-top: 1rem;
+}
+
+.detail-meta-list strong {
+  color: #ffe600;
+}
+
+/* Right Column Styling (Ranks Dropdowns) */
+.detail-right-column {
+  background-color: var(--p5-dark-gray);
+  border: 4px solid var(--p5-white);
+  padding: 2rem;
+  transform: skew(-2deg);
+  box-shadow: -8px 8px 0px #333;
+}
+
+.ranks-header-wrap h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.2rem;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: 0.05em;
+}
+
+.ranks-header-wrap p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+}
+
+.detail-ranks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-rank-card {
+  background-color: #111;
+  border: 2px solid #333;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.detail-rank-card.romance-rank {
+  border-color: var(--p5-red);
+}
+
+.detail-rank-btn {
+  width: 100%;
+  background-color: #1a1a1a;
+  border: none;
+  color: var(--p5-white);
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.detail-rank-btn:hover {
+  background-color: #262626;
+}
+
+.romance-rank .detail-rank-btn {
+  background-color: rgba(217, 0, 22, 0.15);
+}
+
+.rank-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.romance-tag {
+  background-color: var(--p5-red);
+  color: white;
+  font-size: 0.7rem;
+  font-family: "Space Grotesk", sans-serif;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+}
+
+.arrow-icon {
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+.arrow-icon.open {
+  transform: rotate(180deg);
+}
+
+.detail-rank-content {
+  padding: 1.25rem;
+  background-color: #111;
+  border-top: 1px dashed #333;
+}
+
+.romance-rank .detail-rank-content {
+  background-color: rgba(217, 0, 22, 0.05);
+}
+
+.rank-prompt {
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem 0;
+  opacity: 0.85;
+}
+
+.rank-answer {
+  font-size: 1rem;
+  margin: 0;
+  color: #4ade80;
+  font-weight: 700;
+}
+
+.not-found-page {
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: var(--p5-black);
+  color: var(--p5-white);
+  min-height: 100vh;
+}
+
+/* ==========================================
+   GAME-SPECIFIC THEME OVERRIDES FOR DETAIL PAGE
+   ========================================== */
+
+/* Persona 3 (Blue) */
+.detail-page[data-game="P3"] .detail-image-box { box-shadow: 8px 8px 0px #00a8ff; }
+.detail-page[data-game="P3"] .detail-arcana-tag { background-color: #00a8ff; }
+.detail-page[data-game="P3"] .detail-bio-block h3 { border-left-color: #00a8ff; }
+.detail-page[data-game="P3"] .back-btn:hover { background-color: #00a8ff; border-color: #00a8ff; }
+.detail-page[data-game="P3"] .detail-rank-btn:hover { background-color: rgba(0, 168, 255, 0.2); }
+.detail-page[data-game="P3"] .detail-rank-card:hover { border-color: #00a8ff; }
+
+/* Persona 3 Portable (FeMC Pink) */
+.detail-page[data-game="P3P"] .detail-image-box { box-shadow: 8px 8px 0px #ff6699; }
+.detail-page[data-game="P3P"] .detail-arcana-tag { background-color: #ff6699; }
+.detail-page[data-game="P3P"] .detail-bio-block h3 { border-left-color: #ff6699; }
+.detail-page[data-game="P3P"] .back-btn:hover { background-color: #ff6699; border-color: #ff6699; color: #fff; }
+.detail-page[data-game="P3P"] .detail-rank-btn:hover { background-color: rgba(255, 102, 153, 0.2); }
+.detail-page[data-game="P3P"] .detail-rank-card:hover { border-color: #ff6699; }
+
+/* Persona 4 / Persona 4 Golden (Yellow/Gold) */
+.detail-page[data-game="P4"] .detail-image-box,
+.detail-page[data-game="P4G"] .detail-image-box { box-shadow: 8px 8px 0px #ffe600; }
+.detail-page[data-game="P4"] .detail-arcana-tag,
+.detail-page[data-game="P4G"] .detail-arcana-tag { background-color: #ffe600; color: var(--p5-black); }
+.detail-page[data-game="P4"] .detail-bio-block h3,
+.detail-page[data-game="P4G"] .detail-bio-block h3 { border-left-color: #ffe600; }
+.detail-page[data-game="P4"] .back-btn:hover,
+.detail-page[data-game="P4G"] .back-btn:hover { background-color: #ffe600; border-color: #ffe600; color: var(--p5-black); }
+.detail-page[data-game="P4"] .detail-rank-btn:hover,
+.detail-page[data-game="P4G"] .detail-rank-btn:hover { background-color: rgba(255, 230, 0, 0.2); }
+.detail-page[data-game="P4"] .detail-rank-card:hover,
+.detail-page[data-game="P4G"] .detail-rank-card:hover { border-color: #ffe600; }
+
+/* Persona 5 (Red) */
+.detail-page[data-game="P5"] .detail-image-box { box-shadow: 8px 8px 0px var(--p5-red); }
+.detail-page[data-game="P5"] .detail-arcana-tag { background-color: var(--p5-red); }
+.detail-page[data-game="P5"] .detail-bio-block h3 { border-left-color: var(--p5-red); }
+.detail-page[data-game="P5"] .back-btn:hover { background-color: var(--p5-red); border-color: var(--p5-red); }
+.detail-page[data-game="P5"] .detail-rank-btn:hover { background-color: rgba(217, 0, 22, 0.2); }
+.detail-page[data-game="P5"] .detail-rank-card:hover { border-color: var(--p5-red); }
+
+/* Persona 5 Royal (Deep Red) */
+.detail-page[data-game="P5R"] .detail-image-box { box-shadow: 8px 8px 0px #c1121f; }
+.detail-page[data-game="P5R"] .detail-arcana-tag { background-color: #c1121f; }
+.detail-page[data-game="P5R"] .detail-bio-block h3 { border-left-color: #c1121f; }
+.detail-page[data-game="P5R"] .back-btn:hover { background-color: #c1121f; border-color: #c1121f; }
+.detail-page[data-game="P5R"] .detail-rank-btn:hover { background-color: rgba(193, 18, 31, 0.2); }
+.detail-page[data-game="P5R"] .detail-rank-card:hover { border-color: #c1121f; }
