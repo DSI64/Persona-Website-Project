@@ -69,3 +69,11 @@ model Track {
   filePath     String       
   metadata     Json         
 }
+
+model Character {
+  id        Int      @id @default(autoincrement())
+  name      String
+  arcana    String?
+  imageUrl  String?  // Add this field to store the photo path or URL
+  createdAt DateTime @default(now())
+}

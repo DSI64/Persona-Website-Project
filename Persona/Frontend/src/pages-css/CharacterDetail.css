@@ -60,7 +60,6 @@
   gap: 1.5rem;
 }
 
-/* Adapted for Image Carousel */
 .detail-image-carousel-box {
   background-color: var(--p5-dark-gray);
   border: 4px solid var(--p5-white);
@@ -68,38 +67,63 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
-  font-family: "Bebas Neue", sans-serif;
-  color: var(--p5-white);
+  position: relative; /* Crucial for absolute positioning elements inside */
+  overflow: hidden;
   transform: skew(-2deg);
   box-shadow: 8px 8px 0px var(--p5-red);
 }
 
 .carousel-image-display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  color: #888;
+  padding: 2.5rem 3.5rem; /* Keeps padding so art doesn't crash into arrows */
+  box-sizing: border-box;
+  z-index: 1; /* Sits behind the click buttons */
+}
+
+.carousel-img-element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Scales image down completely without stretching or cropping */
+  object-position: center;
 }
 
 .carousel-arrow {
-  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
   color: var(--p5-white);
   border: none;
-  font-size: 2rem;
+  font-size: 2.2rem;
   cursor: pointer;
-  transition: color 0.2s, transform 0.1s;
+  padding: 0.5rem 0.75rem;
+  z-index: 10; /* Forces buttons to stay on top of the image */
+  transition: color 0.2s, background-color 0.2s, transform 0.1s;
+}
+
+.carousel-arrow:first-of-type,
+button.carousel-arrow:not(:last-child) {
+  left: 10px; /* Left navigation arrow */
+}
+
+.carousel-arrow:last-of-type {
+  right: 10px; /* Right navigation arrow */
 }
 
 .carousel-arrow:hover {
   color: var(--p5-red);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .carousel-arrow:active {
-  transform: scale(0.9);
+  transform: translateY(-50%) scale(0.9);
 }
 
 .carousel-counter {

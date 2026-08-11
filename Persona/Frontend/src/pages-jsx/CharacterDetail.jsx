@@ -41,7 +41,11 @@ export default function CharacterDetail() {
           <div className="detail-image-carousel-box">
             <button className="carousel-arrow left" onClick={prevImage}>❮</button>
             <div className="carousel-image-display">
-              <span>{character.images[currentImageIndex]}</span>
+              <img 
+                src={character.images[currentImageIndex]} 
+                alt={`${character.name} view ${currentImageIndex + 1}`} 
+                className="carousel-img-element"
+              />
               <span className="carousel-counter">{currentImageIndex + 1} / {character.images.length}</span>
             </div>
             <button className="carousel-arrow right" onClick={nextImage}>❯</button>
@@ -67,23 +71,23 @@ export default function CharacterDetail() {
               <li><strong>Arcana:</strong> {character.arcana}</li>
               <li><strong>Birthday:</strong> {character.birthday}</li>
               <li>
-  <strong>Persona(s):</strong>{" "}
-  {character.personas ? (
-    character.personas.split(', ').map((personaName, idx) => (
-      <span key={idx}>
-        <button 
-          className="persona-link-tag" 
-          onClick={() => navigate(`/compendium?search=${encodeURIComponent(personaName)}`)}
-        >
-          {personaName}
-        </button>
-        {idx < character.personas.split(', ').length - 1 ? ', ' : ''}
-      </span>
-    ))
-  ) : (
-    "N/A"
-  )}
-</li>
+                <strong>Persona(s):</strong>{" "}
+                {character.personas ? (
+                  character.personas.split(', ').map((personaName, idx) => (
+                    <span key={idx}>
+                      <button 
+                        className="persona-link-tag" 
+                        onClick={() => navigate(`/compendium?search=${encodeURIComponent(personaName)}`)}
+                      >
+                        {personaName}
+                      </button>
+                      {idx < character.personas.split(', ').length - 1 ? ', ' : ''}
+                    </span>
+                  ))
+                ) : (
+                  "N/A"
+                )}
+              </li>
               <li><strong>Appearances:</strong> {character.appearances}</li>
               <li><strong>Voice Actors:</strong> {character.voiceActors || "N/A"}</li>
               {character.likes && <li><strong>Likes:</strong> {character.likes}</li>}
