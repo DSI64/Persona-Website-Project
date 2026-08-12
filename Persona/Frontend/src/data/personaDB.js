@@ -1137,7 +1137,7 @@ export const personaDB = [
   {
     id: "ernesto",
     name: "Ernesto",
-    arcana: "Fool",
+    arcana: "Heirophant",
     originGame: "Spinoffs",
     description: "Toshiro's Persona in Persona 5 Tactica.",
     images: ["Ernesto - P5T Art"],
@@ -1164,7 +1164,7 @@ export const personaDB = [
   {
     id: "pandora",
     name: "Pandora",
-    arcana: "World",
+    arcana: "Hope",
     originGame: "Spinoffs",
     description: "Sophia's awakened Persona in Persona 5 Strikers.",
     images: ["Pandora - P5S Design"],
@@ -1175,23 +1175,23 @@ export const personaDB = [
     name: "Jánošík (P5X)",
     arcana: "Fool",
     originGame: "Spinoffs",
-    description: "Wonder's initial Persona in Persona 5 X.",
+    description: "A hero out of Slovakian legend. He loved to steal from the rich and give to the poor, but would never kill innocent people. He was eventually tortured to death for his partner's betrayal. After his death, he was regarded as a symbol of overthrowing the powerful and novels and poems handed down from later generations also described and embellished his legendary life.",
     images: ["Jánošík - P5X Render"],
-    affinities: { wind: "Resist", curse: "Resist" }
+    affinities: { elec: "Weak", wind: "Weak", bless: "Resist", }
   },
   {
     id: "robroy",
     name: "Robroy (P5X)",
-    arcana: "Chariot",
+    arcana: "Tower",
     originGame: "Spinoffs",
-    description: "Lufel's Persona in Persona 5 X.",
+    description: "A Scottish folk hero. He was a wealthy cattleman who lost his fortune to a nobleman then fought to reclaim it. He was accused of treason and imprisoned, but his story was so well-loved that he was pardoned.",
     images: ["Robroy - P5X Art"],
-    affinities: { elec: "Resist", wind: "Weak" }
+    affinities: { fire: "Resist", wind: "Weak" }
   },
   {
     id: "awilda",
     name: "Awilda (P5X)",
-    arcana: "Priestess",
+    arcana: "Strength",
     originGame: "Spinoffs",
     description: "Motoha's Persona in Persona 5 X.",
     images: ["Awilda - P5X Art"],
@@ -1209,7 +1209,7 @@ export const personaDB = [
   {
     id: "chiyome",
     name: "Chiyome (P5X)",
-    arcana: "Hermit",
+    arcana: "Priestess",
     originGame: "Spinoffs",
     description: "Riko's Persona in Persona 5 X.",
     images: ["Chiyome - P5X Art"],
@@ -1218,7 +1218,7 @@ export const personaDB = [
   {
     id: "ghino",
     name: "Ghino (P5X)",
-    arcana: "Justice",
+    arcana: "Moon",
     originGame: "Spinoffs",
     description: "Shoki's Persona in Persona 5 X.",
     images: ["Ghino - P5X Art"],
@@ -1227,7 +1227,7 @@ export const personaDB = [
   {
     id: "gentileschi",
     name: "Gentileschi (P5X)",
-    arcana: "Lovers",
+    arcana: "Magician",
     originGame: "Spinoffs",
     description: "Hirano's Persona in Persona 5 X.",
     images: ["Gentileschi - P5X Art"],
