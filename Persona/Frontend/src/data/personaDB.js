@@ -653,7 +653,7 @@ export const personaDB = [
   },
   {
     id: "himiko",
-    name: "Himiko / Kanzeon",
+    name: "Himiko",
     arcana: "Lovers",
     originGame: "P4",
     description: "A legendary Japanese queen and shaman who ruled the kingdom of Yamatai. Known for her spiritual power, she governed through divination and was said to possess great influence over the people.",
