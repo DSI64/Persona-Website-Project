@@ -28,9 +28,8 @@ Apollo
 Hermes
 Chronos
 Eros
-Eros Prime
 Venus
-Rhadamanthus/Rhadamanthus Prime
+Rhadamanthus
 Hades
 Maia
 Artemis
@@ -215,10 +214,10 @@ Ernesto
 Valjean
 Pithos
 Pandora
-Jánošík
-Robroy
-Awilda
-Mandrin
-Chiyome
-Ghino
-Gentileschi
+Jánošík (P5X)
+Robroy (P5X)
+Awilda (P5X)
+Mandrin (P5X)
+Chiyome (P5X)
+Ghino (P5X)
+Gentileschi (P5X) 
