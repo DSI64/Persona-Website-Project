@@ -191,144 +191,146 @@ export const personaDB = [
     name: "Vulcanus",
     arcana: "Sun",
     originGame: "P2",
-    description: "The Roman god of fire and metalworking. Tatsuya Suou's initial Persona in Persona 2.",
+    description: "Roman god of smithery. Patron of artists and inventors.",
     images: ["Vulcanus - Persona 2 Innocent Sin"],
-    affinities: { phys: "Resist", fire: "Drain", ice: "Weak", nuclear: "Resist" }
+    affinities: { fire: "Null", water: "Weak", ice: "Weak", nuclear: "Resist", bless: "Resist", curse: "Resist", psy: "Resist" }
   },
   {
     id: "apollo",
     name: "Apollo",
     arcana: "Sun",
     originGame: "P2",
-    description: "The Olympian god of music, truth, and prophecy. Tatsuya's ultimate Persona.",
+    description: "A human sun god of Greece with shining beauty.",
     images: ["Apollo - Persona 2 Artwork"],
-    affinities: { fire: "Drain", wind: "Null", ice: "Weak" }
+    affinities: { fire: "Null", water: "Weak", ice: "Weak", elec: "Resist", nuclear: "Null", bless: "Null", 
+    curse: "Resist", psy: "Null" }
   },
   {
     id: "hermes-p2",
     name: "Hermes",
-    arcana: "Magician",
+    arcana: "Fortune",
     originGame: "P2",
-    description: "The herald of the gods and guide of souls. Eikichi's initial Persona.",
+    description: "I am Hermes... Giver of fortune and fame, and herald of souls...To my alter ego: Love thy neighbor with a selflessness like the wind's...",
     images: ["Hermes - P2 Art"],
-    affinities: { wind: "Resist", elec: "Weak" }
+    affinities: { wind: "Repel", elec: "Weak", bless: "Weak", curse: "Null", psy: "Resist" }
   },
   {
     id: "chronos",
     name: "Chronos",
     arcana: "Fortune",
     originGame: "P2",
-    description: "The personification of time in ancient Greek philosophy.",
+    description: "I am Chronos... The dark sun that kills its father and wields the scythe of false power...See the karma controlling one's destiny...",
     images: ["Chronos - P2 Art"],
-    affinities: { ice: "Null" }
+    affinities: { wind: "Null", earth: "Weak", ice: "Resist", elec: "Resist", nuclear: "Resist", bless: "Null", curse: "Null", psy: "Repel" }
   },
   {
     id: "eros",
     name: "Eros",
     arcana: "Lovers",
     originGame: "P2",
-    description: "Greek god of love and sexual desire. Lisa's initial Persona.",
+    description: "I am Eros... My golden arrows kindle love's flames... I shall be your strength, my other self...",
     images: ["Eros - P2 Art"],
-    affinities: { fire: "Resist" }
+    affinities: { bless: "Null", curse: "Resist", psy: "Resist" }
   },
   {
     id: "venus",
     name: "Venus",
     arcana: "Lovers",
     originGame: "P2",
-    description: "Roman goddess of love and beauty. Lisa's ultimate Persona.",
+    description: "I am Venus... Goddess of fertility about whom beauty and love dance... I am you... You are me... Let us become one...",
     images: ["Venus - P2 Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { wind: "Weak", earth: "Null", ice: "Weak", nuclear: "Resist", light: "Null", curse: "Resist", psy: "Null" }
   },
   {
     id: "rhadamanthus",
     name: "Rhadamanthus",
-    arcana: "Judgement",
+    arcana: "Death",
     originGame: "P2",
-    description: "A wise king of Crete, serving as a judge of the dead.",
+    description: "I am Rhadamanthus... the judge of the netherworld. I shall sever your foes' sins with my blade of judgement!",
     images: ["Rhadamanthus - P2 Art"],
-    affinities: { bless: "Resist", curse: "Weak" }
+    affinities: { curse: "Null", psy: "Null" }
   },
   {
     id: "hades",
     name: "Hades",
     arcana: "Death",
     originGame: "P2",
-    description: "Ruler of the Greek underworld. Jun's ultimate Persona.",
+    description: "I am Hades... King of the underworld who judges the evil and the righteous alike. I am thou... Thou art I... Let us walk this path together...",
     images: ["Hades - P2 Art"],
-    affinities: { curse: "Drain", bless: "Weak" }
+    affinities: { fire: "Weak", water: "Null", ice: "Resist", nuclear: "Weak", bless: "Null", curse: "Weak", psy: "Null" }
   },
   {
     id: "maia",
     name: "Maia",
     arcana: "Moon",
     originGame: "P2",
-    description: "Eldest of the Pleiades and mother of Hermes. Maya's initial Persona.",
+    description: "I am Maia... The workings of the Pleiades shining in the heavens shall be yours, bearer of the full moon...",
     images: ["Maia - P2 Art"],
-    affinities: { ice: "Resist" }
+    affinities: { bless: "Resist", curse: "Null", psy: "Null" }
   },
   {
     id: "artemis",
     name: "Artemis",
     arcana: "Moon",
     originGame: "P2",
-    description: "Goddess of the hunt and wild animals. Maya's ultimate Persona.",
+    description: "I am Artemis... The moon goddess who illuminates your twilight virtue...My purer half, do not be bashful of your destiny.",
     images: ["Artemis - P2 Art"],
-    affinities: { ice: "Drain", fire: "Weak" }
+    affinities: { phys: "Weak", fire: "Repel", wind: "Repel", water: "Repel", earth: "Repel", ice: "Repel", elec: "Repel", nuclear: "Repel", bless: "Repel", 
+    curse: "Repel", psy: "Repel" }
   },
   {
     id: "helios",
     name: "Helios",
-    arcana: "Sun",
+    arcana: "Justice",
     originGame: "P2",
-    description: "The personification of the Sun in Greek mythology.",
+    description: "I am Helios... Bearing the ancient sun, I am the one who violates the night! I shall become your loyal chariot!!",
     images: ["Helios - P2 Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { fire: "Null", water: "Weak", bless: "Resist", curse: "Resist", psy: "Resist" }
   },
   {
     id: "hyperion",
     name: "Hyperion",
-    arcana: "Sun",
+    arcana: "Justice",
     originGame: "P2",
-    description: "A Titan god of heavenly light.",
+    description: "I am the father of the sun, the moon, and the stars…Feel the wrath of the Titans that shakes the heaven and the earth…",
     images: ["Hyperion - P2 Art"],
-    affinities: { fire: "Repel", bless: "Resist" }
+    affinities: { fire: "Null", water: "Weak", ice: "Weak", elec: "Resist", nuclear: "Null", bless: "Null", curse: "Resist", psy: "Null" }
   },
   {
     id: "odysseus",
     name: "Odysseus",
-    arcana: "Magician",
+    arcana: "Hanged Man",
     originGame: "P2",
     description: "Legendary Greek king of Ithaca and hero of Homer's epic poem.",
     images: ["Odysseus - P2 Art"],
-    affinities: { wind: "Resist", elec: "Weak" }
+    affinities: { wind: "Null", earth: "Weak", elec: "Null", bless: "Resist", curse: "Resist", psy: "Resist" }
   },
   {
     id: "prometheus",
     name: "Prometheus",
-    arcana: "Hermit",
+    arcana: "Hanged Man",
     originGame: "P2",
-    description: "The Titan who stole fire from the gods to give to humanity.",
+    description: "Even if I am to be chained to a rock, my duty is to love you and give you wisdom...The fire I have given you is your indomitable spirit..",
     images: ["Prometheus - P2 Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { phys: "Resist", elec: "Weak", bless: "Null", curse: "Null", psy: "Null" }
   },
   {
     id: "callisto",
     name: "Callisto",
-    arcana: "Moon",
+    arcana: "Star",
     originGame: "P2",
-    description: "A nymph associated with Artemis, transformed into a bear.",
+    description: "I am Callisto... The one known as the most beautiful of the nymphs... One who is weary of romance, I shall show you true love.",
     images: ["Callisto - P2 Art"],
-    affinities: { ice: "Resist", fire: "Weak" }
+    affinities: { wind: "Weak", earth: "Resist", bless: "Resist", curse: "Resist", psy: "Resist" }
   },
   {
     id: "astria",
     name: "Astria",
     arcana: "Star",
     originGame: "P2",
-    description: "The virgin goddess of innocence and purity.",
+    description: "I am the mapper of the stars, Astria. Stars change, but they also show one's fate. Know that your way is before you.",
     images: ["Astria - P2 Art"],
-    affinities: { bless: "Drain", curse: "Weak" }
+    affinities: { wind: "Null", earth: "Weak", ice: "Resist",  elec: "Resist",  nuclear: "Resist", bless: "Null", curse: "Resist", psy: "Repel" }
   },
 
   // --- PERSONA 3 ---
@@ -355,7 +357,7 @@ export const personaDB = [
     name: "Hermes (P3)",
     arcana: "Magician",
     originGame: "P3",
-    description: "Junpei's initial Persona in Persona 3.",
+    description: "A messenger god who served Zeus. His winged sandals allow him to fly, and he was worshipped as a god of travel and commerce. He was also known as a trickster, being able to freely cross between the mortal and godly realms.",
     images: ["Hermes - P3 Art"],
     affinities: { wind: "Weak", fire: "Resist" }
   },
@@ -364,9 +366,9 @@ export const personaDB = [
     name: "Trismegistus",
     arcana: "Magician",
     originGame: "P3",
-    description: "Junpei's ultimate Persona, formed by the fusion of Hermes and Medea.",
+    description: "A Hellenistic figure who represents a blending of the Greek god Hermes and the Egyptian god Thoth. His full name, Hermes Trismegistus, means 'Hermes, thrice greatest,' and he is thought to be the author of the Corpus Hermeticum.",
     images: ["Trismegistus - P3 Art"],
-    affinities: { fire: "Drain", wind: "Weak" }
+    affinities: { fire: "Null", wind: "Weak" }
   },
   {
     id: "penthesilea",
@@ -726,9 +728,9 @@ export const personaDB = [
     name: "Magatsu-Izanagi",
     arcana: "Tower",
     originGame: "P4",
-    description: "An impure variant of Izanagi symbolizing corruption and madness.",
+    description: "Izanagi's rival who looks just like him. Magatsu means 'calamity'. Unlike Izanagi, who founded the land and brought order, he leads all back into chaos.",
     images: ["Magatsu-Izanagi - P4G Portrait"],
-    affinities: { phys: "Resist", bless: "Weak", curse: "Repel" }
+    affinities: { nucelar: "Weak", curse: "Null", curse: "Null" }
   },
   {
     id: "kaguya",
@@ -791,36 +793,36 @@ export const personaDB = [
     name: "Asterius Picaro",
     arcana: "Fortune",
     originGame: "P5",
-    description: "Asterius stylized in Phantom Thief colors.",
+    description: "A Persona of another story. Due to a curse on his mother Pasiphae, he was born a bull-headed monster. Locked away in the labyrinth as the Minotaur, he wielded a double-sided axe.",
     images: ["Asterius Picaro - P5 Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { fire: "Resist", ice: "Weak", psy: "Resist", curse: "Null" }
   },
   {
     id: "ariadne-picaro",
     name: "Ariadne Picaro",
-    arcana: "Empress",
+    arcana: "Fortune",
     originGame: "P5",
-    description: "Ariadne wearing the Phantom Thieves' red and black theme.",
+    description: "A Persona of another story. She is the daughter of Minos, the king of Crete. She helped Theseus defeat the Minotaur and gave him a ball of yarn so he could escape the labyrinth.",
     images: ["Ariadne Picaro - P5 Art"],
-    affinities: { elec: "Null", wind: "Weak" }
+    affinities: { gun: "Resist", psy: "Weak",  nuclear: "Null", bless: "Resist" }
   },
   {
     id: "tsukiyomi-picaro",
     name: "Tsukiyomi Picaro",
     arcana: "Moon",
     originGame: "P5",
-    description: "Tsukiyomi re-imagined with a thief attire.",
+    description: "A Persona of another story. An important god born from the Japanese god Izanagi, he governs over the moon and the night. There are many theories behind this mysterious god.",
     images: ["Tsukiyomi Picaro - P5 Art"],
-    affinities: { curse: "Drain", bless: "Weak" }
+    affinities: { phys: "Resist", bless: "Resist", curse: "Reflect", nuclear: "Weak" }
   },
   {
     id: "magatsu-izanagi-picaro",
     name: "Magatsu-Izanagi Picaro",
     arcana: "Tower",
     originGame: "P5",
-    description: "Magatsu-Izanagi styled after the Phantom Thieves.",
+    description: "A Persona of another story. He's Izanagi's rival and looks just like him. Magatsu means 'calamity.' Unlike Izanagi, who founded the land and brought order, he leads all back into chaos.",
     images: ["Magatsu-Izanagi Picaro - P5 Art"],
-    affinities: { phys: "Resist", curse: "Repel", bless: "Weak" }
+    affinities: { nucelar: "Weak", curse: "Null", curse: "Null" }
   },
   {
     id: "orpheus-picaro-male",
@@ -1125,16 +1127,16 @@ export const personaDB = [
     name: "Asterius",
     arcana: "Fortune",
     originGame: "Spinoffs",
-    description: "A Persona of another story. Due to a curse on his mother Pasiphae, he was born a bull-headed monster. Locked away in the labyrinth as the Minotaur, he wielded a double-sided axe.",
+    description: "Due to a curse on his mother Pasiphae, he was born a bull-headed monster. Locked away in the labyrinth as the Minotaur, he wielded a double-sided axe.",
     images: ["Asterius - Persona Arena Render"],
     affinities: { fire: "Resist", ice: "Weak", psy: "Resist", curse: "Null" }
   },
   {
     id: "ariadne",
     name: "Ariadne",
-    arcana: "Empress",
+    arcana: "Fortune",
     originGame: "Spinoffs",
-    description: "A Persona of another story. She is the daughter of Minos, the king of Crete. She helped Theseus defeat the Minotaur and gave him a ball of yarn so he could escape the labyrinth.",
+    description: "She is the daughter of Minos, the king of Crete. She helped Theseus defeat the Minotaur and gave him a ball of yarn so he could escape the labyrinth.",
     images: ["Ariadne - Persona Arena Art"],
     affinities: { gun: "Resist", psy: "Weak",  nuclear: "Null", bless: "Resist" }
   },
@@ -1143,7 +1145,7 @@ export const personaDB = [
     name: "Tsukiyomi",
     arcana: "Moon",
     originGame: "Spinoffs",
-    description: "A Persona of another story. An important god born from the Japanese god Izanagi, he governs over the moon and the night. There are many theories behind this mysterious god.",
+    description: "An important god born from the Japanese god Izanagi, he governs over the moon and the night. There are many theories behind this mysterious god.",
     images: ["Tsukiyomi - P4 Arena Ultimax Art"],
     affinities: { phys: "Resist", bless: "Resist", curse: "Reflect", nuclear: "Weak" }
   },
