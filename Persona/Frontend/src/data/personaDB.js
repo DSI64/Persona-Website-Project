@@ -337,20 +337,20 @@ export const personaDB = [
   {
     id: "io",
     name: "Io",
-    arcana: "Priestess",
+    arcana: "Lovers",
     originGame: "P3",
-    description: "A mortal maiden loved by Zeus transformed into a heifer. Yukari's initial Persona.",
+    description: "A priestess in service of the goddess Hera. When Zeus fell in love with her, he transformed her into a cow to hide her from Hera, but Hera saw through the ruse. She was rescued by Hermes, and escaped across the sea to safety.",
     images: ["Io - Persona 3 Art"],
     affinities: { wind: "Resist", elec: "Weak" }
   },
   {
     id: "isis",
     name: "Isis",
-    arcana: "Priestess",
+    arcana: "Lovers",
     originGame: "P3",
-    description: "Egyptian goddess of magic and motherhood. Yukari's ultimate Persona.",
+    description: "Osiris's wife as well as his younger sister. Upon the death of her husband at the hands of Seth, she traveled all over Egypt to recover the pieces of his body, and revived him with her incredible magic power.",
     images: ["Isis - Persona 3 Art"],
-    affinities: { wind: "Drain", elec: "Weak" }
+    affinities: { wind: "Null", elec: "Weak" }
   },
   {
     id: "hermes-p3",
@@ -375,7 +375,7 @@ export const personaDB = [
     name: "Penthesilea",
     arcana: "Empress",
     originGame: "P3",
-    description: "An Amazonian queen in Greek mythology. Mitsuru's initial Persona.",
+    description: "A queen of the Amazons in Greek mythology. She fought for the Trojans during the Trojan War, but was slain by Achilles. When Achilles took off her helmet and saw her beautiful face, he felt great remorse for killing her.",
     images: ["Penthesilea - P3 Art"],
     affinities: { ice: "Resist", fire: "Weak" }
   },
@@ -384,52 +384,52 @@ export const personaDB = [
     name: "Artemisia",
     arcana: "Empress",
     originGame: "P3",
-    description: "Mitsuru's ultimate Persona.",
+    description: "The heroic queen of Halicarnassus mentioned in Herodotus's The Histories. During the Persian Wars between the Greek states and Persia, she was the only woman to take command in the Persian fleet.",
     images: ["Artemisia - P3 Art"],
-    affinities: { ice: "Drain", fire: "Weak" }
+    affinities: { ice: "Null", fire: "Weak" }
   },
   {
     id: "polydeuces",
     name: "Polydeuces",
     arcana: "Emperor",
     originGame: "P3",
-    description: "Immortal twin of Castor. Akihiko's initial Persona.",
+    description: "A hero in Greek mythology. As the son of Zeus and the mortal Leda, he inherited his father's immortality. He and his half-brother Castor were famed fighters, and both became stars in the constellation Gemini.",
     images: ["Polydeuces - Persona 3 Art"],
-    affinities: { phys: "Resist", wind: "Weak" }
+    affinities: { elec: "Resist", ice: "Weak" }
   },
   {
     id: "caesar",
     name: "Caesar",
     arcana: "Emperor",
     originGame: "P3",
-    description: "Roman general and statesman. Akihiko's ultimate Persona.",
+    description: "A statesman, general, and author known for his rule over the Roman Republic. His full name was Gaius Julius Caesar. His many accomplishments led to his name being used as a title for later Roman emperors.",
     images: ["Caesar - Persona 3 Art"],
-    affinities: { phys: "Null", wind: "Weak", elec: "Drain" }
+    affinities: { elec: "Resist", ice: "Weak" }
   },
   {
     id: "lucia",
     name: "Lucia",
     arcana: "Priestess",
     originGame: "P3",
-    description: "Christian saint and martyr. Fuuka's initial Persona.",
+    description: "A saint who was martyred during the persecution of Christianity in the time of the Roman Empire. She was tortured and had her eyes gouged out, but a miracle restored her sight. She is revered as the patron saint of the blind.",
     images: ["Lucia - Persona 3 Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "None" }
   },
   {
     id: "juno",
     name: "Juno",
     arcana: "Priestess",
     originGame: "P3",
-    description: "Queen of the Roman gods. Fuuka's ultimate Persona.",
+    description: "The goddess of family and marriage, and wife to the Roman god Jupiter. She is often equated with the Greek goddess Hera. Though she is kind, she is also vengeful, seeking to punish women who have affairs with her husband.",
     images: ["Juno - Persona 3 Art"],
-    affinities: { phys: "Null" }
+    affinities: { phys: "None" }
   },
   {
     id: "palladion",
     name: "Palladion",
     arcana: "Chariot",
     originGame: "P3",
-    description: "Ancient wooden statue of Pallas Athena. Aigis's initial Persona.",
+    description: "A guardian statue in ancient Greece, stolen from Troy, that protected the city in which it was enshrined. It is said that Athena was so saddened by the death of her friend, Pallas, that she had the wooden statue made in her image.",
     images: ["Palladion - Persona 3 Art"],
     affinities: { phys: "Resist", elec: "Weak" }
   },
@@ -438,43 +438,43 @@ export const personaDB = [
     name: "Athena",
     arcana: "Chariot",
     originGame: "P3",
-    description: "Greek goddess of wisdom and strategic warfare. Aigis's ultimate Persona.",
+    description: "Daughter of Zeus, and a goddess of great martial ability. She fights to protect her land or family, but never for sheer bloodlust. Her symbol is the olive tree.",
     images: ["Athena - Persona 3 Art"],
-    affinities: { phys: "Drain", curse: "Weak" }
+    affinities: { gun: "Null", phys: "Resist", elec: "Weak" }
   },
   {
     id: "psyche",
     name: "Psyche",
-    arcana: "Lovers",
+    arcana: "Hierophant",
     originGame: "P3",
-    description: "Goddess of the soul. Metis's Persona.",
+    description: "The youngest daughter of the king and queen of Sicily in Greco-Roman mythology. She was the most beautiful person on the island and suitors flocked to ask for her hand.",
     images: ["Psyche - P3 Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "None" }
   },
   {
     id: "cerberus",
     name: "Cerberus",
-    arcana: "Sun",
+    arcana: "Strength",
     originGame: "P3",
-    description: "The multi-headed hound of Hades. Koromaru's Persona.",
+    description: "The giant hound that guards the great abyss, Tartarus. He answers to Hades, the lord of the underworld, and keeps watch for both intruders and escapees. He was born from Typhon and Echidna, and is the older brother of Orthrus.",
     images: ["Cerberus - P3 Art"],
-    affinities: { fire: "Repel", bless: "Weak", curse: "Resist" }
+    affinities: { fire: "Null", bless: "Weak", curse: "Null" }
   },
   {
     id: "castor",
     name: "Castor",
     arcana: "Hierophant",
     originGame: "P3",
-    description: "The mortal twin of Pollux. Shinjiro's Persona.",
+    description: "A hero in Greek mythology. He is Polydeuces's half-brother, but doesn't share his brother's immortality. He was struck and killed by an arrow, after which he and his brother became stars in the constellation Gemini.",
     images: ["Castor - P3 Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "None" }
   },
   {
     id: "nemesis",
     name: "Nemesis",
     arcana: "Justice",
     originGame: "P3",
-    description: "Goddess of divine retribution. Ken's initial Persona.",
+    description: "A Greek goddess who was the personification of the gods' wrath, or 'divine retribution.' While known to administer vengeance, she was also perceived as fair and balanced, punishing only those that deserved it.",
     images: ["Nemesis - P3 Art"],
     affinities: { bless: "Resist", curse: "Weak" }
   },
@@ -483,35 +483,35 @@ export const personaDB = [
     name: "Kala-Nemi",
     arcana: "Justice",
     originGame: "P3",
-    description: "Ken's ultimate Persona.",
+    description: "A Hindu goddess whose name means 'edge of the wheel of time.' The 'wheel' refers to samsara, the cycle of death and rebirth, meaning she is a goddess who has transcended life itself.",
     images: ["Kala-Nemi - P3 Art"],
-    affinities: { bless: "Drain", curse: "Weak" }
+    affinities: { bless: "Null", curse: "Weak" }
   },
   {
     id: "thanatos",
     name: "Thanatos",
     arcana: "Death",
     originGame: "P3",
-    description: "The personification of death in Greek mythology.",
+    description: "The Greek god of death, he is the son of Nyx and the twin brother of Hypnos. He is known to provide mortals with a peaceful death.",
     images: ["Thanatos - Persona 3 Concept Art", "Thanatos - P3 Reload Portrait"],
-    affinities: { fire: "Resist", ice: "Resist", bless: "Weak", curse: "Repel" }
+    affinities: { phys: "Resist", bless: "Weak", curse: "Repel" }
   },
   {
     id: "orpheus",
     name: "Orpheus",
     arcana: "Fool",
     originGame: "P3",
-    description: "A hero from Greek mythology who traveled to the underworld. Protagonist's initial Persona.",
-    images: ["Orpheus - Persona 3 Original"],
-    affinities: { fire: "Resist", elec: "Weak", curse: "Weak" }
+    description: "A poet of Greek mythology skilled with the lyre. He tried to retrieve his wife, Eurydice, from Hades, but she vanished when he looked back before reaching the surface.",
+    images: ["Orpheus - Persona 3 Original", "Orpheus - Female Design"],
+    affinities: { bless: "Resist", elec: "Weak", curse: "Weak" }
   },
   {
     id: "messiah",
     name: "Messiah",
     arcana: "Judgement",
     originGame: "P3",
-    description: "The savior born from the combination of Fool and Death.",
-    images: ["Messiah - Persona 3 Original", "Messiah - P3 Reload Art"],
+    description: "Appears before Judgment Day to save the virtuous. He is a universal figure, appearing in myth around the world. Many stories involve his death and rebirth.",
+    images: ["Messiah - Persona 3 Original", "Messiah - P5 Art"],
     affinities: { bless: "Repel", curse: "Weak" }
   },
   {
@@ -519,9 +519,9 @@ export const personaDB = [
     name: "Orpheus Telos",
     arcana: "Fool",
     originGame: "P3",
-    description: "The ultimate manifestation of the Fool arcana in P3.",
+    description: "By bonding with many people, Orpheus was once again born from the sea of the soul. He has awakened to the power of the Cipher, which holds endless possibilities.",
     images: ["Orpheus Telos - P3 Art"],
-    affinities: { phys: "Resist", fire: "Resist", ice: "Resist", elec: "Resist", wind: "Resist", bless: "Resist", curse: "Resist" }
+    affinities: { phys: "Resist", fire: "Resist", ice: "Resist", elec: "Resist", wind: "Resist", nuclear: "Resist", bless: "Resist", curse: "Resist" }
   },
 
   // --- PERSONA 4 ---
@@ -530,7 +530,7 @@ export const personaDB = [
     name: "Izanagi",
     arcana: "Fool",
     originGame: "P4",
-    description: "A deity born in Japanese mythology who created the archipelago.",
+    description: "One of the ancient gods who existed before Japan was formed. He created the Ouyashima from chaos, then gave birth to countless children and laid the foundation of soil and nature.",
     images: ["Izanagi - Persona 4 Golden Artwork"],
     affinities: { elec: "Resist", wind: "Weak", curse: "Null" }
   },
@@ -539,7 +539,7 @@ export const personaDB = [
     name: "Izanagi-no-Okami",
     arcana: "World",
     originGame: "P4",
-    description: "The ultimate Persona of Yu Narukami.",
+    description: "The Father of all in Japanese myth, as well as the ruler of creation. When forbidden to see his wife Izanami, he broke the promise, resulting in the two being separated from each other forever.",
     images: ["Izanagi-no-Okami - P4 Art"],
     affinities: { phys: "Resist", fire: "Resist", ice: "Resist", elec: "Resist", wind: "Resist" }
   },
@@ -548,88 +548,88 @@ export const personaDB = [
     name: "Jiraiya",
     arcana: "Magician",
     originGame: "P4",
-    description: "A legendary ninja from Japanese folklore. Yosuke's initial Persona.",
+    description: "The legendary toad sage and ninja from Japanese folklore. Known for his mastery of toad magic, he fought against the serpent sorcerer Orochimaru and became a symbol of courage and heroism.",
     images: ["Jiraiya - P4 Artwork"],
-    affinities: { wind: "Drain", elec: "Weak" }
+    affinities: { wind: "Resist", elec: "Weak" }
   },
   {
     id: "susano-o-p4",
     name: "Susano-o (P4)",
     arcana: "Magician",
     originGame: "P4",
-    description: "Yosuke's ultimate Persona.",
+    description: "A god of Japanese legend, born along with Amaterasu and Tsukuyomi. He was cast out for lewd behavior, but redeemed himself with heroic deeds like slaying Yamata-no-Orochi.",
     images: ["Susano-o - P4 Art"],
-    affinities: { wind: "Drain", elec: "Weak" }
+    affinities: { wind: "Null", fire: "Resist", elec: "Weak" }
   },
   {
     id: "takehaya-susano-o",
     name: "Takehaya Susano-o (P4G)",
     arcana: "Magician",
     originGame: "P4",
-    description: "Yosuke's third-tier Persona.",
+    description: "The Japanese god of storms and the younger brother of Amaterasu. After being banished from heaven, he defeated the eight-headed serpent Yamata-no-Orochi and obtained the sacred sword Kusanagi.",
     images: ["Takehaya Susano-o - P4G Art"],
-    affinities: { wind: "Drain", fire: "Resist", elec: "Weak" }
+    affinities: { wind: "Drain", fire: "Null", elec: "Weak" }
   },
   {
     id: "tomoe",
     name: "Tomoe",
     arcana: "Chariot",
     originGame: "P4",
-    description: "Renowned female warrior Tomoe Gozen. Chie's initial Persona.",
+    description: "A legendary female samurai and warrior who served Minamoto no Yoshinaka. Renowned for her beauty and exceptional skill with the bow and sword, she became one of Japan's most famous female warriors.",
     images: ["Tomoe - P4 Art"],
-    affinities: { phys: "Resist", fire: "Weak" }
+    affinities: { ice: "Resist", fire: "Weak" }
   },
   {
     id: "suzuka-gongen",
     name: "Suzuka Gongen",
     arcana: "Chariot",
     originGame: "P4",
-    description: "Chie's ultimate Persona.",
+    description: "A Buddhist deity associated with the legendary warrior Suzuka Gozen. Said to have defeated the demon king Tamuramaro and protected the people of Japan from evil.",
     images: ["Suzuka Gongen - P4 Art"],
-    affinities: { ice: "Drain", fire: "Weak" }
+    affinities: { ice: "Null", bless: "Resist", fire: "Weak" }
   },
   {
     id: "haraedo-no-okami",
     name: "Haraedo-no-Okami (P4G)",
     arcana: "Chariot",
     originGame: "P4",
-    description: "Chie's third-tier Persona.",
+    description: "A divine figure representing purification and the removal of impurities. Associated with the cleansing of spiritual pollution and the restoration of purity in Japanese Shinto tradition.",
     images: ["Haraedo-no-Okami - P4G Art"],
-    affinities: { ice: "Drain", bless: "Resist", fire: "Weak" }
+    affinities: { ice: "Drain", bless: "Null", fire: "Weak" }
   },
   {
     id: "konohana-sakuya",
     name: "Konohana Sakuya",
     arcana: "Priestess",
     originGame: "P4",
-    description: "Japanese blossom princess and symbol of delicate earthly life. Yukiko's initial Persona.",
+    description: "The goddess of Mount Fuji, volcanoes, and delicate earthly life. Known for her beauty and purity, she is the wife of the god Ninigi and the mother of Hoderi and Hoori.",
     images: ["Konohana Sakuya - P4 Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { fire: "Resist", ice: "Weak" }
   },
   {
     id: "amaterasu",
     name: "Amaterasu",
     arcana: "Priestess",
     originGame: "P4",
-    description: "Yukiko's ultimate Persona.",
+    description: "The Japanese goddess of light. She is one of the leading deities of Takaamagahara, the land of the Amatsu gods. A deification of the sun, she also governs life. It is said she was born from the left eye of Izanagi.",
     images: ["Amaterasu - P4 Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { fire: "Null", elec: "Resist", ice: "Weak" }
   },
   {
     id: "sumeo-okami",
     name: "Sumeo-Okami",
     arcana: "Priestess",
     originGame: "P4",
-    description: "Yukiko's third-tier Persona.",
+    description: "A divine goddess of Japanese mythology associated with the sun, fire, and purification. Her name signifies a great divine presence, reflecting her immense spiritual power and sacred nature.",
     images: ["Sumeo-Okami - P4G Art"],
-    affinities: { fire: "Drain", elec: "Resist", ice: "Weak" }
+    affinities: { fire: "Drain", elec: "Null", ice: "Weak" }
   },
   {
     id: "take-mikazuchi",
     name: "Take-Mikazuchi",
     arcana: "Emperor",
     originGame: "P4",
-    description: "Kanji's initial Persona.",
+    description: "When Izanagi slew the fire god Kagutsuchi with the divine sword Ame no Ou Habari, the holy blood upon the sacred blade created an entirely new god: Take-Mikazuchi, lord of thunder. ",
     images: ["Take-Mikazuchi - P4 Art"],
     affinities: { elec: "Resist", wind: "Weak" }
   },
@@ -638,43 +638,43 @@ export const personaDB = [
     name: "Rokuten Maou",
     arcana: "Emperor",
     originGame: "P4",
-    description: "Kanji's ultimate Persona.",
+    description: "The demon king of the Sixth Heaven in Buddhist tradition. A powerful tempter who seeks to obstruct those pursuing enlightenment and represents worldly desire and temptation.",
     images: ["Rokuten Maou - P4 Art"],
-    affinities: { elec: "Drain", wind: "Weak" }
+    affinities: { elec: "Null",  wind: "Weak" }
   },
   {
-    id: "takeji-zaiten",
-    name: "Takeji Zaiten (P4G)",
+    id: "dairoku-tenmaou",
+    name: "Dairoku Tenmaou",
     arcana: "Emperor",
     originGame: "P4",
-    description: "Kanji's third-tier Persona.",
-    images: ["Takeji Zaiten - P4G Art"],
-    affinities: { elec: "Drain", phys: "Resist", wind: "Weak" }
+    description: "A Buddhist deity associated with warriors, strength, and protection. Revered as a powerful guardian who defends the righteous and overcomes evil.",
+    images: ["Dairoku Tenmaou - P4G Art"],
+    affinities: { elec: "Drain", phys: "Null", wind: "Weak" }
   },
   {
     id: "himiko",
     name: "Himiko / Kanzeon",
     arcana: "Lovers",
     originGame: "P4",
-    description: "Shaman queen of ancient Yamatai. Rise's initial Persona.",
+    description: "A legendary Japanese queen and shaman who ruled the kingdom of Yamatai. Known for her spiritual power, she governed through divination and was said to possess great influence over the people.",
     images: ["Himiko - P4 Art"],
-    affinities: { bless: "Resist" }
+    affinities: { bless: "None" }
   },
   {
     id: "kouzeon",
-    name: "Kouzeon (P4G)",
+    name: "Kouzeon",
     arcana: "Lovers",
     originGame: "P4",
-    description: "Rise's third-tier Persona.",
+    description: "A Buddhist bodhisattva of compassion and mercy. Known for hearing the cries of those who suffer, Kanzeon takes many forms to aid and guide those in need.",
     images: ["Kouzeon - P4G Art"],
-    affinities: { bless: "Resist", curse: "Resist" }
+    affinities: { bless: "None" }
   },
   {
     id: "kintoki-douji",
     name: "Kintoki-Douji",
     arcana: "Star",
     originGame: "P4",
-    description: "Teddie's initial Persona.",
+    description: "One of the retainers of Minamoto no Yorimitsu, Kintoki's reputation for great strength, bravery, and absolute loyalty spawned countless folk legends about his feats.",
     images: ["Kintoki-Douji - P4 Art"],
     affinities: { ice: "Resist", elec: "Weak" }
   },
@@ -683,25 +683,25 @@ export const personaDB = [
     name: "Kamui",
     arcana: "Star",
     originGame: "P4",
-    description: "Teddie's ultimate Persona.",
+    description: "A divine spirit in Ainu mythology. Kamui are supernatural beings believed to inhabit the natural world, taking forms such as animals, plants, fire, and other forces of nature.",
     images: ["Kamui - P4 Art"],
-    affinities: { ice: "Drain", elec: "Weak" }
+    affinities: { ice: "Null", wind: "Resist", curse: "Resist", elec: "Weak" }
   },
   {
     id: "kamui-moshiri",
-    name: "Kamui-Moshiri (P4G)",
+    name: "Kamui-Moshiri",
     arcana: "Star",
     originGame: "P4",
-    description: "Teddie's third-tier Persona.",
+    description: "The divine land of the Kamui in Ainu mythology. A sacred realm inhabited by supernatural beings and connected to the earthly world of humans.",
     images: ["Kamui-Moshiri - P4G Art"],
-    affinities: { ice: "Drain", wind: "Resist", elec: "Weak" }
+    affinities: { ice: "Drain", wind: "Null", curse: "Null", elec: "Weak" }
   },
   {
     id: "sukuna-hikona",
     name: "Sukuna-Hikona",
     arcana: "Fortune",
     originGame: "P4",
-    description: "Naoto's initial Persona.",
+    description: "One of the gods of Japanese lore. Son of Kamimusubi, he was so small he fell through her fingers at birth. Though he would normally be counted among the Amatsukami, he became blood-brothers with Okuninushi and is now considered a Kunisukami sic. After building Japan with Okuninushi, he is said to have returned to Tokoyo no Kuni, the land of eternity.",
     images: ["Sukuna-Hikona - P4 Art"],
     affinities: { bless: "Resist", curse: "Resist" }
   },
@@ -710,18 +710,18 @@ export const personaDB = [
     name: "Yamato-Takeru",
     arcana: "Fortune",
     originGame: "P4",
-    description: "Naoto's ultimate Persona.",
+    description: "A legendary Japanese prince and warrior who served the emperor by conquering rebellious tribes and defeating powerful enemies. Known for his bravery, cunning, and mastery of the sacred sword Kusanagi.",
     images: ["Yamato-Takeru - P4 Art"],
-    affinities: { bless: "Null", curse: "Null" }
+    affinities: { bless: "Null", curse: "Null", fire: "Resist" }
   },
   {
     id: "yamato-sumeragi",
     name: "Yamato Sumeragi",
     arcana: "Fortune",
     originGame: "P4",
-    description: "Naoto's third-tier Persona.",
+    description: "A divine warrior associated with the imperial lineage of Japan. Representing the power and authority of the emperor, he embodies the sacred heritage and strength of the Yamato people.",
     images: ["Yamato Sumeragi - P4G Art"],
-    affinities: { bless: "Repel", curse: "Repel" }
+    affinities: { bless: "Repel", curse: "Repel", fire: "Null" }
   },
   {
     id: "magatsu-izanagi",
@@ -730,16 +730,16 @@ export const personaDB = [
     originGame: "P4",
     description: "Izanagi's rival who looks just like him. Magatsu means 'calamity'. Unlike Izanagi, who founded the land and brought order, he leads all back into chaos.",
     images: ["Magatsu-Izanagi - P4G Portrait"],
-    affinities: { nucelar: "Weak", curse: "Null", curse: "Null" }
+    affinities: { nucelar: "Weak", bless: "Null", curse: "Null" }
   },
   {
     id: "kaguya",
     name: "Kaguya",
     arcana: "Moon",
     originGame: "P4",
-    description: "The moon princess from the Tale of the Bamboo Cutter.",
+    description: "A divine being that appeared from a glowing bamboo shoot. Though many men proposed to her, none could complete her impossible tasks and she returned to her homeland, the capital of the moon.",
     images: ["Kaguya - P4G Art"],
-    affinities: { bless: "Repel", fire: "Weak" }
+    affinities: { bless: "Repel", fire: "Weak", curse: "Null" }
   },
 
   // --- PERSONA 5 ---
@@ -775,18 +775,18 @@ export const personaDB = [
     name: "Izanagi Picaro",
     arcana: "Fool",
     originGame: "P5",
-    description: "Izanagi painted with the Phantom Thieves' iconic aesthetic.",
+    description: "A Persona that granted power to a hero in another story. He is one of the gods who existed before Japan was formed. He created the Oyashima from chaos, then birthed countless children and laid the foundation of soil and nature.",
     images: ["Izanagi Picaro - P5 Art"],
-    affinities: { elec: "Null", wind: "Weak", curse: "Null" }
+    affinities: { elec: "Resist", wind: "Weak", curse: "Null" }
   },
   {
     id: "izanagi-no-okami-picaro",
     name: "Izanagi-no-Okami Picaro",
     arcana: "World",
     originGame: "P5",
-    description: "Izanagi-no-Okami modified with Phantom Thief flair.",
+    description: "The Father of all in Japanese myth, as well as the ruler of creation. When forbidden to see his wife Izanami, he broke the promise, resulting in the two being separated from each other forever.",
     images: ["Izanagi-no-Okami Picaro - P5R Art"],
-    affinities: { phys: "Resist", fire: "Resist", ice: "Resist", elec: "Resist", wind: "Resist" }
+    affinities: { gun: "Resist", phys: "Resist", fire: "Resist", ice: "Resist", elec: "Resist", psy: "Resist", nuclear: "Resist" }
   },
   {
     id: "asterius-picaro",
@@ -822,32 +822,23 @@ export const personaDB = [
     originGame: "P5",
     description: "A Persona of another story. He's Izanagi's rival and looks just like him. Magatsu means 'calamity.' Unlike Izanagi, who founded the land and brought order, he leads all back into chaos.",
     images: ["Magatsu-Izanagi Picaro - P5 Art"],
-    affinities: { nucelar: "Weak", curse: "Null", curse: "Null" }
+    affinities: { nucelar: "Weak", bless: "Null", curse: "Null" }
   },
   {
-    id: "orpheus-picaro-male",
-    name: "Orpheus Picaro (Male)",
+    id: "orpheus-picaro",
+    name: "Orpheus Picaro",
     arcana: "Fool",
     originGame: "P5",
-    description: "Male Orpheus customized with the red and black thief aesthetic.",
-    images: ["Orpheus Picaro Male - P5 Art"],
-    affinities: { fire: "Null", elec: "Weak", curse: "Weak" }
-  },
-  {
-    id: "orpheus-picaro-female",
-    name: "Orpheus Picaro (Female)",
-    arcana: "Fool",
-    originGame: "P5",
-    description: "Female Orpheus styled after the Phantom Thieves.",
-    images: ["Orpheus Picaro Female - P5R Art"],
-    affinities: { fire: "Drain", elec: "Weak", curse: "Weak" }
+    description: "A Persona of another story. A Greek poet who tried to retrieve his wife from Hades, but she vanished when he looked back before reaching the surface.",
+    images: ["Orpheus Picaro Male - P5 Art", "Orpheus Picario Female"],
+    affinities: { bless: "Resist", elec: "Weak", curse: "Weak" }
   },
   {
     id: "messiah-picaro",
     name: "Messiah Picaro",
     arcana: "Judgement",
     originGame: "P5",
-    description: "Messiah transformed with Phantom Thief styling.",
+    description: "A Persona of another story. He appears before Judgement Day to save the virtuous. He is a universal figure, appearing in myths around the world. Many stories involve his death and rebirth.",
     images: ["Messiah Picaro - P5 Art"],
     affinities: { bless: "Repel", curse: "Weak" }
   },
@@ -856,27 +847,27 @@ export const personaDB = [
     name: "Thanatos Picaro",
     arcana: "Death",
     originGame: "P5",
-    description: "Thanatos decorated with the Phantom Thief color scheme.",
+    description: "A Persona of another story. The Greek god of death, he is the son of Nyx and the twin brother of Hypnos. He is known to provide mortals with a peaceful death.",
     images: ["Thanatos Picaro - P5 Art"],
-    affinities: { curse: "Repel", bless: "Weak" }
+    affinities: { phys: "Resist", bless: "Weak", curse: "Repel" }
   },
   {
     id: "athena-picaro",
     name: "Athena Picaro",
     arcana: "Chariot",
     originGame: "P5",
-    description: "Athena redrawn with Phantom Thief elements.",
+    description: "Daughter of Zeus, and a goddess of great martial ability. She fights to protect her land or family, but never for sheer bloodlust. Her symbol is the olive tree.",
     images: ["Athena Picaro - P5R Art"],
-    affinities: { phys: "Drain", curse: "Weak" }
+    affinities: { gun: "Null", phys: "Resist", elec: "Weak" }
   },
   {
     id: "kaguya-picaro",
     name: "Kaguya Picaro",
     arcana: "Moon",
     originGame: "P5",
-    description: "Kaguya featuring the signature Phantom Thief motif.",
+    description: "A Persona of another story. A divine being born from a glowing bamboo shoot. Though many proposed to her, none could complete her strict tasks. She eventually returned to her home the moon.",
     images: ["Kaguya Picaro - P5 Art"],
-    affinities: { bless: "Repel", fire: "Weak" }
+    affinities: { bless: "Repel", fire: "Weak", curse: "Null" }
   },
   {
     id: "zorro",
