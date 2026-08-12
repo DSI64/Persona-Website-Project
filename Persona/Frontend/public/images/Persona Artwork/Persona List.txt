@@ -23,7 +23,7 @@ Nyarlathotep
 -----------
 Persona 2
 
-Vulcanus/Vulcanus Prime
+Vulcanus
 Apollo
 Hermes
 Chronos
@@ -39,7 +39,6 @@ Odysseus
 Prometheus
 Callisto
 Astria
-Philemon
 -----------
 Persona 3
 
@@ -60,30 +59,10 @@ Cerberus
 Castor
 Nemesis
 Kala-Nemi
-
-Surt
-Jack Frost
-Thor
-Cu Chulainn
-Metatron
-Alice
-Nebiros
-Masakado
-Pixie (P3)
 Thanatos
 Orpheus
 Messiah
 Orpheus Telos
-
-Uriel
-Gabriel
-Michael
-Raphael
-Sandalphon
-Lilith
-Abaddon
-Beelzebub
-Metatron
 -----------
 Persona 4 (DONE)
 
@@ -111,32 +90,7 @@ Yamato-Takeru
 Yamato Sumeragi
 Magatsu-Izanagi
 Kaguya
-Bishamonten
-Jikokuten
-Zochoten
-Komokuten
-Mokoi
-Neko Shogun
-Nigi Mitama
-Kusi Mitama
-Ara Mitama
-Saki Mitama
-Clotho
-Lachesis
-Atropos
-Pixie
-Siegfried
-Loki
-Oukuninushi
-Cu Chulainn
-Ardha
-Helel
-Yoshitsune
-Oberon
-Yoshitsune
-Cu Chulainn
-Ardha
-Helel
+
 -----------
 Persona 5 (DONE)
 
@@ -177,12 +131,34 @@ Cendrillon
 Vanadis
 Ella
 Robin Hood
-Loki
+Loki (P5)
 Hereward (P5R)
 Milady
 Astarte
 Lucy (P5R)
 Azathoth
+
+-----------
+Spinoffs (DONE)
+
+Asterius
+Ariadne
+Tsukiyomi
+Ernesto
+Valjean
+Pithos
+Pandora
+Jánošík (P5X)
+Robroy (P5X)
+Awilda (P5X)
+Mandrin (P5X)
+Chiyome (P5X)
+Ghino (P5X)
+Gentileschi (P5X)
+------------
+Velvet Room Attendent Personas (Debut accordiningly) 
+ 
+
 
 Slime
 Jack-o'-Lantern
@@ -204,20 +180,50 @@ Atavaka
 Thor
 Nue
 Lucifer
------------
-Spinoffs (DONE)
 
-Asterius
-Ariadne
-Tsukiyomi
-Ernesto
-Valjean
-Pithos
-Pandora
-Jánošík (P5X)
-Robroy (P5X)
-Awilda (P5X)
-Mandrin (P5X)
-Chiyome (P5X)
-Ghino (P5X)
-Gentileschi (P5X) 
+Bishamonten
+Jikokuten
+Zochoten
+Komokuten
+Mokoi
+Neko Shogun
+Nigi Mitama
+Kusi Mitama
+Ara Mitama
+Saki Mitama
+Clotho
+Lachesis
+Atropos
+Pixie
+Siegfried
+Loki
+Oukuninushi
+Cu Chulainn
+Ardha
+Helel
+Yoshitsune
+Oberon
+Yoshitsune
+Cu Chulainn
+Ardha
+Helel
+
+Uriel
+Gabriel
+Michael
+Raphael
+Sandalphon
+Lilith
+Abaddon
+Beelzebub
+Metatron
+
+Surt
+Jack Frost
+Thor
+Cu Chulainn
+Metatron
+Alice
+Nebiros
+Masakado
+Philemon

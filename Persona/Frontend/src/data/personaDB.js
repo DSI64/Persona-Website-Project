@@ -7,9 +7,14 @@ export const personaDB = [
     originGame: "P1",
     description: "A wisdom king in Buddhism associated with transforming worldly desires into spiritual awakening.",
     images: ["Aizen Myouou - Persona 1 Artwork"],
-    affinities: { fire: "Drain", ice: "Weak" },
+    affinities: { elec: "Null", bless: "Null", curse: "Null"  },
     skills: [
-      { level: 1, name: "Agilao", cost: "8 SP", effect: "Deals medium Fire damage to 1 foe." }
+      { level: 1, name: "Hama", cost: "8 SP", effect: "Deals medium Fire damage to 1 foe.", },
+      { level: 3, name: "Sonic Punch", cost: "8 SP", effect: "Deals medium Fire damage to 1 foe.", },
+      { level: 4, name: "Suku Kaja", cost: "8 SP", effect: "Deals medium Fire damage to 1 foe.", },
+      { level: 6, name: "Holy Light", cost: "8 SP", effect: "Deals medium Fire damage to 1 foe.", },
+      { level: 8, name: "Maha Magnus", cost: "8 SP", effect: "Deals medium Fire damage to 1 foe.", },
+      { level: 1, name: "Makakaja", cost: "8 SP", effect: "Deals medium Fire damage to 1 foe.", },
     ]
   },
   {
