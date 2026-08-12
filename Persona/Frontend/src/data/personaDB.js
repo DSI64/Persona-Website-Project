@@ -1112,43 +1112,43 @@ export const personaDB = [
     name: "Asterius",
     arcana: "Fortune",
     originGame: "Spinoffs",
-    description: "The Minotaur of Crete in Persona Arena.",
+    description: "A Persona of another story. Due to a curse on his mother Pasiphae, he was born a bull-headed monster. Locked away in the labyrinth as the Minotaur, he wielded a double-sided axe.",
     images: ["Asterius - Persona Arena Render"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { fire: "Resist", ice: "Weak", psy: "Resist", curse: "Null" }
   },
   {
     id: "ariadne",
     name: "Ariadne",
     arcana: "Empress",
     originGame: "Spinoffs",
-    description: "Cretan princess featured in Persona Arena.",
+    description: "A Persona of another story. She is the daughter of Minos, the king of Crete. She helped Theseus defeat the Minotaur and gave him a ball of yarn so he could escape the labyrinth.",
     images: ["Ariadne - Persona Arena Art"],
-    affinities: { elec: "Resist", wind: "Weak" }
+    affinities: { gun: "Resist", psy: "Weak",  nuclear: "Null", bless: "Resist" }
   },
   {
     id: "tsukiyomi",
     name: "Tsukiyomi",
     arcana: "Moon",
     originGame: "Spinoffs",
-    description: "Japanese moon deity in Persona Arena Ultimax.",
+    description: "A Persona of another story. An important god born from the Japanese god Izanagi, he governs over the moon and the night. There are many theories behind this mysterious god.",
     images: ["Tsukiyomi - P4 Arena Ultimax Art"],
-    affinities: { curse: "Drain", bless: "Weak" }
+    affinities: { phys: "Resist", bless: "Resist", curse: "Reflect", nuclear: "Weak" }
   },
   {
     id: "ernesto",
     name: "Ernesto",
     arcana: "Heirophant",
     originGame: "Spinoffs",
-    description: "Toshiro's Persona in Persona 5 Tactica.",
+    description: "A revolutionary who fought against oppressive rulers and supported liberation movements across the world. He became a symbol of rebellion, resistance, and the struggle for freedom.",
     images: ["Ernesto - P5T Art"],
-    affinities: { wind: "Drain", elec: "Weak" }
+    affinities: { almighty: "Resist" }
   },
   {
     id: "valjean",
     name: "Valjean",
     arcana: "Apostle",
     originGame: "Spinoffs",
-    description: "Zenkichi's Persona in Persona 5 Strikers.",
+    description: "Protagonist of Victor Hugo's 'Les Misérables.' Jailed after stealing bread for his starving nephews, he was consumed by bitterness, but a bishop's mercy inspired a change of heart. He strove to be a virtuous champion of the poor and downtrodden.",
     images: ["Valjean - P5S Art"],
     affinities: { almighty: "Resist" }
   },
@@ -1157,7 +1157,7 @@ export const personaDB = [
     name: "Pithos",
     arcana: "Hope",
     originGame: "Spinoffs",
-    description: "Sophia's Persona in Persona 5 Strikers.",
+    description: "A set of mysterious objects Sophia uses in battle to mimic the powers of Persona-users. Though they function similarly to Personas, their inner workings are completely unknown. It’s name is derived from the Greek word for 'jar.'",
     images: ["Pithos - P5S Art"],
     affinities: { bless: "Resist", curse: "Weak" }
   },
@@ -1166,9 +1166,9 @@ export const personaDB = [
     name: "Pandora",
     arcana: "Hope",
     originGame: "Spinoffs",
-    description: "Sophia's awakened Persona in Persona 5 Strikers.",
+    description: "The first woman created by the Greek gods, made to punish mankind's hubris. She opens a forbidden vessel (said to be a jar or a box) and unleashes evil into the world, but also reveals Hope, to ensure humanity is not crushed by despair.",
     images: ["Pandora - P5S Design"],
-    affinities: { bless: "Drain", curse: "Weak" }
+    affinities: { bless: "Null", curse: "Weak" }
   },
   {
     id: "janosik",
@@ -1193,25 +1193,25 @@ export const personaDB = [
     name: "Awilda (P5X)",
     arcana: "Strength",
     originGame: "Spinoffs",
-    description: "Motoha's Persona in Persona 5 X.",
+    description: "A female pirate from ancient Scandinavian legend She was a Geatish princess who fled from an unwanted arranged marriage and took to the seas. She lead a crew of young female pirates across the Baltic Sea, until she eventually married the Danish prince who defeated her.",
     images: ["Awilda - P5X Art"],
-    affinities: { nuclear: "Resist", psy: "Weak" }
+    affinities: { elec: "Resist", ice: "Weak" }
   },
   {
     id: "mandrin",
     name: "Mandrin (P5X)",
     arcana: "Emperor",
     originGame: "Spinoffs",
-    description: "Shun's Persona in Persona 5 X.",
+    description: "An 18th century smuggler who rebelled against the royal government of France After the execution of his brother and friends, he sold smuggled goods in the city free of taxes, winning the support of the common people. After his arrest, the king planned to offer him a pardon, but was executed before he could do so.",
     images: ["Mandrin - P5X Art"],
-    affinities: { ice: "Resist", fire: "Weak" }
+    affinities: { ice: "Resist", bless: "Weak" }
   },
   {
     id: "chiyome",
     name: "Chiyome (P5X)",
     arcana: "Priestess",
     originGame: "Spinoffs",
-    description: "Riko's Persona in Persona 5 X.",
+    description: "The wife of Mochizuki Moritoki, and a legendary female ninja. During the Sengoku period, she was chosen by Takeda Shingenmto serve as the head shrine maiden of Kai and Shinano provinces, and also headed a group of shrine maidens that wandered the country. It is said that these women were actually kunoichi, working as spies to gather information.",
     images: ["Chiyome - P5X Art"],
     affinities: { phys: "Resist" }
   },
@@ -1220,9 +1220,9 @@ export const personaDB = [
     name: "Ghino (P5X)",
     arcana: "Moon",
     originGame: "Spinoffs",
-    description: "Shoki's Persona in Persona 5 X.",
+    description: "A chivalrous thief from 13th century Italy. He stole from wealthy travelers, and would offer aid to the sick or injured. His deeds garnered him the support of the people, who considered him a gentleman.",
     images: ["Ghino - P5X Art"],
-    affinities: { bless: "Resist", curse: "Weak" }
+    affinities: { bless: "Resist", nuclear: "Weak" }
   },
   {
     id: "gentileschi",
@@ -1231,7 +1231,7 @@ export const personaDB = [
     originGame: "Spinoffs",
     description: "Hirano's Persona in Persona 5 X.",
     images: ["Gentileschi - P5X Art"],
-    affinities: { fire: "Resist", ice: "Weak" }
+    affinities: { curse: "Resist", bless: "Weak" }
   },
 
   // --- VELVET ROOM ATTENDANT / WILD CARD STOCK ---
