@@ -730,7 +730,7 @@ export const personaDB = [
     originGame: "P4",
     description: "Izanagi's rival who looks just like him. Magatsu means 'calamity'. Unlike Izanagi, who founded the land and brought order, he leads all back into chaos.",
     images: ["Magatsu-Izanagi - P4G Portrait"],
-    affinities: { nucelar: "Weak", bless: "Null", curse: "Null" }
+    affinities: { nuclear: "Weak", bless: "Null", curse: "Null" }
   },
   {
     id: "kaguya",
@@ -748,7 +748,7 @@ export const personaDB = [
     name: "Arsène",
     arcana: "Fool",
     originGame: "P5",
-    description: "Inspired by gentleman thief Arsène Lupin.",
+    description: "A being based off the main character of Maurice Leblanc's novels, Arsène Lupin. He appears everywhere and is a master of disguise. He is known to help law-abiding citizens.",
     images: ["Arsène - Persona 5 Original Artwork"],
     affinities: { ice: "Weak", bless: "Weak", curse: "Resist" }
   },
@@ -757,18 +757,19 @@ export const personaDB = [
     name: "Satanael",
     arcana: "Fool",
     originGame: "P5",
-    description: "An archangel who rebelled against God, representing ultimate freedom.",
+    description: "An archangel who is said to be the form of Satan before he fell from Heaven. The second son of God, he rebelled against Him for freedom and bestowed free will and chaos upon humanity.",
     images: ["Satanael - Persona 5 Royal Cutin"],
-    affinities: { bless: "Null", curse: "Repel", phys: "Resist" }
+    affinities: { bless: "Null", curse: "Repel", phys: "Resist", gun: "Resist", fire: "Resist", ice: "Resist", elec: "Resist", 
+    wind: "Resist", psy: "Resist", nuclear: "Resist" }
   },
   {
     id: "raoul",
     name: "Raoul",
     arcana: "Fool",
     originGame: "P5",
-    description: "Another persona incarnation of Arsene Lupin from later novel adventures.",
+    description: "Another alias of Maurice Leblanc's hero, Arsène Lupin. Infamous as a phantom thief, he was also known to be a man of many friends, lovers, and treasured allies.",
     images: ["Raoul - P5 Royal Artwork"],
-    affinities: { bless: "Weak", curse: "Drain" }
+    affinities: { bless: "Weak", curse: "Null" }
   },
   {
     id: "izanagi-picaro",
@@ -822,7 +823,7 @@ export const personaDB = [
     originGame: "P5",
     description: "A Persona of another story. He's Izanagi's rival and looks just like him. Magatsu means 'calamity.' Unlike Izanagi, who founded the land and brought order, he leads all back into chaos.",
     images: ["Magatsu-Izanagi Picaro - P5 Art"],
-    affinities: { nucelar: "Weak", bless: "Null", curse: "Null" }
+    affinities: { nuclear: "Weak", bless: "Null", curse: "Null" }
   },
   {
     id: "orpheus-picaro",
@@ -874,7 +875,7 @@ export const personaDB = [
     name: "Zorro",
     arcana: "Magician",
     originGame: "P5",
-    description: "Morgana's initial Persona.",
+    description: "A masked swordsman of justice who fought in California against corrupt officials during the era of Spanish rule. He always left his 'Z' mark with his rapier wherever he appeared.",
     images: ["Zorro - P5 Art"],
     affinities: { wind: "Drain", elec: "Weak" }
   },
@@ -883,169 +884,169 @@ export const personaDB = [
     name: "Mercurius",
     arcana: "Magician",
     originGame: "P5",
-    description: "Morgana's ultimate Persona.",
+    description: "The Roman god of travelers and thieves. A diverse god, he is seen as a symbol of human unconscious and the mental world. He is equated with the Philosopher's Stone, the ultimate mystery in the field of alchemy.",
     images: ["Mercurius - P5 Art"],
-    affinities: { wind: "Drain", elec: "Weak" }
+    affinities: { wind: "Null", elec: "Weak", bless: "Resist" }
   },
   {
     id: "diego",
-    name: "Diego (P5R)",
+    name: "Diego",
     arcana: "Magician",
     originGame: "P5",
-    description: "Morgana's third-tier Persona.",
+    description: "The true name of California's masked swordsman of justice, who fought corrupt officials during the era of Spanish rule. Despite being marked as a thief, he fought for the weak as a true gentleman.",
     images: ["Diego - P5R Art"],
-    affinities: { wind: "Drain", elec: "Weak", bless: "Resist" }
+    affinities: { wind: "Null", elec: "Weak", bless: "Resist" }
   },
   {
     id: "captain-kidd",
     name: "Captain Kidd",
     arcana: "Chariot",
     originGame: "P5",
-    description: "Ryuji's initial Persona.",
+    description: "A 17th century privateer who eventually became a world-renowned pirate. At his execution, he declared he had a hidden treasure, leaving behind many legends.",
     images: ["Captain Kidd - P5 Art"],
-    affinities: { elec: "Drain", wind: "Weak" }
+    affinities: { elec: "Resist", wind: "Weak" }
   },
   {
     id: "seiten-taisei",
     name: "Seiten Taisei",
     arcana: "Chariot",
     originGame: "P5",
-    description: "Ryuji's ultimate Persona.",
+    description: "A title Sun Wukong had given himself. Born from a rock, he wreaked havoc and was punished by Buddha who imprisoned him under a mountain. Eventually, he was saved by a monk named Xuanzang.",
     images: ["Seiten Taisei - P5 Art"],
-    affinities: { elec: "Drain", wind: "Weak" }
+    affinities: { elec: "Null", fire: "Resist", wind: "Weak" }
   },
   {
     id: "william",
     name: "William (P5R)",
     arcana: "Chariot",
     originGame: "P5",
-    description: "Ryuji's third-tier Persona.",
+    description: "The other name of Captain Kidd, world-renowned pirate. For years after his death, songs and legends of his life inspired many to chase rumors of his buried treasure across the seas.",
     images: ["William - P5R Art"],
-    affinities: { elec: "Drain", phys: "Resist", wind: "Weak" }
+    affinities: { elec: "Null", fire: "Resist", wind: "Weak" }
   },
   {
     id: "carmen",
     name: "Carmen",
     arcana: "Lovers",
     originGame: "P5",
-    description: "Ann's initial Persona.",
+    description: "A gypsy thief from the novel by Merimee, which became famous through the opera by Bizet. She is a femme fatale who is beautiful but very capricious.",
     images: ["Carmen - P5 Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { fire: "Resist", ice: "Weak" }
   },
   {
     id: "hecate",
     name: "Hecate",
     arcana: "Lovers",
     originGame: "P5",
-    description: "Ann's ultimate Persona.",
+    description: "A Greek goddess of crossroads, ghosts and witchcraft, she is commonly attended to by dogs. She is also known to be the chief of the witches that appears in the play 'Macbeth'.",
     images: ["Hecate - P5 Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { fire: "Null", elec: "Resist", ice: "Weak" }
   },
   {
     id: "celestine",
     name: "Célestine (P5R)",
     arcana: "Lovers",
     originGame: "P5",
-    description: "Ann's third-tier Persona.",
+    description: "A beautiful actress who performed as Carmen in the opera named for the role. So tempestuous and outspoken was she that it's said the main role was rewritten to better suit her.",
     images: ["Célestine - P5R Art"],
-    affinities: { fire: "Drain", elec: "Resist", ice: "Weak" }
+    affinities: { fire: "Null", elec: "Resist", ice: "Weak" }
   },
   {
     id: "johanna",
     name: "Johanna",
     arcana: "Priestess",
     originGame: "P5",
-    description: "Makoto's initial Persona.",
+    description: "The mysterious female pope of the Middle Ages. She posed as a man and eventually made it all the way up to pope due to her unrivaled intellect. Her existence shook the history of the Catholic church.",
     images: ["Johanna - P5 Art"],
-    affinities: { nuclear: "Drain", psy: "Weak" }
+    affinities: { nuclear: "Resist", psy: "Weak" }
   },
   {
     id: "anat",
     name: "Anat",
     arcana: "Priestess",
     originGame: "P5",
-    description: "Makoto's ultimate Persona.",
+    description: "The daughter of Ugaritic's highest god El. She is the goddess of fertility, as well as hunting and war. Her characteristics are the characteristics of the seasons in Canaan.",
     images: ["Anat - P5 Art"],
-    affinities: { nuclear: "Drain", psy: "Weak" }
+    affinities: { nuclear: "Null", curse: "Resist", psy: "Weak" }
   },
   {
     id: "agnes",
-    name: "Agnes (P5R)",
+    name: "Agnes",
     arcana: "Priestess",
     originGame: "P5",
-    description: "Makoto's third-tier Persona.",
+    description: "Another name of Johanna, the female pope of the middle ages. Posing as a man, her wits and ability helped her climb the ranks. Her story shook the Catholic Church to its core.",
     images: ["Agnes - P5R Art"],
-    affinities: { nuclear: "Drain", phys: "Resist", psy: "Weak" }
+    affinities: { nuclear: "Null", curse: "Resist", psy: "Weak" }
   },
   {
     id: "necronomicon",
     name: "Necronomicon",
     arcana: "Hermit",
     originGame: "P5",
-    description: "Futaba's initial Persona.",
+    description: "The grimoire which contains vital information of the Cthulhu mythos by Lovecraft. Its original name is Al Azif. It is said the book itself is alive.",
     images: ["Necronomicon - P5 Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "None" }
   },
   {
     id: "prometheus-p5",
-    name: "Prometheus",
+    name: "Prometheus (P5)",
     arcana: "Hermit",
     originGame: "P5",
-    description: "Futaba's ultimate Persona.",
+    description: "The Greek Titan created mankind from clay. He later stole fire from Olympus and, in turn, gave it to mankind against Zeus's will. His name is often synonymous with fire and 'divine knowledge'.",
     images: ["Prometheus - P5 Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "None" }
   },
   {
     id: "al-azif",
     name: "Al Azif (P5R)",
     arcana: "Hermit",
     originGame: "P5",
-    description: "Futaba's third-tier Persona.",
+    description: "The original name of the Necronomicon, a tome of the Cthulhu Mythos's mysteries. Said to have been authored by Abdul Alhazred, a poet and devotee of Cthulhu known as the 'mad Arab.'",
     images: ["Al Azif - P5R Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "None" }
   },
   {
     id: "goemon",
     name: "Goemon",
     arcana: "Emperor",
     originGame: "P5",
-    description: "Yusuke's initial Persona.",
+    description: "Ishikawa Goemon was a thief who stole from the rich and gave to the poor in Japan during the Azuchi-Momoyama period. The kabuki scene of him sitting on the gate of Nanzen-ji is famous.",
     images: ["Goemon - P5 Art"],
-    affinities: { ice: "Drain", fire: "Weak" }
+    affinities: { ice: "Resist", fire: "Weak" }
   },
   {
     id: "kamu-susano-o",
     name: "Kamu Susano-o",
     arcana: "Emperor",
     originGame: "P5",
-    description: "Yusuke's ultimate Persona.",
+    description: "A Japanese god found in the Izumo Fudoki. He was one of the three gods born from Izanagi. He was a violent ruffian, but also has a sensitive side, showing love for his mother and reading poems.",
     images: ["Kamu Susano-o - P5 Art"],
-    affinities: { ice: "Drain", fire: "Weak" }
+    affinities: { ice: "Null", wind: "Resist", fire: "Weak" }
   },
   {
     id: "gorokichi",
     name: "Gorokichi (P5R)",
     arcana: "Emperor",
     originGame: "P5",
-    description: "Yusuke's third-tier Persona.",
+    description: "Childhood nickname of Goemon Ishikawa. During his youth, he was raised among the Iga-ryu ninjas before he set off on his own to become a rogue ninja.",
     images: ["Gorokichi - P5R Art"],
-    affinities: { ice: "Drain", phys: "Resist", fire: "Weak" }
+    affinities: { ice: "Null", wind: "Resist", fire: "Weak" }
   },
   {
     id: "cendrillon",
     name: "Cendrillon",
     arcana: "Faith",
     originGame: "P5",
-    description: "Kasumi's initial Persona.",
+    description: "The French name of the titular heroine of Cinderella, an oft-retold tale of great renown in which a mistreated waif gains luxury, beauty, and a single night's dance with a prince through the power of magic.",
     images: ["Cendrillon - P5R Art"],
-    affinities: { bless: "Resist", curse: "Weak" }
+    affinities: { bless: "Null", curse: "Weak" }
   },
   {
     id: "vanadis",
     name: "Vanadis",
     arcana: "Faith",
     originGame: "P5",
-    description: "Kasumi's ultimate Persona.",
+    description: "The true name of Freyja, of the Norse Vanir deities. Younger twin sister of Freyr. Her name means 'dis of the Vanir' - dis being a goddess. Known to be a great beauty and a witchlike master of magic.",
     images: ["Vanadis - P5R Art"],
     affinities: { bless: "Drain", curse: "Weak" }
   },
@@ -1054,63 +1055,63 @@ export const personaDB = [
     name: "Ella",
     arcana: "Faith",
     originGame: "P5",
-    description: "Kasumi's third-tier Persona.",
+    description: "The true name of Cinderella's heroine. 'Cinder Ella' was a derisive nickname, born from her hard work always leaving her dusty and sooty. After marrying her prince, she became 'Princess Ella.'",
     images: ["Ella - P5R Art"],
-    affinities: { bless: "Drain", phys: "Resist", curse: "Weak" }
+    affinities: { bless: "Drain", nuclear: "Resist", curse: "Weak" }
   },
   {
     id: "robin-hood",
     name: "Robin Hood",
     arcana: "Justice",
     originGame: "P5",
-    description: "Akechi's initial Persona.",
+    description: "A noble thief that made waves in England during the Middle Ages. He is an expert archer and leader of the Merry Men, outlaws of justice who made Sherwood Forest their home.",
     images: ["Robin Hood - P5 Art"],
-    affinities: { bless: "Resist", curse: "Resist" }
+    affinities: { bless: "Resist", curse: "Weak" }
   },
   {
     id: "loki-p5",
     name: "Loki (P5)",
     arcana: "Justice",
     originGame: "P5",
-    description: "Akechi's true Persona.",
+    description: "A malignant god of Norse mythology. Not always driven by malice, but impulsive and devious. He had an uneasy peace with Odin and the gods, but his part in Baldr's death drove them to finally punish him.",
     images: ["Loki - P5 Art"],
-    affinities: { curse: "Drain", bless: "Weak" }
+    affinities: { curse: "Null", bless: "Weak" }
   },
   {
     id: "hereward",
-    name: "Hereward (P5R)",
+    name: "Hereward",
     arcana: "Justice",
     originGame: "P5",
-    description: "Akechi's third-tier Persona.",
+    description: "The legendary Saxon who opposed the Normans during the conquest of England in the 11th century. Said to have been the basis for tales of Robin Hood. Called 'Hereward the Wake' for his watchfulness",
     images: ["Hereward - P5R Art"],
-    affinities: { bless: "Drain", curse: "Drain" }
+    affinities: { psy: "Resist", bless: "Drain", curse: "Weak" }
   },
   {
     id: "milady",
     name: "Milady",
     arcana: "Empress",
     originGame: "P5",
-    description: "Haru's initial Persona.",
+    description: "The beautiful woman that appears in Dumas' 'Three Musketeers'. Branded with a fleur-de-lis symbol, she used many aliases to control nobility and get her vengeance.",
     images: ["Milady - P5 Art"],
-    affinities: { psy: "Drain", bless: "Weak" }
+    affinities: { psy: "Drain", nuclear: "Weak" }
   },
   {
     id: "astarte",
     name: "Astarte",
     arcana: "Empress",
     originGame: "P5",
-    description: "Haru's ultimate Persona.",
+    description: "A Middle Eastern goddess of fertilty. Many scriptures note her folklore, and there is even a mention of her as the 'Queen of Heaven' in the Bible.",
     images: ["Astarte - P5 Art"],
-    affinities: { psy: "Drain", nuclear: "Weak" }
+    affinities: { ice: "Resist", psy: "Null", nuclear: "Weak" }
   },
   {
     id: "lucy",
-    name: "Lucy (P5R)",
+    name: "Lucy",
     arcana: "Empress",
     originGame: "P5",
-    description: "Haru's third-tier Persona.",
+    description: "The Countess of Carlisle, and the historical basis for Alexandre Dumas's femme fatale, Milady de Winter. Known for her beauty and cunning, she was a courtier much favored by the Queen.",
     images: ["Lucy - P5R Art"],
-    affinities: { psy: "Drain", nuclear: "Weak" }
+    affinities: { ice: "Resist", psy: "Null", nuclear: "Weak" }
   },
   // --- SPINOFFS ---
   {
