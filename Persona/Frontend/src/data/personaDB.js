@@ -16,7 +16,7 @@ export const personaDB = [
     originGame: "P1",
     description: "Ah, young master! I'm so glad to be able to serve you again! I, Alfred, will defeat anyone who would stand in your way!",
     images: ["Yamaoka - Persona 1 Portrait"],
-    affinities: { wind: "Null", elec: "Null", bless: "Null", nerve: "Null", mind: "Null" }
+    affinities: { wind: "Null", elec: "Null", bless: "Null", psy: "Null" }
   },
   {
     id: "vesta",
@@ -25,7 +25,7 @@ export const personaDB = [
     originGame: "P1",
     description: "I am Vesta... In your destiny to accompany your true love and lead the lost ones, I shall protect you with my flame...",
     images: ["Vesta - Persona 1 Art"],
-    affinities: { fire: "Repel", water: "Weak", ice: "Weak", nuclear: "Resist", nerve: "Resist", mind: "Resist" }
+    affinities: { fire: "Repel", water: "Weak", ice: "Weak", nuclear: "Resist", psy: "Resist" }
   },
   {
     id: "durga",
@@ -44,7 +44,7 @@ export const personaDB = [
     description: "An Orisha who presides over iron, hunting, politics, and war.",
     images: ["Ogun - Persona 1 Art"],
     affinities: { gun: "Weak", fire: "Weak", ice: "Weak", wind: "Weak", earth: "Weak", 
-      elec: "Resist", nucelar: "Resist", gravity: "Repel", nerve: "Resist" }
+      elec: "Resist", nuclear: "Resist", gravity: "Repel", psy: "Resist" }
   },
   {
     id: "susano-o-p1",
@@ -54,7 +54,7 @@ export const personaDB = [
     description: "I am Susano-O... Lord of the underworld...You with a raging soul like mine, from now on, I shall be your Ameno Murakumo no Tsurugi.",
     images: ["Susano-o P1 - Artwork"],
     affinities: { gun: "Weak", fire: "Weak", ice: "Weak", wind: "Weak", earth: "Weak", 
-      elec: "Resist", nucelar: "Resist", blast: "Repel", nerve: "Resist" }
+      elec: "Resist", nuclear: "Resist", blast: "Repel", psy: "Resist" }
   },
   {
     id: "seimen-kongou",
@@ -64,7 +64,7 @@ export const personaDB = [
     description: "A being originated from the syncretism of the Taoist Koshin and the Dosojin Sarutahiko. Originally a demon who spread disease, he and his 9,000 servants would consume the souls, flesh, and blood of humans. He later decided to redeem himself and began to heal people from sickness and epidemics. ",
     images: ["Seimen Kongou - Persona 1 Original"],
     affinities: { gun: "Weak", fire: "Resist", ice: "Resist", wind: "Repel", elec: "Weak", 
-      nuclear: "Weak", blast: "Weak", gravity: "Weak", nerve: "Resist"  }
+      nuclear: "Weak", blast: "Weak", gravity: "Weak", psy: "Resist"  }
   },
   {
     id: "amen-ra",
@@ -74,7 +74,7 @@ export const personaDB = [
     description: "Originally, Amon and Ra were two separate gods, but once the capital was moved to Thebes during the Middle Kingdom, the two gods were merged into one. They became Amon-Ra, sun god and supreme deity of Egypt.",
     images: ["Amen Ra - Persona 1 Artwork"],
     affinities: { gun: "Weak", fire: "Resist", ice: "Resist", wind: "Resist", earth: "Resist", elec: "Weak", 
-      nuclear: "Drain", blast: "Weak", gravity: "Weak", nerve: "Resist"  }
+      nuclear: "Drain", blast: "Weak", gravity: "Weak", psy: "Resist"  }
   },
   {
     id: "vishnu-p1",
@@ -84,7 +84,7 @@ export const personaDB = [
     description: "I am Vishnu... The one who spreads mercy throughout the world...My soul mate, let us move forth together as one..",
     images: ["Vishnu - Persona 1 Classic Art"],
     affinities: { phys: "Null", gun: "Weak", fire: "Weak", ice: "Resist", wind: "Null", elec: "Weak", 
-      nuclear: "Weak", blast: "Resist", gravity: "Weak", bless: "Resist", curse: "Resist", nerve: "Resist" }
+      nuclear: "Weak", blast: "Resist", gravity: "Weak", bless: "Resist", curse: "Resist", psy: "Resist" }
   },
   {
     id: "maso",
@@ -94,7 +94,7 @@ export const personaDB = [
     description: "The Chinese sea goddess Mazu, protector of sailors and fishermen.",
     images: ["Maso - Persona 1 Art"],
     affinities: { gun: "Weak", fire: "Weak", ice: "Drain", wind: "Resist", earth: "Resist", elec: "Resist", 
-      nucelar: "Resist", blast: "Resist", gravity: "Resist", expel: "Drain", bless: "Null", curse: "Weak", nerve: "Resist" }
+      nuclear: "Resist", blast: "Resist", gravity: "Resist", bless: "Null", curse: "Weak", psy: "Resist" }
   },
   {
     id: "verdandi",
@@ -104,7 +104,7 @@ export const personaDB = [
     description: "I am Verdandi... Middle sister of the goddesses of destiny before whom even gods tremble...The inevitable present, I shall muster for you...",
     images: ["Verdandi - Persona 1 Art"],
     affinities: { phys: "Weak", fire: "Resist", ice: "Resist", wind: "Resist", earth: "Resist", elec: "Resist", 
-      nucelar: "Resist", blast: "Resist", gravity: "Resist", expel: "Drain", bless: "Drain", curse: "Weak", nerve: "Repel" }
+      nuclear: "Resist", blast: "Resist", gravity: "Resist", bless: "Drain", curse: "Weak", psy: "Repel" }
   },
   {
     id: "nike",
@@ -113,9 +113,8 @@ export const personaDB = [
     originGame: "P1",
     description: "The Greek goddess who personifies victory.",
     images: ["Nike - Persona 1 Art"],
-    affinities: { fire: "Null", water: "Weak", ice: "Weak", elec: "Resist", nucelar: "Resist", bless: "Null", curse: "Weak",
-      nerve: "Null", mind: "Null"
-     }
+    affinities: { fire: "Null", water: "Weak", ice: "Weak", elec: "Resist", nuclear: "Resist", bless: "Null", curse: "Weak",
+      psy: "Null" }
   },
   {
     id: "michael-p1",
@@ -134,7 +133,7 @@ export const personaDB = [
     description: "One of the four major archangels. She is also the only female angel at this rank. Her name comes from the Sumerian word for 'governor.' She is the angel who told Mary of her pregnancy.",
     images: ["Gabriel - Classic Artwork"],
     affinities: { phys: "Resist", fire: "Resist", water: "Resist", wind: "Resist", earth: "Resist", ice: "Null", 
-      elec: "Resist", nuclear: "Weak", bless: "Null", curse: "Weak", nerve: "Null", mind: "Null", }
+      elec: "Resist", nuclear: "Weak", bless: "Null", curse: "Weak", psy: "Null" }
   },
   {
     id: "houri",
@@ -144,7 +143,7 @@ export const personaDB = [
     description: "Companions of the pure in Islamic paradise.",
     images: ["Houri - Persona 1 Art"],
     affinities: { gun: "Weak", fire: "Repel", wind: "Resist", earth: "Resist", elec: "Weak", nuclear: "Weak", 
-      blast: "Weak", gravity: "Weak", nerve: "Resist" }
+      blast: "Weak", gravity: "Weak", psy: "Resist" }
   },
   {
     id: "frey",
@@ -154,7 +153,7 @@ export const personaDB = [
     description: "Norse god of fertility, peace, and rain.",
     images: ["Frey - Persona 1 Art"],
     affinities: { gun: "Weak", fire: "Resist", ice: "Resist", earth: "Repel", elec: "Weak", nuclear: "Weak", 
-      blast: "Weak", gravity: "Weak", nerve: "Resist" }
+      blast: "Weak", gravity: "Weak", psy: "Resist" }
   },
   {
     id: "bres",
@@ -165,7 +164,7 @@ export const personaDB = [
     images: ["Bres - Persona 1 Art"],
     affinities: { phys: "Resist", gun: "Resist", fire: "Resist", ice: "Resist", wind: "Resist", 
       earth: "Resist", elec: "Resist", nuclear: "Resist", blast: "Resist", gravity: "Resist", 
-      expel: "Weak", bless: "Weak", curse: "Drain", nerve: "Null" }
+      bless: "Weak", curse: "Drain", psy: "Null" }
   },
   {
     id: "mot",
@@ -183,7 +182,7 @@ export const personaDB = [
     originGame: "P1",
     description: "The crawling chaos and primary antagonist entity behind human malice.",
     images: ["Nyarlathotep - Portrait"],
-    affinities: { curse: "Null", nerve: "Null", mind: "Null" }
+    affinities: { curse: "Null", psy: "Null" }
   },
 
   // --- PERSONA 2 ---
