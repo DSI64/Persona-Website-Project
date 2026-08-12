@@ -3,29 +3,38 @@ export const personaDB = [
   {
     id: "aizen-myouou",
     name: "Aizen Myouou",
-    arcana: "Magician",
+    arcana: "Hierophant",
     originGame: "P1",
-    description: "A wisdom king in Buddhism associated with transforming worldly desires into spiritual awakening.",
+    description: "Salvation cannot be achieved by withdrawing from your desire...Life is death, and desire is salvation...",
     images: ["Aizen Myouou - Persona 1 Artwork"],
-    affinities: { elec: "Null", bless: "Null", curse: "Null"  }
+    affinities: { earth: "Null", bless: "Null", curse: "Null"  }
   },
   {
     id: "yamaoka",
     name: "Yamaoka",
-    arcana: "Emperor",
+    arcana: "Hierophant",
     originGame: "P1",
-    description: "The loyal butler of the Nanjo family, manifesting as a reliable Persona.",
+    description: "Ah, young master! I'm so glad to be able to serve you again! I, Alfred, will defeat anyone who would stand in your way!",
     images: ["Yamaoka - Persona 1 Portrait"],
-    affinities: { phys: "Resist", wind: "Weak" }
+    affinities: { wind: "Null", elec: "Null", bless: "Null", nerve: "Null", mind: "Null" }
   },
   {
     id: "vesta",
     name: "Vesta",
     arcana: "Empress",
     originGame: "P1",
-    description: "The virgin goddess of the hearth, home, and family in Roman mythology.",
+    description: "I am Vesta... In your destiny to accompany your true love and lead the lost ones, I shall protect you with my flame...",
     images: ["Vesta - Persona 1 Art"],
-    affinities: { fire: "Null", ice: "Weak" }
+    affinities: { fire: "Repel", water: "Weak", ice: "Weak", nuclear: "Resist", nerve: "Resist", mind: "Resist" }
+  },
+  {
+    id: "durga",
+    name: "Durga",
+    arcana: "Empress",
+    originGame: "P1",
+    description: "I am Durga. My duty is to rend asunder the evil that threatens the world...Know that your destiny is nothing less than this.",
+    images: ["Durga - Persona 1 Art"],
+    affinities: { fire: "Drain", water: "Weak", ice: "Weak", nuclear: "Resist", bless: "Resist" }
   },
   {
     id: "ogun",
@@ -34,43 +43,48 @@ export const personaDB = [
     originGame: "P1",
     description: "An Orisha who presides over iron, hunting, politics, and war.",
     images: ["Ogun - Persona 1 Art"],
-    affinities: { phys: "Resist", curse: "Weak" }
+    affinities: { gun: "Weak", fire: "Weak", ice: "Weak", wind: "Weak", earth: "Weak", 
+      elec: "Resist", nucelar: "Resist", gravity: "Repel", nerve: "Resist" }
   },
   {
     id: "susano-o-p1",
     name: "Susano-o (P1)",
-    arcana: "Storm",
+    arcana: "Chariot",
     originGame: "P1",
-    description: "The swift storm god of Japanese mythology as depicted in Persona 1.",
+    description: "I am Susano-O... Lord of the underworld...You with a raging soul like mine, from now on, I shall be your Ameno Murakumo no Tsurugi.",
     images: ["Susano-o P1 - Artwork"],
-    affinities: { wind: "Drain", elec: "Weak" }
+    affinities: { gun: "Weak", fire: "Weak", ice: "Weak", wind: "Weak", earth: "Weak", 
+      elec: "Resist", nucelar: "Resist", blast: "Repel", nerve: "Resist" }
   },
   {
     id: "seimen-kongou",
     name: "Seimen Kongou",
-    arcana: "Fool",
+    arcana: "Emperor",
     originGame: "P1",
-    description: "A fierce deity associated with Koshin worship. Boy with Earring's initial Persona.",
+    description: "A being originated from the syncretism of the Taoist Koshin and the Dosojin Sarutahiko. Originally a demon who spread disease, he and his 9,000 servants would consume the souls, flesh, and blood of humans. He later decided to redeem himself and began to heal people from sickness and epidemics. ",
     images: ["Seimen Kongou - Persona 1 Original"],
-    affinities: { phys: "Resist", bless: "Null" }
+    affinities: { gun: "Weak", fire: "Resist", ice: "Resist", wind: "Repel", elec: "Weak", 
+      nuclear: "Weak", blast: "Weak", gravity: "Weak", nerve: "Resist"  }
   },
   {
     id: "amen-ra",
     name: "Amen Ra",
-    arcana: "Sun",
+    arcana: "Emperor",
     originGame: "P1",
-    description: "The supreme solar deity of ancient Thebes, fusing Amun and Ra.",
+    description: "Originally, Amon and Ra were two separate gods, but once the capital was moved to Thebes during the Middle Kingdom, the two gods were merged into one. They became Amon-Ra, sun god and supreme deity of Egypt.",
     images: ["Amen Ra - Persona 1 Artwork"],
-    affinities: { fire: "Drain", curse: "Null" }
+    affinities: { gun: "Weak", fire: "Resist", ice: "Resist", wind: "Resist", earth: "Resist", elec: "Weak", 
+      nuclear: "Drain", blast: "Weak", gravity: "Weak", nerve: "Resist"  }
   },
   {
     id: "vishnu-p1",
     name: "Vishnu",
     arcana: "World",
     originGame: "P1",
-    description: "The preserver and protector of the universe in Hindu mythology.",
+    description: "I am Vishnu... The one who spreads mercy throughout the world...My soul mate, let us move forth together as one..",
     images: ["Vishnu - Persona 1 Classic Art"],
-    affinities: { bless: "Drain", curse: "Repel" }
+    affinities: { phys: "Null", gun: "Weak", fire: "Weak", ice: "Resist", wind: "Null", elec: "Weak", 
+      nuclear: "Weak", blast: "Resist", gravity: "Weak", bless: "Resist", curse: "Resist", nerve: "Resist" }
   },
   {
     id: "maso",
@@ -79,97 +93,97 @@ export const personaDB = [
     originGame: "P1",
     description: "The Chinese sea goddess Mazu, protector of sailors and fishermen.",
     images: ["Maso - Persona 1 Art"],
-    affinities: { ice: "Resist" }
+    affinities: { gun: "Weak", fire: "Weak", ice: "Drain", wind: "Resist", earth: "Resist", elec: "Resist", 
+      nucelar: "Resist", blast: "Resist", gravity: "Resist", expel: "Drain", bless: "Null", curse: "Weak", nerve: "Resist" }
   },
   {
     id: "verdandi",
     name: "Verdandi",
-    arcana: "Fortune",
+    arcana: "Priestess",
     originGame: "P1",
-    description: "The Norn of the present, weaving the thread of human destiny.",
+    description: "I am Verdandi... Middle sister of the goddesses of destiny before whom even gods tremble...The inevitable present, I shall muster for you...",
     images: ["Verdandi - Persona 1 Art"],
-    affinities: { wind: "Resist" }
+    affinities: { phys: "Weak", fire: "Resist", ice: "Resist", wind: "Resist", earth: "Resist", elec: "Resist", 
+      nucelar: "Resist", blast: "Resist", gravity: "Resist", expel: "Drain", bless: "Drain", curse: "Weak", nerve: "Repel" }
   },
   {
     id: "nike",
     name: "Nike",
-    arcana: "Lovers",
+    arcana: "Judgement",
     originGame: "P1",
     description: "The Greek goddess who personifies victory.",
     images: ["Nike - Persona 1 Art"],
-    affinities: { wind: "Resist" }
-  },
-  {
-    id: "armaiti",
-    name: "Armaiti",
-    arcana: "Empress",
-    originGame: "P1",
-    description: "Zoroastrian Amesha Spenta representing devotion and serenity.",
-    images: ["Armaiti - Persona 1 Art"],
-    affinities: { bless: "Null" }
+    affinities: { fire: "Null", water: "Weak", ice: "Weak", elec: "Resist", nucelar: "Resist", bless: "Null", curse: "Weak",
+      nerve: "Null", mind: "Null"
+     }
   },
   {
     id: "michael-p1",
-    name: "Michael (P1)",
+    name: "Michael",
     arcana: "Judgement",
     originGame: "P1",
-    description: "The leader of the heavenly host of angels in Abrahamic lore.",
+    description: "One of the four major archangels, he is at the top of the angelic hierarchy. He carries a long spear that can cut through anything, and his name means 'one who is like God.'",
     images: ["Michael - Persona 1 Art"],
-    affinities: { bless: "Drain", curse: "Repel" }
+    affinities: { gun: "Resist", bless: "Repel", curse: "Null" }
   },
   {
     id: "gabriel",
     name: "Gabriel",
-    arcana: "Empress",
+    arcana: "Judgement",
     originGame: "P1",
-    description: "An archangel who serves as a messenger of God.",
+    description: "One of the four major archangels. She is also the only female angel at this rank. Her name comes from the Sumerian word for 'governor.' She is the angel who told Mary of her pregnancy.",
     images: ["Gabriel - Classic Artwork"],
-    affinities: { ice: "Drain", bless: "Null" }
+    affinities: { phys: "Resist", fire: "Resist", water: "Resist", wind: "Resist", earth: "Resist", ice: "Null", 
+      elec: "Resist", nuclear: "Weak", bless: "Null", curse: "Weak", nerve: "Null", mind: "Null", }
   },
   {
     id: "houri",
     name: "Houri",
-    arcana: "Lovers",
+    arcana: "Magician",
     originGame: "P1",
     description: "Companions of the pure in Islamic paradise.",
     images: ["Houri - Persona 1 Art"],
-    affinities: { fire: "Resist" }
+    affinities: { gun: "Weak", fire: "Repel", wind: "Resist", earth: "Resist", elec: "Weak", nuclear: "Weak", 
+      blast: "Weak", gravity: "Weak", nerve: "Resist" }
   },
   {
     id: "frey",
     name: "Frey",
-    arcana: "Emperor",
+    arcana: "Magician",
     originGame: "P1",
     description: "Norse god of fertility, peace, and rain.",
     images: ["Frey - Persona 1 Art"],
-    affinities: { wind: "Resist" }
+    affinities: { gun: "Weak", fire: "Resist", ice: "Resist", earth: "Repel", elec: "Weak", nuclear: "Weak", 
+      blast: "Weak", gravity: "Weak", nerve: "Resist" }
   },
   {
     id: "bres",
     name: "Bres",
-    arcana: "Magician",
+    arcana: "Devil",
     originGame: "P1",
     description: "A king of the Tuatha Dé Danann in Irish mythology.",
     images: ["Bres - Persona 1 Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "Resist", gun: "Resist", fire: "Resist", ice: "Resist", wind: "Resist", 
+      earth: "Resist", elec: "Resist", nuclear: "Resist", blast: "Resist", gravity: "Resist", 
+      expel: "Weak", bless: "Weak", curse: "Drain", nerve: "Null" }
   },
   {
     id: "mot",
     name: "Mot",
-    arcana: "Emperor",
+    arcana: "Death",
     originGame: "P1",
-    description: "God of death and sterility in Canaanite mythology.",
+    description: "The Canaanite god of death. Every year he attempts to kill Baal, the god of fertility, only to see him raised from the dead with the help of Baal's sister, Anat.",
     images: ["Mot - Classic Megami Tensei Art"],
-    affinities: { curse: "Drain", bless: "Weak" }
+    affinities: { gun: "Resist", wind: "Weak", curse: "Repel", elec: "Drain" }
   },
   {
     id: "nyarlathotep",
     name: "Nyarlathotep",
-    arcana: "World",
+    arcana: "Tower",
     originGame: "P1",
     description: "The crawling chaos and primary antagonist entity behind human malice.",
     images: ["Nyarlathotep - Portrait"],
-    affinities: { curse: "Drain", bless: "Weak", phys: "Resist" }
+    affinities: { curse: "Null", nerve: "Null", mind: "Null" }
   },
 
   // --- PERSONA 2 ---
