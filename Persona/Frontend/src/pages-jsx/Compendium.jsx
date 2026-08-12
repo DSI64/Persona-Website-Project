@@ -126,7 +126,6 @@ export default function Compendium() {
                   <span className="persona-game-badge">Debut: {selectedPersona.originGame}</span>
                 </div>
                 <h2>{selectedPersona.name}</h2>
-                <p className="persona-desc">{selectedPersona.description}</p>
               </div>
             </div>
 
@@ -147,29 +146,10 @@ export default function Compendium() {
               )}
             </div>
 
-            {/* Level-Up Skills Table */}
+            {/* In-Game Bio Section */}
             <div className="compendium-block">
-              <h3>Learnable Skills</h3>
-              <table className="skills-table">
-                <thead>
-                  <tr>
-                    <th>Lvl</th>
-                    <th>Skill</th>
-                    <th>Cost</th>
-                    <th>Effect</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {selectedPersona.skills.map((skill, index) => (
-                    <tr key={index}>
-                      <td className="skill-lvl">{skill.level}</td>
-                      <td className="skill-name">{skill.name}</td>
-                      <td className="skill-cost">{skill.cost}</td>
-                      <td className="skill-effect">{skill.effect}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <h3>Persona Bio</h3>
+              <p className="persona-bio-text">{selectedPersona.description}</p>
             </div>
           </div>
         )}
