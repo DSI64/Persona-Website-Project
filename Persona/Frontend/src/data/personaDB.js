@@ -1474,19 +1474,6 @@ export const personaDB = [
       { level: 1, name: "Life Wall", cost: "90 SP", effect: "Creates a shield reflecting all attacks for all allies." }
     ]
   },
-  {
-    id: "azathoth",
-    name: "Azathoth",
-    arcana: "Councillor",
-    originGame: "P5",
-    description: "Maruki's Persona.",
-    images: ["Azathoth - P5R Art"],
-    affinities: { phys: "Resist" },
-    skills: [
-      { level: 1, name: "Tendril Smash", cost: "20 SP", effect: "Deals Almighty damage." }
-    ]
-  },
-
   // --- SPINOFFS ---
   {
     id: "asterius",
@@ -2268,18 +2255,6 @@ export const personaDB = [
     affinities: { phys: "Repel", curse: "Repel", bless: "Weak" },
     skills: [
       { level: 1, name: "Hassou Tobi", cost: "24% HP", effect: "Deals 8 light Physical attacks to all foes." }
-    ]
-  },
-  {
-    id: "philemon",
-    name: "Philemon",
-    arcana: "World",
-    originGame: "Velvet Stock",
-    description: "A benevolent entity of collective unconsciousness who aids protagonists in butterfly form.",
-    images: ["Philemon - Persona Mask Art"],
-    affinities: { nerve: "Null", mind: "Null" },
-    skills: [
-      { level: 1, name: "Salvation", cost: "48 SP", effect: "Fully heals party and cures all ailments." }
     ]
   }
 ];
