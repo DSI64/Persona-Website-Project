@@ -66,3 +66,21 @@
 .romance-rank .rank-dropdown-body {
   background-color: rgba(217, 0, 22, 0.05);
 }
+
+.card-image-placeholder {
+  width: 100%;
+  height: 100%; /* Or set a fixed height depending on your card layout */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center; /* Shifts the crop window up to her face/shoulders */
+  display: block;
+}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { socialLinksDB } from './SocialLinks';
+import { socialLinkDB } from '../data/socialLinkDB';
 import "../pages-css/SocialLinkDetail.css";
 
 export default function SocialLinkDetail() {
@@ -8,7 +8,7 @@ export default function SocialLinkDetail() {
   const navigate = useNavigate();
   
   // Case-insensitive lookup safeguard
-  const character = socialLinksDB.find(
+  const character = socialLinkDB.find(
     (c) => c.id?.toLowerCase() === id?.toLowerCase()
   );
 

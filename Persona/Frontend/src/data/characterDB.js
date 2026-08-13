@@ -268,8 +268,20 @@ export const characterDB = [
     profile: "A founding member of S.E.E.S. who dropped out of active combat due to a tragic accident involving his Persona. He maintains a tough exterior and distances himself from others, but is a phenomenal cook with a soft spot for dogs.",
     images: ["/images/characters/shinjiro_1.webp"]
   },
+  { 
+    id: 311, name: "Fuuka Yamagishi", game: "P3", arcana: "Priestess", image: "Fuuka",
+    title: "The Timid Navigator", birthday: "January 22", appearances: "Persona 3, Persona 4 Arena Ultimax, Persona Q",
+    personas: "Lucia, Juno",
+    voiceActors: "Miyuki Sawashiro (JP) / Wendee Lee / Suzie Yeung (EN)",
+    likes: "Cooking (with unique results), reading, computing, mechanical tinkering", dislikes: "Bullying, ghosts, her own lack of confidence",
+    profile: "A quiet and gentle student at Gekkoukan High who gets trapped in Tartarus. After being rescued by S.E.E.S., she steps up to become the team's primary navigator, using her exceptional sensory abilities to analyze enemies and support her allies.",
+    images: ["/images/characters/fuuka_1.webp",
+        "/images/characters/fuuka_2.webp",
+        "/images/characters/fuuka_3.webp"
+    ]
+  },
     { 
-    id: 310, name: "Kotone Shiomi", game: "P3P", arcana: "Fool", image: "P3 Femc",
+    id: 312, name: "Kotone Shiomi", game: "P3P", arcana: "Fool", image: "P3 Femc",
     title: "Female Protagonist", birthday: "Unknown (1992)", appearances: "Persona 3 Portable, Persona Q2",
     personas: "Orpheus, Thanatos, Messiah",
     voiceActors: "Laura Bailey (EN) / Marina Inoue (JP)",
