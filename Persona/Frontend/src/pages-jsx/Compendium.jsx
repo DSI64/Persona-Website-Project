@@ -68,7 +68,7 @@ export default function Compendium() {
               onChange={(e) => setSelectedGame(e.target.value)}
               className="compendium-select"
             >
-              <option value="All">All Origin Games</option>
+              <option value="All">All Games</option>
               <option value="P1">Persona 1</option>
               <option value="P2">Persona 2</option>
               <option value="P3">Persona 3</option>

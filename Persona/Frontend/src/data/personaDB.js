@@ -1247,34 +1247,34 @@ export const personaDB = [
     name: "Slime",
     arcana: "Chariot",
     originGame: "P1",
-    description: "A gooey creature formed from low-level shadow energy.",
+    description: "A primitive monster with a viscous body. There are various theories as to its origin, but it is still under debate. Said to compulsively collect shiny objects.",
     images: ["Slime - Persona Art"],
-    affinities: { phys: "Resist", fire: "Weak" }
+    affinities: { phys: "Resist", fire: "Weak", wind: "Weak" }
   },
   {
     id: "jack-o-lantern",
     name: "Jack-o'-Lantern",
     arcana: "Magician",
     originGame: "P1",
-    description: "Carved pumpkin spirit associated with fire and trickery.",
+    description: "A drunkard who tricked the Devil out of taking him to Hell. When refused entry to Heaven, he was forced to wander the earth with only an ember as a light.",
     images: ["Jack-o'-Lantern - Persona Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { fire: "Drain", ice: "Weak", wind: "Weak" }
   },
   {
     id: "agathion",
-    name: "P1",
+    name: "Agathion",
     arcana: "Chariot",
-    originGame: "Velvet Stock",
-    description: "A familiar spirit trapped inside a bottle or ring.",
+    originGame: "P1",
+    description: "A general term for familiars used by Judeo-Christian magicians, they are usually sealed away in bottles, rings, or talismans. They torment the target selected by the conjuror.",
     images: ["Agathion - Persona Art"],
-    affinities: { elec: "Resist", wind: "Weak" }
+    affinities: { gun: "Resist", elec: "Resist", wind: "Weak" }
   },
   {
     id: "mandrake",
     name: "Mandrake",
-    arcana: "Hermit",
+    arcana: "Death",
     originGame: "P3",
-    description: "A mythical root plant whose scream is deadly.",
+    description: "A magical plant whose roots look like a human. They are valued for their healing properties in potions, but the screams they let out when pulled from the ground will kill anyone who hears them.",
     images: ["Mandrake - Persona Art"],
     affinities: { elec: "Resist", fire: "Weak" }
   },
@@ -1283,70 +1283,70 @@ export const personaDB = [
     name: "Shiisaa",
     arcana: "Hierophant",
     originGame: "P3",
-    description: "Okinawan lion-dog statue that wards off evil spirits.",
+    description: "A holy beast said to protect houses from evil and bring good fortune. They look similar to Shinto guardian dogs, but are actually modeled after a lion. There are many stories about it in Ryukyu lore.",
     images: ["Shiisaa - Persona Art"],
-    affinities: { phys: "Resist", curse: "Weak" }
+    affinities: { phys: "Resist", gun: "Resist", bless: "Null", curse: "Weak" }
   },
   {
     id: "bugbear",
     name: "Bugbear",
-    arcana: "Priority",
+    arcana: "Fool",
     originGame: "P5",
-    description: "A legendary goblin-like creature used to scare children.",
+    description: "A Welsh creature commonly known as 'Bugbear' or the 'Boogeyman.' Its existence is often used by mothers to scare children into behaving.",
     images: ["Bugbear - Persona Art"],
-    affinities: { phys: "Resist", fire: "Weak" }
+    affinities: { psy: "Resist", nuclear: "Weak", curse: "Null" }
   },
   {
     id: "jack-frost",
     name: "Jack Frost",
     arcana: "Magician",
     originGame: "P1",
-    description: "The winter frost spirit. Hee-ho!",
+    description: "A winter fairy of European descent. He leaves ice patterns on windows and nips people's noses. Though normally an innocent creature, he will freeze his victims to death if provoked.",
     images: ["Jack Frost - Persona Art"],
-    affinities: { ice: "Drain", fire: "Weak" }
+    affinities: { ice: "Null", fire: "Weak" }
   },
   {
     id: "sudama",
     name: "Sudama",
     arcana: "Hermit",
     originGame: "P5",
-    description: "Japanese mountain spirit inhabiting rocks and trees.",
+    description: "A spirit of rivers and mountains in Japanese lore, they dwell in ancient trees and ageless rocks. They are not evil, and will often appear as humans or supernatural wonders to warn people.",
     images: ["Sudama - Persona Art"],
-    affinities: { wind: "Resist", fire: "Weak" }
+    affinities: { wind: "Repel", ice: "Weak", nuclear: "Weak" }
   },
   {
     id: "onmoraki",
     name: "Onmoraki",
     arcana: "Moon",
-    originGame: "Velvet Stock",
-    description: "Demonic bird born from spirits of unburied dead.",
+    originGame: "P3",
+    description: "A monstrous, fire-spitting, Japanese bird with a man's face. It is actually a corpse that was not given a proper memorial service. They appear before monks who neglect their duties.",
     images: ["Onmoraki - Persona Art"],
-    affinities: { fire: "Resist", bless: "Weak" }
+    affinities: { gun: "Weak", fire: "Resist", bless: "Weak", curse: "Null" }
   },
   {
     id: "pixie",
     name: "Pixie",
     arcana: "Lovers",
-    originGame: "Velvet Stock",
-    description: "A playful fairy originating from English folklore.",
+    originGame: "P1",
+    description: "Friendly fairies of the forest that tend to hide from humans. They like to play tricks on the lazy people. It is said they are the souls of dead, unbaptized children.",
     images: ["Pixie - Persona Art"],
-    affinities: { elec: "Resist", ice: "Weak" }
+    affinities: { gun: "Weak", elec: "Resist", ice: "Weak", bless: "Resist", curse: "Weak", }
   },
   {
     id: "ardha",
     name: "Ardha",
     arcana: "Temperance",
-    originGame: "Velvet Stock",
-    description: "Androgynous composite deity formed by Shiva and Parvati.",
+    originGame: "P4",
+    description: "A god of dual gender whose appearance is half that of the destroyer, Shiva, and half his wife, Parvati. Ardha is the ideal figure of Shaktism, the perfect god.",
     images: ["Ardha - Persona Art"],
-    affinities: { phys: "Resist", ice: "Drain" }
+    affinities: { phys: "Resist", ice: "Null", elec: "Null" }
   },
   {
     id: "kelpie",
     name: "Kelpie",
     arcana: "Strength",
-    originGame: "Velvet Stock",
-    description: "Scottish shape-shifting water spirit appearing as a horse.",
+    originGame: "P5",
+    description: "A horse-like fairy of Celtic folklore that lives by the water. It drowns those who ride on it, but is a valuable mount if you can tame it.",
     images: ["Kelpie - Persona Art"],
     affinities: { ice: "Resist", elec: "Weak" }
   },
@@ -1354,116 +1354,116 @@ export const personaDB = [
     id: "berith",
     name: "Berith",
     arcana: "Hierophant",
-    originGame: "Velvet Stock",
-    description: "Great Duke of Hell riding a red horse wearing a crown.",
+    originGame: "P1",
+    description: "One of the 72 demons of the Goetia. Known as the Duke of Hell, he rides a gigantic horse and burns those without manners.",
     images: ["Berith - Persona Art"],
-    affinities: { fire: "Resist", ice: "Weak" }
+    affinities: { gun: "Null", fire: "Resist", ice: "Weak" }
   },
   {
     id: "inugami",
     name: "Inugami",
     arcana: "Hanged Man",
-    originGame: "Velvet Stock",
-    description: "Dog spirit created through dark sorcery in Japanese tradition.",
+    originGame: "P3",
+    description: "A dog spirit said to possess people in Japanese lore. Those possessed are in a state of 'inu-tsuki' and lose consciousness. Onmyoji use Inugami as familiars.",
     images: ["Inugami - Persona Art"],
-    affinities: { fire: "Resist", wind: "Weak" }
+    affinities: { gun: "Null", fire: "Null", wind: "Weak", curse: "Null" }
   },
   {
     id: "oni",
     name: "Oni",
     arcana: "Strength",
-    originGame: "Velvet Stock",
-    description: "Fierce demon or ogre in Japanese folklore.",
+    originGame: "P3",
+    description: "An evil monster from Japanese lore known for its hideous appearance and brute strength. They loot and plunder villages, massacring the townspeople with their iron clubs.",
     images: ["Oni - Persona Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "Resist", gun: "Resist" }
   },
   {
     id: "mithras",
     name: "Mithras",
     arcana: "Sun",
-    originGame: "Velvet Stock",
-    description: "Persian god of light and oaths slaver of the cosmic bull.",
+    originGame: "P3",
+    description: "A sun deity who was worshipped in the Roman Empire from the 1st to the 4th century AD. He was said to be reborn after death, and a festival was held on the winter solstice for him.",
     images: ["Mithras - Persona Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { phys: "Resist", fire: "Drain", psy: "Weak", nuclear: "Null", }
   },
   {
     id: "atavaka",
     name: "Atavaka",
     arcana: "Faith",
-    originGame: "Velvet Stock",
-    description: "A powerful demon king converted to a protector god in Buddhism.",
+    originGame: "P3",
+    description: "One of the eight Yashaou. His domain is war and protection. Once a child-eating demon, he became one of the Wisdom Kings after Buddha converted him to good.",
     images: ["Atavaka - Persona Art"],
-    affinities: { phys: "Repel", curse: "Null" }
+    affinities: { phys: "Repel", gun: "Null", fire: "Repel", curse: "Resist" }
   },
   {
     id: "thor",
     name: "Thor",
     arcana: "Chariot",
-    originGame: "Velvet Stock",
-    description: "Norse god of thunder and strength wielder of Mjolnir.",
+    originGame: "P1",
+    description: "The Norse thunder god and son of Odin, Thor owns the power enhancing belt, Megingjard, and wields Mjolnir, a hammer that causes lightning to strike and returns to its owner if thrown.",
     images: ["Thor - Persona Art"],
-    affinities: { elec: "Drain", wind: "Weak" }
+    affinities: { phys: "Resist", elec: "Drain", psy: "Weak", curse: "Resist", bless: "Resist" }
   },
   {
     id: "nue",
     name: "Nue",
     arcana: "Death",
-    originGame: "Velvet Stock",
-    description: "Japanese chimera with a monkey head, tiger legs, and snake tail.",
+    originGame: "P1",
+    description: "A creature of Japanese lore with a monkey's head, tiger's legs, and snake's tail. The Tale of Heike says it hid behind a dark cloud each night to attack the Emperor.",
     images: ["Nue - Persona Art"],
-    affinities: { curse: "Resist", fire: "Weak" }
+    affinities: { curse: "Null", ice: "Resist", fire: "Weak" }
   },
   {
     id: "lucifer",
     name: "Lucifer",
     arcana: "Star",
-    originGame: "Velvet Stock",
-    description: "The proud fallen archangel king of demons.",
+    originGame: "P1",
+    description: "A fallen Judeo-Christian angel, he lead a rebellion with an army of angels against God and lost. He waits in Hell for his chance to challenge God once more and strike him down.",
     images: ["Lucifer - Persona Art"],
-    affinities: { dark: "Drain", bless: "Weak" }
+    affinities: { phys: "Null", gun: "Null", fire: "Resist", ice: "Resist", elec: "Resist", wind: "Resist", curse: "Drain", bless: "Weak" }
   },
   {
     id: "bishamonten",
     name: "Bishamonten",
     arcana: "Hierophant",
-    originGame: "Velvet Stock",
-    description: "One of the Four Heavenly Kings protecting the north.",
+    originGame: "P1",
+    description: "Also known as Tamonten and Vaishravana in Buddhist lore, he is the strongest of the Heavenly Kings. He protects the North and is the god of war.",
     images: ["Bishamonten - Persona Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { fire: "Drain", ice: "Weak", curse: "Resist", bless: "Resist" }
   },
   {
     id: "jikokuten",
     name: "Jikokuten",
     arcana: "Temperance",
-    originGame: "Velvet Stock",
-    description: "One of the Four Heavenly Kings protecting the east.",
+    originGame: "P3",
+    description: "Also known as Dhritarashtra, he is the protector of the East, and is one of the four Heavenly Kings of Buddhist origin. He helps maintain the security of the nation.",
     images: ["Jikokuten - Persona Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "Resist", curse: "Weak", bless: "Resist" }
   },
   {
     id: "zochoten",
     name: "Zochoten",
     arcana: "Strength",
-    originGame: "Velvet Stock",
+    originGame: "P3",
     description: "One of the Four Heavenly Kings protecting the south.",
     images: ["Zochoten - Persona Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "Resist", wind: "Weak" }
   },
   {
-    id: "komokuten",
-    name: "Komokuten",
+    id: "koumokuten",
+    name: "Koumokuten",
     arcana: "Hermit",
-    originGame: "Velvet Stock",
-    description: "One of the Four Heavenly Kings protecting the west.",
+    originGame: "P3",
+    description: "Also known as Virupaksha, he is the protector of the West, and is one of the four Heavenly Kings of Buddhist origin. He keeps a close watch on the world with his sharp gaze.",
     images: ["Komokuten - Persona Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "Resist", ice: "Weak", bless: "Resist" }
   },
   {
     id: "mokoi",
     name: "Mokoi",
-    arcana: "Devil",
-    originGame: "Velvet Stock",
-    description: "A demon from Australian Aboriginal mythology.",
+    arcana: "Death",
+    originGame: "P3",
+    description: "Evil spirits of Murngin lore believed to be reborn shadows. They kidnap and eat children, and strike down any sorcerer who uses black magic.",
     images: ["Mokoi - Persona Art"],
     affinities: { elec: "Resist", wind: "Weak" }
   },
@@ -1471,234 +1471,234 @@ export const personaDB = [
     id: "neko-shogun",
     name: "Neko Shogun",
     arcana: "Star",
-    originGame: "Velvet Stock",
-    description: "A Taoist deity depicted as a cat in military attire.",
+    originGame: "P3",
+    description: "A prophetic taoist god, originally known as Mao Shogun. Due to a linguistic error involving the Chinese word for 'cat,' his name was changed to Neko Shogun.",
     images: ["Neko Shogun - Persona Art"],
-    affinities: { elec: "Resist", wind: "Weak" }
+    affinities: { phys: "Resist", elec: "Resist", wind: "Weak", curse: "Resist" }
   },
   {
     id: "nigi-mitama",
     name: "Nigi Mitama",
     arcana: "Temperance",
-    originGame: "Velvet Stock",
-    description: "The gentle, benevolent aspect of a Shinto spirit.",
+    originGame: "P3",
+    description: "One of the four aspects of Shinto thought, it works gently to help maintain a calm mind. It is said to aid in one's relations and sociability, and can lead one in a positive direction.",
     images: ["Nigi Mitama - Persona Art"],
-    affinities: { bless: "Resist" }
+    affinities: { elec: "Weak",curse: "Resist", bless: "Resist" }
   },
   {
     id: "kusi-mitama",
     name: "Kusi Mitama",
     arcana: "Strength",
-    originGame: "Velvet Stock",
-    description: "The wondrous aspect of a Shinto soul causing transformation.",
+    originGame: "P3",
+    description: "One of the four aspects of Shinto thought, it uses its power to bring good omens. It is said to aid in one's wisdom, observation, and skill, and can mend fractured paths.",
     images: ["Kusi Mitama - Persona Art"],
-    affinities: { wind: "Resist" }
+    affinities: { fire: "Weak", wind: "Resist" }
   },
   {
     id: "ara-mitama",
     name: "Ara Mitama",
     arcana: "Chariot",
-    originGame: "Velvet Stock",
-    description: "The aggressive, wild aspect of a Shinto soul.",
+    originGame: "P3",
+    description: "One of the four aspects of Shinto thought, it has the power to grant ferocity. It is said to aid in one's bravery, growth, and endeavors, though it can lead in a negative direction.",
     images: ["Ara Mitama - Persona Art"],
-    affinities: { phys: "Resist" }
+    affinities: { phys: "Resist", ice: "Weak" }
   },
   {
     id: "saki-mitama",
     name: "Saki Mitama",
     arcana: "Lovers",
-    originGame: "Velvet Stock",
-    description: "The prosperous aspect of a Shinto spirit bringing good fortune.",
+    originGame: "P3",
+    description: "One of the four aspects of Shinto thought, it brings great bounty from the hunt. It is said to aid in love, profit, and growth, and can create new paths.",
     images: ["Saki Mitama - Persona Art"],
-    affinities: { ice: "Resist" }
+    affinities: { wind: "Weak", ice: "Resist" }
   },
   {
     id: "clotho",
     name: "Clotho",
     arcana: "Fortune",
-    originGame: "Velvet Stock",
-    description: "Youngest of the three Fates spinning the thread of life.",
+    originGame: "P3",
+    description: "The youngest of the three Moirae Sisters of Greek legend. She spins the threads of life with her spindle.",
     images: ["Clotho - Persona Art"],
-    affinities: { wind: "Resist", ice: "Weak" }
+    affinities: { wind: "Null", ice: "Weak", nuclear: "Weak" }
   },
   {
     id: "lachesis",
     name: "Lachesis",
     arcana: "Fortune",
-    originGame: "Velvet Stock",
-    description: "The Fate measuring the length of life's thread.",
+    originGame: "P3",
+    description: "The middle sister of the three Moirae Sisters of Greek legend. She is the apportioner, measuring the thread which determines each person's lifespan.",
     images: ["Lachesis - Persona Art"],
-    affinities: { ice: "Resist", elec: "Weak" }
+    affinities: { wind: "Resist", ice: "Null", elec: "Weak" }
   },
   {
     id: "atropos",
     name: "Atropos",
     arcana: "Fortune",
-    originGame: "Velvet Stock",
-    description: "The Fate who cuts the thread of life.",
+    originGame: "P3",
+    description: "The eldest of the three Moirae Sisters of Greek mythology. She cuts the threads of life for those whose time has come.",
     images: ["Atropos - Persona Art"],
-    affinities: { wind: "Drain", fire: "Weak" }
+    affinities: { wind: "Null", fire: "Weak" }
   },
   {
     id: "siegfried",
     name: "Siegfried",
     arcana: "Strength",
-    originGame: "Velvet Stock",
-    description: "Heroic dragon-slayer from the Nibelungenlied.",
+    originGame: "P3",
+    description: "The German name of the hero in the epic poem, 'The Nibelungenlied.' The dragon Fafnir's blood made him invincible, but a single leaf on his back resulted in a weak spot.",
     images: ["Siegfried - Persona Art"],
-    affinities: { phys: "Drain", curse: "Weak" }
+    affinities: { phys: "Null", gun: "Resist", elec:"Null ", ice: "Resist", nuclear: "Weak" }
   },
   {
     id: "loki",
     name: "Loki",
     arcana: "Fool",
-    originGame: "P2",
-    description: "Norse trickster god.",
+    originGame: "P1",
+    description: "A major Norse deity, known as a trickster who clashes with the other gods. Though his parents are giants and enemies of the gods, he joined the pantheon as Odin's blood brother. Due to his countless evil deeds, such as the murder of Beldr, he was eventually punished with imprisonment in a cave. He is fated to be released on the day of Ragnarok, when the world will end and he will battle the gods.",
     images: ["Loki - Persona Art"],
-    affinities: { ice: "Drain", bless: "Weak" }
+    affinities: { ice: "Drain", fire: "Weak", curse: "Null" }
   },
   {
-    id: "oukuninushi",
-    name: "Oukuninushi",
+    id: "okuninushi",
+    name: "Okuninushi",
     arcana: "Emperor",
-    originGame: "Velvet Stock",
-    description: "Shinto deity of nation-building and agriculture.",
+    originGame: "P3",
+    description: "A Kunitsu deity of Japanese mythology that governs agriculture and medicine. He's said to have built the country of Izumo with Susano-o's daughter, Suseri-Hime.",
     images: ["Oukuninushi - Persona Art"],
-    affinities: { psy: "Resist", wind: "Weak" }
+    affinities: { wind: "Weak", elec: "Repel", psy: "Null", nuclear: "Weak" }
   },
   {
     id: "cu-chulainn",
     name: "Cu Chulainn",
-    arcana: "Tower",
-    originGame: "Velvet Stock",
-    description: "Legendary hero of Irish mythology.",
+    arcana: "Star",
+    originGame: "P1",
+    description: "A hero in Celtic folklore. He was called Setanta until he earned the name, 'Culann's Hound.' There are many tales of his adventures. He received his spear, Gae Bolg, from his mentor, Scathach.",
     images: ["Cu Chulainn - Persona Art"],
-    affinities: { wind: "Drain", elec: "Weak" }
+    affinities: { phys: "Resist", gun: "Resist", wind: "Null", elec: "Weak", bless: "Drain" }
   },
   {
     id: "helel",
     name: "Helel",
     arcana: "Star",
-    originGame: "Velvet Stock",
-    description: "The bringer of light before falling from grace.",
+    originGame: "P3",
+    description: "A fallen angel in Judeo-Christian lore whose name signifies 'Morning Star.' Primarily known for defying God, but also worshiped as a bringer of light to mankind.",
     images: ["Helel - Persona Art"],
-    affinities: { bless: "Drain", curse: "Drain" }
+    affinities: { phys: "Resist", fire: "Null", wind: "Weak", bless: "Null", curse: "Null" }
   },
   {
     id: "yoshitsune",
     name: "Yoshitsune",
     arcana: "Tower",
-    originGame: "Velvet Stock",
-    description: "Famed general of the Minamoto clan.",
+    originGame: "P4",
+    description: "A Japanese general of the Genpei War near the end of the Heian era and start of the Kamakura era. His bold ingenuity and ruthless skill with a blade are still praised in Japan today.",
     images: ["Yoshitsune - Persona Art"],
-    affinities: { phys: "Repel", elec: "Repel", bless: "Repel" }
+    affinities: { phys: "Null", fire: "Resist", elec: "Repel", bless: "Repel" }
   },
   {
     id: "oberon",
     name: "Oberon",
     arcana: "Emperor",
-    originGame: "Velvet Stock",
-    description: "King of the Fairies in medieval literature.",
+    originGame: "P3",
+    description: "The king of the faeries and Titania's husband. He is quite old but, due to a curse, his looks are that of a young boy. He often flirts with human women, ending in a scolding from his wife.",
     images: ["Oberon - Persona Art"],
-    affinities: { elec: "Resist", nuclear: "Weak" }
+    affinities: { psy: "Null", elec: "Resist", nuclear: "Weak" }
   },
   {
     id: "uriel",
     name: "Uriel",
     arcana: "Justice",
-    originGame: "Velvet Stock",
-    description: "Archangel of repentance and sun-deity standing at Heaven's gate.",
+    originGame: "P3",
+    description: "One of the four major archangels. His name means 'Flame of God,' and he knows all the celestial phenomena. He is the first angel Satan met on earth.",
     images: ["Uriel - Persona Art"],
-    affinities: { fire: "Drain", curse: "Weak" }
+    affinities: { fire: "Null", nuclear: "Drain", bless: "Repel" }
   },
   {
     id: "raphael",
     name: "Raphael",
     arcana: "Lovers",
-    originGame: "Velvet Stock",
-    description: "Archangel of healing and patron of travelers.",
+    originGame: "P3",
+    description: "One of the four major archangels, his name means 'healer.' He recites the history of the fallen angels and the creation of Adam and Eve.",
     images: ["Raphael - Persona Art"],
-    affinities: { wind: "Drain", ice: "Weak" }
+    affinities: { ice: "Drain", psy: "Null", bless: "Null" }
   },
   {
     id: "sandalphon",
     name: "Sandalphon",
     arcana: "Moon",
-    originGame: "Velvet Stock",
-    description: "Archangel of prayer and twin brother of Metatron.",
+    originGame: "P3",
+    description: "Metatron's twin brother in Judeo-Christian lore, he is the master of heavenly songs. It is said that a human would take 500 years to walk the length of his body.",
     images: ["Sandalphon - Persona Art"],
-    affinities: { bless: "Repel", curse: "Weak" }
+    affinities: { phys: "Resist", gun: "Resist", bless: "Repel", curse: "Null" }
   },
   {
     id: "lilith",
     name: "Lilith",
-    arcana: "Devil",
-    originGame: "Velvet Stock",
-    description: "Mythological figure of night and queen of demons.",
+    arcana: "Moon",
+    originGame: "P3",
+    description: "Said to have been Adam's first wife, she desired to be his equal and refused to obey him. She was cast out of Eden and became a demon of the night. She is the mother of the demoness, Lilim.",
     images: ["Lilith - Persona Art"],
-    affinities: { curse: "Drain", bless: "Weak" }
+    affinities: { curse: "Null", fire: "Weak", ice: "Repel", nuclear: "Repel" }
   },
   {
     id: "abaddon",
     name: "Abaddon",
     arcana: "Judgement",
-    originGame: "Velvet Stock",
-    description: "The ruler of the abyss and angel of destruction.",
+    originGame: "P3",
+    description: "The 'Destroyer' and 'Angel of the Bottomless Pit,' as described in ancient scriptures. He controls locusts and uses them to cause massive destruction to villages.",
     images: ["Abaddon - Persona Art"],
-    affinities: { curse: "Drain", bless: "Weak" }
+    affinities: { phys: "Drain", gun:"Drain", psy: "Weak", nuclear: "Weak", curse: "Drain" }
   },
   {
     id: "beelzebub",
     name: "Beelzebub",
     arcana: "Devil",
-    originGame: "P2",
+    originGame: "P1",
     description: "Demonic Lord of the Flies whose insect minions carry souls for him to control. He is mentioned in the Bible as a leader of evil spirits and is seen as a powerful demon.",
     images: ["Beelzebub - Persona Art"],
-    affinities: { curse: "Repel", bless: "Weak" }
+    affinities: { fire: "Drain", curse: "Repel", bless: "Weak" }
   },
   {
     id: "metatron",
     name: "Metatron",
-    arcana: "Judgement",
+    arcana: "Justice",
     originGame: "P3",
     description: "The greatest angel in Judeo-Christian legend. He is known as the Voice of God or the Angel of Contracts. Despite his duty to maintain the world's order, he shows no mercy towards humanity.",
     images: ["Metatron - Persona Art"],
-    affinities: { bless: "Repel", curse: "Weak" }
+    affinities: { wind: "Repel", psy: "Drain", nuclear: "Drain", elec: "Weak", curse: "Weak" }
   },
   {
     id: "surt",
     name: "Surt",
     arcana: "Magician",
-    originGame: "P3",
-    description: "Fire giant who destroys the world with flame in Ragnarok.",
+    originGame: "P2",
+    description: "A fire giant in Norse lore. He rules the fire realm, Muspelheim, and brandishes a burning sword. At Ragnarok, he will set the world ablaze.",
     images: ["Surt - Persona Art"],
-    affinities: { fire: "Drain", ice: "Weak" }
+    affinities: { gun: "Resist", fire: "Drain", elec: "Null", ice: "Weak", nuclear: "Resist" }
   },
   {
     id: "alice",
     name: "Alice",
     arcana: "Death",
     originGame: "P1",
-    description: "Mysterious girl spirit wielding deathly magical powers.",
+    description: "A mysterious blond girl. She is quite powerful, despite her looks. Some say she is the ghost of a girl who died a sad death. Others say she is a spirit born from someone's imagination.A mysterious blond girl. She is quite powerful, despite her looks. Some say she is the ghost of a girl who died a sad death. Others say she is a spirit born from someone's imagination.",
     images: ["Alice - Persona Art"],
-    affinities: { curse: "Repel", bless: "Weak" }
+    affinities: { psy: "Resist", nuclear: "Resist", curse: "Repel", bless: "Weak" }
   },
   {
     id: "nebiros",
     name: "Nebiros",
     arcana: "Devil",
     originGame: "P3",
-    description: "High necromancer marshal of the underworld.",
+    description: "The general of Hell. He keeps watch over other demons. One of Hell's greatest necromancers, he can control souls and corpses.",
     images: ["Nebiros - Persona Art"],
-    affinities: { curse: "Drain", bless: "Weak" }
+    affinities: { psy: "Resist", curse: "Repel", bless: "Weak" }
   },
   {
     id: "masakado",
     name: "Masakado",
     arcana: "Tower",
     originGame: "P3",
-    description: "Deified spirit of Taira no Masakado guardian of Tokyo.",
+    description: "Taira no Masakado, hero of the Heian Period. He claimed the title 'Shinno' (New Emperor) and rebelled against the government. He was killed, but it is said he became a demigod.",
     images: ["Masakado - Persona Art"],
-    affinities: { phys: "Repel", curse: "Repel", bless: "Weak" }
+    affinities: { phys: "Null", fire: "Null", elec: "Weak", curse: "Weak" }
   }
 ];

@@ -21,7 +21,7 @@ export default function Characters() {
   return (
     <div className="roster-page">
       <div className="roster-header">
-        <h1>Operatives & Confidants</h1>
+        <h1>Operatives</h1>
         
         <div className="filters">
           <div className="filter-group">
