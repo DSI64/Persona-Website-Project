@@ -721,7 +721,9 @@ export const characterDB = [
     voiceActors: "Hiroshi Arikawa / Hideyuki Tanaka (JP)",
     likes: "Human growth, hope, testing the potential of mankind", dislikes: "Nyarlathotep, despair, apathy",
     profile: "A benevolent cosmic entity who represents the collective unconscious of humanity and the source of the Persona power. Taking the form of a man wearing a golden butterfly mask, he often guides or tests humanity's chosen champions.",
-    images: ["/images/characters/philemon_1.webp"]
+    images: ["/images/characters/philemon_1.webp",
+        "/images/characters/philemon_2.webp"
+    ]
   }
 
 
