@@ -339,3 +339,23 @@
   color: #aaa;
   font-size: 0.9rem;
 }
+/* Non-clickable Image Box - Constrains the image properly */
+.persona-image-box {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  background-color: #111;
+  border: 2px solid var(--p5-white, #ffffff);
+  box-shadow: 4px 4px 0px var(--game-accent, #ff003c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* This prevents anything from spilling outside the box */
+}
+
+/* Forces the image to scale down and fit neatly inside the 140x140 square */
+.persona-artwork {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Keeps aspect ratio without stretching or overflowing */
+}

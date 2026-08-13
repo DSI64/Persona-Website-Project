@@ -8,10 +8,6 @@ export default function Compendium() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedGame, setSelectedGame] = useState("All");
   const [selectedPersona, setSelectedPersona] = useState(personaDB[0]);
-  
-  // Lightbox Modal States
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [lightboxIndex, setLightboxIndex] = useState(0);
 
   useEffect(() => {
     const query = searchParams.get("search");
@@ -22,27 +18,11 @@ export default function Compendium() {
     }
   }, [searchParams]);
 
-  useEffect(() => {
-    setLightboxIndex(0);
-  }, [selectedPersona]);
-
   const filteredPersonas = personaDB.filter(p => {
     const matchesName = p.name.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesGame = selectedGame === "All" || p.originGame === selectedGame;
     return matchesName && matchesGame;
   });
-
-  const personaImages = selectedPersona?.images || [selectedPersona?.name];
-
-  const nextLightboxImage = (e) => {
-    e.stopPropagation();
-    setLightboxIndex((prev) => (prev + 1) % personaImages.length);
-  };
-
-  const prevLightboxImage = (e) => {
-    e.stopPropagation();
-    setLightboxIndex((prev) => (prev - 1 + personaImages.length) % personaImages.length);
-  };
 
   // Helper function to map element keys to display labels
   const formatElementLabel = (elem) => {
@@ -50,6 +30,16 @@ export default function Compendium() {
     if (key === 'curse' || key === 'dark') return 'CURSE / DARK';
     if (key === 'bless' || key === 'light') return 'BLESS / LIGHT';
     return elem.toUpperCase();
+  };
+
+  // Helper function to handle fallback image extensions if .png fails
+  const handleImageError = (e, persona) => {
+    const currentSrc = e.target.src;
+    if (currentSrc.endsWith('.png')) {
+      e.target.src = `/images/Persona Artwork/${persona.originGame}/${persona.id}.webp`;
+    } else if (currentSrc.endsWith('.webp')) {
+      e.target.src = `/images/Persona Artwork/${persona.originGame}/${persona.id}.jpg`;
+    }
   };
 
   // Filter out neutral ('-') affinities
@@ -109,15 +99,15 @@ export default function Compendium() {
         {/* Detailed View - Dynamically themed by Persona's Origin Game */}
         {selectedPersona && (
           <div className="compendium-detail" data-game={selectedPersona.originGame}>
-            {/* Clickable Persona Header Image */}
+            {/* Persona Header Image (Non-clickable container) */}
             <div className="persona-header-container">
-              <div 
-                className="persona-image-box clickable"
-                onClick={() => setIsModalOpen(true)}
-              >
-                <div className="persona-image-placeholder">
-                  <span>{personaImages[0]}</span>
-                </div>
+              <div className="persona-image-box">
+                <img 
+                  src={`/images/Persona Artwork/${selectedPersona.originGame}/${selectedPersona.id}.png`} 
+                  alt={selectedPersona.name} 
+                  onError={(e) => handleImageError(e, selectedPersona)}
+                  className="persona-artwork"
+                />
               </div>
 
               <div className="persona-header-text">
@@ -154,33 +144,6 @@ export default function Compendium() {
           </div>
         )}
       </div>
-
-      {/* FULL-SCREEN ARTWORK LIGHTBOX MODAL */}
-      {isModalOpen && selectedPersona && (
-        <div className="lightbox-overlay" onClick={() => setIsModalOpen(false)}>
-          <div className="lightbox-content" data-game={selectedPersona.originGame} onClick={(e) => e.stopPropagation()}>
-            <button className="lightbox-close-btn" onClick={() => setIsModalOpen(false)}>✕</button>
-
-            {personaImages.length > 1 && (
-              <button className="lightbox-arrow left" onClick={prevLightboxImage}>❮</button>
-            )}
-
-            <div className="lightbox-display-area">
-              <div className="lightbox-image-box">
-                <span>{personaImages[lightboxIndex]}</span>
-              </div>
-              <div className="lightbox-caption">
-                <h4>{selectedPersona.name}</h4>
-                <p>Artwork Variant {lightboxIndex + 1} of {personaImages.length}</p>
-              </div>
-            </div>
-
-            {personaImages.length > 1 && (
-              <button className="lightbox-arrow right" onClick={nextLightboxImage}>❯</button>
-            )}
-          </div>
-        </div>
-      )}
     </div>
   );
 }

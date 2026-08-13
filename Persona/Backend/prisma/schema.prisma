@@ -54,11 +54,11 @@ model Option {
 model Persona {
   id           String       @id @default(uuid())
   name         String       @unique
-  game         String
   arcana       String
-  level        Int
-  stats        Json         
-  skills       Json         
+  originGame   String
+  images       String[] // Stores array of image titles/URLs
+  desciption   String
+  affinities   String
 }
 
 model Track {

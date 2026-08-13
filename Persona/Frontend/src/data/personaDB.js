@@ -353,7 +353,7 @@ export const personaDB = [
     affinities: { wind: "Null", elec: "Weak" }
   },
   {
-    id: "hermes-p3",
+    id: "hermes",
     name: "Hermes (P3)",
     arcana: "Magician",
     originGame: "P3",
@@ -563,7 +563,7 @@ export const personaDB = [
   },
   {
     id: "takehaya-susano-o",
-    name: "Takehaya Susano-o (P4G)",
+    name: "Takehaya Susano-o",
     arcana: "Magician",
     originGame: "P4",
     description: "The Japanese god of storms and the younger brother of Amaterasu. After being banished from heaven, he defeated the eight-headed serpent Yamata-no-Orochi and obtained the sacred sword Kusanagi.",
@@ -590,7 +590,7 @@ export const personaDB = [
   },
   {
     id: "haraedo-no-okami",
-    name: "Haraedo-no-Okami (P4G)",
+    name: "Haraedo-no-Okami",
     arcana: "Chariot",
     originGame: "P4",
     description: "A divine figure representing purification and the removal of impurities. Associated with the cleansing of spiritual pollution and the restoration of purity in Japanese Shinto tradition.",
@@ -634,22 +634,22 @@ export const personaDB = [
     affinities: { elec: "Resist", wind: "Weak" }
   },
   {
-    id: "rokuten-maou",
-    name: "Rokuten Maou",
+    id: "rokuten-maoh",
+    name: "Rokuten Maoh",
     arcana: "Emperor",
     originGame: "P4",
     description: "The demon king of the Sixth Heaven in Buddhist tradition. A powerful tempter who seeks to obstruct those pursuing enlightenment and represents worldly desire and temptation.",
-    images: ["Rokuten Maou - P4 Art"],
+    images: ["Rokuten Maoh - P4 Art"],
     affinities: { elec: "Null",  wind: "Weak" }
   },
   {
-    id: "dairoku-tenmaou",
-    name: "Dairoku Tenmaou",
+    id: "takeji-zaiten",
+    name: "Takeji Zaiten",
     arcana: "Emperor",
     originGame: "P4",
     description: "A Buddhist deity associated with warriors, strength, and protection. Revered as a powerful guardian who defends the righteous and overcomes evil.",
-    images: ["Dairoku Tenmaou - P4G Art"],
-    affinities: { elec: "Drain", phys: "Null", wind: "Weak" }
+    images: [" Takeji Zaiten - P4G Art"],
+    affinities: { elec: "Drain", phys: "Resist", wind: "Weak" }
   },
   {
     id: "himiko",
@@ -917,7 +917,7 @@ export const personaDB = [
   },
   {
     id: "william",
-    name: "William (P5R)",
+    name: "William",
     arcana: "Chariot",
     originGame: "P5",
     description: "The other name of Captain Kidd, world-renowned pirate. For years after his death, songs and legends of his life inspired many to chase rumors of his buried treasure across the seas.",
@@ -944,7 +944,7 @@ export const personaDB = [
   },
   {
     id: "celestine",
-    name: "Célestine (P5R)",
+    name: "Célestine",
     arcana: "Lovers",
     originGame: "P5",
     description: "A beautiful actress who performed as Carmen in the opera named for the role. So tempestuous and outspoken was she that it's said the main role was rewritten to better suit her.",
@@ -998,7 +998,7 @@ export const personaDB = [
   },
   {
     id: "al-azif",
-    name: "Al Azif (P5R)",
+    name: "Al Azif",
     arcana: "Hermit",
     originGame: "P5",
     description: "The original name of the Necronomicon, a tome of the Cthulhu Mythos's mysteries. Said to have been authored by Abdul Alhazred, a poet and devotee of Cthulhu known as the 'mad Arab.'",
@@ -1025,7 +1025,7 @@ export const personaDB = [
   },
   {
     id: "gorokichi",
-    name: "Gorokichi (P5R)",
+    name: "Gorokichi",
     arcana: "Emperor",
     originGame: "P5",
     description: "Childhood nickname of Goemon Ishikawa. During his youth, he was raised among the Iga-ryu ninjas before he set off on his own to become a rogue ninja.",
