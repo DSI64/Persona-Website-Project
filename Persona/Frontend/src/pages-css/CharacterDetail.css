@@ -348,6 +348,11 @@ button.carousel-arrow:not(:last-child) {
 .detail-page[data-game="P3"] .detail-arcana-tag { background-color: #00a8ff; }
 .detail-page[data-game="P3"] .detail-bio-block h3 { border-left-color: #00a8ff; }
 
+/* Persona 3 Portable (Pink) */
+.detail-page[data-game="P3P"] .detail-image-carousel-box { box-shadow: 8px 8px 0px #ff6699; }
+.detail-page[data-game="P3P"] .detail-arcana-tag { background-color: #ff6699; }
+.detail-page[data-game="P3P"] .detail-bio-block h3 { border-left-color: #ff6699; }
+
 /* Persona 4 (Gold) */
 .detail-page[data-game="P4"] .detail-image-carousel-box { box-shadow: 8px 8px 0px #ffe600; }
 .detail-page[data-game="P4"] .detail-arcana-tag { background-color: #ffe600; color: var(--p5-black); }

@@ -1246,7 +1246,7 @@ export const personaDB = [
     id: "slime",
     name: "Slime",
     arcana: "Chariot",
-    originGame: "Velvet Stock",
+    originGame: "P1",
     description: "A gooey creature formed from low-level shadow energy.",
     images: ["Slime - Persona Art"],
     affinities: { phys: "Resist", fire: "Weak" }
@@ -1255,14 +1255,14 @@ export const personaDB = [
     id: "jack-o-lantern",
     name: "Jack-o'-Lantern",
     arcana: "Magician",
-    originGame: "Velvet Stock",
+    originGame: "P1",
     description: "Carved pumpkin spirit associated with fire and trickery.",
     images: ["Jack-o'-Lantern - Persona Art"],
     affinities: { fire: "Drain", ice: "Weak" }
   },
   {
     id: "agathion",
-    name: "Agathion",
+    name: "P1",
     arcana: "Chariot",
     originGame: "Velvet Stock",
     description: "A familiar spirit trapped inside a bottle or ring.",
@@ -1273,7 +1273,7 @@ export const personaDB = [
     id: "mandrake",
     name: "Mandrake",
     arcana: "Hermit",
-    originGame: "Velvet Stock",
+    originGame: "P3",
     description: "A mythical root plant whose scream is deadly.",
     images: ["Mandrake - Persona Art"],
     affinities: { elec: "Resist", fire: "Weak" }
@@ -1282,7 +1282,7 @@ export const personaDB = [
     id: "shiisaa",
     name: "Shiisaa",
     arcana: "Hierophant",
-    originGame: "Velvet Stock",
+    originGame: "P3",
     description: "Okinawan lion-dog statue that wards off evil spirits.",
     images: ["Shiisaa - Persona Art"],
     affinities: { phys: "Resist", curse: "Weak" }
@@ -1291,7 +1291,7 @@ export const personaDB = [
     id: "bugbear",
     name: "Bugbear",
     arcana: "Priority",
-    originGame: "Velvet Stock",
+    originGame: "P5",
     description: "A legendary goblin-like creature used to scare children.",
     images: ["Bugbear - Persona Art"],
     affinities: { phys: "Resist", fire: "Weak" }
@@ -1300,7 +1300,7 @@ export const personaDB = [
     id: "jack-frost",
     name: "Jack Frost",
     arcana: "Magician",
-    originGame: "Velvet Stock",
+    originGame: "P1",
     description: "The winter frost spirit. Hee-ho!",
     images: ["Jack Frost - Persona Art"],
     affinities: { ice: "Drain", fire: "Weak" }
@@ -1309,7 +1309,7 @@ export const personaDB = [
     id: "sudama",
     name: "Sudama",
     arcana: "Hermit",
-    originGame: "Velvet Stock",
+    originGame: "P5",
     description: "Japanese mountain spirit inhabiting rocks and trees.",
     images: ["Sudama - Persona Art"],
     affinities: { wind: "Resist", fire: "Weak" }
@@ -1552,7 +1552,7 @@ export const personaDB = [
     id: "loki",
     name: "Loki",
     arcana: "Fool",
-    originGame: "Velvet Stock",
+    originGame: "P2",
     description: "Norse trickster god.",
     images: ["Loki - Persona Art"],
     affinities: { ice: "Drain", bless: "Weak" }
@@ -1651,8 +1651,8 @@ export const personaDB = [
     id: "beelzebub",
     name: "Beelzebub",
     arcana: "Devil",
-    originGame: "Velvet Stock",
-    description: "Lord of the Flies and high prince of demons.",
+    originGame: "P2",
+    description: "Demonic Lord of the Flies whose insect minions carry souls for him to control. He is mentioned in the Bible as a leader of evil spirits and is seen as a powerful demon.",
     images: ["Beelzebub - Persona Art"],
     affinities: { curse: "Repel", bless: "Weak" }
   },
@@ -1660,8 +1660,8 @@ export const personaDB = [
     id: "metatron",
     name: "Metatron",
     arcana: "Judgement",
-    originGame: "Velvet Stock",
-    description: "The voice of God and king of angels.",
+    originGame: "P3",
+    description: "The greatest angel in Judeo-Christian legend. He is known as the Voice of God or the Angel of Contracts. Despite his duty to maintain the world's order, he shows no mercy towards humanity.",
     images: ["Metatron - Persona Art"],
     affinities: { bless: "Repel", curse: "Weak" }
   },
@@ -1669,7 +1669,7 @@ export const personaDB = [
     id: "surt",
     name: "Surt",
     arcana: "Magician",
-    originGame: "Velvet Stock",
+    originGame: "P3",
     description: "Fire giant who destroys the world with flame in Ragnarok.",
     images: ["Surt - Persona Art"],
     affinities: { fire: "Drain", ice: "Weak" }
@@ -1678,7 +1678,7 @@ export const personaDB = [
     id: "alice",
     name: "Alice",
     arcana: "Death",
-    originGame: "Velvet Stock",
+    originGame: "P1",
     description: "Mysterious girl spirit wielding deathly magical powers.",
     images: ["Alice - Persona Art"],
     affinities: { curse: "Repel", bless: "Weak" }
@@ -1687,7 +1687,7 @@ export const personaDB = [
     id: "nebiros",
     name: "Nebiros",
     arcana: "Devil",
-    originGame: "Velvet Stock",
+    originGame: "P3",
     description: "High necromancer marshal of the underworld.",
     images: ["Nebiros - Persona Art"],
     affinities: { curse: "Drain", bless: "Weak" }
@@ -1696,7 +1696,7 @@ export const personaDB = [
     id: "masakado",
     name: "Masakado",
     arcana: "Tower",
-    originGame: "Velvet Stock",
+    originGame: "P3",
     description: "Deified spirit of Taira no Masakado guardian of Tokyo.",
     images: ["Masakado - Persona Art"],
     affinities: { phys: "Repel", curse: "Repel", bless: "Weak" }

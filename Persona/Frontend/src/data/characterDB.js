@@ -280,8 +280,17 @@ export const characterDB = [
         "/images/characters/fuuka_3.webp"
     ]
   },
+  { 
+    id: 312, name: "Metis", game: "P3", arcana: "Aeon", image: "Metis",
+    title: "The Antithesis of Shadows", birthday: "Unknown (Manufactured)", appearances: "Persona 3 FES (The Answer)",
+    personas: "Psyche",
+    voiceActors: "Chiaki Sawashiro (JP) / Hedy Burress (EN)",
+    likes: "Aigis, protecting her family, sweet treats", dislikes: "Shadows, anything threatening Aigis",
+    profile: "An android entity who emerges during the events of 'The Answer' in Persona 3 FES. Claiming to be Aigis's sister, she possesses the unique ability to shift her mechanical form into a combat-ready state and harbors a fierce, protective devotion to Aigis.",
+    images: ["/images/characters/metis_1.webp"]
+  },
     { 
-    id: 312, name: "Kotone Shiomi", game: "P3P", arcana: "Fool", image: "P3 Femc",
+    id: 313, name: "Kotone Shiomi", game: "P3P", arcana: "Fool", image: "P3 Femc",
     title: "Female Protagonist", birthday: "Unknown (1992)", appearances: "Persona 3 Portable, Persona Q2",
     personas: "Orpheus, Thanatos, Messiah",
     voiceActors: "Laura Bailey (EN) / Marina Inoue (JP)",
