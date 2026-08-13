@@ -342,8 +342,8 @@
 /* Non-clickable Image Box - Constrains the image properly */
 .persona-image-box {
   flex-shrink: 0;
-  width: 140px;
-  height: 140px;
+  width: 200px; /* Increased from 140px */
+  height: 200px; /* Increased from 140px */
   background-color: #111;
   border: 2px solid var(--p5-white, #ffffff);
   box-shadow: 4px 4px 0px var(--game-accent, #ff003c);

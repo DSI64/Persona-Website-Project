@@ -262,3 +262,22 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
   }
 }
+
+/* Ensure the red image wrapper forces boundaries */
+.daily-char-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Force the image to stay constrained inside the red section block */
+.daily-char-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}

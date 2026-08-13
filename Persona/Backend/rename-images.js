@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-
+//Renames Image files
 // Target the artwork directory directly relative to this script's location
 const baseDirectory = path.join(__dirname, '../Frontend/public/images/Persona Artwork');
 const folders = ['P1', 'P2', 'P3', 'P4', 'P5', 'Spinoffs'];

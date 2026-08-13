@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { characterDB } from './Characters';
+import { characterDB } from '../data/characterDB'; // Adjust path if necessary
 import "../pages-css/CharacterDetail.css";
 
 export default function CharacterDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
   
-  const character = characterDB.find(c => c.id === parseInt(id));
+  // Safely find character matching either number or string ID types
+  const character = characterDB.find(c => c.id.toString() === id);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   if (!character) {
@@ -46,27 +47,23 @@ export default function CharacterDetail() {
                 alt={`${character.name} view ${currentImageIndex + 1}`} 
                 className="carousel-img-element"
               />
-              <span className="carousel-counter">{currentImageIndex + 1} / {character.images.length}</span>
             </div>
             <button className="carousel-arrow right" onClick={nextImage}>❯</button>
+          </div>
+          <div className="carousel-counter" style={{ textAlign: 'center' }}>
+            {currentImageIndex + 1} / {character.images.length}
           </div>
         </div>
 
         {/* RIGHT COLUMN: Character Profile & Details */}
         <div className="detail-right-column">
-          {/* Header Info */}
           <div className="ranks-header-wrap">
             <span className="detail-arcana-tag">{character.arcana} Arcana</span>
             <h1 className="detail-name">{character.name}</h1>
             <p className="detail-subtitle">{character.title}</p>
           </div>
 
-          {/* Character Profile Container */}
           <div className="detail-bio-box">
-            <div className="bio-header">
-              <h2>Character Profile</h2>
-            </div>
-            
             <ul className="detail-meta-list">
               <li><strong>Arcana:</strong> {character.arcana}</li>
               <li><strong>Birthday:</strong> {character.birthday}</li>
@@ -94,10 +91,8 @@ export default function CharacterDetail() {
               {character.dislikes && <li><strong>Dislikes:</strong> {character.dislikes}</li>}
             </ul>
 
-            {/* Dashed Separator below Dislikes */}
             <hr className="detail-divider" />
 
-            {/* Background Narrative Section */}
             <div className="detail-bio-block">
               <h3>Background</h3>
               <p>{character.profile}</p>

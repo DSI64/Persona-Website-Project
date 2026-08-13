@@ -23,9 +23,12 @@ export default function Home() {
       {/* EDGE-TO-EDGE DAILY CHARACTER BANNER */}
       <section className="daily-character-banner">
         <div className="daily-char-image">
-          <div className="image-placeholder">
-            <span>Character Portrait</span>
-          </div>
+          {/* Replaced placeholder div with an img tag */}
+          <img 
+            src="/images/characters/makoto_1.webp" 
+            alt="Makoto Yuki" 
+            className="daily-char-img"
+          />
         </div>
         
         <div className="daily-char-info">
@@ -43,7 +46,7 @@ export default function Home() {
             The transfer student who awakens to the power of the Wild Card. He leads S.E.E.S. in their mission to eliminate the Shadows and explore Tartarus during the Dark Hour.
           </p>
           
-          <Link to="/characters/301" className="primary-action char-btn">View Full Profile</Link>
+          <Link to="/characters/300" className="primary-action char-btn">View Full Profile</Link>
         </div>
       </section>
 
