@@ -16,17 +16,23 @@ export const socialLinkDB = [
     requirements: "Automatic on 4/22",
     ranks: [
       { rank: 1, choices: [{ prompt: "Talk to Kenji after class", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Can you, like just waltz on into Takeba-san's room and stuff?", bestChoice: "No way. (+2)", 
-        prompt: "I'm more into older women. How 'bout you?", bestChoice: "I like them all! (+2)" }] },
-      { rank: 3, choices: [{ prompt: "Maaan... I'm so sick of this, dude.", bestChoice: "What, of life? (+3)",
-        prompt: "Okay, that settles it, <protagonist>. I'm gonna get myself a girlfriend! Right now!", bestChoice: "Good luck! (+2)"
-       }] },
-      { rank: 4, choices: [{ prompt: "I'm planning to ask Ms. Kanou out!", bestChoice: "Good luck! (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I'm planning our future together.", bestChoice: "Are you serious? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I bought a ring!", bestChoice: "That's a bit too much. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I think she's moving away...", bestChoice: "Let's go talk to her. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "She's getting married to someone else...", bestChoice: "Look for another one. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "I'm never gonna give up on love!", bestChoice: "That's the spirit! (+3)" }] },
+      { rank: 2, choices: [
+        {prompt: "Can you, like just waltz on into Takeba-san's room and stuff?", bestChoice: "No way. (+2)"}, 
+        {prompt: "I'm more into older women. How 'bout you?", bestChoice: "I like them all! (+2)" }] },
+      { rank: 3, choices: [
+        {prompt: "Maaan... I'm so sick of this, dude.", bestChoice: "What, of life? (+3)"},
+        {prompt: "Okay, that settles it. I'm gonna get myself a girlfriend! Right now!", bestChoice: "Good luck! (+2)"}] },
+      { rank: 4, choices: [{ prompt: "I'm planning to ask Ms. Kanou out! Like, right now!", bestChoice: "Good luck! (+3)" }] },
+      { rank: 5, choices: [{ prompt: "Yeah, good-looking people just flock together, y'know? It's like a law of attraction.", bestChoice: "Okay... (+3)" }] },
+      { rank: 6, choices: [{ prompt: "I mean, getting into college is pretty important, don't ya think? You think about the future too, right?", bestChoice: "I've got plans already. (+3)" }] },
+      { rank: 7, choices: [
+        {prompt: "I can't eat...", bestChoice: "What happened? (+3)" }, 
+        {prompt: "I saw a magazine in Emiri's room. Guess what it was called.", bestChoice: "Bride-to-Be? (+2)"}, 
+        {prompt: "You think that's a good plan?", bestChoice: "Congrats!"}] },
+      { rank: 8, choices: [
+        {prompt: "H-Hey, man. Sorry to make you come here. I, um... Ah, damn it...", bestChoice: "Look for another one. (+3)" }, 
+        {prompt: "And now she's being transferred to a school in Kyushu. What do I do!?", bestChoice: "You two should talk it out. (+2)"} ] },
+      { rank: 9, choices: [{ prompt: "I was so excited about going with her that I... I...", bestChoice: "Let me handle this! (+3)" }] },
       { rank: 10, choices: [{ prompt: "Thanks for sticking by me, man.", bestChoice: "Max Rank Achieved." }] }
     ]
   },
@@ -88,14 +94,31 @@ export const socialLinkDB = [
     requirements: "Join Student Council on 4/27+",
     ranks: [
       { rank: 1, choices: [{ prompt: "Join Student Council.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "They waste time complaining.", bestChoice: "It's a waste of time. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "I won't back down on the cigarette investigation.", bestChoice: "They're impolerable. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "People hate me for doing my job.", bestChoice: "You're hard working. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Someone left an anonymous complaint.", bestChoice: "They're cowards. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I might have gone too far.", bestChoice: "Stay strong. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "The offender confessed.", bestChoice: "It's good you waited. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I was selfish in my pursuit.", bestChoice: "Don't blame yourself. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "I need to apologize to everyone.", bestChoice: "You've changed. (+3)" }] },
+      { rank: 2, choices: [
+      { prompt: "Some students feel the school uniform should be abolished...", bestChoice: "Sounds like nonsense. (+2)" }
+    ] },
+    { rank: 3, choices: [
+      { prompt: "What!? You can't decide something like that without talking to the president first.", bestChoice: "No need to fight. (+2)" }
+    ] },
+    { rank: 4, choices: [
+      { prompt: "What is it? Did you need something from me?", bestChoice: "Looks like you're hard at work. (+2)" }
+    ] },
+    { rank: 5, choices: [
+      { prompt: "…Bunch of Neanderthals. They're the worst.", bestChoice: "They're the worst. (+2)" }
+    ] },
+    { rank: 6, choices: [
+      { prompt: "As you can see, the meeting's over, so you can leave if you want.", bestChoice: "But I just got here… (+2)" },
+      { prompt: "Maybe I should stick around.", bestChoice: "Maybe I should stick around. (+2)" }
+    ] },
+    { rank: 7, choices: [
+      { prompt: "…About the smoker's punishment, that is.", bestChoice: "It seems too harsh. (+2)" }
+    ] },
+    { rank: 8, choices: [
+      { prompt: "…So, you heard all that.", bestChoice: "It wasn't me. (+2)" }
+    ] },
+    { rank: 9, choices: [
+      { prompt: "I rambled on about rules and fairness, but all I really proved was that I was desperate for power.", bestChoice: "Don't blame yourself. (+2)" }
+    ] },
       { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Odin." }] }
     ]
   },
