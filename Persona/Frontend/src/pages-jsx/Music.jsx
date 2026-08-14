@@ -225,7 +225,7 @@ export default function Music() {
                       className={`category-btn ${isSelected ? 'active-cat' : ''}`}
                       onClick={() => handleCategoryClick(cat)}
                     >
-                      <span>{cat === "All" ? "CD0 - All Records" : `CD - ${cat}`}</span>
+                      <span>{cat === "All" ? "CD - All Records" : `CD - ${cat}`}</span>
                       <span className="dropdown-arrow">{isExpanded ? "▼" : "▶"}</span>
                     </button>
 

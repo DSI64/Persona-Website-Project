@@ -70,8 +70,40 @@ export const TRACK_DATA = [
   // ============================================================
   // SPINOFFS / OTHER
   // ============================================================
-  { id: 112, title: "Mass Destruction (Q Mix)", game: "Persona Q", category: "Spinoffs", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "z5Kui2zh3eQ" },
-  { id: 113, title: "Velvet Room Anthem", game: "Series Mix", category: "Other", artist: "Shoji Meguro",  themeClass: "p5-theme", embedId: "z5Kui2zh3eQ" }
+  { id: 112, title: "Light the Fire Up in the Night (DARK HOUR)", game: "Persona Q", category: "Spinoffs", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "tCuh78VTM4g" },
+  { id: 113, title: "Light the Fire Up in the Night (MAYONAKA)", game: "Persona Q", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "yNFnrhdyHKY" },  
+  { id: 114, title: "Maze of Life", game: "Persona Q", category: "Spinoffs", artist: "Yumi Kawamura / Shihoko Hirata", themeClass: "p4-theme", embedId: "_2aH4fTeAjM" },
+  { id: 115, title: "Road Less Taken", game: "Persona Q2", category: "Spinoffs", artist: "Yumi Kawamura / Shihoko Hirata / Lyn / Lotus Juice", themeClass: "p5-theme", embedId: "lGS9flfg8Vg" },
+  { id: 116, title: "Dance!", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "ddXM6HX1PgU" },
+  { id: 117, title: "GROOVY", game: "Persona 5: Dancing in Starlight", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "W1vJgSsCXk4" },
+  { id: 118, title: "Our Moment", game: "Persona 3: Dancing in Moonlight", category: "Spinoffs", artist: "Yumi Kawamura / Lotus Juice", themeClass: "p3-theme", embedId: "T3TXt4q54kA" },
+  { id: 119, title: "You Are Stronger", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "wV16X8cAS50" },
+  { id: 120, title: "Daredevil", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "yrraZ6-4lig" },
+  { id: 121, title: "Break Out Of...", game: "Persona 4 Arena Ultimax", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "_e2XYzBFzxU" },
+  { id: 122, title: "Revolution in Your Heart", game: "Persona 5 Tactica", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "jniBKxr2PRE" },
+
+  // ============================================================
+  // ANIME, MOVIES & 20TH ANNIVERSARY (OTHER)
+  // ============================================================
+  { id: 123, title: "Breakin' through", game: "Persona -trinity soul-", category: "Other", artist: "Shuhei Kita", themeClass: "p3-theme", embedId: "gd3YTSJt2ec" },
+  { id: 124, title: "Burning Men's Soul", game: "Persona -trinity soul-", category: "Other", artist: "Taku Iwasaki / Lotus Juice",  themeClass: "p3-theme", embedId: "6plVf2T6AOo" },
+  { id: 125, title: "Reverse the Destiny", game: "Persona -trinity soul-", category: "Other", artist: "Taku Iwasaki",  themeClass: "p3-theme", embedId: "yjKor43tf6w" },
+  { id: 126, title: "More Than One Heart", game: "Persona 3 The Movie #1", category: "Other", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "KLXWQa5_ydY" },
+  { id: 127, title: "Fate is In Our Hands", game: "Persona 3 The Movie #2", category: "Other", artist: "Lotus Juice", themeClass: "p3-theme", embedId: "j6i6_LOvHVw" },
+  { id: 128, title: "Light in Starless Sky", game: "Persona 3 The Movie #3", category: "Other", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "9kJ03vfKb8w" },
+  { id: 129, title: "My Testimony", game: "Persona 3 The Movie #4", category: "Other", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "lPhG0_VlyA" },
+  { id: 130, title: "sky's the limit", game: "Persona 4 The Animation", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "O0cI9N5rfrg" },
+  { id: 131, title: "Beauty of Destiny", game: "Persona 4 The Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "8qZm-tAIjgk" },
+  { id: 132, title: "Ying Yang", game: "Persona 4 Golden Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "OIsrm7ZFH1U" },
+
+  // --- 20th Anniversary Playlist Tracks ---
+  { id: 133, title: "Legends Awaken", game: "Persona 20th Anniversary", category: "Other", artist: "ATLUS Sound Team", themeClass: "p1-theme", embedId: "MtXUIRTc5QY" },
+  { id: 134, title: "Maya's Theme", game: "Persona 20th Anniversary", category: "Other", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "ZfX4QOgWVEU" },
+  { id: 135, title: "Mass Destruction", game: "Persona 20th Anniversary", category: "Other", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "NTncpOFWvmg" },
+  { id: 136, title: "Your Affection", game: "Persona 20th Anniversary", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "ENPG4N-y_JU" },
+  { id: 137, title: "Wake Up, Get Up, Get Out There", game: "Persona 20th Anniversary", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "1vKCYy2NIkE" }
+
 ];
+
 
 export const CATEGORIES = ["All", "Persona 1", "Persona 2", "Persona 3", "Persona 4", "Persona 5", "Spinoffs", "Other"];
