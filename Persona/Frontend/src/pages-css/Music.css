@@ -174,40 +174,36 @@
   align-items: center;
 }
 
-.vinyl-disc {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #252525 0%, #0a0a0a 75%);
+/* --- BOX ART STYLES --- */
+.player-boxart-area {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.game-box-container {
+  width: 220px;
+  height: 220px;
+  border-radius: 24px; /* Matches the rounded square look in the Mario Kart 7 UI */
+  background-color: #252525;
   box-shadow: 0 8px 20px rgba(0,0,0,0.8), inset 0 0 10px rgba(255,255,255,0.15);
   border: 3px solid #333;
+  overflow: hidden;
   position: relative;
 }
 
-.vinyl-grooves {
-  position: absolute;
-  width: 88%;
-  height: 88%;
-  border-radius: 50%;
-  border: 1px dashed rgba(255,255,255,0.12);
-  box-shadow: inset 0 0 0 12px rgba(0,0,0,0.3), inset 0 0 0 24px rgba(255,255,255,0.03);
-  pointer-events: none;
+.game-box-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* Centers the image perfectly */
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.vinyl-center-label {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--p5-black);
-  position: relative;
-  box-shadow: inset 0 0 8px rgba(0,0,0,0.6);
+/* Optional: Slight zoom effect to give the box art a bit of interactivity */
+.game-box-container:hover .game-box-image {
+  transform: scale(1.05);
 }
 
 .p1-theme-label { background-color: #4f46e5; }
@@ -225,15 +221,6 @@
   text-transform: uppercase;
   text-align: center;
   padding: 0 4px;
-}
-
-.vinyl-center-hole {
-  width: 12px;
-  height: 12px;
-  background-color: var(--p5-black);
-  border-radius: 50%;
-  position: absolute;
-  box-shadow: inset 0 2px 4px rgba(255,255,255,0.3);
 }
 
 @keyframes spin-disc {

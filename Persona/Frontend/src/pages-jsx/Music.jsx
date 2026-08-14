@@ -30,6 +30,8 @@ export default function Music() {
 
   const playerRef = useRef(null);
   const progressBarRef = useRef(null);
+  const [initialVideoId] = useState(TRACK_DATA[0].embedId);
+  const isFirstRun = useRef(true);
   const currentTrack = TRACK_DATA[currentIndex];
 
   // Refs to guarantee fresh state values inside the YouTube event handlers
@@ -74,6 +76,21 @@ export default function Music() {
     }
     return () => clearInterval(interval);
   }, [isPlaying]);
+
+  useEffect(() => {
+    if (isFirstRun.current) {
+      isFirstRun.current = false;
+      return;
+    }
+    
+    if (playerRef.current) {
+      if (isPlaying) {
+        playerRef.current.loadVideoById(currentTrack.embedId);
+      } else {
+        playerRef.current.cueVideoById(currentTrack.embedId);
+      }
+    }
+  }, [currentTrack.embedId]);
 
   const handlePlayPause = () => setIsPlaying(prev => !prev);
 
@@ -185,7 +202,7 @@ export default function Music() {
 
       <div style={{ position: 'absolute', top: '-9999px', left: '-9999px' }}>
         <YouTube
-          videoId={currentTrack.embedId}
+          videoId={initialVideoId}
           opts={ytOptions}
           onReady={onPlayerReady}
           onStateChange={onPlayerStateChange}
@@ -248,16 +265,18 @@ export default function Music() {
         <main className="music-main-pane">
           <div className="music-player-card">
             
-            {/* DISC AREA */}
-            <div className="player-disc-area">
-              <div className={`vinyl-disc ${isPlaying ? 'spinning' : ''}`}>
-                <div className="vinyl-grooves"></div>
-                <div className={`vinyl-center-label ${currentTrack.themeClass}-label`}>
-                  <span className="label-game-text">{currentTrack.game}</span>
-                  <div className="vinyl-center-hole"></div>
-                </div>
-              </div>
-            </div>
+            {/* BOX ART AREA */}
+<div className="player-boxart-area">
+  <div className="game-box-container">
+    <img 
+      /* Looks for the boxArt property, falls back to a placeholder if it's missing */
+      src={currentTrack.boxArt || '/images/default-placeholder.png'} 
+      alt={`${currentTrack.game} Box Art`} 
+      className="game-box-image" 
+    />
+  </div>
+</div>
+
 
             <div className="player-controls-area">
               <div className="track-meta-header">
