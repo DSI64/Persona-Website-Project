@@ -14,27 +14,6 @@ export const socialLinkDB = [
     bio: "A fellow student in Class 2-F who considers himself a romantic, specifically pursuing older women.",
     availability: "Tue, Thu, Fri (Classroom 2-F)",
     requirements: "Automatic on 4/22",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Kenji after class", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [
-        {prompt: "Can you, like just waltz on into Takeba-san's room and stuff?", bestChoice: "No way. (+2)"}, 
-        {prompt: "I'm more into older women. How 'bout you?", bestChoice: "I like them all! (+2)" }] },
-      { rank: 3, choices: [
-        {prompt: "Maaan... I'm so sick of this, dude.", bestChoice: "What, of life? (+3)"},
-        {prompt: "Okay, that settles it. I'm gonna get myself a girlfriend! Right now!", bestChoice: "Good luck! (+2)"}] },
-      { rank: 4, choices: [{ prompt: "I'm planning to ask Ms. Kanou out! Like, right now!", bestChoice: "Good luck! (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Yeah, good-looking people just flock together, y'know? It's like a law of attraction.", bestChoice: "Okay... (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I mean, getting into college is pretty important, don't ya think? You think about the future too, right?", bestChoice: "I've got plans already. (+3)" }] },
-      { rank: 7, choices: [
-        {prompt: "I can't eat...", bestChoice: "What happened? (+3)" }, 
-        {prompt: "I saw a magazine in Emiri's room. Guess what it was called.", bestChoice: "Bride-to-Be? (+2)"}, 
-        {prompt: "You think that's a good plan?", bestChoice: "Congrats!"}] },
-      { rank: 8, choices: [
-        {prompt: "H-Hey, man. Sorry to make you come here. I, um... Ah, damn it...", bestChoice: "Look for another one. (+3)" }, 
-        {prompt: "And now she's being transferred to a school in Kyushu. What do I do!?", bestChoice: "You two should talk it out. (+2)"} ] },
-      { rank: 9, choices: [{ prompt: "I was so excited about going with her that I... I...", bestChoice: "Let me handle this! (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Thanks for sticking by me, man.", bestChoice: "Max Rank Achieved." }] }
-    ]
   },
   {
     id: "p3-fuuka",
@@ -46,18 +25,6 @@ export const socialLinkDB = [
     bio: "The calm and perceptive tactical officer of S.E.E.S. with a passion for technology and cooking.",
     availability: "Mon, Fri, Sat (2F Hallway)",
     requirements: "Courage Level 6 (Badass)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Fuuka outside 2-F.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "I wanted to try making something to eat...", bestChoice: "I'll be your guinea pig. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Do you think I lack femininity?", bestChoice: "That's not true. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Fuuka hands you a bento box.", bestChoice: "Let me try it. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I want to get better at cooking.", bestChoice: "You're doing great. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "People perceive me differently than who I am.", bestChoice: "I know the real you. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Dealing with school rumors.", bestChoice: "Stay true to yourself. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Expressing gratitude for your support.", bestChoice: "I'm always here. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Fuuka confesses her feelings.", bestChoice: "I feel the same way. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Scathach." }] }
-    ]
   },
   {
     id: "p3-mitsuru",
@@ -69,18 +36,6 @@ export const socialLinkDB = [
     bio: "Heir to the Kirijo Group and founding member of S.E.E.S. known for her unmatched brilliance and elegance.",
     availability: "Tue, Thu, Sat (1F Faculty Hallway)",
     requirements: "Academics Level 6 (Genius)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Mitsuru outside 1F Faculty Office.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Eating ramen for the first time...", bestChoice: "It's delicious. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Arranged marriage discussions...", bestChoice: "That's your decision. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Trying new everyday experiences.", bestChoice: "Hold on to me. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I don't know much about normal life.", bestChoice: "You're doing fine. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Confronting family pressures.", bestChoice: "I'll support you. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Finding her own desires.", bestChoice: "Take your time. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Acknowledging vulnerability.", bestChoice: "You're strong. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Mitsuru opens up under the stars.", bestChoice: "I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Alilat." }] }
-    ]
   },
   {
     id: "p3-hidetoshi",
@@ -92,35 +47,6 @@ export const socialLinkDB = [
     bio: "A strict student council officer determined to uphold rules at all costs, regardless of popularity.",
     availability: "Mon, Fri (Student Council Room)",
     requirements: "Join Student Council on 4/27+",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Join Student Council.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [
-      { prompt: "Some students feel the school uniform should be abolished...", bestChoice: "Sounds like nonsense. (+2)" }
-    ] },
-    { rank: 3, choices: [
-      { prompt: "What!? You can't decide something like that without talking to the president first.", bestChoice: "No need to fight. (+2)" }
-    ] },
-    { rank: 4, choices: [
-      { prompt: "What is it? Did you need something from me?", bestChoice: "Looks like you're hard at work. (+2)" }
-    ] },
-    { rank: 5, choices: [
-      { prompt: "…Bunch of Neanderthals. They're the worst.", bestChoice: "They're the worst. (+2)" }
-    ] },
-    { rank: 6, choices: [
-      { prompt: "As you can see, the meeting's over, so you can leave if you want.", bestChoice: "But I just got here… (+2)" },
-      { prompt: "Maybe I should stick around.", bestChoice: "Maybe I should stick around. (+2)" }
-    ] },
-    { rank: 7, choices: [
-      { prompt: "…About the smoker's punishment, that is.", bestChoice: "It seems too harsh. (+2)" }
-    ] },
-    { rank: 8, choices: [
-      { prompt: "…So, you heard all that.", bestChoice: "It wasn't me. (+2)" }
-    ] },
-    { rank: 9, choices: [
-      { prompt: "I rambled on about rules and fairness, but all I really proved was that I was desperate for power.", bestChoice: "Don't blame yourself. (+2)" }
-    ] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Odin." }] }
-    ]
   },
   {
     id: "p3-bunkichi-mitsuko",
@@ -132,18 +58,6 @@ export const socialLinkDB = [
     bio: "An elderly couple running 'Bookworms' bookstore, fondly attached to a persimmon tree planted at Gekkoukan.",
     availability: "Tue - Sun (Iwatodai Strip Mall)",
     requirements: "Obtain Persimmon Leaf from Gekkoukan High courtyard",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Hand over the Persimmon Leaf.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Welcome back!", bestChoice: "Thank you. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Where did I put those glasses...", bestChoice: "Looking for something? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "The school wants to cut down the persimmon tree.", bestChoice: "That's terrible. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "It was planted in memory of our son...", bestChoice: "I'll help save it. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "We're gathering signatures for a petition.", bestChoice: "Count me in. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "A former student came by to help.", bestChoice: "That's great news. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "The school agreed to keep the tree!", bestChoice: "Congratulations! (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Our son will live on in that tree.", bestChoice: "He would be proud. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Kohryu." }] }
-    ]
   },
   {
     id: "p3-yukari",
@@ -155,18 +69,6 @@ export const socialLinkDB = [
     bio: "Popular archery team member searching for answers surrounding the Dark Hour and her father's legacy.",
     availability: "Mon, Wed, Thu, Sat (Classroom 2-F)",
     requirements: "Charm Level 6 (Charismatic)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Yukari in class.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "What color flower should I get?", bestChoice: "Cute pink. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Are you feeling okay?", bestChoice: "Are you okay? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I didn't need your help back there!", bestChoice: "Sorry. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Thanks for stepping in.", bestChoice: "Anytime. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I feel like I'm running away.", bestChoice: "You're doing fine. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I want to grow stronger.", bestChoice: "I'll help you. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Thinking about the future...", bestChoice: "Let me help. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Yukari breaks down in tears.", bestChoice: "I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Cybele." }] }
-    ]
   },
   {
     id: "p3-kazushi",
@@ -178,18 +80,6 @@ export const socialLinkDB = [
     bio: "Dedicated star athlete who pushes his body to dangerous extremes despite a secret knee injury.",
     availability: "Mon, Tue, Thu, Fri (Track Field / Classroom 2-F)",
     requirements: "Join Track Team after 4/23",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Join Track Team.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "How's your running form?", bestChoice: "Tough it out! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "My knee hurts, but I can't quit.", bestChoice: "Are you okay? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Don't tell anyone about my knee.", bestChoice: "Will it heal? (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I have to win for my nephew.", bestChoice: "The knee issue again? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I'm pushing through the regionals.", bestChoice: "Show some sportsmanship! (+3)" }] },
-      { rank: 7, choices: [{ prompt: "The doctor said I need surgery...", bestChoice: "Get the surgery. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I told the coach everything.", bestChoice: "He'll understand. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "I'll recover and run again!", bestChoice: "I'll be waiting. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Thor." }] }
-    ]
   },
   {
     id: "p3-chihiro",
@@ -201,18 +91,6 @@ export const socialLinkDB = [
     bio: "An excessively shy girl with a fear of men who gradually builds confidence through student council work.",
     availability: "Tue, Thu, Sat (2F Hallway outside Student Council)",
     requirements: "Talk to her 3 times on separate days",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Ask Chihiro to hang out.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "I'm bad at talking to boys...", bestChoice: "Don't worry about it. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Do you like reading books?", bestChoice: "I agree. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Someone lost money and blamed me!", bestChoice: "You have to clear your name. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I'm still suspected...", bestChoice: "I trust you. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I'm going to stand up for myself.", bestChoice: "You can do it. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "We found the real thief!", bestChoice: "That's fantastic news. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Thank you for believing in me.", bestChoice: "I was happy to help. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Chihiro holding hands...", bestChoice: "I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Melchizedek." }] }
-    ]
   },
   {
     id: "p3-maya",
@@ -224,18 +102,6 @@ export const socialLinkDB = [
     bio: "An online MMORPG partner who complains endlessly about her teaching job, unaware you are her student.",
     availability: "Sun, Holidays (Computer in Room)",
     requirements: "Available after Junpei gives you 'Innocent Sin Online' on 4/29",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Boot up Innocent Sin Online.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Work is so stressful!", bestChoice: "Of course! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "My boss is such an idiot.", bestChoice: "That's awful. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I drunk-dialed someone last night...", bestChoice: "Let's plan something. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "One of my students is pretty cute though...", bestChoice: "Who is it? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "The school is shutting down our game servers!", bestChoice: "That's unfair! (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I think I like my student Tatsuya...", bestChoice: "What about me? (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I made a mess of things...", bestChoice: "Hurry up and confess! (+3)" }] },
-      { rank: 9, choices: [{ prompt: "The game server is closing down permanently...", bestChoice: "I'm glad I met you. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Arahabaki." }] }
-    ]
   },
   {
     id: "p3-keisuke",
@@ -247,18 +113,6 @@ export const socialLinkDB = [
     bio: "A talented artist who feels torn between pursuing his artistic passion and his father's wish for him to become a doctor.",
     availability: "Tue, Thu (Art Club Room)",
     requirements: "Join Art Club on 6/17+",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Join Art Club.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Do you like art?", bestChoice: "I love it. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "My dad wants me to be a doctor...", bestChoice: "Do what you want. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "An art competition is coming up.", bestChoice: "You should enter! (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I don't know if I can paint anymore.", bestChoice: "Don't give up. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "My dad called me again...", bestChoice: "You have talent. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I won first place in the contest!", bestChoice: "Congratulations! (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Someone collapsed in front of me!", bestChoice: "Use your first aid. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Saving that person made me realize I want to be a doctor.", bestChoice: "Follow your heart. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Lakshmi." }] }
-    ]
   },
   {
     id: "p3-yuko",
@@ -270,18 +124,6 @@ export const socialLinkDB = [
     bio: "Energetic team manager who decides to coach a local elementary school running group.",
     availability: "Wed, Sat (2F Hallway)",
     requirements: "Walk home with her twice during Track Rank progression",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Ask Yuko to walk home.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Do you like kids?", bestChoice: "I love kids. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Coaching those kids is tough!", bestChoice: "Not at all. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "The kids aren't listening...", bestChoice: "Show them how it's done! (+3)" }] },
-      { rank: 5, choices: [{ prompt: "One kid is thinking of giving up.", bestChoice: "Do your best. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "The race is coming up!", bestChoice: "They'll win for sure. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "They did great in the race!", bestChoice: "It was thanks to you. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I realized I want to be an athletic coach.", bestChoice: "That's a great goal. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Yuko walking with you...", bestChoice: "I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Zaou-Gongen." }] }
-    ]
   },
   {
     id: "p3-maiko",
@@ -293,18 +135,6 @@ export const socialLinkDB = [
     bio: "A young girl at Nagaki Shrine dealing with her parents' impending divorce.",
     availability: "Mon, Wed, Sat (Nagaki Shrine)",
     requirements: "Give her Takoyaki (Iwatodai) and Mad Bull (Vending Machine)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Play with Maiko.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "My parents are always fighting...", bestChoice: "Don't worry, they love you. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "I want to run away!", bestChoice: "Don't do that. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "They're talking about getting a divorce...", bestChoice: "That's awful. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Who will I live with?", bestChoice: "You get to choose. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I ran away from home!", bestChoice: "Let me buy you food. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "My parents came looking for me crying...", bestChoice: "They were worried. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I'm moving away with my mom...", bestChoice: "We'll always be friends. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "I will grow up strong!", bestChoice: "I know you will. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Attis." }] }
-    ]
   },
   {
     id: "p3-tanaka",
@@ -316,18 +146,6 @@ export const socialLinkDB = [
     bio: "A ruthless, money-obsessed CEO of Amazing Commodities who teaches you the dark side of business.",
     availability: "Tue, Sat (Paulownia Mall - Night)",
     requirements: "Charm Level 4 + Rank 4 Hermit + Invest 40,000 yen across 3 meetings",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Give Tanaka 10,000 yen for the 3rd time.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Money rules the world!", bestChoice: "Placebo effect! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "I can sell anything to anyone.", bestChoice: "Maybe a little... (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Looking to invest?", bestChoice: "Sure am! (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Tax evasion is just smart business.", bestChoice: "Who cares about tax? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Someone tried to blackmail me!", bestChoice: "That's terrible. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I turned the tables on him!", bestChoice: "Sort of... (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I donated money to an orphanage anonymously.", bestChoice: "Are you feeling sick? (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Maybe money isn't everything after all...", bestChoice: "You've changed. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Beelzebub." }] }
-    ]
   },
   {
     id: "p3-bebe",
@@ -339,18 +157,6 @@ export const socialLinkDB = [
     bio: "An eccentric French exchange student obsessed with traditional Japanese culture and tailoring Kimonos.",
     availability: "Tue, Wed, Fri (Home Economics Room)",
     requirements: "Academics Level 2 + Rank 3 Hierophant",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Join Sewing Club.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "I love Japan so much!", bestChoice: "I agree! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "My uncle wants me to return to France...", bestChoice: "That's terrible news. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I want to finish making this Kimono first!", bestChoice: "I'll help you. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I need to prove my love for traditional art.", bestChoice: "You can do it! (+3)" }] },
-      { rank: 6, choices: [{ prompt: "The Kimono is almost complete!", bestChoice: "It looks incredible. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "My uncle agreed to let me finish the semester!", bestChoice: "That's awesome! (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I made this for you.", bestChoice: "Thank you so much. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "I will return to France, but my heart stays in Japan.", bestChoice: "We'll miss you. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Yurlungur." }] }
-    ]
   },
   {
     id: "p3-mutatsu",
@@ -362,18 +168,6 @@ export const socialLinkDB = [
     bio: "A cynical, drinking, cigar-smoking monk lounging at Club Escapade to escape his estranged family.",
     availability: "Thu, Fri, Sat, Sun (Club Escapade - Night)",
     requirements: "Toughness/Courage Lv 4 + Strength Rank 4 (Talk to Yuko about the monk)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Order a drink for Mutatsu.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Life is meaningless, kid.", bestChoice: "None of your business. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "You shouldn't come here.", bestChoice: "I don't mind. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Family is a burden.", bestChoice: "Is it really that bad? (+3)" }] },
-      { rank: 5, choices: [{ prompt: "My wife and son left me years ago...", bestChoice: "That's sad. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I miss them every single day.", bestChoice: "Why don't you talk to them? (+3)" }] },
-      { rank: 7, choices: [{ prompt: "My son came to see me today...", bestChoice: "How did it go? (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I want to be a real father to him again.", bestChoice: "It's not too late. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "I'm quitting drinking and going home.", bestChoice: "Good luck, old man. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Chi You." }] }
-    ]
   },
   {
     id: "p3-mamoru",
@@ -385,18 +179,6 @@ export const socialLinkDB = [
     bio: "A fierce star athlete from another school who bears the burden of supporting his struggling family.",
     availability: "Wed, Fri, Sun (Iwatodai Strip Mall)",
     requirements: "Courage Lv 4 + Reach Aug 2nd Track event",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Mamoru in Iwatodai.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Eating wild food to save money...", bestChoice: "Sounds tough. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "My dad passed away...", bestChoice: "Are you alright? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I have to get a corporate sports scholarship.", bestChoice: "Do your best. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "My siblings need me to provide for them.", bestChoice: "You're a good brother. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I injured my leg during practice...", bestChoice: "Don't push yourself. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "If I lose my scholarship, my family suffers.", bestChoice: "We'll find a solution. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "A team offered me a professional contract!", bestChoice: "That's awesome news! (+3)" }] },
-      { rank: 9, choices: [{ prompt: "I won't forget the competition we shared.", bestChoice: "We'll run again. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Helel." }] }
-    ]
   },
   {
     id: "p3-nozomi",
@@ -408,18 +190,6 @@ export const socialLinkDB = [
     bio: "A self-proclaimed food critic who uses cult-like beliefs to hide his deep inferiority complex toward his deceased brother.",
     availability: "Mon - Sun (Paulownia Mall)",
     requirements: "Charm Lv 2 + Answer trivia correctly + Hand over Odd Morsel",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Give Nozomi an Odd Morsel.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "I am the Gourmet King!", bestChoice: "That's right! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Do you know about the Cult of the End?", bestChoice: "Are you sick? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "People pay me to reach salvation!", bestChoice: "You're scamming them. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "My brother was better at everything...", bestChoice: "Don't compare yourself. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Dangerous people are threatening me!", bestChoice: "Are you in trouble? (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I was only doing this to feel important...", bestChoice: "It's time to stop. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I apologized and returned their money.", bestChoice: "Good job. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "I'll become a real culinary expert on my own merit!", bestChoice: "I believe in you. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Sandalphon." }] }
-    ]
   },
   {
     id: "p3-akinari",
@@ -431,18 +201,6 @@ export const socialLinkDB = [
     bio: "A terminally ill young man sitting alone at Nagaki Shrine writing a children's story about a pink alligator.",
     availability: "Sun (Nagaki Shrine)",
     requirements: "Academics Lv 4 + Rank 3 Hanged Man (Find his Fountain Pen in Koromaru's care)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Return Akinari's fountain pen.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Why was I born just to die like this?", bestChoice: "That's deep. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "I'm writing a story about a pink alligator...", bestChoice: "Sounds interesting. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "My mother suffers watching me deteriorate.", bestChoice: "It must be hard. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I want my life to leave a mark behind.", bestChoice: "Your story will. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "The alligator wanted to fit in with the birds...", bestChoice: "Keep writing. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I finished the story...", bestChoice: "I want to read it. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "The alligator swallowed the sun to give light to others.", bestChoice: "That's beautiful. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Thank you for listening to my existence.", bestChoice: "You gave it meaning. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Akinari passes away peacefully.", bestChoice: "Unlocks Asura." }] }
-    ]
   },
   {
     id: "p3-aigis",
@@ -454,18 +212,6 @@ export const socialLinkDB = [
     bio: "An android warrior created to destroy Shadows who gradually awakens to human emotion and love.",
     availability: "Mon - Sat (Classroom 2-F starting Jan 8th)",
     requirements: "Available automatically in January",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Walk home with Aigis.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "I want to walk with you.", bestChoice: "I like it. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "What is the purpose of life?", bestChoice: "That's not true. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I am a machine, after all...", bestChoice: "All right. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I want to understand your feelings.", bestChoice: "You may be right. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Why do humans cry?", bestChoice: "He saw me as a boyfriend. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I am changing...", bestChoice: "It's a good thing. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I will protect you.", bestChoice: "I'm doing it now. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Aigis touches her chest mechanism.", bestChoice: "I love you, Aigis. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Metatron." }] }
-    ]
   },
 
   // ==========================================
@@ -481,18 +227,6 @@ export const socialLinkDB = [
     bio: "The energetic, class clown of S.E.E.S. who wrestles with self-worth and feelings of inadequacy.",
     availability: "Tue, Fri (Classroom 2-F - FeMC Only)",
     requirements: "FeMC Route Exclusive",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Hang out with Junpei.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Eating junk food together...", bestChoice: "It's delicious! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "I gotta get stronger man!", bestChoice: "You're doing fine. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Do you see me as a man?", bestChoice: "Of course! (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I felt jealous of you...", bestChoice: "Thanks, Junpei. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Meeting Chidori...", bestChoice: "Go talk to her! (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I really care about Chidori.", bestChoice: "I'll support you. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I'm scared of losing her...", bestChoice: "Stay strong! (+3)" }] },
-      { rank: 9, choices: [{ prompt: "You're my best friend.", bestChoice: "Platonic bond solidified." }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Surt." }] }
-    ]
   },
   {
     id: "p3p-akihiko",
@@ -504,18 +238,6 @@ export const socialLinkDB = [
     bio: "Champion high school boxer and senior S.E.E.S. member dedicated to growing stronger to protect others.",
     availability: "Mon, Fri (Dorm Lounge - FeMC Only)",
     requirements: "Charm Level 4 (FeMC Route Exclusive)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Akihiko at the dorm.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Protein talk...", bestChoice: "You love protein! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Reminiscing about Shinjiro and Miki...", bestChoice: "Tell me more. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I couldn't save my sister...", bestChoice: "It wasn't your fault. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Eating street food together...", bestChoice: "It's tasty! (+3)" }] },
-      { rank: 6, choices: [{ prompt: "You're pretty strong for a girl.", bestChoice: "Don't underestimate me! (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I feel different around you.", bestChoice: "How do you mean? (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I want to protect you specifically.", bestChoice: "I feel the same. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Akihiko confesses his true feelings.", bestChoice: "I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Helel." }] }
-    ]
   },
   {
     id: "p3p-koromaru",
@@ -527,18 +249,6 @@ export const socialLinkDB = [
     bio: "A faithful Shiba Inu who wields a dagger and Persona to guard the memory of his deceased master.",
     availability: "Mon, Wed, Sat, Sun (Dorm Lounge - FeMC Only)",
     requirements: "FeMC Route Exclusive",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Give Koromaru a dog treat.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Walk Koromaru.", bestChoice: "Good boy! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Koromaru barks happily.", bestChoice: "Scratch his ears. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Visiting his master's shrine...", bestChoice: "He misses him. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Koromaru guards your side.", bestChoice: "You're very loyal. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Other dogs gather around.", bestChoice: "He's popular! (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Koromaru brings you a gift.", bestChoice: "Thank you! (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Koromaru leaning against you...", bestChoice: "Stay together forever. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Woof woof!", bestChoice: "You're my family. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Zaou-Gongen." }] }
-    ]
   },
   {
     id: "p3p-ken",
@@ -550,18 +260,6 @@ export const socialLinkDB = [
     bio: "A young elementary student who joined S.E.E.S. harboring a secret quest for vengeance.",
     availability: "Tue, Thu (Dorm Lounge - Night - FeMC Only)",
     requirements: "Courage Level 6 (FeMC Route Exclusive)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Ken at night.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Watching TV shows...", bestChoice: "I like Featherman too! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Drinking milk to grow taller...", bestChoice: "You'll grow tall. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I don't like being treated like a kid.", bestChoice: "I treat you like an equal. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I have something important I must do.", bestChoice: "Don't push yourself. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Talking about his mother...", bestChoice: "She loved you very much. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I feel safe around you.", bestChoice: "I'm glad. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Ken blushes...", bestChoice: "Stay close to me. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Ken's confession (Special Route).", bestChoice: "Hold his hand / Special romantic lock." }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Melchizedek." }] }
-    ]
   },
   {
     id: "p3p-shinjiro",
@@ -573,18 +271,6 @@ export const socialLinkDB = [
     bio: "A gruff former S.E.E.S. member with a secret passion for cooking who carries immense guilt.",
     availability: "Mon, Wed, Fri, Sat (Port Island Station - FeMC Only)",
     requirements: "Must Max BEFORE Oct 4th (FeMC Exclusive)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Shinjiro at Port Island Station.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "What are you doing here?", bestChoice: "I wanted to see you. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Feeding a stray dog...", bestChoice: "Can I help? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Shinjiro cooks a meal for you.", bestChoice: "It's amazing! (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I don't have much time left...", bestChoice: "What do you mean? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Looking for his pocket watch...", bestChoice: "I'll help search! (+3)" }] },
-      { rank: 7, choices: [{ prompt: "We shouldn't get close.", bestChoice: "I don't care! (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Talking about his tragic accident...", bestChoice: "Stop blaming yourself. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Hand back his pocket watch.", bestChoice: "I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Shinjiro survives Oct 4th.", bestChoice: "Unlocks Sandalphon." }] }
-    ]
   },
   {
     id: "p3p-rio",
@@ -596,18 +282,6 @@ export const socialLinkDB = [
     bio: "A hardworking member of the school tennis/volleyball team wrestling with peer expectations and feelings.",
     availability: "Mon, Wed, Fri (Practice Field / Classroom - FeMC Only)",
     requirements: "Join Tennis/Volleyball Club (FeMC Exclusive)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Join sports team.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Practicing hard...", bestChoice: "Let me practice with you! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "People talk behind my back.", bestChoice: "Ignore them! (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I think I like Kenji...", bestChoice: "I'll help you out. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Kenji only likes older women...", bestChoice: "He's an idiot. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I should just focus on sports.", bestChoice: "That's the spirit! (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Our team unity is getting better!", bestChoice: "Thanks to your effort. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I don't need romance right now.", bestChoice: "You have us! (+3)" }] },
-      { rank: 9, choices: [{ prompt: "You're my absolute best friend.", bestChoice: "Same here! (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Thor." }] }
-    ]
   },
   {
     id: "p3p-saori",
@@ -619,18 +293,6 @@ export const socialLinkDB = [
     bio: "An older transfer student targeted by malicious school rumors who finds solace in committee work.",
     availability: "Tue, Thu (Library / Health Room - FeMC Only)",
     requirements: "Join Library or Health Committee (FeMC Exclusive)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Join Committee.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Rumors about me returning from abroad...", bestChoice: "Don't pay attention to them. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "People avoid talking to me.", bestChoice: "I'm here for you. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "A teacher is spreading rumors too!", bestChoice: "That's unforgivable! (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Why does everyone hate me?", bestChoice: "You did nothing wrong. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I'm thinking of studying abroad again...", bestChoice: "Will you be okay? (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Confronting the rumors directly.", bestChoice: "I'll stand with you. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I made up my mind to move forward.", bestChoice: "You're very brave. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Thank you for being my true friend.", bestChoice: "I'll never forget you. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Arahabaki." }] }
-    ]
   },
   {
     id: "p3p-ryoji",
@@ -642,18 +304,6 @@ export const socialLinkDB = [
     bio: "A flirtatious and lively transfer student whose warm demeanor conceals a profound fate.",
     availability: "Nov & Dec specific days (Classroom - FeMC Only)",
     requirements: "Auto-starts 11/9 (Highly missable - FeMC Exclusive)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Auto event on Nov 9.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Hang out on Nov 12.", bestChoice: "I don't mind. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Hang out on Nov 15.", bestChoice: "You're fun to be with. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Hang out on Nov 19.", bestChoice: "I'll go with you. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Hang out on Nov 22.", bestChoice: "I agree with you. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Hang out on Nov 27.", bestChoice: "I'll stay right here. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Hang out on Nov 29.", bestChoice: "Are you feeling okay? (+3)" }] },
-      { rank: 8, isRomance: true, choices: [{ prompt: "Hang out on Dec 1.", bestChoice: "I love you, Ryoji. [Romance]" }] },
-      { rank: 9, choices: [{ prompt: "Auto Dec 31 event.", bestChoice: "Refuse to kill him." }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Lakshmi." }] }
-    ]
   },
 
   // ==========================================
@@ -669,18 +319,6 @@ export const socialLinkDB = [
     bio: "The self-proclaimed partner of the Investigation Team struggling with small-town boredom and grief.",
     availability: "Mon, Tue, Thu, Fri (Classroom 2-2)",
     requirements: "Auto-starts on 4/16",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Form Investigation Team.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Living in Inaba is boring...", bestChoice: "It must be tough. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Dealing with the loss of Saki-senpai...", bestChoice: "You did your best. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Reflecting on responsibility.", bestChoice: "I agree. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Riding motorbikes together...", bestChoice: "Sounds like fun. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Trusting leadership.", bestChoice: "Of course. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Addressing feelings about Saki.", bestChoice: "She cared about you. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Standing strong as partners.", bestChoice: "We're partners. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Fist fight in the dry riverbed.", bestChoice: "You're a great guy. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Jiraiya -> Susano-o." }] }
-    ]
   },
   {
     id: "P4G-yukiko",
@@ -692,18 +330,6 @@ export const socialLinkDB = [
     bio: "An elegant young woman trapped by her obligation to inherit her family's historic inn.",
     availability: "Mon, Thu, Fri, Sun (Classroom 2-2 / Shopping District)",
     requirements: "Available after 5/17",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Hang out with Yukiko.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Practicing cooking for the inn...", bestChoice: "I'll try it! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "My cooking is terrible...", bestChoice: "Keep practicing! (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I want to leave this town.", bestChoice: "What's wrong? (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Studying to get an interior design license.", bestChoice: "You can do it! (+3)" }] },
-      { rank: 6, choices: [{ prompt: "The inn's staff supports me.", bestChoice: "They care about you. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I realized I don't want to run away.", bestChoice: "You've grown strong. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I want to inherit the inn on my own choice.", bestChoice: "I'll support you. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Yukiko confesses her feelings.", bestChoice: "I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Amaterasu -> Sakuya." }] }
-    ]
   },
   {
     id: "P4G-chie",
@@ -715,18 +341,6 @@ export const socialLinkDB = [
     bio: "An energetic martial arts fanatic who loves steak and fiercely protects her best friend Yukiko.",
     availability: "Mon, Tue, Thu, Fri (Roof / Shopping District)",
     requirements: "Available after 4/18",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Hang out with Chie.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Talking about martial arts...", bestChoice: "That's cool. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Comparing strength and doubts...", bestChoice: "You're plenty strong. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Stopping harassers on the street.", bestChoice: "You were brave. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Worrying about Yukiko's independence...", bestChoice: "You care about her. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Overcoming personal envy...", bestChoice: "Everyone has strengths. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Finding her own goal to become a police officer.", bestChoice: "I'll help you study. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Protecting others is my path.", bestChoice: "I'm right behind you. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Chie holding onto you...", bestChoice: "I'll protect you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Tomoe -> Haraedo-no-Okami." }] }
-    ]
   },
   {
     id: "P4G-kanji",
@@ -761,18 +375,6 @@ export const socialLinkDB = [
     bio: "A famous idol ('Risette') who fled Tokyo to find her true self in her grandmother's tofu shop.",
     availability: "Fri, Sat, Sun (Classroom 1F / Tofu Shop)",
     requirements: "Available after 7/23",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Hang out with Rise.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Being watched constantly is exhausting...", bestChoice: "Just be yourself. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Do you want to eat something sweet?", bestChoice: "Sure thing. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Am I forcing myself to act fake?", bestChoice: "No way. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I want to figure out who Risette really is.", bestChoice: "I'm here for you. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Are you worried about me?", bestChoice: "Always. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "People only love the idol persona...", bestChoice: "I love the real you. (+3)" }] },
-      { rank: 8, isRomance: true, choices: [{ prompt: "Rise crying in your arms...", bestChoice: "Hold her tight. [Romance]" }] },
-      { rank: 9, choices: [{ prompt: "I'm going back to show business as the true Rise!", bestChoice: "I'll be cheering! (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Himiko -> Kanzeon." }] }
-    ]
   },
   {
     id: "P4G-naoto",
@@ -784,18 +386,6 @@ export const socialLinkDB = [
     bio: "A young detective prodigy hiding her true gender to gain respect in a male-dominated field.",
     availability: "Mon, Tue, Wed, Sat (Classroom 1F / Shopping District)",
     requirements: "Max Knowledge & Courage Lv 5 + Talk to man in North Shopping District for Calling Card on 10/21+",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Hand calling card to Naoto.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Solving a riddle card...", bestChoice: "That's easy for you. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "A mysterious phantom thief case...", bestChoice: "Let me assist you. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Why do you help me so much?", bestChoice: "Because I care. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "The villain's clue points to my past...", bestChoice: "Burn it. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I hid my gender because the world disrespects young women.", bestChoice: "I'm glad you told me. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I want to accept myself for who I am.", bestChoice: "You're amazing as you are. (+3)" }] },
-      { rank: 8, isRomance: true, choices: [{ prompt: "Naoto blushes heavily.", bestChoice: "I'm glad you're a girl. [Romance]" }] },
-      { rank: 9, choices: [{ prompt: "The mystery is solved!", bestChoice: "Great job, detective. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Sukuna-Hikona -> Yamato-Takeru." }] }
-    ]
   },
   {
     id: "P4G-teddie",
@@ -807,18 +397,6 @@ export const socialLinkDB = [
     bio: "A hollow shadow creature who created a human body and seeks to discover the truth of his origins.",
     availability: "Story Progression",
     requirements: "Automatic Progression",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Auto unlock in TV World.", bestChoice: "Automatic." }] },
-      { rank: 2, choices: [{ prompt: "Auto story event on 6/24.", bestChoice: "Automatic." }] },
-      { rank: 3, choices: [{ prompt: "Auto story event on 7/24.", bestChoice: "Automatic." }] },
-      { rank: 4, choices: [{ prompt: "Auto story event on 7/26.", bestChoice: "Automatic." }] },
-      { rank: 5, choices: [{ prompt: "Auto story event on 8/25.", bestChoice: "Automatic." }] },
-      { rank: 6, choices: [{ prompt: "Auto story event on 9/8.", bestChoice: "Automatic." }] },
-      { rank: 7, choices: [{ prompt: "Auto story event on 10/6.", bestChoice: "Automatic." }] },
-      { rank: 8, choices: [{ prompt: "Auto story event on 11/13.", bestChoice: "Automatic." }] },
-      { rank: 9, choices: [{ prompt: "Auto story event on 11/27.", bestChoice: "Automatic." }] },
-      { rank: 10, choices: [{ prompt: "Auto story event on 12/5.", bestChoice: "Unlocks Kintoki-Douji -> Kamui." }] }
-    ]
   },
   {
     id: "P4G-dojima",
@@ -830,18 +408,6 @@ export const socialLinkDB = [
     bio: "Your uncle and lead detective on the Inaba murder cases, obsessively burying his grief for his late wife in work.",
     availability: "Mon, Tue, Thu, Sat (Dojima Residence - Night)",
     requirements: "Available after 5/6",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Dojima at night.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Drinking coffee...", bestChoice: "That's pretty cool. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "I'm a terrible father to Nanako...", bestChoice: "She's lonely. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Chasing Chisato's hit-and-run driver...", bestChoice: "Is that all Chisato was? (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I bought Nanako a gift.", bestChoice: "She'll love it. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I keep pushing her away...", bestChoice: "Talk to her. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I promised Nanako I'd take a day off.", bestChoice: "Good luck. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Facing his grief directly.", bestChoice: "You did your best. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "We're a real family now.", bestChoice: "I'm glad to be here. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Kohryu." }] }
-    ]
   },
   {
     id: "P4G-nanako",
@@ -853,18 +419,6 @@ export const socialLinkDB = [
     bio: "Your sweet young cousin who takes care of household chores and loves the Junes commercial jingle.",
     availability: "Mon, Tue, Wed, Fri (Dojima Residence - Night)",
     requirements: "Expression Level 3 + Dojima Rank 3+",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Nanako at night.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Every day's great at your Junes!", bestChoice: "Sing along! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "I made a drawing of our family.", bestChoice: "It's awesome! (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Is Big Bro gonna leave too?", bestChoice: "I'm right here. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Do heavenly angels look after my mom?", bestChoice: "Always. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Dad couldn't make it to school open house...", bestChoice: "I'll go with you! (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I love Dad so much.", bestChoice: "He loves you too. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Will we be together forever?", bestChoice: "Forever and ever. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Big Bro is my real brother!", bestChoice: "You're my real sister. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Sraosha." }] }
-    ]
   },
   {
     id: "P4G-fox",
@@ -876,18 +430,6 @@ export const socialLinkDB = [
     bio: "A greedy shrine fox that restores your SP in TV World dungeons in exchange for completed wish Ema quests.",
     availability: "Mon - Sun (Tatsuhime Shrine)",
     requirements: "Available after 5/5",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Visit Tatsuhime Shrine.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Fulfill Ema Wish 1 (Feed hungry student)", bestChoice: "Hand in completed quest." }] },
-      { rank: 3, choices: [{ prompt: "Fulfill Ema Wish 2 (Find missing cat)", bestChoice: "Hand in completed quest." }] },
-      { rank: 4, choices: [{ prompt: "Fulfill Ema Wish 3 (Help dog lover)", bestChoice: "Hand in completed quest." }] },
-      { rank: 5, choices: [{ prompt: "Fulfill Ema Wish 4 (Help model kit kid)", bestChoice: "Hand in completed quest." }] },
-      { rank: 6, choices: [{ prompt: "Fulfill Ema Wish 5 (Help shy girl)", bestChoice: "Hand in completed quest." }] },
-      { rank: 7, choices: [{ prompt: "Fulfill Ema Wish 6 (Help depressed man)", bestChoice: "Hand in completed quest." }] },
-      { rank: 8, choices: [{ prompt: "Fulfill Ema Wish 7 (Help spearo fisherman)", bestChoice: "Hand in completed quest." }] },
-      { rank: 9, choices: [{ prompt: "Fulfill Ema Wish 8 (Catch Guardian Fish)", bestChoice: "Hand in completed quest." }] },
-      { rank: 10, choices: [{ prompt: "Shrine restored to full power!", bestChoice: "Unlocks Ongyo-Ki." }] }
-    ]
   },
   {
     id: "P4G-naoki",
@@ -899,18 +441,6 @@ export const socialLinkDB = [
     bio: "The younger brother of murder victim Saki Konishi, smothered by town pity and unable to grieve normally.",
     availability: "Mon, Tue, Wed, Thu (1F Hallway / Liquors Shop)",
     requirements: "Understanding Level 3 + Talk to him 3 times after 6/8",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Naoki in 1F Hallway.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Everyone looks at me with pity...", bestChoice: "It must be tiring. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Working at the family liquor store.", bestChoice: "I'll help out. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Why does everyone care now that she's dead?", bestChoice: "I understand. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I don't even know how I feel...", bestChoice: "Take your time. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "People gossiping about my sister...", bestChoice: "Let it out. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "I finally cried for my sister today.", bestChoice: "That's good. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I'm going to run this store with pride.", bestChoice: "She'd be happy. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Thank you for listening without pity.", bestChoice: "We're friends. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Attis." }] }
-    ]
   },
   {
     id: "P4G-hisano",
@@ -922,18 +452,6 @@ export const socialLinkDB = [
     bio: "An elderly woman dressed in black mourning clothes sitting by Samegawa River, calling herself 'Death'.",
     availability: "Sun, Holidays (Samegawa Riverbank)",
     requirements: "Devil Rank 4 (Nurse Sayoko Rank)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Hisano by the river.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Talking about her late husband...", bestChoice: "Tell me more. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "He had Alzheimer's and forgot me...", bestChoice: "That must hurt. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I wished he would die so the suffering stopped...", bestChoice: "That's human. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Looking for old love letters...", bestChoice: "I'll help search. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Finding the letters in the house.", bestChoice: "Read them. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "He never forgot his love for me.", bestChoice: "That's beautiful. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I'm moving to live with my children.", bestChoice: "Take care. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Thank you for saving my soul.", bestChoice: "Good luck! (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Mahakala." }] }
-    ]
   },
   {
     id: "P4G-eri",
@@ -945,18 +463,6 @@ export const socialLinkDB = [
     bio: "A young stepmother struggling to connect with her stepson Yuuta at the local daycare center.",
     availability: "Mon, Fri, Sat (Daycare Job)",
     requirements: "Expressive Lv 2 + Take Daycare Assistant Job (Bus Stop)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Start Daycare job.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Yuuta doesn't talk to me...", bestChoice: "Give it time. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "I don't know how to be a mother.", bestChoice: "You're trying hard. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Yuuta left his toy behind...", bestChoice: "I'll fetch it. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "He misses his real mom...", bestChoice: "You're his mom now. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Yuuta got in a fight at school...", bestChoice: "Listen to his reason. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "He was defending my honor!", bestChoice: "He loves you. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "We finally talked heart to heart.", bestChoice: "Congratulations! (+3)" }] },
-      { rank: 9, choices: [{ prompt: "We're a real mother and son now.", bestChoice: "I'm so happy. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Yurlungur." }] }
-    ]
   },
   {
     id: "P4G-sayoko",
@@ -968,18 +474,6 @@ export const socialLinkDB = [
     bio: "A cynical hospital nurse who flirts recklessly to mask her burnt-out disillusionment with healthcare.",
     availability: "Wed, Thu, Fri (Hospital Janitor Job - Night)",
     requirements: "Courage Level 3 + Take Hospital Janitor Job",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Start Hospital job.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Flirting with you...", bestChoice: "That's tempting. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Patients leave or die... it never ends.", bestChoice: "It's tough work. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "A former patient passed away...", bestChoice: "Are you okay? (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Why do I even bother caring?", bestChoice: "Because you're human. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "I was fired from my previous hospital...", bestChoice: "It wasn't your fault. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Revisiting why I became a nurse.", bestChoice: "Remember your passion. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I'm joining a volunteer medical corps abroad!", bestChoice: "That's amazing! (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Thank you for saving my spirit.", bestChoice: "Good luck out there. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Beelzebub." }] }
-    ]
   },
   {
     id: "P4G-shu",
@@ -991,18 +485,6 @@ export const socialLinkDB = [
     bio: "An isolated, overly pressured boy pushed by his mother to achieve academic perfection at all costs.",
     availability: "Tue, Thu, Sat (Tutor Job - Night)",
     requirements: "Understanding Level 5 + Take Tutor Job",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Start Tutor job.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "All I do is study...", bestChoice: "Do you hate it? (+3)" }] },
-      { rank: 3, choices: [{ prompt: "My mom only cares about test scores.", bestChoice: "That's rough. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I want a real friend for my birthday...", bestChoice: "I'm your friend. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I cheated on the last exam...", bestChoice: "Why did you do it? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "The school caught me cheating...", bestChoice: "Face the consequences. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "My mom yelled at me...", bestChoice: "Apologize honestly. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I confessed to my mom and teacher.", bestChoice: "Proud of you. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "My mom accepted me for who I am.", bestChoice: "That's great news! (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Shiva." }] }
-    ]
   },
   {
     id: "P4G-ai",
@@ -1014,18 +496,6 @@ export const socialLinkDB = [
     bio: "A superficial, wealthy girl who uses shopping and arrogance to hide past trauma from childhood obesity.",
     availability: "Wed, Thu, Fri (1F Hallway / Shopping District)",
     requirements: "Courage Level 3 + Rank 3 Strength (Sports Club)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Ai in 1F Hallway.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Carry my shopping bags!", bestChoice: "Sure thing. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "I hate people who judge by appearance.", bestChoice: "I agree. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "I'm in love with Kou/Daisuke...", bestChoice: "I'll support you. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "He rejected me...", bestChoice: "It's his loss. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Will you be my fake boyfriend?", bestChoice: "Accept (Fake Route) / Reject (True Path)" }] },
-      { rank: 7, choices: [{ prompt: "Realizing true self worth...", bestChoice: "Be yourself. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "I was ugly as a kid...", bestChoice: "You're beautiful inside. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Ai confesses real love for you.", bestChoice: "I love you too. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Sandalphon." }] }
-    ]
   },
   // Strength Arcana Splits
   {
@@ -1037,18 +507,6 @@ export const socialLinkDB = [
     image: "/images/characters/kou_1.webp",
     bio: "",
     requirements: "Join the Basketball Club (Available starting 4/19)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Join Basketball team.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Kou working hard at practice...", bestChoice: "Thanks for the help. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Hanging out after practice...", bestChoice: "Count me in! (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Discussing family expectations...", bestChoice: "Must be tough. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Kou looks troubled...", bestChoice: "Sounds good. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Doubting his future...", bestChoice: "You can do it. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Uncovering adoption truths...", bestChoice: "It's not your fault. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Reconciling with family history...", bestChoice: "You did your best. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Reflecting on basketball and friends...", bestChoice: "You guys are great. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Zaou-Gongen." }] }
-    ]
   },
   {
     id: "P4G-daisuke",
@@ -1059,21 +517,8 @@ export const socialLinkDB = [
     image: "/images/characters/daisuke_1.webp",
     bio: "",
     requirements: "Join the Soccer Club (Available starting 4/19)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Join Soccer team.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Daisuke slacking off...", bestChoice: "Thanks for the help. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Hanging out post-practice...", bestChoice: "Count me in! (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Talking about girls and sports...", bestChoice: "Must be tough. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Daisuke acting distant...", bestChoice: "Sounds good. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Facing his fear of rejection...", bestChoice: "You'll pull through. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Opening up about his ex-girlfriend...", bestChoice: "Don't worry about it. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Moving on from the past...", bestChoice: "You did great. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Bonding with team members...", bestChoice: "You guys are awesome. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Zaou-Gongen." }] }
-    ]
   },
-
-  // Sun Arcana Splits
+  // Sun Arcana Splits 
   {
     id: "P4G-yumi",
     name: "Yumi Ozawa",
@@ -1083,18 +528,6 @@ export const socialLinkDB = [
     image: "/images/characters/yumi_1.webp",
     bio: "",
     requirements: "Join the Drama Club (Available starting 4/25)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Join Drama Club.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Practicing script after school...", bestChoice: "Try your best. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Yumi feeling overwhelmed...", bestChoice: "Are you okay? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Discussing acting vs reality...", bestChoice: "I'll support you. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Receiving news about her father...", bestChoice: "Forgive him. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Visiting the hospital...", bestChoice: "You're not wrong. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Father's condition worsening...", bestChoice: "It's up to you. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Facing heavy grief...", bestChoice: "I'll be here. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Confessing her feelings...", bestChoice: "I love you. [Romance] / We're friends. [Platonic]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Asura." }] }
-    ]
   },
   {
     id: "P4G-ayane",
@@ -1105,18 +538,6 @@ export const socialLinkDB = [
     image: "/images/characters/ayane_1.webp",
     bio: "",
     requirements: "Join the Music Club (Available starting 4/25)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Join Music Club.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Practicing trombone alone...", bestChoice: "Effort is what counts. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Struggling with complex sheet music...", bestChoice: "Need a hand? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Feeling inferior to other members...", bestChoice: "Keep at it. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Being passed over for solos...", bestChoice: "You can do it. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Overcome with frustration...", bestChoice: "It's okay to cry. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Practicing extra hours...", bestChoice: "You've grown. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Preparing for the main concert...", bestChoice: "I'll watch over you. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Expressing gratitude and feelings...", bestChoice: "I love you. [Romance] / We're friends. [Platonic]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Asura." }] }
-    ]
   },
   {
     id: "P4G-marie",
@@ -1128,18 +549,6 @@ export const socialLinkDB = [
     bio: "An amnesiac poet girl residing in the Velvet Room whose lost memories hold the key to the Golden True Ending.",
     availability: "Wed, Sat, Sun, Holidays (Velvet Room Door - Central Shopping)",
     requirements: "Must Max BEFORE Dec 23rd for Golden Ending",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Take Marie out of Velvet Room.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "What is this town?", bestChoice: "Plenty of time. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Shopping in town...", bestChoice: "Let me help. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Is hanging out with me fun?", bestChoice: "It's lots of fun. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I want to remember who I was...", bestChoice: "I'll help you. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "What if my past is terrible?", bestChoice: "Don't worry. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Losing hope in memory search...", bestChoice: "You have us now. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Making new memories together.", bestChoice: "Let's make tons. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Marie confesses her feelings.", bestChoice: "I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Hollow Forest Unlocked.", bestChoice: "Unlocks Kaguya." }] }
-    ]
   },
   {
     id: "P4G-adachi",
@@ -1151,18 +560,6 @@ export const socialLinkDB = [
     bio: "Dojima's clumsy junior detective who conceals a dark, nihilistic cynicism behind his lazy persona.",
     availability: "Specific days at Junes / Gas Station Night",
     requirements: "Must reach Rank 6 by Nov 1st",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Adachi at Junes after 5/13.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Dojima-san works me to the bone...", bestChoice: "That sounds tough. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Hanging out at night...", bestChoice: "You're a good detective. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Complaining about old ladies...", bestChoice: "That's a surprise. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "I wish I stayed in the city...", bestChoice: "Do you hate Inaba? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Talking at the gas station night...", bestChoice: "Are you okay? (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Story Progression (Nov)", bestChoice: "Automatic." }] },
-      { rank: 8, choices: [{ prompt: "Confront him alone in TV World (Dec)", bestChoice: "Go alone to Magatsu Mandala." }] },
-      { rank: 9, choices: [{ prompt: "Story Progression (Dec)", bestChoice: "Automatic." }] },
-      { rank: 10, choices: [{ prompt: "True Ending Route reached.", bestChoice: "Unlocks Magatsu-Izanagi." }] }
-    ]
   },
   {
     id: "P4G-margaret",
@@ -1174,18 +571,6 @@ export const socialLinkDB = [
     bio: "Igor's refined assistant who tests your fusion mastery by demanding specific Personas with requested skills.",
     availability: "Mon - Sun (Velvet Room)",
     requirements: "Knowledge Level 3 + Fusion Mastery",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Fuse Taotie with Dia.", bestChoice: "Hand over Persona." }] },
-      { rank: 2, choices: [{ prompt: "Fuse Expert / Ride with Sukukaja.", bestChoice: "Hand over Persona." }] },
-      { rank: 3, choices: [{ prompt: "Fuse Kuwan-yu with Invigorate 1.", bestChoice: "Hand over Persona." }] },
-      { rank: 4, choices: [{ prompt: "Fuse Neko Shogun with Bufula.", bestChoice: "Hand over Persona." }] },
-      { rank: 5, choices: [{ prompt: "Fuse Black Frost with Auto-Sukukaja.", bestChoice: "Hand over Persona." }] },
-      { rank: 6, choices: [{ prompt: "Fuse Yatagarasu with Megido.", bestChoice: "Hand over Persona." }] },
-      { rank: 7, choices: [{ prompt: "Fuse Yatsufusa with Mediarama.", bestChoice: "Hand over Persona." }] },
-      { rank: 8, choices: [{ prompt: "Fuse Ganesha with Mind Charge.", bestChoice: "Hand over Persona." }] },
-      { rank: 9, choices: [{ prompt: "Fuse Trumpeter with Evade Physical.", bestChoice: "Hand over Persona." }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Isis & Secret Boss Fight." }] }
-    ]
   },
 
   // ==========================================
@@ -1201,18 +586,6 @@ export const socialLinkDB = [
     bio: "A hot-headed, fiercely loyal friend branded a delinquent after standing up against Kamoshida's abuse.",
     availability: "Mon, Tue, Wed, Fri, Sat (Classroom 2-D / Arcade)",
     requirements: "Automatic on 4/12",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Awaken to Captain Kidd.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Talking about former track team...", bestChoice: "I'm counting on you. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Rumors spreading in school...", bestChoice: "Let's not get riled up. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Meeting Nakaoka at the ramen shop...", bestChoice: "Are you worried about him? (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Working out at Gym...", bestChoice: "Protein shake? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Yamauchi abusing position...", bestChoice: "We can't lose our cool. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Confronting former teammates...", bestChoice: "You should talk to them. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Nakaoka's change of heart...", bestChoice: "I agree. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Rebuilding track team spirit...", bestChoice: "I'm proud of you, Ryuji. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Instakill & Seiten Taisei -> William." }] }
-    ]
   },
   {
     id: "p5-morgana",
@@ -1224,18 +597,6 @@ export const socialLinkDB = [
     bio: "A mysterious cat-like creature who teaches you the ways of the Metaverse while seeking his true identity.",
     availability: "Story Progression",
     requirements: "Automatic Progression",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Escape Castle Palace.", bestChoice: "Automatic." }] },
-      { rank: 2, choices: [{ prompt: "Story Progression (Madarame Palace).", bestChoice: "Automatic." }] },
-      { rank: 3, choices: [{ prompt: "Story Progression (Kaneshiro Palace).", bestChoice: "Automatic." }] },
-      { rank: 4, choices: [{ prompt: "Story Progression (Futaba Palace).", bestChoice: "Automatic." }] },
-      { rank: 5, choices: [{ prompt: "Story Progression (Okumura Palace).", bestChoice: "Automatic." }] },
-      { rank: 6, choices: [{ prompt: "Rejoining team post-Okumura.", bestChoice: "Automatic." }] },
-      { rank: 7, choices: [{ prompt: "Story Progression (Niijima Palace).", bestChoice: "Automatic." }] },
-      { rank: 8, choices: [{ prompt: "Story Progression (Shido Palace).", bestChoice: "Automatic." }] },
-      { rank: 9, choices: [{ prompt: "Story Progression (Depths of Mementos).", bestChoice: "Automatic." }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Mercurius -> Diego." }] }
-    ]
   },
   {
     id: "p5-makoto",
@@ -1247,18 +608,6 @@ export const socialLinkDB = [
     bio: "An overachieving student leader who awakens her inner motorcycle Persona, Johanna, to fight for justice.",
     availability: "Wed, Thu, Fri, Sun (3F School Hall / Aoyama)",
     requirements: "Knowledge Level 3 (Scholarly) + Charm Level 5 at Rank 6",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Makoto outside Student Council Office.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Visiting arcade in Shibuya...", bestChoice: "You're very well informed. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "She was called a robot...", bestChoice: "You can change. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Talking about her father...", bestChoice: "That's an amazing goal. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Pretend to be my boyfriend!", bestChoice: "I got this. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Eiko's suspicious host boyfriend...", bestChoice: "Love comes in many forms. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Investigating Tsukasa...", bestChoice: "That's horrible. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Confronting Tsukasa in club...", bestChoice: "He's taking advantage of you. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Makoto stumbles into your arms.", bestChoice: "I'll be here for you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Anat -> Agnes." }] }
-    ]
   },
   {
     id: "p5-haru",
@@ -1270,18 +619,6 @@ export const socialLinkDB = [
     bio: "The gentle, coffee-gardening heiress to Okumura Foods who rebels against an forced arranged marriage.",
     availability: "Mon, Tue, Wed, Fri (School Rooftop)",
     requirements: "Proficiency Level 5 (Tinker)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Haru on School Rooftop.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Gardening on rooftop...", bestChoice: "Are you opening a café? (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Sugimura harassing her...", bestChoice: "Don't marry him. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Okumura Foods corporate decisions...", bestChoice: "It's all good. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Takakura-san offering help...", bestChoice: "Trust your instincts. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Coffee tasting together...", bestChoice: "You should follow your dream. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Sugimura confrontation...", bestChoice: "What a jerk. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Protecting her father's true vision.", bestChoice: "I'm with you. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Haru confessing on rooftop...", bestChoice: "I love you too. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Astarte -> Lucy." }] }
-    ]
   },
   {
     id: "p5-yusuke",
@@ -1293,18 +630,6 @@ export const socialLinkDB = [
     bio: "An eccentric art student seeking true aesthetic beauty while overcoming the trauma of Madarame's exploitation.",
     availability: "Mon, Tue, Wed, Thu, Sun (Underground Walkway)",
     requirements: "Proficiency Level 2",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Yusuke in Underground Walkway.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Inspiration slumps...", bestChoice: "It's novel. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Asking you to pose as Desire...", bestChoice: "Don't lose hope. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Visiting boat park for art...", bestChoice: "I should be asking you. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Art critic offer...", bestChoice: "Do you want to strip? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Madarame's shadow lingering...", bestChoice: "It feels nostalgic. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Painting 'Desire and Hope'...", bestChoice: "What do you mean? (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Looking at 'Sayuri' with fresh eyes.", bestChoice: "It has soul. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Understanding genuine beauty.", bestChoice: "You've matured. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Kamu Susano-o -> Gorokichi." }] }
-    ]
   },
   {
     id: "p5-sojiro",
@@ -1316,18 +641,6 @@ export const socialLinkDB = [
     bio: "Your gruff guardian and owner of Café Leblanc who secretly guards and cares deeply for Futaba Sakura.",
     availability: "Mon, Tue, Thu, Sat (Café Leblanc - Night)",
     requirements: "Kindness Level 5 at Rank 7 (Unlocked after Futaba Palace)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Help Sojiro at Leblanc.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Learning coffee brewing...", bestChoice: "Making coffee! (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Curry masterclass...", bestChoice: "I want to learn more. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Phone call about Futaba...", bestChoice: "Tell me more. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Protecting Futaba's home...", bestChoice: "I think I'm getting it. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Futaba's uncle harassing Sojiro...", bestChoice: "To each his own. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Sojiro's dedication as foster dad.", bestChoice: "You're a great dad. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Clearing Mementos shadow for Futaba's uncle.", bestChoice: "You did great. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Sojiro's tears of gratitude.", bestChoice: "You have a great family. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Kohryu." }] }
-    ]
   },
   {
     id: "p5-ann",
@@ -1339,18 +652,6 @@ export const socialLinkDB = [
     bio: "A compassionate Japanese-American girl who fights to empower herself and protect her hospitalized friend Shiho.",
     availability: "Tue, Thu, Fri, Sun (Underground Mall / Shibuya)",
     requirements: "Kindness Level 2",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Awaken to Carmen.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Supporting Shiho's recovery...", bestChoice: "She'll recover. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Practicing tough expressions...", bestChoice: "Can we stop yet? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Rival model Mika acting fake...", bestChoice: "I know how you feel. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Eating sweets together...", bestChoice: "Give it your all. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Shiho moving to a new school...", bestChoice: "Comfort her. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Mika taking jobs away from her...", bestChoice: "She's right. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Showing true willpower as a model.", bestChoice: "You're amazing. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Ann crying on the rooftop.", bestChoice: "I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Hecate -> Célestine." }] }
-    ]
   },
   {
     id: "p5-futaba",
@@ -1362,18 +663,6 @@ export const socialLinkDB = [
     bio: "A shut-in hacker prodigy who overcomes trauma, severe social anxiety, and false guilt with your help.",
     availability: "Wed, Thu, Sat, Sun (Outside Leblanc)",
     requirements: "Kindness Level 4 (Gentle)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Futaba outside Leblanc.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Futaba's 'Promise List' for society...", bestChoice: "I'll help you. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Going to Akihabara...", bestChoice: "Custom made. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Meeting Kana-chan...", bestChoice: "Let's do this together. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Kana's parents abusing her...", bestChoice: "I think you're right. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Overcoming panic in public.", bestChoice: "Are you okay? (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Targeting Kana's parents in Mementos.", bestChoice: "You've grown so much. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Completing the Promise List!", bestChoice: "You're welcome. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Futaba holding your shirt sleeve...", bestChoice: "Because I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Prometheus -> Al Azif." }] }
-    ]
   },
   {
     id: "p5-chihaya",
@@ -1385,18 +674,6 @@ export const socialLinkDB = [
     bio: "A country girl trapped in a fraudulent fortune-telling cult who learns to change fate.",
     availability: "Tue, Thu, Sat, Sun (Shinjuku - Night)",
     requirements: "Buy 'Holy Stone' for 100,000 yen ( refunded later )",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Buy Holy Stone and complete Mementos request.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Testing fate readings...", bestChoice: "Encourage her. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Changing a client's fate...", bestChoice: "You have true power. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "The Holy Heavenly Truth cult...", bestChoice: "You're a victim too. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Researching cult leadership...", bestChoice: "It's a scam. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Confronting her past village rumors...", bestChoice: "You aren't a monster. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Mementos Target: Cult President.", bestChoice: "Stand up to them! (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Refusing to sell fake stones.", bestChoice: "You changed your fate. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Chihaya gives you a private reading.", bestChoice: "I want to be with you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Lakshmi." }] }
-    ]
   },
   {
     id: "p5-twins",
@@ -1408,18 +685,6 @@ export const socialLinkDB = [
     bio: "Twin prison wardens who rehabilitate Joker by demanding fused Personas with specified skill traits.",
     availability: "Mon - Sun (Velvet Room Door)",
     requirements: "Available after 5/18",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Fuse Jack Frost with Mabufu.", bestChoice: "Hand over Persona." }] },
-      { rank: 2, choices: [{ prompt: "Fuse Ame-no-Uzume with Frei.", bestChoice: "Hand over Persona." }] },
-      { rank: 3, choices: [{ prompt: "Fuse Flauros with Tarukaja.", bestChoice: "Hand over Persona." }] },
-      { rank: 4, choices: [{ prompt: "Fuse Phoenix with Counter.", bestChoice: "Hand over Persona." }] },
-      { rank: 5, choices: [{ prompt: "Fuse Setanta with Rakukaja.", bestChoice: "Hand over Persona." }] },
-      { rank: 6, choices: [{ prompt: "Fuse Neko Shogun with Dekaja.", bestChoice: "Hand over Persona." }] },
-      { rank: 7, choices: [{ prompt: "Fuse Lachesis with Tetraja.", bestChoice: "Hand over Persona." }] },
-      { rank: 8, choices: [{ prompt: "Fuse Hecatoncheires with Masukunda.", bestChoice: "Hand over Persona." }] },
-      { rank: 9, choices: [{ prompt: "Fuse Bugs with Samarecarm.", bestChoice: "Hand over Persona." }] },
-      { rank: 10, choices: [{ prompt: "Fuse Seth with High Counter.", bestChoice: "Unlocks Zaou-Gongen & Special Fusions." }] }
-    ]
   },
   {
     id: "p5-iwai",
@@ -1431,18 +696,6 @@ export const socialLinkDB = [
     bio: "Former Yakuza member who crafts custom airsoft gear while protecting his adopted son Kaoru from his past life.",
     availability: "Sun, Thu, Sat (Untouchable Airsoft Shop - Night)",
     requirements: "Guts Level 4 (Dauntless)",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Ask Iwai about the mystery package.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Custom gun modding...", bestChoice: "Leave it to me. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Yakuza associates coming around...", bestChoice: "Is it Yakuza? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Kaoru asking questions...", bestChoice: "Hong Kong mafia? (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Arai blackmailing Iwai...", bestChoice: "Kaoru is important to you. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Protecting Kaoru from the truth...", bestChoice: "He's a good kid. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Mementos Target: Arai.", bestChoice: "I'll do it for Kaoru. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Kaoru learns about Iwai's Yakuza past.", bestChoice: "You're a real father. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Kaoru accepts Iwai completely.", bestChoice: "I'm glad. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Attis." }] }
-    ]
   },
   {
     id: "p5-takemi",
@@ -1454,18 +707,6 @@ export const socialLinkDB = [
     bio: "A disgraced medical doctor who uses you as a 'guinea pig' to test life-saving experimental medication.",
     availability: "Mon - Sun (Takemi Medical Clinic - Day)",
     requirements: "Guts Level 2 + Charm Level 4 at Rank 8",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Participate in clinical trial.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Drinking experimental medicine...", bestChoice: "I have a tough stomach. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Dr. Oyamada ruined her medical career...", bestChoice: "I'm fine. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Miwa-chan's terminal illness...", bestChoice: "Dr. Takemi will save her. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Oyamada lying about Miwa's death...", bestChoice: "It's for Miwa-chan. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Takemi giving up...", bestChoice: "Don't lose hope. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Finding out Miwa is still alive!", bestChoice: "Just what I'd expect. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Mementos Target: Oyamada.", bestChoice: "I'm glad you didn't give up. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Takemi teasing you in clinic.", bestChoice: "I love you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Alice & SP Adhesive 3." }] }
-    ]
   },
   {
     id: "p5-kawakami",
@@ -1477,18 +718,6 @@ export const socialLinkDB = [
     bio: "Your burnt-out Shujin homeroom teacher forced into maid service by extortionate former student guardians.",
     availability: "Fri, Sat (Leblanc Payphone - Night)",
     requirements: "Guts Level 3 + Operation Maidwatch event",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Call Kawakami using Leblanc payphone.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Maid service in your room...", bestChoice: "It's my duty. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Kawakami passing out from exhaustion...", bestChoice: "Don't push yourself. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Takase's guardians extortion scheme...", bestChoice: "That's awful. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Working multiple jobs...", bestChoice: "Are you okay? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Kawakami hospitalized...", bestChoice: "Rest up. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Takase guardians demand money...", bestChoice: "Don't pay them! (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Mementos Target: Takase Guardians.", bestChoice: "I'll handle them. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Kawakami quitting maid job...", bestChoice: "I want you to stay. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Ardha & Special Massage." }] }
-    ]
   },
   {
     id: "p5-ohya",
@@ -1500,18 +729,6 @@ export const socialLinkDB = [
     bio: "A heavy-drinking tabloid journalist at Crossroads Bar seeking the truth behind her former partner's disappearance.",
     availability: "Mon, Tue, Wed, Thu, Sun (Crossroads Bar - Shinjuku)",
     requirements: "Charm Level 3",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Ohya at Crossroads Bar.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Exposing shady scoops...", bestChoice: "For the Phantom Thieves? (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Ohya's boss suppressing real stories...", bestChoice: "You're a real reporter. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Kazuyo's disappearance...", bestChoice: "What happened? (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Shido's political coverup connection...", bestChoice: "That's dangerous. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Chief Editor threat...", bestChoice: "Don't give up. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Mementos Target: Chief Editor.", bestChoice: "I'll clear the way. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Finding Kazuyo in psychiatric ward...", bestChoice: "You saved her. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Ohya drinking with you...", bestChoice: "I want to be with you. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Beelzebub." }] }
-    ]
   },
   {
     id: "p5-shinya",
@@ -1523,18 +740,6 @@ export const socialLinkDB = [
     bio: "An arcade prodigy whose toxic gaming behavior stems from his mother's aggressive perfectionism.",
     availability: "Mon, Tue, Thu, Sat (Akihabara Arcade)",
     requirements: "Get 'Get Smarter with Cheating' Mementos Request",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Talk to Shinya in Akihabara Arcade.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Gun manipulation training...", bestChoice: "Don't brag. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Winning is everything!", bestChoice: "Is it fun? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Shinya's mom complaining at school...", bestChoice: "Calm down. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Other gamers hating him...", bestChoice: "You're acting like a bully. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Realizing he lost sight of fun...", bestChoice: "I believe in you. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Mementos Target: Shinya's Mom.", bestChoice: "I'll help her. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Shinya's mom changes her heart...", bestChoice: "You're a true champion. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Playing fair and having fun!", bestChoice: "I'm proud of you. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Chi You & Down Shot." }] }
-    ]
   },
   {
     id: "p5-mishima",
@@ -1546,18 +751,6 @@ export const socialLinkDB = [
     bio: "A former victim of Kamoshida who runs the Phan-Site, managing target requests and seeking fame.",
     availability: "Mon - Sun (Shibuya / Shinjuku / Akihabara - Night)",
     requirements: "Automatic after Kamoshida Palace",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Phan-Site creation event.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Managing requests...", bestChoice: "You're very dedicated. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Phan-Site popularity soaring...", bestChoice: "Great job. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Mishima getting arrogant...", bestChoice: "Don't let it get to your head. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Targeting old classmates...", bestChoice: "Is this for justice? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Mishima's shadow in Mementos...", bestChoice: "You don't need Phantom Thieves. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Confronting his own shadow without battle...", bestChoice: "You changed on your own. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "True courage revealed...", bestChoice: "You're incredible. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Supporting the team from the shadows.", bestChoice: "You're the hero. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Sandalphon & Max EXP boost." }] }
-    ]
   },
   {
     id: "p5-yoshida",
@@ -1569,18 +762,6 @@ export const socialLinkDB = [
     bio: "A disgraced politician, known as 'No-Good Tora', who rediscovering his passion for truthful public speech.",
     availability: "Sun (Shibuya Station Square - Night)",
     requirements: "Work at Beef Bowl Shop twice + Deadline Nov 13th",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Hold Yoshida's megaphone.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Public speaking lessons...", bestChoice: "I want to improve. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Dealing with hecklers...", bestChoice: "His speech had heart. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Matsushita offer...", bestChoice: "Follow your convictions. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Former scandal history...", bestChoice: "I think so too. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Kuramoto political pressure...", bestChoice: "Don't back down. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Clean campaign pledge...", bestChoice: "You've got my vote. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Matsushita bribe offer...", bestChoice: "Refuse the bribe! (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Inspiring speech at station...", bestChoice: "You're a true leader. (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Asura & Shadow Recruitment perks." }] }
-    ]
   },
   {
     id: "p5-hifumi",
@@ -1592,18 +773,6 @@ export const socialLinkDB = [
     bio: "A beautiful high school Shogi champion whose mother manipulates her match results for celebrity fame.",
     availability: "Mon, Wed, Sat, Sun (Kanda Church - Night)",
     requirements: "Knowledge Level 3 (Scholarly) + Rank 2 Yusuke",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Play Shogi at Kanda Church.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Shogi battle strategies...", bestChoice: "That's cool. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Mother forcing media appearances...", bestChoice: "Don't force yourself. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Shogi magazine photo shoots...", bestChoice: "I support you. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Rigged match allegations...", bestChoice: "Focus on the board. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Mother confessing to match fixing...", bestChoice: "Is that true? (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Mementos Target: Hifumi's Mom.", bestChoice: "I'll help you. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Playing genuine Shogi...", bestChoice: "You can win on your own. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Hifumi at church altar.", bestChoice: "I want to stay by your side. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Achieved.", bestChoice: "Unlocks Lucifer & Mid-Battle Party Swap." }] }
-    ]
   },
   {
     id: "p5-sae",
@@ -1615,18 +784,6 @@ export const socialLinkDB = [
     bio: "Makoto's older sister and lead prosecutor driving the Phantom Thief investigation while conducting Joker's interrogation.",
     availability: "Story Interrogation Progression",
     requirements: "Automatic Progression",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Interrogation start.", bestChoice: "Automatic." }] },
-      { rank: 2, choices: [{ prompt: "Post-Madarame Palace.", bestChoice: "Automatic." }] },
-      { rank: 3, choices: [{ prompt: "Post-Kaneshiro Palace.", bestChoice: "Automatic." }] },
-      { rank: 4, choices: [{ prompt: "Post-Futaba Palace.", bestChoice: "Automatic." }] },
-      { rank: 5, choices: [{ prompt: "Post-Okumura Palace.", bestChoice: "Automatic." }] },
-      { rank: 6, choices: [{ prompt: "Niijima Palace start.", bestChoice: "Automatic." }] },
-      { rank: 7, choices: [{ prompt: "Niijima Palace mid-point.", bestChoice: "Automatic." }] },
-      { rank: 8, choices: [{ prompt: "Niijima Palace treasure route.", bestChoice: "Automatic." }] },
-      { rank: 9, choices: [{ prompt: "Interrogation climax (Refuse to snitch!).", bestChoice: "Do NOT sell out your friends!" }] },
-      { rank: 10, choices: [{ prompt: "True Route unlocked on 11/20.", bestChoice: "Unlocks Satan." }] }
-    ]
   },
   {
     id: "p5-akechi",
@@ -1638,18 +795,6 @@ export const socialLinkDB = [
     bio: "A celebrity high school detective who shares a bitter, rivalistic bond with Joker.",
     availability: "Wed, Sat (Kichijoji Darts / Billiards - Night)",
     requirements: "Must reach Rank 8 BEFORE Nov 17th for 3rd Semester Content",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "TV Station encounter on 6/10.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Billiards at Kichijoji...", bestChoice: "You always seem so busy. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Leblanc coffee visit...", bestChoice: "Should have figured. (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Jazz Jin Club visit...", bestChoice: "Now this is my kind of club. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Playing Darts together...", bestChoice: "Are you used to gunplay? (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Batting Cages at night...", bestChoice: "A while, huh? (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Rivalry confrontation...", bestChoice: "You're my rival. (Crucial for 3rd Sem)" }] },
-      { rank: 8, choices: [{ prompt: "Mementos Duel...", bestChoice: "I accept. (Crucial for 3rd Sem)" }] },
-      { rank: 9, choices: [{ prompt: "Shido Palace Event.", bestChoice: "Automatic." }] },
-      { rank: 10, choices: [{ prompt: "True Justice Awakened.", bestChoice: "Unlocks Hereward." }] }
-    ]
   },
   {
     id: "p5-yoshizawa",
@@ -1661,18 +806,6 @@ export const socialLinkDB = [
     bio: "An elite rhythmic gymnast whose vibrant personality hides a tragic identity twist.",
     availability: "Wed, Thu, Sun (Kichijoji - Day)",
     requirements: "Must reach Rank 5 BEFORE Dec 22nd. Ranks 6-10 unlock in 3rd Semester.",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Cleanup event on 5/30.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Gymnastics training...", bestChoice: "We're just getting started. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Bento box lunch...", bestChoice: "Making bento? (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Shopping in Kichijoji...", bestChoice: "I'm glad to hear that. (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Showcase performance promise...", bestChoice: "It's a deal. (+3) [CAP UNTIL JAN]" }] },
-      { rank: 6, choices: [{ prompt: "3rd Semester truth reveal...", bestChoice: "You have to face it. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Overcoming past identity trauma...", bestChoice: "You're not alone. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Reclaiming her own gymnastics...", bestChoice: "Walk your own path. (+3)" }] },
-      { rank: 9, isRomance: true, choices: [{ prompt: "Confession in 3rd Semester...", bestChoice: "I love you too. [Romance]" }] },
-      { rank: 10, choices: [{ prompt: "Max Rank Faith Achieved.", bestChoice: "Unlocks Cendrillon -> Ella." }] }
-    ]
   },
   {
     id: "p5-maruki",
@@ -1684,17 +817,5 @@ export const socialLinkDB = [
     bio: "A benevolent school counselor researching cognitive psychology whose ideal reality shapes the 3rd Semester.",
     availability: "Mon, Fri (Practice Building 1F)",
     requirements: "Must reach Rank 9 BEFORE Nov 17th to unlock 3rd Semester",
-    ranks: [
-      { rank: 1, choices: [{ prompt: "Intro session on 5/13.", bestChoice: "Automatic unlock." }] },
-      { rank: 2, choices: [{ prompt: "Counseling sessions...", bestChoice: "We made a deal. (+3)" }] },
-      { rank: 3, choices: [{ prompt: "Free snacks & cognitive talks...", bestChoice: "Thanks for the food! (+3)" }] },
-      { rank: 4, choices: [{ prompt: "Trauma discussion...", bestChoice: "I know, right? (+3)" }] },
-      { rank: 5, choices: [{ prompt: "Research assistant work...", bestChoice: "This looks great. (+3)" }] },
-      { rank: 6, choices: [{ prompt: "Talking about Rumi...", bestChoice: "Calm down. (+3)" }] },
-      { rank: 7, choices: [{ prompt: "Cognitive psuchology breakthrough...", bestChoice: "You're very dedicated. (+3)" }] },
-      { rank: 8, choices: [{ prompt: "Paper completion nearing...", bestChoice: "I'm a good listener. (+3)" }] },
-      { rank: 9, choices: [{ prompt: "Final counseling session before Nov 17.", bestChoice: "Kind of sad... (+3)" }] },
-      { rank: 10, choices: [{ prompt: "Auto on 11/18 if Rank 9 met.", bestChoice: "Unlocks 3rd Semester & Vohu Manah." }] }
-    ]
   }
 ];

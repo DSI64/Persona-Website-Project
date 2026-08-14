@@ -128,116 +128,6 @@
   color: #ffe600;
 }
 
-/* Right Column Styling (Ranks Dropdowns) */
-.detail-right-column {
-  background-color: var(--p5-dark-gray);
-  border: 4px solid var(--p5-white);
-  padding: 2rem;
-  transform: skew(-2deg);
-  box-shadow: -8px 8px 0px #333;
-}
-
-.ranks-header-wrap h2 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 2.2rem;
-  margin: 0 0 0.25rem 0;
-  letter-spacing: 0.05em;
-}
-
-.ranks-header-wrap p {
-  font-size: 0.9rem;
-  opacity: 0.7;
-  margin-bottom: 1.5rem;
-}
-
-.detail-ranks-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.detail-rank-card {
-  background-color: #111;
-  border: 2px solid #333;
-  overflow: hidden;
-  transition: border-color 0.2s ease;
-}
-
-.detail-rank-card.romance-rank {
-  border-color: var(--p5-red);
-}
-
-.detail-rank-btn {
-  width: 100%;
-  background-color: #1a1a1a;
-  border: none;
-  color: var(--p5-white);
-  padding: 1rem 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.05em;
-  text-align: left;
-  transition: background-color 0.2s ease;
-}
-
-.detail-rank-btn:hover {
-  background-color: #262626;
-}
-
-.romance-rank .detail-rank-btn {
-  background-color: rgba(217, 0, 22, 0.15);
-}
-
-.rank-title-group {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.romance-tag {
-  background-color: var(--p5-red);
-  color: white;
-  font-size: 0.7rem;
-  font-family: "Space Grotesk", sans-serif;
-  padding: 0.1rem 0.4rem;
-  border-radius: 3px;
-}
-
-.arrow-icon {
-  font-size: 0.8rem;
-  transition: transform 0.2s ease;
-}
-
-.arrow-icon.open {
-  transform: rotate(180deg);
-}
-
-.detail-rank-content {
-  padding: 1.25rem;
-  background-color: #111;
-  border-top: 1px dashed #333;
-}
-
-.romance-rank .detail-rank-content {
-  background-color: rgba(217, 0, 22, 0.05);
-}
-
-.rank-prompt {
-  font-size: 0.95rem;
-  margin: 0 0 0.5rem 0;
-  opacity: 0.85;
-}
-
-.rank-answer {
-  font-size: 1rem;
-  margin: 0;
-  color: #4ade80;
-  font-weight: 700;
-}
 
 .not-found-page {
   text-align: center;
@@ -319,4 +209,10 @@
   height: 100%;
   object-fit: contain; /* Shows the full image without heavy cropping/zooming */
   display: block;
+}
+
+.detail-divider {
+  border: none;
+  border-top: 2px dashed #444;
+  margin: 1.5rem 0;
 }
