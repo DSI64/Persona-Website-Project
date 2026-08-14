@@ -16,7 +16,6 @@ const getNextValidIndex = (startIndex, direction) => {
 };
 
 export default function Music() {
-  const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [expandedCategory, setExpandedCategory] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -201,16 +200,6 @@ export default function Music() {
       <div className="music-layout-grid centered-layout">
         {/* LEFT SIDEBAR */}
         <aside className="music-sidebar">
-          <div className="sidebar-search-box">
-            <input 
-              type="text" 
-              className="p5-sidebar-search" 
-              placeholder="SEARCH TRACKS..." 
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-          </div>
-
           <div className="category-section">
             <h3>Discs & Categories</h3>
             <div className="category-list">
@@ -322,7 +311,10 @@ export default function Music() {
 
                   {showSettingsMenu && (
                     <div className="settings-dropdown">
-                      <button onClick={handleRandomize}>🔀 Instant Randomize</button>
+                      <div className="settings-slider-row" onClick={handleRandomize} style={{ cursor: 'pointer' }}>
+                        <span className="settings-slider-title">Instant Randomize</span>
+                        <span style={{ fontSize: '1.2rem', paddingRight: '4px' }}>🔀</span>
+                      </div>
                       
                       <div className="settings-slider-row">
                         <span className="settings-slider-title">Randomize on Finish</span>
