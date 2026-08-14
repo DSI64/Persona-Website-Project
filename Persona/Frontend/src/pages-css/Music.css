@@ -283,19 +283,19 @@
   color: #ccc;
 }
 
+/* --- UPDATED PROGRESS BAR --- */
 .progress-bar-bg {
   width: 100%;
-  height: 7px;
-  background-color: #333;
-  border-radius: 4px;
+  height: 8px; /* Slightly thicker for better visibility */
+  background-color: #222; /* Flat dark background */
   overflow: hidden;
-  border: 1px solid #555;
+  /* Removed border-radius and border to match the sharp edges in the image */
 }
 
 .progress-bar-fill {
   height: 100%;
   background-color: var(--p5-red);
-  transition: width 0.2s ease;
+  transition: width 0.2s linear; 
 }
 
 .playback-buttons-row {
@@ -345,10 +345,48 @@
   color: #aaa;
 }
 
+/* --- UPDATED VOLUME SLIDER --- */
 .volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
   flex-grow: 1;
-  accent-color: var(--p5-red);
+  height: 8px;
+  background-color: #222;
+  outline: none;
   cursor: pointer;
+}
+
+/* Chrome, Safari, Edge Customization */
+.volume-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: transparent;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 18px;
+  width: 8px; /* Blocky, rectangular thumb */
+  background-color: var(--p5-white);
+  margin-top: -5px; /* Centers the 18px thumb on the 8px track */
+  box-shadow: 2px 2px 0px var(--p5-black); /* Persona-style drop shadow */
+}
+
+/* Firefox Customization */
+.volume-slider::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  background: #222;
+}
+
+.volume-slider::-moz-range-thumb {
+  height: 18px;
+  width: 8px;
+  background-color: var(--p5-white);
+  border: none;
+  border-radius: 0; /* Ensures sharp corners */
+  box-shadow: 2px 2px 0px var(--p5-black);
 }
 
 /* Settings Wrapper & Dropdown */
@@ -518,4 +556,223 @@
     justify-content: center;
     width: 100%;
   }
+}
+
+/* --- Dropdown Sidebar Styles (Persona Theme Match) --- */
+.category-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.category-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+  font-family: monospace;
+}
+
+.sidebar-dropdown-list {
+  list-style: none;
+  margin: 2px 0 6px 0;
+  padding: 0 0 0 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.sidebar-dropdown-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--p5-black, #111);
+  padding: 0.45rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 2px solid var(--p5-black, #111);
+  box-shadow: 2px 2px 0px var(--p5-black, #111);
+  cursor: pointer;
+  transform: skew(-1deg);
+  transition: all 0.15s ease;
+}
+
+.sidebar-dropdown-track:hover {
+  background-color: var(--p5-white, #fff);
+  transform: skew(-1deg) translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--p5-red, #e11d48);
+}
+
+.sidebar-dropdown-track.active-subtrack {
+  background-color: var(--p5-white, #fff);
+  border-color: var(--p5-red, #e11d48);
+  box-shadow: 3px 3px 0px var(--p5-red, #e11d48);
+}
+
+.subtrack-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 170px;
+  text-transform: uppercase;
+}
+
+.subtrack-indicator {
+  font-size: 0.85rem;
+  color: var(--p5-red, #e11d48);
+}
+
+/* --- Centering the layout container --- */
+.music-layout-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2.5rem;
+  max-width: 1250px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Settings Dropdown Toggle Enhancements --- */
+.settings-dropdown {
+  position: absolute;
+  right: 0;
+  bottom: 130%;
+  background-color: #1a1a1a;
+  border: 2px solid var(--p5-white, #fff);
+  box-shadow: 4px 4px 0px var(--p5-red, #e11d48);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  min-width: 210px;
+  padding: 4px;
+}
+
+.settings-dropdown button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+  transition: background 0.15s;
+}
+
+.settings-dropdown button:hover {
+  background-color: var(--p5-red, #e11d48);
+}
+
+.settings-toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--p5-black, #111);
+  background: var(--p5-white, #fff);
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--p5-black, #111);
+  cursor: pointer;
+  transform: skew(-1deg);
+  transition: background 0.1s ease;
+  margin: 3px 0;
+  box-shadow: 2px 2px 0px var(--p5-black, #111);
+}
+
+.settings-toggle-label:hover {
+  background-color: #f3f4f6;
+}
+
+.settings-toggle-label input[type="checkbox"] {
+  accent-color: var(--p5-red, #e11d48);
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+
+/* --- Persona Toggle Switch Sliders --- */
+.settings-slider-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--p5-white, #fff);
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--p5-black, #111);
+  transform: skew(-1deg);
+  margin: 3px 0;
+  box-shadow: 2px 2px 0px var(--p5-black, #111);
+}
+
+.settings-slider-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--p5-black, #111);
+  letter-spacing: 0.02em;
+}
+
+/* Switch container */
+.p5-switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Hide default HTML checkbox */
+.p5-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The track */
+.p5-slider-track {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border: 2px solid var(--p5-black, #111);
+  transition: background-color 0.2s ease;
+}
+
+/* The sliding square handle */
+.p5-slider-track:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--p5-black, #111);
+  transition: transform 0.2s ease;
+}
+
+/* Checked state styling */
+.p5-switch input:checked + .p5-slider-track {
+  background-color: var(--p5-red, #e11d48);
+}
+
+.p5-switch input:checked + .p5-slider-track:before {
+  transform: translateX(16px);
+  background-color: var(--p5-white, #fff);
 }

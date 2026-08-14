@@ -492,7 +492,7 @@ export const characterDB = [
   { 
     id: 507, name: "Futaba Sakura", game: "P5", arcana: "Hermit", image: "Oracle",
     title: "Oracle", birthday: "February 19", appearances: "Persona 5, Persona 5 Royal, Persona 5 Strikers",
-    personas: "Necronomicon, Prometheus, Al Azif",
+    personas: "Necronomicon, Prometheus (P5), Al Azif",
     voiceActors: "Erica Lindbeck (EN) / Aoi Yuuki (JP)",
     likes: "Video games, anime, hacking, Sojiro", dislikes: "Crowds, cognitive science conspirators",
     profile: "A genius hacker who became a shut-in due to false guilt over her mother's death. She provides indispensable navigation and technical support for the Phantom Thieves.",
@@ -516,7 +516,7 @@ export const characterDB = [
   { 
     id: 509, name: "Goro Akechi", game: "P5", arcana: "Justice", image: "Crow",
     title: "Crow", birthday: "June 2", appearances: "Persona 5, Persona 5 Royal",
-    personas: "Robin Hood, Loki, Hereward",
+    personas: "Robin Hood, Loki (P5), Hereward",
     voiceActors: "Robbie Daymond (EN) / Soichiro Hoshi (JP)",
     likes: "Billiards, jazz clubs, public adoration", dislikes: "The Phantom Thieves, Shido, being manipulated",
     profile: "A charismatic high school detective who opposes the Phantom Thieves in public. Behind his polite exterior lies a deeply fractured and vengeful Wild Card user.",
