@@ -1,14 +1,13 @@
+// Can run site doing npm run dev
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-// Can run site doing npm run dev
-// Import page components
 import Home from './pages-jsx/Home';
 import Characters from './pages-jsx/Characters';
-import Compendium from './pages-jsx/Compendium';
-import SocialLinks from './pages-jsx/SocialLinks';
-import Music from './pages-jsx/Music';
-import SocialLinkDetail from './pages-jsx/SocialLinkDetail';
 import CharacterDetail from './pages-jsx/CharacterDetail';
+import SocialLinks from './pages-jsx/SocialLinks';
+import SocialLinkDetail from './pages-jsx/SocialLinkDetail';
+import Compendium from './pages-jsx/Compendium';
+import Music from './pages-jsx/Music';
 import TeddieQuiz from './pages-jsx/TeddieQuiz';
 
 function App() {
