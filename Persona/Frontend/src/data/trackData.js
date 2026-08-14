@@ -52,19 +52,19 @@ export const TRACK_DATA = [
   // ============================================================
   // PERSONA 3
   // ============================================================
-  { id: 106, title: "Mass Destruction", game: "Persona 3", category: "Persona 3", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "z5Kui2zh3eQ" },
-  { id: 107, title: "Burn My Dread", game: "Persona 3", category: "Persona 3", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "z5Kui2zh3eQ" },
+  { id: 106, title: "Mass Destruction", game: "Persona 3", category: "Persona 3", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "dZBJwlI2tK4" },
+  { id: 107, title: "Burn My Dread", game: "Persona 3", category: "Persona 3", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "MCq-334EzlU" },
 
   // ============================================================
   // PERSONA 4
   // ============================================================
-  { id: 108, title: "Reach Out To The Truth", game: "Persona 4", category: "Persona 4", artist: "Shihoko Hirata",  themeClass: "p4-theme", embedId: "z5Kui2zh3eQ" },
-  { id: 109, title: "Time To Make History", game: "Persona 4", category: "Persona 4", artist: "Shihoko Hirata",  themeClass: "p4-theme", embedId: "z5Kui2zh3eQ" },
+  { id: 108, title: "Reach Out to the Truth", game: "Persona 4", category: "Persona 4", artist: "Shihoko Hirata",  themeClass: "p4-theme", embedId: "Vd_PuNxt5Jg" },
+  { id: 109, title: "Time To Make History", game: "Persona 4 Golden", category: "Persona 4", artist: "Shihoko Hirata",  themeClass: "p4-theme", embedId: "GCYazIui6UM" },
 
   // ============================================================
   // PERSONA 5
   // ============================================================
-  { id: 110, title: "Last Surprise", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "z5Kui2zh3eQ" },
+  { id: 110, title: "Last Surprise", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "f2Us5ipR36w" },
   { id: 111, title: "Life Will Change", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "dsuJZx24V_A" },
 
   // ============================================================
