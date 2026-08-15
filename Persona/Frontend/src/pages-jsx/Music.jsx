@@ -283,7 +283,7 @@ export default function Music() {
             <input 
               type="text" 
               className="p5-sidebar-search" 
-              placeholder="Search for a track..." 
+              placeholder="Search for a track or game..." 
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               onFocus={() => setIsSearchFocused(true)}
