@@ -138,9 +138,9 @@ export const TRACK_DATA = [
   // ============================================================
   // PERSONA 5
   // ============================================================
-  { id: 510, title: "Last Surprise", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "ZNGqBDRJgvo", boxArt: "/images/CD Art/P5.png" },
-  { id: 511, title: "Life Will Change", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "dsuJZx24V_A", boxArt: "/images/CD Art/P5.png" },
-  { id: 512, title: "Wake Up, Get Up, Get Out There", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "zXT_ClHc7Nw", boxArt: "/images/CD Art/P5.png" },
+  { id: 510, title: "Wake Up, Get Up, Get Out There", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "zXT_ClHc7Nw", boxArt: "/images/CD Art/P5.png" },
+  { id: 511, title: "Last Surprise", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "ZNGqBDRJgvo", boxArt: "/images/CD Art/P5.png" },
+  { id: 512, title: "Life Will Change", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "dsuJZx24V_A", boxArt: "/images/CD Art/P5.png" },
   { id: 513, title: "Beneath the Mask", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "lfNPnEm3gu4", boxArt: "/images/CD Art/P5.png" },
   { id: 514, title: "Beneath the Mask -Rain-", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "7cPLD2j1Yew", boxArt: "/images/CD Art/P5.png" },
   { id: 515, title: "Rivers In the Desert", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "lvuHvXsZPrk", boxArt: "/images/CD Art/P5.png" },
@@ -175,18 +175,12 @@ export const TRACK_DATA = [
   { id: 613, title: "Light the Fire Up in the Night (MAYONAKA)", game: "Persona Q: Shadow of the Labyrinth", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "yNFnrhdyHKY", boxArt: "/images/CD Art/PQ.png" },
   { id: 614, title: "Maze of Life", game: "Persona Q: Shadow of the Labyrinth", category: "Spinoffs", artist: "Yumi Kawamura / Shihoko Hirata", themeClass: "p4-theme", embedId: "_2aH4fTeAjM", boxArt: "/images/CD Art/PQ.png" },
   { id: 615, title: "ROAD LESS TAKEN", game: "Persona Q2: New Cinema Labyrinth", category: "Spinoffs", artist: "Yumi Kawamura / Shihoko Hirata / Lyn / Lotus Juice", themeClass: "p5-theme", embedId: "lGS9flfg8Vg", boxArt: "/images/CD Art/PQ2.png" },
-  { id: 616, title: "Dance!", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "497kvOLTH4A", boxArt: "/images/CD Art/P4-Dancing.png" },
-  { id: 617, title: "GROOVY", game: "Persona 5: Dancing in Starlight", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "4EO0orRtsAE", boxArt: "/images/CD Art/P5-Dancing.png" },
-  { id: 618, title: "Our Moment", game: "Persona 3: Dancing in Moonlight", category: "Spinoffs", artist: "Yumi Kawamura / Lotus Juice", themeClass: "p3-theme", embedId: "5VJO7oBwmRs", boxArt: "/images/CD Art/P3-Dancing.png" },
-  { id: 619, title: "You Are Stronger", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "wV16X8cAS50", boxArt: "/images/CD Art/P5S.png" },
-  { id: 620, title: "Daredevil", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "yrraZ6-4lig", boxArt: "/images/CD Art/P5S.png" },
-  { id: 621, title: "Break Out Of...", game: "Persona 4 Arena Ultimax", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "_e2XYzBFzxU", boxArt: "/images/CD Art/P4-AU.png" },
-  { id: 622, title: "Revolution in Your Heart", game: "Persona 5 Tactica", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "jniBKxr2PRE", boxArt: "/images/CD Art/P5T.png" },
-  { id: 623, title: "Best Friends", game: "Persona 4 Arena", category: "Spinoffs", artist: "Yumi Kawamura", themeClass: "p4-theme", embedId: "PqLrCFzssXk", boxArt: "/images/CD Art/P4A.png" },
-  { id: 624, title: "Axe to Grind", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "6XhQfVjlEBY", boxArt: "/images/CD Art/P5S.png" },
   { id: 625, title: "Wait and See", game: "Persona Q2: New Cinema Labyrinth", category: "Spinoffs", artist: "Yumi Kawamura / Shihoko Hirata", themeClass: "p3-theme", embedId: "YlmgojMHJ60", boxArt: "/images/CD Art/PQ2.png" },
   
   // --- Persona 5 Strikers ---
+  { id: 619, title: "You Are Stronger", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "wV16X8cAS50", boxArt: "/images/CD Art/P5S.png" },
+  { id: 620, title: "Daredevil", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "yrraZ6-4lig", boxArt: "/images/CD Art/P5S.png" },
+  { id: 624, title: "Axe to Grind", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "6XhQfVjlEBY", boxArt: "/images/CD Art/P5S.png" },
   { id: 642, title: "Anti HERO", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "18fI53b2VFE", boxArt: "/images/CD Art/P5S.png" },
   { id: 643, title: "Welcome To The Jail", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p5-theme", embedId: "zc7bVLu4bRg", boxArt: "/images/CD Art/P5S.png" },
   { id: 644, title: "Counter Strike", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "N4saztGxyVI", boxArt: "/images/CD Art/P5S.png" },
@@ -197,6 +191,7 @@ export const TRACK_DATA = [
   { id: 649, title: "Freedom Buzz Dance", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Hiromu Akaba", themeClass: "p5-theme", embedId: "e9xvmAa1vgw", boxArt: "/images/CD Art/P5S.png" },
 
   // --- Persona 5 Tactica ---
+  { id: 622, title: "Revolution in Your Heart", game: "Persona 5 Tactica", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "jniBKxr2PRE", boxArt: "/images/CD Art/P5T.png" },
   { id: 650, title: "Quiet Storm", game: "Persona 5 Tactica", category: "Spinoffs", artist: "Toshiki Konishi", themeClass: "p5-theme", embedId: "SKE5GOv4OXs", boxArt: "/images/CD Art/P5T.png" },
   { id: 651, title: "Truth or Dare", game: "Persona 5 Tactica", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "AFhxdC4CVrc", boxArt: "/images/CD Art/P5T.png" },
   { id: 652, title: "The Night We Stood", game: "Persona 5 Tactica", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "6kmthRrZaSw", boxArt: "/images/CD Art/P5T.png" },
@@ -205,17 +200,20 @@ export const TRACK_DATA = [
   { id: 655, title: "Abyss of Despair", game: "Persona 5 Tactica", category: "Spinoffs", artist: "Toshiki Konishi", themeClass: "p5-theme", embedId: "kvbkPEeSN7E", boxArt: "/images/CD Art/P5T.png" },
 
   // --- Persona 4 Arena & Ultimax ---
+  { id: 623, title: "Best Friends", game: "Persona 4 Arena", category: "Spinoffs", artist: "Yumi Kawamura", themeClass: "p4-theme", embedId: "PqLrCFzssXk", boxArt: "/images/CD Art/P4A.png" },
   { id: 656, title: "The Ultimate", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "MB2CnsHPEQo", boxArt: "/images/CD Art/P4A.png" },
   { id: 657, title: "Princess Amagi-ya", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "z4S0ks72Usc", boxArt: "/images/CD Art/P4A.png" },
   { id: 658, title: "The Junes Hero", game: "Persona 4 Arena", category: "Spinoffs", artist: "Shoji Meguro", themeClass: "p4-theme", embedId: "bBMqbEObsaA", boxArt: "/images/CD Art/P4A.png" },
   { id: 659, title: "Like The Dragon", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "CQyL2KG-vHI", boxArt: "/images/CD Art/P4A.png" },
   { id: 660, title: "Seeker Of Truth", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "I13pf-GauJw", boxArt: "/images/CD Art/P4A.png" },
+  { id: 621, title: "Break Out Of...", game: "Persona 4 Arena Ultimax", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "_e2XYzBFzxU", boxArt: "/images/CD Art/P4-AU.png" },
   { id: 661, title: "A Fool or Clown?", game: "Persona 4 Arena Ultimax", category: "Spinoffs", artist: "Shoji Meguro", themeClass: "p4-theme", embedId: "xeMuISkXk14", boxArt: "/images/CD Art/P4-AU.png" },
   { id: 662, title: "Mr. Easy-Going Man", game: "Persona 4 Arena Ultimax", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "_Eh67pxeWMc", boxArt: "/images/CD Art/P4-AU.png" },
   { id: 663, title: "Pink Sniper", game: "Persona 4 Arena Ultimax", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "XkU17cSdBw4", boxArt: "/images/CD Art/P4-AU.png" },
   { id: 664, title: "Battle Hymm for the Soul", game: "Persona 4 Arena Ultimax", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "5pFMouauRxY", boxArt: "/images/CD Art/P4-AU.png" },
 
   // --- Persona 3: Dancing in Moonlight ---
+  { id: 618, title: "Our Moment", game: "Persona 3: Dancing in Moonlight", category: "Spinoffs", artist: "Yumi Kawamura / Lotus Juice", themeClass: "p3-theme", embedId: "5VJO7oBwmRs", boxArt: "/images/CD Art/P3-Dancing.png" },
   { id: 665, title: "Mass Destruction (Tetsuya Kobayashi Remix)", game: "Persona 3: Dancing in Moonlight", category: "Spinoffs", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "8Zn69jk60bU", boxArt: "/images/CD Art/P3-Dancing.png" },
   { id: 666, title: "Burn My Dread (Novoiski Remix)", game: "Persona 3: Dancing in Moonlight", category: "Spinoffs", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "Q8p92vzaJbI", boxArt: "/images/CD Art/P3-Dancing.png" },
   { id: 667, title: "When The Moon's Reaching Out Stars (Hideki Naganuma Remix)", game: "Persona 3: Dancing in Moonlight", category: "Spinoffs", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "t-KKkIgfEgI", boxArt: "/images/CD Art/P3-Dancing.png" },
@@ -223,6 +221,7 @@ export const TRACK_DATA = [
   { id: 669, title: "A Way of Life (ATLUS Kitajoh Remix)", game: "Persona 3: Dancing in Moonlight", category: "Spinoffs", artist: "Mayumi Fujita", themeClass: "p3-theme", embedId: "4R7s-W34MYg", boxArt: "/images/CD Art/P3-Dancing.png" },
 
   // --- Persona 4: Dancing All Night ---
+  { id: 616, title: "Dance!", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "497kvOLTH4A", boxArt: "/images/CD Art/P4-Dancing.png" },
   { id: 670, title: "Signs of Love (Never More Cover)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "ofj5FIzuUDE", boxArt: "/images/CD Art/P4-Dancing.png" },
   { id: 671, title: "Your Affection (Daisuke Asakura Remix)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "59xlHV41Zhw", boxArt: "/images/CD Art/P4-Dancing.png" },
   { id: 672, title: "Pursuing My True Self (ATLUS Kozuka Remix)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "SpNdQyvlMIE", boxArt: "/images/CD Art/P4-Dancing.png" },
@@ -231,6 +230,7 @@ export const TRACK_DATA = [
   { id: 675, title: "Time To Make History (AKIRA YAMAOKA Remix)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "usq8op_OO4g", boxArt: "/images/CD Art/P4-Dancing.png" },
 
   // --- Persona 5: Dancing in Starlight ---
+  { id: 617, title: "GROOVY", game: "Persona 5: Dancing in Starlight", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "4EO0orRtsAE", boxArt: "/images/CD Art/P5-Dancing.png" },
   { id: 676, title: "Rivers In the Desert (Mito Remix)", game: "Persona 5: Dancing in Starlight", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "G026pWrf6WE", boxArt: "/images/CD Art/P5-Dancing.png" },
   { id: 677, title: "Wake Up, Get Up, Get Out There (Jazztronik Remix)", game: "Persona 5: Dancing in Starlight", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "AgDP_KeiNIc", boxArt: "/images/CD Art/P5-Dancing.png" },
   { id: 678, title: "Will Power (Shacho Remix)", game: "Persona 5: Dancing in Starlight", category: "Spinoffs", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "tuSJycf2EKQ", boxArt: "/images/CD Art/P5-Dancing.png" },
