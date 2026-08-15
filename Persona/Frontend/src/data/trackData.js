@@ -271,7 +271,7 @@ export const TRACK_DATA = [
   { id: 729, title: "My Testimony", game: "Persona 3 The Movie #4", category: "Other", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "lPhG0_VlyA", boxArt: "/images/CD Art/P3-Movie4.png" },
   { id: 730, title: "sky's the limit", game: "Persona 4 The Animation", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "O0cI9N5rfrg", boxArt: "/images/CD Art/P4-Anime.png" },
   { id: 731, title: "Beauty of Destiny", game: "Persona 4 The Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "8qZm-tAIjgk", boxArt: "/images/CD Art/P4-Anime.png" },
-  { id: 732, title: "Ying Yang", game: "Persona 4 Golden Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "OIsrm7ZFH1U", boxArt: "/images/CD Art/P4G-Anime.png" },
+  { id: 732, title: "Ying Yang", game: "Persona 4 The Golden Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "OIsrm7ZFH1U", boxArt: "/images/CD Art/P4G-Anime.png" },
 
   // --- 20th Anniversary Playlist Tracks ---
   { id: 733, title: "Legends Awaken", game: "Persona 20th Anniversary", category: "Other", artist: "ATLUS Sound Team", themeClass: "p1-theme", embedId: "MtXUIRTc5QY", boxArt: "/images/CD Art/P-20th.png" },
