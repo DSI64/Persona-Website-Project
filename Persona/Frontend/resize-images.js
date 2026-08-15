@@ -1,3 +1,4 @@
+// Resize png files at location
 import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
@@ -5,11 +6,11 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-//Resize webp files
-// Where your current massive images are
-const inputDirectory = path.resolve(__dirname, './public/images/characters');
-// A brand new folder where the optimized images will go
-const outputDirectory = path.resolve(__dirname, './public/images/characters/resized');
+
+// Where your current images are
+const inputDirectory = path.resolve(__dirname, './public/images/CD Art');
+// A brand new folder where the optimized images go
+const outputDirectory = path.resolve(__dirname, './public/images/CD Art/resized');
 
 async function resizeImages() {
   if (!fs.existsSync(inputDirectory)) {
@@ -17,7 +18,7 @@ async function resizeImages() {
     return;
   }
 
-  // Create the 'resized' folder if it doesn't exist yet
+  // Creates the 'resized' folder if it doesn't exist yet
   if (!fs.existsSync(outputDirectory)) {
     fs.mkdirSync(outputDirectory, { recursive: true });
   }
@@ -30,9 +31,9 @@ async function resizeImages() {
     // Skip directories (like our new 'resized' folder)
     if (fs.statSync(inputPath).isDirectory()) continue;
 
-    // Grab the file name without the extension (e.g., "naoya_1")
+    // Grabs the file name without the extension (e.g., "naoya_1")
     const rawName = path.parse(file).name;
-    const outputPath = path.join(outputDirectory, `${rawName}.webp`);
+    const outputPath = path.join(outputDirectory, `${rawName}.png`);
     
     try {
       await sharp(inputPath)
@@ -40,10 +41,10 @@ async function resizeImages() {
           width: 800, 
           withoutEnlargement: true 
         })
-        .webp({ quality: 80 }) 
+        .png({ quality: 80 }) 
         .toFile(outputPath); // Writing to a new file avoids the Windows -4094 lock
         
-      console.log(`[Success] Saved to resized/${rawName}.webp`);
+      console.log(`[Success] Saved to resized/${rawName}.png`);
 
     } catch (err) {
       console.error(`[Error] Failed to process ${file}. If this persists, the original image might be corrupted.`, err.message);

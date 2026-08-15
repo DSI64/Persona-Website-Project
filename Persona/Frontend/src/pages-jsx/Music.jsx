@@ -82,7 +82,7 @@ export default function Music() {
       isFirstRun.current = false;
       return;
     }
-    
+
     if (playerRef.current) {
       if (isPlaying) {
         playerRef.current.loadVideoById(currentTrack.embedId);
@@ -94,8 +94,7 @@ export default function Music() {
 
   const handlePlayPause = () => setIsPlaying(prev => !prev);
 
-  // Instead of manual loadVideoById calls, we just update the React state.
-  // The <YouTube> component will automatically load the new videoId prop.
+  // The <YouTube> automatically loads the new videoId prop.
   const handleNext = () => {
     setIsPlaying(true);
     setCurrentTime(0);
@@ -140,7 +139,7 @@ export default function Music() {
     const rect = progressBarRef.current.getBoundingClientRect();
     const clickPosition = (e.clientX - rect.left) / rect.width;
     const targetTime = clickPosition * duration;
-    
+
     playerRef.current.seekTo(targetTime, true);
     setCurrentTime(targetTime);
   };
@@ -162,8 +161,7 @@ export default function Music() {
   };
 
   const onPlayerStateChange = (event) => {
-    // 0 = Track Ended
-    if (event.data === 0) {
+    if (event.data === 0) {     // 0 = Track Ended
       if (randomizeRef.current) {
         handleRandomize();
       } else if (autoplayRef.current) {
@@ -171,10 +169,10 @@ export default function Music() {
       } else {
         setIsPlaying(false);
       }
-    } 
+    }
     // 5 = Video Cued, -1 = Unstarted (Happens automatically when videoId prop changes)
     else if (event.data === 5 || event.data === -1) {
-      // If our React state says we should be playing, force the newly loaded video to play
+      // If React says the music should play, it forces the newly video to play the music
       if (isPlayingRef.current) {
         event.target.playVideo();
       }
@@ -227,7 +225,7 @@ export default function Music() {
 
                 return (
                   <div key={cat} className="category-item-wrapper">
-                    <button 
+                    <button
                       className={`category-btn ${isSelected ? 'active-cat' : ''}`}
                       onClick={() => handleCategoryClick(cat)}
                     >
@@ -238,7 +236,7 @@ export default function Music() {
                     {isExpanded && (
                       <ul className="sidebar-dropdown-list">
                         {categoryTracks.map((track, idx) => (
-                          <li 
+                          <li
                             key={track.id}
                             className={`sidebar-dropdown-track ${currentTrack.id === track.id ? 'active-subtrack' : ''}`}
                             onClick={(e) => {
@@ -246,9 +244,15 @@ export default function Music() {
                               handleTrackSelect(track);
                             }}
                           >
-                            <span className="subtrack-title">
-                              {String(idx + 1).padStart(2, '0')} - {track.title}
-                            </span>
+                            {/* Wrap the text in a new div container */}
+                            <div className="subtrack-info">
+                              <span className="subtrack-title">
+                                {String(idx + 1).padStart(2, '0')} - {track.title}
+                              </span>
+                              <span className="subtrack-game">
+                                {track.game}
+                              </span>
+                            </div>
                             <span className="subtrack-indicator">♪</span>
                           </li>
                         ))}
@@ -264,18 +268,18 @@ export default function Music() {
         {/* RIGHT PANE (CENTERED PLAYER) */}
         <main className="music-main-pane">
           <div className="music-player-card">
-            
+
             {/* BOX ART AREA */}
-<div className="player-boxart-area">
-  <div className="game-box-container">
-    <img 
-      /* Looks for the boxArt property, falls back to a placeholder if it's missing */
-      src={currentTrack.boxArt || '/images/default-placeholder.png'} 
-      alt={`${currentTrack.game} Box Art`} 
-      className="game-box-image" 
-    />
-  </div>
-</div>
+            <div className="player-boxart-area">
+              <div className="game-box-container">
+                <img
+                  /* Looks for the boxArt property, falls back to a placeholder if it's missing */
+                  src={currentTrack.boxArt || '/images/default-placeholder.png'}
+                  alt={`${currentTrack.game} Box Art`}
+                  className="game-box-image"
+                />
+              </div>
+            </div>
 
 
             <div className="player-controls-area">
@@ -289,9 +293,9 @@ export default function Music() {
                   <span>{formatTime(currentTime)}</span>
                   <span>{formatTime(duration) || currentTrack.duration}</span>
                 </div>
-                
-                <div 
-                  className="progress-bar-bg" 
+
+                <div
+                  className="progress-bar-bg"
                   ref={progressBarRef}
                   onClick={handleProgressBarClick}
                   style={{ cursor: 'pointer' }}
@@ -310,18 +314,18 @@ export default function Music() {
 
               <div className="volume-settings-row">
                 <span className="volume-label">Volume</span>
-                <input 
-                  type="range" 
-                  min="0" 
-                  max="100" 
-                  value={volume} 
-                  onChange={(e) => setVolume(e.target.value)} 
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={volume}
+                  onChange={(e) => setVolume(e.target.value)}
                   className="volume-slider"
                 />
-                
+
                 <div className="settings-wrapper">
-                  <button 
-                    className="settings-gear-btn" 
+                  <button
+                    className="settings-gear-btn"
                     onClick={() => setShowSettingsMenu(!showSettingsMenu)}
                     title="Audio Options & Randomize"
                   >
@@ -334,17 +338,17 @@ export default function Music() {
                         <span className="settings-slider-title">Instant Randomize</span>
                         <span style={{ fontSize: '1.2rem', paddingRight: '4px' }}>🔀</span>
                       </div>
-                      
+
                       <div className="settings-slider-row">
                         <span className="settings-slider-title">Randomize on Finish</span>
                         <label className="p5-switch">
-                          <input 
-                            type="checkbox" 
-                            checked={randomizeOnFinish} 
+                          <input
+                            type="checkbox"
+                            checked={randomizeOnFinish}
                             onChange={(e) => {
                               setRandomizeOnFinish(e.target.checked);
                               if (e.target.checked) setAutoplayNext(false);
-                            }} 
+                            }}
                           />
                           <span className="p5-slider-track"></span>
                         </label>
@@ -353,13 +357,13 @@ export default function Music() {
                       <div className="settings-slider-row">
                         <span className="settings-slider-title">Autoplay Next Song</span>
                         <label className="p5-switch">
-                          <input 
-                            type="checkbox" 
-                            checked={autoplayNext} 
+                          <input
+                            type="checkbox"
+                            checked={autoplayNext}
                             onChange={(e) => {
                               setAutoplayNext(e.target.checked);
                               if (e.target.checked) setRandomizeOnFinish(false);
-                            }} 
+                            }}
                           />
                           <span className="p5-slider-track"></span>
                         </label>
