@@ -80,7 +80,7 @@ export const TRACK_DATA = [
   { id: 330, title: "Between Doors", game: "Persona 3 FES", category: "Persona 3", artist: "Shoji Meguro", themeClass: "p3-theme", embedId: "zwZour7cP_8", boxArt: "/images/CD Art/P3FES.png" },
   { id: 331, title: "Their Own Past", game: "Persona 3 FES", category: "Persona 3", artist: "Shoji Meguro", themeClass: "p3-theme", embedId: "Bi4IQba663w", boxArt: "/images/CD Art/P3FES.png" },
   { id: 332, title: "Heartful Cry", game: "Persona 3 FES", category: "Persona 3", artist: "Shoji Meguro", themeClass: "p3-theme", embedId: "4CbKaxECQjA", boxArt: "/images/CD Art/P3FES.png" },
-  { id: 334, title: "Persona", game: "Persona 3 FES", category: "Persona 3", artist: "Shoji Meguro", themeClass: "p3-theme", embedId: "ZUZvvVxPQ58", boxArt: "/images/CD Art/P3FES.png" },
+  { id: 334, title: "Persona (SEBEC Bad Ending)", game: "Persona 3 FES", category: "Persona 3", artist: "Shoji Meguro", themeClass: "p3-theme", embedId: "ZUZvvVxPQ58", boxArt: "/images/CD Art/P3FES.png" },
   { id: 334, title: "Time Castle", game: "Persona 3 FES", category: "Persona 3", artist: "Toshiko Tasaki", themeClass: "p3-theme", embedId: "IZcbszyLFRU", boxArt: "/images/CD Art/P3FES.png" },
   { id: 335, title: "Seal", game: "Persona 3 FES", category: "Persona 3", artist: "Shoji Meguro", themeClass: "p3-theme", embedId: "o5YlHQT8dms", boxArt: "/images/CD Art/P3FES.png" },
   { id: 336, title: "Darkness", game: "Persona 3 FES", category: "Persona 3", artist: "Shoji Meguro", themeClass: "p3-theme", embedId: "3AVX1cvI5O8", boxArt: "/images/CD Art/P3FES.png" },

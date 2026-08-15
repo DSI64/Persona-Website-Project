@@ -43,14 +43,29 @@ export default function Music() {
   const autoplayRef = useRef(autoplayNext);
   const isPlayingRef = useRef(isPlaying);
 
-  // Filtering logic for the search box
+  // Filtering logic with safe compound key deduplication
   const filteredTracks = useMemo(() => {
     if (!searchQuery.trim()) return [];
     const lowerQuery = searchQuery.toLowerCase();
-    return TRACK_DATA.filter(track => 
-      track.title.toLowerCase().includes(lowerQuery) || 
-      track.game.toLowerCase().includes(lowerQuery)
+    
+    const matched = TRACK_DATA.filter(track => 
+      (track.title && track.title.toLowerCase().includes(lowerQuery)) || 
+      (track.game && track.game.toLowerCase().includes(lowerQuery))
     );
+
+    // Deduplicate using a unique composite key (id + title + game) to prevent item loss
+    const uniqueMap = new Map();
+    matched.forEach(track => {
+      const uniqueKey = track.id !== undefined && track.id !== null 
+        ? track.id 
+        : `${track.title}-${track.game}-${track.embedId}`;
+        
+      if (!uniqueMap.has(uniqueKey)) {
+        uniqueMap.set(uniqueKey, track);
+      }
+    });
+
+    return Array.from(uniqueMap.values());
   }, [searchQuery]);
 
   useEffect(() => { randomizeRef.current = randomizeOnFinish; }, [randomizeOnFinish]);
@@ -134,7 +149,9 @@ export default function Music() {
   };
 
   const handleTrackSelect = (track) => {
-    const index = TRACK_DATA.findIndex(t => t.id === track.id);
+    const index = TRACK_DATA.findIndex(t => 
+      t.id === track.id || (t.title === track.title && t.game === track.game)
+    );
     if (index !== -1) {
       setIsPlaying(true);
       setCurrentTime(0);
@@ -248,7 +265,7 @@ export default function Music() {
                       <ul className="sidebar-dropdown-list">
                         {categoryTracks.map((track, idx) => (
                           <li
-                            key={track.id}
+                            key={track.id || idx}
                             className={`sidebar-dropdown-track ${currentTrack.id === track.id ? 'active-subtrack' : ''}`}
                             onClick={(e) => {
                               e.stopPropagation();
@@ -293,9 +310,9 @@ export default function Music() {
             {isSearchFocused && searchQuery.trim() && (
               <div className="search-results-dropdown">
                 {filteredTracks.length > 0 ? (
-                  filteredTracks.map(track => (
+                  filteredTracks.map((track, index) => (
                     <div 
-                      key={track.id} 
+                      key={track.id || index} 
                       className="search-result-item"
                       onMouseDown={(e) => {
                         e.preventDefault();
