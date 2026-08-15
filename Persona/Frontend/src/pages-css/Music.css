@@ -829,3 +829,57 @@
 .sidebar-dropdown-track.active-subtrack .subtrack-game {
   color: var(--p5-red, #e11d48);
 }
+
+/* --- Search Bar & Dropdown Styles --- */
+.search-container {
+  position: relative;
+  width: 100%;
+  z-index: 20; 
+}
+
+.search-results-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--p5-white, #fff);
+  border: 3px solid var(--p5-black, #111);
+  box-shadow: 5px 5px 0px var(--p5-red, #e11d48);
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 30;
+  margin-top: 10px;
+  transform: skew(-1deg);
+}
+
+.search-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--p5-black, #111);
+  cursor: pointer;
+  color: var(--p5-black, #111);
+  transition: all 0.15s ease;
+}
+
+.search-result-item:hover {
+  background-color: var(--p5-black, #111);
+  color: var(--p5-white, #fff);
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-title {
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.search-result-game {
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0.8;
+}

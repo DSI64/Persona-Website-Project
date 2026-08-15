@@ -28,6 +28,10 @@ export default function Music() {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
 
+  // Search states
+  const [searchQuery, setSearchQuery] = useState("");
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
+
   const playerRef = useRef(null);
   const progressBarRef = useRef(null);
   const [initialVideoId] = useState(TRACK_DATA[0].embedId);
@@ -38,6 +42,16 @@ export default function Music() {
   const randomizeRef = useRef(randomizeOnFinish);
   const autoplayRef = useRef(autoplayNext);
   const isPlayingRef = useRef(isPlaying);
+
+  // Filtering logic for the search box
+  const filteredTracks = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    const lowerQuery = searchQuery.toLowerCase();
+    return TRACK_DATA.filter(track => 
+      track.title.toLowerCase().includes(lowerQuery) || 
+      track.game.toLowerCase().includes(lowerQuery)
+    );
+  }, [searchQuery]);
 
   useEffect(() => { randomizeRef.current = randomizeOnFinish; }, [randomizeOnFinish]);
   useEffect(() => { autoplayRef.current = autoplayNext; }, [autoplayNext]);
@@ -94,7 +108,6 @@ export default function Music() {
 
   const handlePlayPause = () => setIsPlaying(prev => !prev);
 
-  // The <YouTube> automatically loads the new videoId prop.
   const handleNext = () => {
     setIsPlaying(true);
     setCurrentTime(0);
@@ -161,7 +174,7 @@ export default function Music() {
   };
 
   const onPlayerStateChange = (event) => {
-    if (event.data === 0) {     // 0 = Track Ended
+    if (event.data === 0) {     
       if (randomizeRef.current) {
         handleRandomize();
       } else if (autoplayRef.current) {
@@ -170,9 +183,7 @@ export default function Music() {
         setIsPlaying(false);
       }
     }
-    // 5 = Video Cued, -1 = Unstarted (Happens automatically when videoId prop changes)
     else if (event.data === 5 || event.data === -1) {
-      // If React says the music should play, it forces the newly video to play the music
       if (isPlayingRef.current) {
         event.target.playVideo();
       }
@@ -244,7 +255,6 @@ export default function Music() {
                               handleTrackSelect(track);
                             }}
                           >
-                            {/* Wrap the text in a new div container */}
                             <div className="subtrack-info">
                               <span className="subtrack-title">
                                 {String(idx + 1).padStart(2, '0')} - {track.title}
@@ -267,20 +277,58 @@ export default function Music() {
 
         {/* RIGHT PANE (CENTERED PLAYER) */}
         <main className="music-main-pane">
-          <div className="music-player-card">
+          
+          {/* SEARCH BAR */}
+          <div className="search-container">
+            <input 
+              type="text" 
+              className="p5-sidebar-search" 
+              placeholder="Search for a track or game..." 
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onFocus={() => setIsSearchFocused(true)}
+              onBlur={() => setTimeout(() => setIsSearchFocused(false), 300)} 
+            />
+            
+            {isSearchFocused && searchQuery.trim() && (
+              <div className="search-results-dropdown">
+                {filteredTracks.length > 0 ? (
+                  filteredTracks.map(track => (
+                    <div 
+                      key={track.id} 
+                      className="search-result-item"
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+                        handleTrackSelect(track); 
+                        setSearchQuery(""); 
+                        setSelectedCategory(track.category); 
+                        setExpandedCategory(track.category); 
+                      }}
+                    >
+                      <span className="search-result-title">{track.title}</span>
+                      <span className="search-result-game">{track.game}</span>
+                    </div>
+                  ))
+                ) : (
+                  <div className="search-result-item">
+                    <span className="search-result-title" style={{ color: '#666' }}>No records found...</span>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
 
+          <div className="music-player-card">
             {/* BOX ART AREA */}
             <div className="player-boxart-area">
               <div className="game-box-container">
                 <img
-                  /* Looks for the boxArt property, falls back to a placeholder if it's missing */
                   src={currentTrack.boxArt || '/images/default-placeholder.png'}
                   alt={`${currentTrack.game} Box Art`}
                   className="game-box-image"
                 />
               </div>
             </div>
-
 
             <div className="player-controls-area">
               <div className="track-meta-header">
