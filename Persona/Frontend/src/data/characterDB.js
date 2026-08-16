@@ -187,7 +187,7 @@ export const characterDB = [
     ]
   },
   { 
-    id: 302, name: "Aigis", game: "P3", arcana: "Aeon", image: "Aigis",
+    id: 302, name: "Aigis", game: "P3", arcana: "Fool", image: "Aigis",
     title: "Anti-Shadow Weapon", birthday: "September 10 (Manufactured)", appearances: "Persona 3, Persona 4 Arena, Persona Q",
     personas: "Palladion, Athena",
     voiceActors: "Karen Strassman (EN) / Maaya Sakamoto (JP)",
@@ -281,7 +281,7 @@ export const characterDB = [
     ]
   },
   { 
-    id: 312, name: "Metis", game: "P3", arcana: "Aeon", image: "Metis",
+    id: 312, name: "Metis", game: "P3", arcana: "Hierophant", image: "Metis",
     title: "The Antithesis of Shadows", birthday: "Unknown (Manufactured)", appearances: "Persona 3 FES (The Answer)",
     personas: "Psyche",
     voiceActors: "Chiaki Sawashiro (JP) / Hedy Burress (EN)",
@@ -547,7 +547,7 @@ export const characterDB = [
     ]
   },
   { 
-    id: 512, name: "Zenkichi Hasegawa", game: "P5", arcana: "Wolf", image: "Wolf",
+    id: 512, name: "Zenkichi Hasegawa", game: "P5", arcana: "Apostle", image: "Wolf",
     title: "The Cop on a Quest", birthday: "October 1", appearances: "Persona 5 Strikers",
     personas: "Valjean",
     voiceActors: "Tom Taylorson (EN) / Shinichiro Miki (JP)",
