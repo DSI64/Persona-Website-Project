@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-/* Halftone dot pattern overlay (Classic P5 comic effect) */
+/* Halftone dot pattern overlay */
 .landing-grain {
   position: absolute;
   inset: 0;
