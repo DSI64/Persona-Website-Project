@@ -32,7 +32,7 @@ export const TRACK_DATA = [
   { id: 87, title: "Boss Battle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "UDycXD2d324", boxArt: "/images/CD Art/P2IS-PSP.png" },
   { id: 88, title: "Crazy Party", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "MM7710V1E-c", boxArt: "/images/CD Art/P2IS-PSP.png" },
   { id: 89, title: "Battle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "CJOfxB06GIA", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 90, title: "Velvet Room", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Shoji Meguro / Haruko Komiya", themeClass: "p2-theme", embedId: "u0yK6H0908", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 90, title: "Velvet Room", game: "Persona 2: Innocent Sin", category: "Persona 2", artist: "Shoji Meguro / Haruko Komiya", themeClass: "p2-theme", embedId: "g9GkTgg-Ou4", boxArt: "/images/CD Art/P2-Innocent.png" },
   { id: 91, title: "Time Castle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Masaki Kurokawa", themeClass: "p2-theme", embedId: "QGyJea_tyl4", boxArt: "/images/CD Art/P2IS-PSP.png" },
   { id: 92, title: "Giga Macho", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Toshiko Tasaki", themeClass: "p2-theme", embedId: "7PaCcDRzZGQ", boxArt: "/images/CD Art/P2IS-PSP.png" },
   { id: 93, title: "JOKER", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "ATLUS Sound Team", themeClass: "p2-theme", embedId: "2T-IFdsrZiI", boxArt: "/images/CD Art/P2IS-PSP.png" },
@@ -171,11 +171,19 @@ export const TRACK_DATA = [
   // ============================================================
   // SPINOFFS
   // ============================================================
+
+  // --- Persona Q ---
   { id: 612, title: "Light the Fire Up in the Night (DARK HOUR)", game: "Persona Q: Shadow of the Labyrinth", category: "Spinoffs", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "tCuh78VTM4g", boxArt: "/images/CD Art/PQ.png" },
   { id: 613, title: "Light the Fire Up in the Night (MAYONAKA)", game: "Persona Q: Shadow of the Labyrinth", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "yNFnrhdyHKY", boxArt: "/images/CD Art/PQ.png" },
   { id: 614, title: "Maze of Life", game: "Persona Q: Shadow of the Labyrinth", category: "Spinoffs", artist: "Yumi Kawamura / Shihoko Hirata", themeClass: "p4-theme", embedId: "_2aH4fTeAjM", boxArt: "/images/CD Art/PQ.png" },
+  { id: 626, title: "Laser Beam", game: "Persona Q: Shadow of the Labyrinth", category: "Spinoffs", artist: "Yumi Kawamura / Shihoko Hirata", themeClass: "p4-theme", embedId: "yNFnrhdyHKY", boxArt: "/images/CD Art/PQ.png" },
+  { id: 627, title: "changing me", game: "Persona Q: Shadow of the Labyrinth", category: "Spinoffs", artist: "Yumi Kawamura / Shihoko Hirata", themeClass: "p3-theme", embedId: "wPdaf6WK8VI", boxArt: "/images/CD Art/PQ.png" },
   { id: 615, title: "ROAD LESS TAKEN", game: "Persona Q2: New Cinema Labyrinth", category: "Spinoffs", artist: "Yumi Kawamura / Shihoko Hirata / Lyn / Lotus Juice", themeClass: "p5-theme", embedId: "lGS9flfg8Vg", boxArt: "/images/CD Art/PQ2.png" },
   { id: 625, title: "Wait and See", game: "Persona Q2: New Cinema Labyrinth", category: "Spinoffs", artist: "Yumi Kawamura / Shihoko Hirata", themeClass: "p3-theme", embedId: "YlmgojMHJ60", boxArt: "/images/CD Art/PQ2.png" },
+  { id: 628, title: "Invitation to Freedom", game: "Persona Q2: New Cinema Labyrinth", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "PGgFhpf9_KQ", boxArt: "/images/CD Art/PQ2.png" },
+  { id: 629, title: "Pull the Trigger", game: "Persona Q2: New Cinema Labyrinth", category: "Spinoffs", artist: "Mayumi Fujita / Lotus Juice", themeClass: "p3-theme", embedId: "ztRlRlyUGLM", boxArt: "/images/CD Art/PQ2.png" },
+  { id: 630, title: "Nothing is Promised", game: "Persona Q2: New Cinema Labyrinth", category: "Spinoffs", artist: "Lotus Juice", themeClass: "p3-theme", embedId: "B0mSNsGSlBQ", boxArt: "/images/CD Art/PQ2.png" },
+  { id: 631, title: "Cinematic Tale", game: "Persona Q2: New Cinema Labyrinth", category: "Spinoffs", artist: "Shihoko Hirata / Lyn Inaizumi", themeClass: "p5-theme", embedId: "Q9Nsp6e4N6I", boxArt: "/images/CD Art/PQ2.png" },
   
   // --- Persona 5 Strikers ---
   { id: 619, title: "You Are Stronger", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "wV16X8cAS50", boxArt: "/images/CD Art/P5S.png" },
@@ -200,12 +208,12 @@ export const TRACK_DATA = [
   { id: 655, title: "Abyss of Despair", game: "Persona 5 Tactica", category: "Spinoffs", artist: "Toshiki Konishi", themeClass: "p5-theme", embedId: "kvbkPEeSN7E", boxArt: "/images/CD Art/P5T.png" },
 
   // --- Persona 4 Arena & Ultimax ---
-  { id: 623, title: "Best Friends", game: "Persona 4 Arena", category: "Spinoffs", artist: "Yumi Kawamura", themeClass: "p4-theme", embedId: "PqLrCFzssXk", boxArt: "/images/CD Art/P4A.png" },
-  { id: 656, title: "The Ultimate", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "MB2CnsHPEQo", boxArt: "/images/CD Art/P4A.png" },
-  { id: 657, title: "Princess Amagi-ya", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "z4S0ks72Usc", boxArt: "/images/CD Art/P4A.png" },
-  { id: 658, title: "The Junes Hero", game: "Persona 4 Arena", category: "Spinoffs", artist: "Shoji Meguro", themeClass: "p4-theme", embedId: "bBMqbEObsaA", boxArt: "/images/CD Art/P4A.png" },
-  { id: 659, title: "Like The Dragon", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "CQyL2KG-vHI", boxArt: "/images/CD Art/P4A.png" },
-  { id: 660, title: "Seeker Of Truth", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "I13pf-GauJw", boxArt: "/images/CD Art/P4A.png" },
+  { id: 623, title: "Best Friends", game: "Persona 4 Arena", category: "Spinoffs", artist: "Yumi Kawamura", themeClass: "p4-theme", embedId: "PqLrCFzssXk", boxArt: "/images/CD Art/P4-A.png" },
+  { id: 656, title: "The Ultimate", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "MB2CnsHPEQo", boxArt: "/images/CD Art/P4-A.png" },
+  { id: 657, title: "Princess Amagi-ya", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "z4S0ks72Usc", boxArt: "/images/CD Art/P4-A.png" },
+  { id: 658, title: "The Junes Hero", game: "Persona 4 Arena", category: "Spinoffs", artist: "Shoji Meguro", themeClass: "p4-theme", embedId: "bBMqbEObsaA", boxArt: "/images/CD Art/P4-A.png" },
+  { id: 659, title: "Like The Dragon", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "CQyL2KG-vHI", boxArt: "/images/CD Art/P4-A.png" },
+  { id: 660, title: "Seeker Of Truth", game: "Persona 4 Arena", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "I13pf-GauJw", boxArt: "/images/CD Art/P4-A.png" },
   { id: 621, title: "Break Out Of...", game: "Persona 4 Arena Ultimax", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "_e2XYzBFzxU", boxArt: "/images/CD Art/P4-AU.png" },
   { id: 661, title: "A Fool or Clown?", game: "Persona 4 Arena Ultimax", category: "Spinoffs", artist: "Shoji Meguro", themeClass: "p4-theme", embedId: "xeMuISkXk14", boxArt: "/images/CD Art/P4-AU.png" },
   { id: 662, title: "Mr. Easy-Going Man", game: "Persona 4 Arena Ultimax", category: "Spinoffs", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "_Eh67pxeWMc", boxArt: "/images/CD Art/P4-AU.png" },
@@ -272,6 +280,11 @@ export const TRACK_DATA = [
   { id: 730, title: "sky's the limit", game: "Persona 4 The Animation", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "O0cI9N5rfrg", boxArt: "/images/CD Art/P4-Anime.png" },
   { id: 731, title: "Beauty of Destiny", game: "Persona 4 The Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "8qZm-tAIjgk", boxArt: "/images/CD Art/P4-Anime.png" },
   { id: 732, title: "Ying Yang", game: "Persona 4 The Golden Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "OIsrm7ZFH1U", boxArt: "/images/CD Art/P4G-Anime.png" },
+  { id: 738, title: "BREAK IN TO BREAK OUT", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "WHyXZQE7-bQ", boxArt: "/images/CD Art/P5-Anime.png" },
+  { id: 739, title: "INFINITY", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "slsePSVB0Fs", boxArt: "/images/CD Art/P5-Anime.png" },
+  { id: 740, title: "Dark Sun...", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "D4qurAKMebM", boxArt: "/images/CD Art/P5-Anime.png" },
+  { id: 741, title: "Autonomy", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "LOXEWmJ4Js8", boxArt: "/images/CD Art/P5-Anime.png" },
+  { id: 742, title: "Found a Light", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "5uKdSuZcPj8", boxArt: "/images/CD Art/P5-Anime.png" },
 
   // --- 20th Anniversary Playlist Tracks ---
   { id: 733, title: "Legends Awaken", game: "Persona 20th Anniversary", category: "Other", artist: "ATLUS Sound Team", themeClass: "p1-theme", embedId: "MtXUIRTc5QY", boxArt: "/images/CD Art/P-20th.png" },
