@@ -158,13 +158,23 @@
   color: var(--p5-white);
 }
 
-/* Persona 2 (Vermilion) */
-.roster-card[data-game="P2"]:hover {
+/* Persona 2 IS (Vermilion) */
+.roster-card[data-game="P2IS"]:hover {
   border-color: #ff4500;
   box-shadow: 0 10px 20px rgba(0, 168, 255, 0.4);
 }
-.roster-card[data-game="P2"]:hover .card-info {
+.roster-card[data-game="P2IS"]:hover .card-info {
   background-color: #ff4500;
+  color: var(--p5-white);
+}
+
+/* Persona 2 EP */
+.roster-card[data-game="P2EP"]:hover {
+  border-color: #4b5563;
+  box-shadow: 0 10px 20px rgba(0, 168, 255, 0.4);
+}
+.roster-card[data-game="P2EP"]:hover .card-info {
+  background-color: #4b5563;
   color: var(--p5-white);
 }
 

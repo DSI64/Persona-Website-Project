@@ -47,19 +47,19 @@ export default function Music() {
   const filteredTracks = useMemo(() => {
     if (!searchQuery.trim()) return [];
     const lowerQuery = searchQuery.toLowerCase();
-    
-    const matched = TRACK_DATA.filter(track => 
-      (track.title && track.title.toLowerCase().includes(lowerQuery)) || 
+
+    const matched = TRACK_DATA.filter(track =>
+      (track.title && track.title.toLowerCase().includes(lowerQuery)) ||
       (track.game && track.game.toLowerCase().includes(lowerQuery))
     );
 
     // Deduplicate using a unique composite key (id + title + game) to prevent item loss
     const uniqueMap = new Map();
     matched.forEach(track => {
-      const uniqueKey = track.id !== undefined && track.id !== null 
-        ? track.id 
+      const uniqueKey = track.id !== undefined && track.id !== null
+        ? track.id
         : `${track.title}-${track.game}-${track.embedId}`;
-        
+
       if (!uniqueMap.has(uniqueKey)) {
         uniqueMap.set(uniqueKey, track);
       }
@@ -149,7 +149,7 @@ export default function Music() {
   };
 
   const handleTrackSelect = (track) => {
-    const index = TRACK_DATA.findIndex(t => 
+    const index = TRACK_DATA.findIndex(t =>
       t.id === track.id || (t.title === track.title && t.game === track.game)
     );
     if (index !== -1) {
@@ -191,7 +191,7 @@ export default function Music() {
   };
 
   const onPlayerStateChange = (event) => {
-    if (event.data === 0) {     
+    if (event.data === 0) {
       if (randomizeRef.current) {
         handleRandomize();
       } else if (autoplayRef.current) {
@@ -294,32 +294,32 @@ export default function Music() {
 
         {/* RIGHT PANE (CENTERED PLAYER) */}
         <main className="music-main-pane">
-          
+
           {/* SEARCH BAR */}
           <div className="search-container">
-            <input 
-              type="text" 
-              className="p5-sidebar-search" 
-              placeholder="Search for a track or game..." 
+            <input
+              type="text"
+              className="p5-sidebar-search"
+              placeholder="Search for a track or game..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               onFocus={() => setIsSearchFocused(true)}
-              onBlur={() => setTimeout(() => setIsSearchFocused(false), 300)} 
+              onBlur={() => setTimeout(() => setIsSearchFocused(false), 300)}
             />
-            
+
             {isSearchFocused && searchQuery.trim() && (
               <div className="search-results-dropdown">
                 {filteredTracks.length > 0 ? (
                   filteredTracks.map((track, index) => (
-                    <div 
-                      key={track.id || index} 
+                    <div
+                      key={track.id || index}
                       className="search-result-item"
                       onMouseDown={(e) => {
                         e.preventDefault();
-                        handleTrackSelect(track); 
-                        setSearchQuery(""); 
-                        setSelectedCategory(track.category); 
-                        setExpandedCategory(track.category); 
+                        handleTrackSelect(track);
+                        setSearchQuery("");
+                        setSelectedCategory(track.category);
+                        setExpandedCategory(track.category);
                       }}
                     >
                       <span className="search-result-title">{track.title}</span>
@@ -346,13 +346,13 @@ export default function Music() {
                 />
               </div>
             </div>
-
+            {/* Track Name Area */}
             <div className="player-controls-area">
               <div className="track-meta-header">
-                <h3>{currentTrack.title}</h3>
+                <h3>{currentTrack.title.replace(/(\(|-)/, '\n$1')}</h3>
                 <p>{currentTrack.game} // {currentTrack.artist}</p>
               </div>
-
+            {/* Progress Bar Area */}
               <div className="progress-section">
                 <div className="time-display">
                   <span>{formatTime(currentTime)}</span>
@@ -368,7 +368,7 @@ export default function Music() {
                   <div className="progress-bar-fill" style={{ width: `${progressPercent}%` }}></div>
                 </div>
               </div>
-
+            {/* Button Area */}
               <div className="playback-buttons-row">
                 <button className="control-btn" onClick={handlePrev} title="Previous">⏮</button>
                 <button className="control-btn play-pause-main" onClick={handlePlayPause} title={isPlaying ? "Pause" : "Play"}>

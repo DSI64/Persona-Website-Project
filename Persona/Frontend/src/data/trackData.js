@@ -22,33 +22,33 @@ export const TRACK_DATA = [
   // ============================================================
   // PERSONA 2 — INNOCENT SIN & ETERNAL PUNISHMENT PSP
   // ============================================================
-  { id: 80, title: "Unbreakable Tie", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Asami Izawa / Lotus Juice", themeClass: "p2-theme", embedId: "eAarVmqJwNw", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 81, title: "Hero's Theme", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2-theme", embedId: "Xm9N3p81XcA", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 82, title: "Seven Sisters High School", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Ryota Kozuka", themeClass: "p2-theme", embedId: "jjjCWWX-0BU", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 83, title: "Tension", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Atsushi Kitajoh", themeClass: "p2-theme", embedId: "em9-3C-2BIM", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 84, title: "Philemon's Theme", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Ryota Kozuka", themeClass: "p2-theme", embedId: "hdG2EPJ1p4w", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 85, title: "Maya's Theme", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Ryota Kozuka", themeClass: "p2-theme", embedId: "jdJKv1OJZxI", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 86, title: "Joker's Theme", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Ryota Kozuka", themeClass: "p2-theme", embedId: "DspxjWMGy6M", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 87, title: "Boss Battle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "UDycXD2d324", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 88, title: "Crazy Party", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "MM7710V1E-c", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 89, title: "Battle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "CJOfxB06GIA", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 90, title: "Velvet Room", game: "Persona 2: Innocent Sin", category: "Persona 2", artist: "Shoji Meguro / Haruko Komiya", themeClass: "p2-theme", embedId: "g9GkTgg-Ou4", boxArt: "/images/CD Art/P2-Innocent.png" },
-  { id: 91, title: "Time Castle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Masaki Kurokawa", themeClass: "p2-theme", embedId: "QGyJea_tyl4", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 92, title: "Giga Macho", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Toshiko Tasaki", themeClass: "p2-theme", embedId: "7PaCcDRzZGQ", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 93, title: "JOKER", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "ATLUS Sound Team", themeClass: "p2-theme", embedId: "2T-IFdsrZiI", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 94, title: "Quest Battle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2-theme", embedId: "Mrg0UEp2VSY", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 95, title: "Next To You", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Hitomi / Ryo Yoshimata", themeClass: "p2-theme", embedId: "aq_jMLavtLM", boxArt: "/images/CD Art/P2IS-PSP.png" },
-  { id: 96, title: "Opening", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "iqKUVxrnnB8", boxArt: "/images/CD Art/P2EP-PSP.png" },
-  { id: 97, title: "Maya's Theme", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "iHQbldQ_bU8", boxArt: "/images/CD Art/P2EP-PSP.png" },
-  { id: 98, title: "Seven Sisters Academy", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Atsushi Kitajoh", themeClass: "p2-theme", embedId: "pS619evEUPI", boxArt: "/images/CD Art/P2EP-PSP.png" },
-  { id: 99, title: "Battle", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "IzJ6hwBccbc", boxArt: "/images/CD Art/P2EP-PSP.png" },
-  { id: 100, title: "Boss Battle", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "w3LS6xsu_lk",boxArt: "/images/CD Art/P2EP-PSP.png"  },
-  { id: 101, title: "Velvet Room ~ Nameless Arrange", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2-theme", embedId: "1Nb-k7Xsm6k", boxArt: "/images/CD Art/P2EP-PSP.png" },
-  { id: 102, title: "Velvet Room ~ Gymnopedie", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Erik Satie", themeClass: "p2-theme", embedId: "DMNvi58XDcI", boxArt: "/images/CD Art/P2EP-PSP.png" },
-  { id: 103, title: "Battle (Additional Scenario)", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2-theme", embedId: "7VLBsy3rlRA", boxArt: "/images/CD Art/P2EP-PSP.png" },
-  { id: 104, title: "Boss Battle (Additional Scenario)", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2-theme", embedId: "obFUazSk5mc", boxArt: "/images/CD Art/P2EP-PSP.png" },
-  { id: 105, title: "Mt. Katatsumuri", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2-theme", embedId: "odyfd9Q2WY8", boxArt: "/images/CD Art/P2EP-PSP.png" },
-  { id: 106, title: "Change Your Way", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Elisha La'Verne", themeClass: "p2-theme", embedId: "nlK6NMfSw2I", boxArt: "/images/CD Art/P2EP-PSP.png" },
+  { id: 80, title: "Unbreakable Tie", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Asami Izawa / Lotus Juice", themeClass: "p2is-theme", embedId: "eAarVmqJwNw", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 81, title: "Hero's Theme", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2is-theme", embedId: "Xm9N3p81XcA", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 82, title: "Seven Sisters High School", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Ryota Kozuka", themeClass: "p2is-theme", embedId: "jjjCWWX-0BU", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 83, title: "Tension", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Atsushi Kitajoh", themeClass: "p2is-theme", embedId: "em9-3C-2BIM", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 84, title: "Philemon's Theme", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Ryota Kozuka", themeClass: "p2is-theme", embedId: "hdG2EPJ1p4w", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 85, title: "Maya's Theme", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Ryota Kozuka", themeClass: "p2is-theme", embedId: "jdJKv1OJZxI", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 86, title: "Joker's Theme", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Ryota Kozuka", themeClass: "p2is-theme", embedId: "DspxjWMGy6M", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 87, title: "Boss Battle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2is-theme", embedId: "UDycXD2d324", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 88, title: "Crazy Party", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2is-theme", embedId: "MM7710V1E-c", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 89, title: "Battle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2is-theme", embedId: "CJOfxB06GIA", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 90, title: "Velvet Room", game: "Persona 2: Innocent Sin", category: "Persona 2", artist: "Shoji Meguro / Haruko Komiya", themeClass: "p2is-theme", embedId: "g9GkTgg-Ou4", boxArt: "/images/CD Art/P2-Innocent.png" },
+  { id: 91, title: "Time Castle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Masaki Kurokawa", themeClass: "p2is-theme", embedId: "QGyJea_tyl4", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 92, title: "Giga Macho", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Toshiko Tasaki", themeClass: "p2is-theme", embedId: "7PaCcDRzZGQ", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 93, title: "JOKER", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "ATLUS Sound Team", themeClass: "p2is-theme", embedId: "2T-IFdsrZiI", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 94, title: "Quest Battle", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2is-theme", embedId: "Mrg0UEp2VSY", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 95, title: "Next To You", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Hitomi / Ryo Yoshimata", themeClass: "p2is-theme", embedId: "aq_jMLavtLM", boxArt: "/images/CD Art/P2IS-PSP.png" },
+  { id: 96, title: "Opening", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2ep-theme", embedId: "iqKUVxrnnB8", boxArt: "/images/CD Art/P2EP-PSP.png" },
+  { id: 97, title: "Maya's Theme", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2ep-theme", embedId: "iHQbldQ_bU8", boxArt: "/images/CD Art/P2EP-PSP.png" },
+  { id: 98, title: "Seven Sisters Academy", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Atsushi Kitajoh", themeClass: "p2ep-theme", embedId: "pS619evEUPI", boxArt: "/images/CD Art/P2EP-PSP.png" },
+  { id: 99, title: "Battle", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2ep-theme", embedId: "IzJ6hwBccbc", boxArt: "/images/CD Art/P2EP-PSP.png" },
+  { id: 100, title: "Boss Battle", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Kenichi Tsuchiya", themeClass: "p2ep-theme", embedId: "w3LS6xsu_lk",boxArt: "/images/CD Art/P2EP-PSP.png"  },
+  { id: 101, title: "Velvet Room ~ Nameless Arrange", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2ep-theme", embedId: "1Nb-k7Xsm6k", boxArt: "/images/CD Art/P2EP-PSP.png" },
+  { id: 102, title: "Velvet Room ~ Gymnopedie", game: "Persona 2: Innocent Sin (PSP)", category: "Persona 2", artist: "Erik Satie", themeClass: "p2ep-theme", embedId: "DMNvi58XDcI", boxArt: "/images/CD Art/P2EP-PSP.png" },
+  { id: 103, title: "Battle (Additional Scenario)", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2ep-theme", embedId: "7VLBsy3rlRA", boxArt: "/images/CD Art/P2EP-PSP.png" },
+  { id: 104, title: "Boss Battle (Additional Scenario)", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2ep-theme", embedId: "obFUazSk5mc", boxArt: "/images/CD Art/P2EP-PSP.png" },
+  { id: 105, title: "Mt. Katatsumuri", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Toshiki Konishi", themeClass: "p2ep-theme", embedId: "odyfd9Q2WY8", boxArt: "/images/CD Art/P2EP-PSP.png" },
+  { id: 106, title: "Change Your Way", game: "Persona 2: Eternal Punishment (PSP)", category: "Persona 2", artist: "Elisha La'Verne", themeClass: "p2ep-theme", embedId: "nlK6NMfSw2I", boxArt: "/images/CD Art/P2EP-PSP.png" },
   // ============================================================
   // PERSONA 3
   // ============================================================
@@ -292,13 +292,13 @@ export const TRACK_DATA = [
   { id: 864, title: "Found a Light", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "5uKdSuZcPj8", boxArt: "/images/CD Art/P5-Anime.png" },
 
   // --- 20th Anniversary Playlist Tracks ---
-  { id: 870, title: "Legends Awaken", game: "Persona 20th Anniversary", category: "Other", artist: "ATLUS Sound Team", themeClass: "p1-theme", embedId: "MtXUIRTc5QY", boxArt: "/images/CD Art/P-20th.png" },
-  { id: 871, title: "Maya's Theme", game: "Persona 20th Anniversary", category: "Other", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "ZfX4QOgWVEU", boxArt: "/images/CD Art/P-20th.png" },
-  { id: 872, title: "Mass Destruction", game: "Persona 20th Anniversary", category: "Other", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "NTncpOFWvmg", boxArt: "/images/CD Art/P-20th.png" },
-  { id: 873, title: "Your Affection", game: "Persona 20th Anniversary", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "ENPG4N-y_JU", boxArt: "/images/CD Art/P-20th.png" },
-  { id: 874, title: "Wake Up, Get Up, Get Out There", game: "Persona 20th Anniversary", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "1vKCYy2NIkE", boxArt: "/images/CD Art/P-20th.png" },
+  { id: 870, title: "Legends Awaken (20th Anniversary)", game: "Persona 20th Anniversary", category: "Other", artist: "ATLUS Sound Team", themeClass: "p1-theme", embedId: "MtXUIRTc5QY", boxArt: "/images/CD Art/P-20th.png" },
+  { id: 871, title: "Maya's Theme (20th Anniversary)", game: "Persona 20th Anniversary", category: "Other", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "ZfX4QOgWVEU", boxArt: "/images/CD Art/P-20th.png" },
+  { id: 872, title: "Mass Destruction (20th Anniversary)", game: "Persona 20th Anniversary", category: "Other", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "NTncpOFWvmg", boxArt: "/images/CD Art/P-20th.png" },
+  { id: 873, title: "Your Affection (20th Anniversary)", game: "Persona 20th Anniversary", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "ENPG4N-y_JU", boxArt: "/images/CD Art/P-20th.png" },
+  { id: 874, title: "Wake Up, Get Up, Get Out There (20th Anniversary)", game: "Persona 20th Anniversary", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "1vKCYy2NIkE", boxArt: "/images/CD Art/P-20th.png" },
   
-  // Other Persona Games
+  // Features / Collabs with Persona Games
   { id: 875, title: "Hippocampal Pain × Mass Destruction -Reload-", game: "Persona 3 Reload", category: "Other", artist: "ZUTOMAYO / Lotus Juice ", themeClass: "p3-theme", embedId: "3ytqnteXfjw", boxArt: "/images/CD Art/P3RxHippocampal.png" },
   { id: 876, title: "Spring Storm", game: "Persona 5: The Phantom X", category: "Other", artist: "john / Hatsune Miku", themeClass: "p5-theme", embedId: "pUH9vCsvq08", boxArt: "/images/CD Art/Shunran.png" },
   { id: 877, title: "Sanity Krush", game: "Persona 5: The Phantom X", category: "Other", artist: "STEAKA / Hatsune Miku", themeClass: "p5-theme", embedId: "4j5D5DnOLOM", boxArt: "/images/CD Art/San.png" },
@@ -306,16 +306,16 @@ export const TRACK_DATA = [
   { id: 879, title: "Marionette Dancer", game: "Persona 5: The Phantom X", category: "Other", artist: "Hiragi / Hatsune Miku", themeClass: "p5-theme", embedId: "ZCKrEfBkP7c", boxArt: "/images/CD Art/marionette_dancer.png" },
   { id: 880, title: "Ghost Rule", game: "Persona 5: The Phantom X", category: "Other", artist: "DECO*27 /Hatsune Miku", themeClass: "p5-theme", embedId: "KushW6zvazM", boxArt: "/images/CD Art/Ghost.png" },
   
-  // Other Game Crossovers
+  // Other Game Collabs
   { id: 881, title: "Life Will Change feat. Hatsune Miku", game: "Project SEKAI: Colorful Stage", category: "Other", artist: "Hatsune Miku", themeClass: "p5-theme", embedId: "Yv5NJOtahYI", boxArt: "/images/CD Art/Miku_Colorful_Stage_LFC.png" },
   { id: 882, title: "Kimi no Kioku (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "Roselia", themeClass: "p3-theme", embedId: "ADlJZsiXOKs", boxArt: "/images/CD Art/Bang_Dream-Kimi_no_Kioku.png" },
   { id: 883, title: "Reach Out To The Truth (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "Afterglow", themeClass: "p4-theme", embedId: "ufMWpo-RKpQ", boxArt: "/images/CD Art/ROTT-Afterglow.png" },
   { id: 884, title: "Life Will Change (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "PoppinParty", themeClass: "p5-theme", embedId: "0JpPDYC_1Ow", boxArt: "/images/CD Art/LWC-Poppin.png" },
   { id: 885, title: "Dominion Black Dragon", game: "Granblue Fantasy ", category: "Other", artist: "Taro Kobayashi", themeClass: "p5-theme", embedId: "5R7fL5wjZG0", boxArt: "/images/CD Art/P5xGBF.png" },
-  { id: 886, title: "Stab Unjust", game: "Star Ocean Anamnesis", category: "Other", artist: "Lotus Juice", themeClass: "p5-theme", embedId: "RFPwoRVTZ9s", boxArt: "/images/CD Art/Star_Ocean_Anamnesis.png" },
+  { id: 886, title: "Stab Unjust feat. Lotus Juice", game: "Star Ocean Anamnesis", category: "Other", artist: "Lotus Juice", themeClass: "p5-theme", embedId: "RFPwoRVTZ9s", boxArt: "/images/CD Art/Star_Ocean_Anamnesis.png" },
   { id: 887, title: "Take Your Heart (Season 6)", game: "Call of Duty: Mobile", category: "Other", artist: "ATLUS Sound Team", themeClass: "p5-theme", embedId: "Vg7QJfb9x14", boxArt: "/images/CD Art/P5xCOD_Mobile.png" },
 
-  // Nikke Crossover
+  // Nikke Collab
   { id: 900, title: "ON FRONTLINE", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Cosmograph / Kate Kim", themeClass: "p5-theme", embedId: "ankEhGlVoTk", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
   { id: 901, title: "Dorm", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Cosmograph", themeClass: "p3-theme", embedId: "5j6cgwrWsCE", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
   { id: 902, title: "Shadow Highrise", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Mori+", themeClass: "p3-theme", embedId: "OhZB-FEgSoc", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
@@ -328,9 +328,9 @@ export const TRACK_DATA = [
   { id: 909, title: "ASSOCIATE", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "tigerlily", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
 
   // SSBU Crossover
-  { id: 911, title: "Beneath the Mask", game: "Super Smash Bros Ultimate", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "J6zRpRrqn1I", boxArt: "/images/CD Art/SSBU.png" },
-  { id: 912, title: "I'll Face Myself", game: "Super Smash Bros Ultimate", category: "Other", artist: "Yusuke Yamuchi", themeClass: "p4-theme", embedId: "vuOjk9yjFiI", boxArt: "/images/CD Art/SSBU.png" },
-  { id: 913, title: "Aria of the Soul", game: "Super Smash Bros Ultimate", category: "Other", artist: "Mitsuhiro Kitadani / Tomoko Komiya", themeClass: "p1-theme", embedId: "X3-NaBUlEj4", boxArt: "/images/CD Art/SSBU.png" }
+  { id: 911, title: "Beneath the Mask (New Remix)", game: "Super Smash Bros Ultimate", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "J6zRpRrqn1I", boxArt: "/images/CD Art/SSBU.png" },
+  { id: 912, title: "I'll Face Myself (New Remix)", game: "Super Smash Bros Ultimate", category: "Other", artist: "Yusuke Yamuchi", themeClass: "p4-theme", embedId: "vuOjk9yjFiI", boxArt: "/images/CD Art/SSBU.png" },
+  { id: 913, title: "Aria of the Soul (New Remix)", game: "Super Smash Bros Ultimate", category: "Other", artist: "Mitsuhiro Kitadani / Tomoko Komiya", themeClass: "p1-theme", embedId: "X3-NaBUlEj4", boxArt: "/images/CD Art/SSBU.png" }
 
 ];
 

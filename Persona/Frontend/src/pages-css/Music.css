@@ -13,11 +13,15 @@
 
 /* Dynamic Game Theme Backgrounds */
 .music-page-container.p1-theme {
-  background: linear-gradient(135deg, #1e1b4b 0%, #111 70%);
+  background: linear-gradient(135deg, #31103f 0%, #111 70%);
 }
 
-.music-page-container.p2-theme {
-  background: linear-gradient(135deg, #31103f 0%, #111 70%);
+.music-page-container.p2is-theme {
+  background: linear-gradient(135deg, #ff4500 0%, #111 70%);
+}
+
+.music-page-container.p2ep-theme {
+  background: linear-gradient(135deg, #4b5563 0%, #111 70%);
 }
 
 .music-page-container.p3-theme {
@@ -217,11 +221,15 @@
 
 
 .p1-theme-label {
-  background-color: #4f46e5;
+  background-color: #9333ea;
 }
 
-.p2-theme-label {
-  background-color: #9333ea;
+.p2is-theme-label {
+  background-color: #ff4500;
+}
+
+.p2ep-theme-label {
+  background-color: #4b5563;
 }
 
 .p3-theme-label {
@@ -275,6 +283,7 @@
   color: var(--p5-white);
   letter-spacing: 0.05em;
   text-shadow: 2px 2px 0px var(--p5-black);
+  white-space: pre-wrap;
 }
 
 .track-meta-header p {
