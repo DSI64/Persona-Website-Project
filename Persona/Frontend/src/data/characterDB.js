@@ -728,7 +728,7 @@ export const characterDB = [
   // Series Mainstays / Velvet Room & Cosmos
   {
     id: 701, name: "Igor", game: "P1", arcana: "Fool", image: "Igor",
-    title: "Master of the Velvet Room", birthday: "Unknown", appearances: "Persona 1, Persona 2, Persona 3, Persona 4, Persona 5",
+    title: "Master of the Velvet Room", birthday: "Unknown", appearances: "Persona 1, Persona 2, Persona 3, Persona 4, Persona 5, Persona 5: The Phantom X",
     personas: "None",
     voiceActors: "Isamu Tanonaka / Masane Tsukayama (JP) / Kirk Thornton / David Lodge (EN)",
     likes: "Human potential, fusing personas, watching over his guests", dislikes: "Interference from malevolent entities",
