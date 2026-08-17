@@ -7,14 +7,14 @@ export const TRACK_DATA = [
   { id: 3, title: "Kandori's Theme ~ Silence", game: "Megami Ibunroku Persona", category: "Persona 1", artist: "Misaki Okibe / Kenichi Tsuchiya", themeClass: "p1-theme", embedId: "X_r2vlQYy3U", boxArt: "/images/CD Art/Revelations-Persona.png" },
   { id: 4, title: "Maki's Theme ~ Bright", game: "Megami Ibunroku Persona", category: "Persona 1", artist: "Kenichi Tsuchiya", themeClass: "p1-theme", embedId: "WfBO281aZgs", boxArt: "/images/CD Art/Revelations-Persona.png" },
   { id: 5, title: "Velvet Room", game: "Megami Ibunroku Persona", category: "Persona 1", artist: "Shoji Meguro / Haruko Komiya", themeClass: "p1-theme", embedId: "mGqoPQZyUsk", boxArt: "/images/CD Art/Revelations-Persona.png" },
-  { id: 6, title: "Dream of Butterfly", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "guDM_SqdbkM", boxArt: "/images/CD Art/SMT-Persona.png" },
-  { id: 7, title: "School Days", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "aumQxbQSFEk", boxArt: "/images/CD Art/SMT-Persona.png" },
-  { id: 8, title: "A Lone Prayer", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "Xb4PX3rPg6o", boxArt: "/images/CD Art/SMT-Persona.png" },
-  { id: 9, title: "Let Butterflies Spread Until the Dawn", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "nuKpIDf4U_o", boxArt: "/images/CD Art/SMT-Persona.png" },
-  { id: 10, title: "Battle ~ Tesso", game: "Megami Ibunroku Persona", category: "Persona 1", artist: "Shoji Meguro", themeClass: "p1-theme", embedId: "MExEnrj8aRU", boxArt: "/images/CD Art/Revelations-Persona.png" },
-  { id: 11, title: "Confrontation", game: "Megami Ibunroku Persona", category: "Persona 1", artist: "Shoji Meguro", themeClass: "p1-theme", embedId: "0JXZSBqOTWw", boxArt: "/images/CD Art/Revelations-Persona.png" },
-  { id: 12, title: "Bloody Destiny", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "vTSFyORPu0s", boxArt: "/images/CD Art/SMT-Persona.png" },
-  { id: 13, title: "Battle ~ Night Queen", game: "Megami Ibunroku Persona", category: "Persona 1", artist: "Kenichi Tsuchiya / Shoji Meguro", duration: "", themeClass: "p1-theme", embedId: "PVldAWxJ5aE", boxArt: "/images/CD Art/SMT-Persona.png" },
+  { id: 6, title: "Battle ~ Tesso", game: "Megami Ibunroku Persona", category: "Persona 1", artist: "Shoji Meguro", themeClass: "p1-theme", embedId: "MExEnrj8aRU", boxArt: "/images/CD Art/Revelations-Persona.png" },
+  { id: 7, title: "Confrontation", game: "Megami Ibunroku Persona", category: "Persona 1", artist: "Shoji Meguro", themeClass: "p1-theme", embedId: "0JXZSBqOTWw", boxArt: "/images/CD Art/Revelations-Persona.png" },
+  { id: 8, title: "Battle ~ Night Queen", game: "Megami Ibunroku Persona", category: "Persona 1", artist: "Kenichi Tsuchiya / Shoji Meguro", duration: "", themeClass: "p1-theme", embedId: "PVldAWxJ5aE", boxArt: "/images/CD Art/SMT-Persona.png" },
+  { id: 9, title: "Dream of Butterfly", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "guDM_SqdbkM", boxArt: "/images/CD Art/SMT-Persona.png" },
+  { id: 10, title: "School Days", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "aumQxbQSFEk", boxArt: "/images/CD Art/SMT-Persona.png" },
+  { id: 11, title: "A Lone Prayer", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "Xb4PX3rPg6o", boxArt: "/images/CD Art/SMT-Persona.png" },
+  { id: 12, title: "Let Butterflies Spread Until the Dawn", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "nuKpIDf4U_o", boxArt: "/images/CD Art/SMT-Persona.png" },
+  { id: 13, title: "Bloody Destiny", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "vTSFyORPu0s", boxArt: "/images/CD Art/SMT-Persona.png" },
   { id: 14, title: "Voice", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "KkxMCWTFHtc", boxArt: "/images/CD Art/SMT-Persona.png" },
   { id: 15, title: "Satomi Tadashi Pharmacy's Theme 2009", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Junichi Nozawa", themeClass: "p1-theme", embedId: "ANkbtqAT7ho", boxArt: "/images/CD Art/SMT-Persona.png" },
   { id: 16, title: "Dream of Butterfly (Instrumental)", game: "Shin Megami Tensei: Persona", category: "Persona 1", artist: "Yumi Kawamura", themeClass: "p1-theme", embedId: "SwcD0nOX3bg", boxArt: "/images/CD Art/SMT-Persona.png" },
@@ -154,19 +154,22 @@ export const TRACK_DATA = [
   { id: 523, title: "Jaldabaoth", game: "Persona 5", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "hU2rrWPn5ew", boxArt: "/images/CD Art/P5.png" },
   { id: 524, title: "Our Beginning", game: "Persona 5", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "sbuhTXCpq6E", boxArt: "/images/CD Art/P5.png" },
   { id: 525, title: "With the Stars and Us", game: "Persona 5", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "r1dq5SuhcZY", boxArt: "/images/CD Art/P5.png" },
+  { id: 526, title: "Alleycat", game: "Persona 5", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "T-D-KzkSQEE", boxArt: "/images/CD Art/P5.png" },
+  { id: 527, title: "Have a Short Rest", game: "Persona 5", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "TQ06skW9dLY", boxArt: "/images/CD Art/P5.png" },
+  { id: 528, title: "My Homie", game: "Persona 5", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "KkyCSrq_UyQ", boxArt: "/images/CD Art/P5.png" },
 
   // --- Persona 5 Royal ---
-  { id: 526, title: "Colors Flying High", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "SXknUX0Z0iw", boxArt: "/images/CD Art/P5R.png" },
-  { id: 527, title: "Take Over", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "gsp9GKmd6mg", boxArt: "/images/CD Art/P5R.png" },
-  { id: 528, title: "I Believe", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "xbSe0eX7oS4", boxArt: "/images/CD Art/P5R.png" },
-  { id: 529, title: "Throw Away Your Mask", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "WzDTqGfyFB0", boxArt: "/images/CD Art/P5R.png" },
-  { id: 530, title: "Gentle Madman", game: "Persona 5 Royal", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "kexqSlkVTf0", boxArt: "/images/CD Art/P5R.png" },
-  { id: 531, title: "No More What Ifs", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "GOTDmQ_gGwI", boxArt: "/images/CD Art/P5R.png" },
-  { id: 532, title: "Royal Days", game: "Persona 5 Royal", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "THkVZDSkjWM", boxArt: "/images/CD Art/P5R.png" },
-  { id: 533, title: "Ideal and the Real", game: "Persona 5 Royal", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "lXJRIAvaEY0", boxArt: "/images/CD Art/P5R.png" },
-  { id: 534, title: "Keep Your Faith", game: "Persona 5 Royal", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "vRjvpcXhcd8", boxArt: "/images/CD Art/P5R.png" },
-  { id: 535, title: "Out of Kindness", game: "Persona 5 Royal", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "ikgm3xVzh-M", boxArt: "/images/CD Art/P5R.png" },
-  { id: 536, title: "Our Light", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "WD3sWCzeOo8", boxArt: "/images/CD Art/P5R.png" },
+  { id: 540, title: "Colors Flying High", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "SXknUX0Z0iw", boxArt: "/images/CD Art/P5R.png" },
+  { id: 541, title: "Take Over", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "gsp9GKmd6mg", boxArt: "/images/CD Art/P5R.png" },
+  { id: 542, title: "I Believe", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "xbSe0eX7oS4", boxArt: "/images/CD Art/P5R.png" },
+  { id: 543, title: "Throw Away Your Mask", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "WzDTqGfyFB0", boxArt: "/images/CD Art/P5R.png" },
+  { id: 544, title: "Gentle Madman", game: "Persona 5 Royal", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "kexqSlkVTf0", boxArt: "/images/CD Art/P5R.png" },
+  { id: 545, title: "No More What Ifs", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "GOTDmQ_gGwI", boxArt: "/images/CD Art/P5R.png" },
+  { id: 546, title: "Royal Days", game: "Persona 5 Royal", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "THkVZDSkjWM", boxArt: "/images/CD Art/P5R.png" },
+  { id: 547, title: "Ideal and the Real", game: "Persona 5 Royal", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "lXJRIAvaEY0", boxArt: "/images/CD Art/P5R.png" },
+  { id: 548, title: "Keep Your Faith", game: "Persona 5 Royal", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "vRjvpcXhcd8", boxArt: "/images/CD Art/P5R.png" },
+  { id: 549, title: "Out of Kindness", game: "Persona 5 Royal", category: "Persona 5", artist: "Shoji Meguro", themeClass: "p5-theme", embedId: "ikgm3xVzh-M", boxArt: "/images/CD Art/P5R.png" },
+  { id: 550, title: "Our Light", game: "Persona 5 Royal", category: "Persona 5", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "WD3sWCzeOo8", boxArt: "/images/CD Art/P5R.png" },
 
   // ============================================================
   // SPINOFFS
@@ -197,6 +200,7 @@ export const TRACK_DATA = [
   { id: 648, title: "Singularity", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Gota Masuoka", themeClass: "p5-theme", embedId: "b4c-FrJGEHI", boxArt: "/images/CD Art/P5S.png" },
   { id: 649, title: "To the South", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "FRaw1wTJ6yQ", boxArt: "/images/CD Art/P5S.png" },
   { id: 650, title: "Freedom Buzz Dance", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Hiromu Akaba", themeClass: "p5-theme", embedId: "e9xvmAa1vgw", boxArt: "/images/CD Art/P5S.png" },
+  { id: 651, title: "Last Surprise -Scramble-", game: "Persona 5 Strikers", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "cS_CPy7YcaA", boxArt: "/images/CD Art/P5S.png" },
 
   // --- Persona 5 Tactica ---
   { id: 670, title: "Revolution in Your Heart", game: "Persona 5 Tactica", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "jniBKxr2PRE", boxArt: "/images/CD Art/P5T.png" },
@@ -236,6 +240,7 @@ export const TRACK_DATA = [
   { id: 729, title: "Backside Of The TV (Lotus Juice Remix)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "qFH9BBnMUCk", boxArt: "/images/CD Art/P4-Dancing.png" },
   { id: 730, title: "Snowflakes (NARASAKI Remix)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "IEcNCDtDbdg", boxArt: "/images/CD Art/P4-Dancing.png" },
   { id: 731, title: "Time To Make History (AKIRA YAMAOKA Remix)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "usq8op_OO4g", boxArt: "/images/CD Art/P4-Dancing.png" },
+  { id: 732, title: "Heaven - ATOLS Remix -", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Hatsune Miku", themeClass: "p4-theme", embedId: "yIxy_I0s7fk", boxArt: "/images/CD Art/P4-Dancing.png" },
 
   // --- Persona 5: Dancing in Starlight ---
   { id: 741, title: "GROOVY", game: "Persona 5: Dancing in Starlight", category: "Spinoffs", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "4EO0orRtsAE", boxArt: "/images/CD Art/P5-Dancing.png" },
@@ -291,7 +296,41 @@ export const TRACK_DATA = [
   { id: 871, title: "Maya's Theme", game: "Persona 20th Anniversary", category: "Other", artist: "Kenichi Tsuchiya", themeClass: "p2-theme", embedId: "ZfX4QOgWVEU", boxArt: "/images/CD Art/P-20th.png" },
   { id: 872, title: "Mass Destruction", game: "Persona 20th Anniversary", category: "Other", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "NTncpOFWvmg", boxArt: "/images/CD Art/P-20th.png" },
   { id: 873, title: "Your Affection", game: "Persona 20th Anniversary", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "ENPG4N-y_JU", boxArt: "/images/CD Art/P-20th.png" },
-  { id: 874, title: "Wake Up, Get Up, Get Out There", game: "Persona 20th Anniversary", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "1vKCYy2NIkE", boxArt: "/images/CD Art/P-20th.png" }
+  { id: 874, title: "Wake Up, Get Up, Get Out There", game: "Persona 20th Anniversary", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "1vKCYy2NIkE", boxArt: "/images/CD Art/P-20th.png" },
+  
+  // Other Persona Games
+  { id: 875, title: "Hippocampal Pain × Mass Destruction -Reload-", game: "Persona 3 Reload", category: "Other", artist: "ZUTOMAYO / Lotus Juice ", themeClass: "p3-theme", embedId: "3ytqnteXfjw", boxArt: "/images/CD Art/P3RxHippocampal.png" },
+  { id: 876, title: "Spring Storm", game: "Persona 5: The Phantom X", category: "Other", artist: "john / Hatsune Miku", themeClass: "p5-theme", embedId: "pUH9vCsvq08", boxArt: "/images/CD Art/Shunran.png" },
+  { id: 877, title: "Sanity Krush", game: "Persona 5: The Phantom X", category: "Other", artist: "STEAKA / Hatsune Miku", themeClass: "p5-theme", embedId: "4j5D5DnOLOM", boxArt: "/images/CD Art/San.png" },
+  { id: 878, title: "Play-With-Fire", game: "Persona 5: The Phantom X", category: "Other", artist: "Camellia / Hatsune Miku", themeClass: "p5-theme", embedId: "od4QcDPpNVk", boxArt: "/images/CD Art/PWFire.png" },
+  { id: 879, title: "Marionette Dancer", game: "Persona 5: The Phantom X", category: "Other", artist: "Hiragi / Hatsune Miku", themeClass: "p5-theme", embedId: "ZCKrEfBkP7c", boxArt: "/images/CD Art/marionette_dancer.png" },
+  { id: 880, title: "Ghost Rule", game: "Persona 5: The Phantom X", category: "Other", artist: "DECO*27 /Hatsune Miku", themeClass: "p5-theme", embedId: "KushW6zvazM", boxArt: "/images/CD Art/Ghost.png" },
+  
+  // Other Game Crossovers
+  { id: 881, title: "Life Will Change feat. Hatsune Miku", game: "Project SEKAI: Colorful Stage", category: "Other", artist: "Hatsune Miku", themeClass: "p5-theme", embedId: "Yv5NJOtahYI", boxArt: "/images/CD Art/Miku_Colorful_Stage_LFC.png" },
+  { id: 882, title: "Kimi no Kioku (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "Roselia", themeClass: "p3-theme", embedId: "ADlJZsiXOKs", boxArt: "/images/CD Art/Bang_Dream-Kimi_no_Kioku.png" },
+  { id: 883, title: "Reach Out To The Truth (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "Afterglow", themeClass: "p4-theme", embedId: "ufMWpo-RKpQ", boxArt: "/images/CD Art/ROTT-Afterglow.png" },
+  { id: 884, title: "Life Will Change (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "PoppinParty", themeClass: "p5-theme", embedId: "0JpPDYC_1Ow", boxArt: "/images/CD Art/LWC-Poppin.png" },
+  { id: 885, title: "Dominion Black Dragon", game: "Granblue Fantasy ", category: "Other", artist: "Taro Kobayashi", themeClass: "p5-theme", embedId: "5R7fL5wjZG0", boxArt: "/images/CD Art/P5xGBF.png" },
+  { id: 886, title: "Stab Unjust", game: "Star Ocean Anamnesis", category: "Other", artist: "Lotus Juice", themeClass: "p5-theme", embedId: "RFPwoRVTZ9s", boxArt: "/images/CD Art/Star_Ocean_Anamnesis.png" },
+  { id: 887, title: "Take Your Heart (Season 6)", game: "Call of Duty: Mobile", category: "Other", artist: "ATLUS Sound Team", themeClass: "p5-theme", embedId: "Vg7QJfb9x14", boxArt: "/images/CD Art/P5xCOD_Mobile.png" },
+
+  // Nikke Crossover
+  { id: 900, title: "ON FRONTLINE", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Cosmograph / Kate Kim", themeClass: "p5-theme", embedId: "ankEhGlVoTk", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 901, title: "Dorm", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Cosmograph", themeClass: "p3-theme", embedId: "5j6cgwrWsCE", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 902, title: "Shadow Highrise", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Mori+", themeClass: "p3-theme", embedId: "OhZB-FEgSoc", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 903, title: "HoldUP!", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "seibin", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 904, title: "Action-Ambush!", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "seibin", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 905, title: "The Harvester (Lux...", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Cosmograph / Ellarin Firestar", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 906, title: "MIDNIGHT PHANTOM", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Cosmograph", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 907, title: "PARADIS", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "roop", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 908, title: "LONDELL", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "roop", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 909, title: "ASSOCIATE", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "tigerlily", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+
+  // SSBU Crossover
+  { id: 911, title: "Beneath the Mask", game: "Super Smash Bros Ultimate", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "J6zRpRrqn1I", boxArt: "/images/CD Art/SSBU.png" },
+  { id: 912, title: "I'll Face Myself", game: "Super Smash Bros Ultimate", category: "Other", artist: "Yusuke Yamuchi", themeClass: "p4-theme", embedId: "vuOjk9yjFiI", boxArt: "/images/CD Art/SSBU.png" },
+  { id: 913, title: "Aria of the Soul", game: "Super Smash Bros Ultimate", category: "Other", artist: "Mitsuhiro Kitadani / Tomoko Komiya", themeClass: "p1-theme", embedId: "X3-NaBUlEj4", boxArt: "/images/CD Art/SSBU.png" }
 
 ];
 
