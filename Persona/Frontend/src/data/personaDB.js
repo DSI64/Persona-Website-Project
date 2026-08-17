@@ -7,7 +7,7 @@ export const personaDB = [
     originGame: "P1",
     description: "Salvation cannot be achieved by withdrawing from your desire...Life is death, and desire is salvation...",
     images: ["Aizen Myouou - Persona 1 Artwork"],
-    affinities: { earth: "Null", bless: "Null", curse: "Null"  }
+    affinities: { earth: "Null", bless: "Null", curse: "Null" }
   },
   {
     id: "yamaoka",
@@ -43,8 +43,10 @@ export const personaDB = [
     originGame: "P1",
     description: "An Orisha who presides over iron, hunting, politics, and war.",
     images: ["Ogun - Persona 1 Art"],
-    affinities: { gun: "Weak", fire: "Weak", ice: "Weak", wind: "Weak", earth: "Weak", 
-      elec: "Resist", nuclear: "Resist", gravity: "Repel", psy: "Resist" }
+    affinities: {
+      gun: "Weak", fire: "Weak", ice: "Weak", wind: "Weak", earth: "Weak",
+      elec: "Resist", nuclear: "Resist", gravity: "Repel", psy: "Resist"
+    }
   },
   {
     id: "susano-o-p1",
@@ -53,8 +55,10 @@ export const personaDB = [
     originGame: "P1",
     description: "I am Susano-O... Lord of the underworld...You with a raging soul like mine, from now on, I shall be your Ameno Murakumo no Tsurugi.",
     images: ["Susano-o P1 - Artwork"],
-    affinities: { gun: "Weak", fire: "Weak", ice: "Weak", wind: "Weak", earth: "Weak", 
-      elec: "Resist", nuclear: "Resist", blast: "Repel", psy: "Resist" }
+    affinities: {
+      gun: "Weak", fire: "Weak", ice: "Weak", wind: "Weak", earth: "Weak",
+      elec: "Resist", nuclear: "Resist", blast: "Repel", psy: "Resist"
+    }
   },
   {
     id: "seimen-kongou",
@@ -63,8 +67,10 @@ export const personaDB = [
     originGame: "P1",
     description: "A being originated from the syncretism of the Taoist Koshin and the Dosojin Sarutahiko. Originally a demon who spread disease, he and his 9,000 servants would consume the souls, flesh, and blood of humans. He later decided to redeem himself and began to heal people from sickness and epidemics. ",
     images: ["Seimen Kongou - Persona 1 Original"],
-    affinities: { gun: "Weak", fire: "Resist", ice: "Resist", wind: "Repel", elec: "Weak", 
-      nuclear: "Weak", blast: "Weak", gravity: "Weak", psy: "Resist"  }
+    affinities: {
+      gun: "Weak", fire: "Resist", ice: "Resist", wind: "Repel", elec: "Weak",
+      nuclear: "Weak", blast: "Weak", gravity: "Weak", psy: "Resist"
+    }
   },
   {
     id: "amen-ra",
@@ -73,8 +79,10 @@ export const personaDB = [
     originGame: "P1",
     description: "Originally, Amon and Ra were two separate gods, but once the capital was moved to Thebes during the Middle Kingdom, the two gods were merged into one. They became Amon-Ra, sun god and supreme deity of Egypt.",
     images: ["Amen Ra - Persona 1 Artwork"],
-    affinities: { gun: "Weak", fire: "Resist", ice: "Resist", wind: "Resist", earth: "Resist", elec: "Weak", 
-      nuclear: "Drain", blast: "Weak", gravity: "Weak", psy: "Resist"  }
+    affinities: {
+      gun: "Weak", fire: "Resist", ice: "Resist", wind: "Resist", earth: "Resist", elec: "Weak",
+      nuclear: "Drain", blast: "Weak", gravity: "Weak", psy: "Resist"
+    }
   },
   {
     id: "vishnu-p1",
@@ -83,8 +91,10 @@ export const personaDB = [
     originGame: "P1",
     description: "I am Vishnu... The one who spreads mercy throughout the world...My soul mate, let us move forth together as one..",
     images: ["Vishnu - Persona 1 Classic Art"],
-    affinities: { phys: "Null", gun: "Weak", fire: "Weak", ice: "Resist", wind: "Null", elec: "Weak", 
-      nuclear: "Weak", blast: "Resist", gravity: "Weak", bless: "Resist", curse: "Resist", psy: "Resist" }
+    affinities: {
+      phys: "Null", gun: "Weak", fire: "Weak", ice: "Resist", wind: "Null", elec: "Weak",
+      nuclear: "Weak", blast: "Resist", gravity: "Weak", bless: "Resist", curse: "Resist", psy: "Resist"
+    }
   },
   {
     id: "maso",
@@ -93,8 +103,10 @@ export const personaDB = [
     originGame: "P1",
     description: "The Chinese sea goddess Mazu, protector of sailors and fishermen.",
     images: ["Maso - Persona 1 Art"],
-    affinities: { gun: "Weak", fire: "Weak", ice: "Drain", wind: "Resist", earth: "Resist", elec: "Resist", 
-      nuclear: "Resist", blast: "Resist", gravity: "Resist", bless: "Null", curse: "Weak", psy: "Resist" }
+    affinities: {
+      gun: "Weak", fire: "Weak", ice: "Drain", wind: "Resist", earth: "Resist", elec: "Resist",
+      nuclear: "Resist", blast: "Resist", gravity: "Resist", bless: "Null", curse: "Weak", psy: "Resist"
+    }
   },
   {
     id: "verdandi",
@@ -103,8 +115,10 @@ export const personaDB = [
     originGame: "P1",
     description: "I am Verdandi... Middle sister of the goddesses of destiny before whom even gods tremble...The inevitable present, I shall muster for you...",
     images: ["Verdandi - Persona 1 Art"],
-    affinities: { phys: "Weak", fire: "Resist", ice: "Resist", wind: "Resist", earth: "Resist", elec: "Resist", 
-      nuclear: "Resist", blast: "Resist", gravity: "Resist", bless: "Drain", curse: "Weak", psy: "Repel" }
+    affinities: {
+      phys: "Weak", fire: "Resist", ice: "Resist", wind: "Resist", earth: "Resist", elec: "Resist",
+      nuclear: "Resist", blast: "Resist", gravity: "Resist", bless: "Drain", curse: "Weak", psy: "Repel"
+    }
   },
   {
     id: "nike",
@@ -113,8 +127,10 @@ export const personaDB = [
     originGame: "P1",
     description: "The Greek goddess who personifies victory.",
     images: ["Nike - Persona 1 Art"],
-    affinities: { fire: "Null", water: "Weak", ice: "Weak", elec: "Resist", nuclear: "Resist", bless: "Null", curse: "Weak",
-      psy: "Null" }
+    affinities: {
+      fire: "Null", water: "Weak", ice: "Weak", elec: "Resist", nuclear: "Resist", bless: "Null", curse: "Weak",
+      psy: "Null"
+    }
   },
   {
     id: "michael-p1",
@@ -132,8 +148,10 @@ export const personaDB = [
     originGame: "P1",
     description: "One of the four major archangels. She is also the only female angel at this rank. Her name comes from the Sumerian word for 'governor.' She is the angel who told Mary of her pregnancy.",
     images: ["Gabriel - Classic Artwork"],
-    affinities: { phys: "Resist", fire: "Resist", water: "Resist", wind: "Resist", earth: "Resist", ice: "Null", 
-      elec: "Resist", nuclear: "Weak", bless: "Null", curse: "Weak", psy: "Null" }
+    affinities: {
+      phys: "Resist", fire: "Resist", water: "Resist", wind: "Resist", earth: "Resist", ice: "Null",
+      elec: "Resist", nuclear: "Weak", bless: "Null", curse: "Weak", psy: "Null"
+    }
   },
   {
     id: "houri",
@@ -142,8 +160,10 @@ export const personaDB = [
     originGame: "P1",
     description: "Companions of the pure in Islamic paradise.",
     images: ["Houri - Persona 1 Art"],
-    affinities: { gun: "Weak", fire: "Repel", wind: "Resist", earth: "Resist", elec: "Weak", nuclear: "Weak", 
-      blast: "Weak", gravity: "Weak", psy: "Resist" }
+    affinities: {
+      gun: "Weak", fire: "Repel", wind: "Resist", earth: "Resist", elec: "Weak", nuclear: "Weak",
+      blast: "Weak", gravity: "Weak", psy: "Resist"
+    }
   },
   {
     id: "frey",
@@ -152,8 +172,10 @@ export const personaDB = [
     originGame: "P1",
     description: "Norse god of fertility, peace, and rain.",
     images: ["Frey - Persona 1 Art"],
-    affinities: { gun: "Weak", fire: "Resist", ice: "Resist", earth: "Repel", elec: "Weak", nuclear: "Weak", 
-      blast: "Weak", gravity: "Weak", psy: "Resist" }
+    affinities: {
+      gun: "Weak", fire: "Resist", ice: "Resist", earth: "Repel", elec: "Weak", nuclear: "Weak",
+      blast: "Weak", gravity: "Weak", psy: "Resist"
+    }
   },
   {
     id: "bres",
@@ -162,9 +184,11 @@ export const personaDB = [
     originGame: "P1",
     description: "A king of the Tuatha Dé Danann in Irish mythology.",
     images: ["Bres - Persona 1 Art"],
-    affinities: { phys: "Resist", gun: "Resist", fire: "Resist", ice: "Resist", wind: "Resist", 
-      earth: "Resist", elec: "Resist", nuclear: "Resist", blast: "Resist", gravity: "Resist", 
-      bless: "Weak", curse: "Drain", psy: "Null" }
+    affinities: {
+      phys: "Resist", gun: "Resist", fire: "Resist", ice: "Resist", wind: "Resist",
+      earth: "Resist", elec: "Resist", nuclear: "Resist", blast: "Resist", gravity: "Resist",
+      bless: "Weak", curse: "Drain", psy: "Null"
+    }
   },
   {
     id: "mot",
@@ -202,8 +226,10 @@ export const personaDB = [
     originGame: "P2",
     description: "A human sun god of Greece with shining beauty.",
     images: ["Apollo - Persona 2 Artwork"],
-    affinities: { fire: "Null", water: "Weak", ice: "Weak", elec: "Resist", nuclear: "Null", bless: "Null", 
-    curse: "Resist", psy: "Null" }
+    affinities: {
+      fire: "Null", water: "Weak", ice: "Weak", elec: "Resist", nuclear: "Null", bless: "Null",
+      curse: "Resist", psy: "Null"
+    }
   },
   {
     id: "hermes-p2",
@@ -275,8 +301,10 @@ export const personaDB = [
     originGame: "P2",
     description: "I am Artemis... The moon goddess who illuminates your twilight virtue...My purer half, do not be bashful of your destiny.",
     images: ["Artemis - P2 Art"],
-    affinities: { phys: "Weak", fire: "Repel", wind: "Repel", water: "Repel", earth: "Repel", ice: "Repel", elec: "Repel", nuclear: "Repel", bless: "Repel", 
-    curse: "Repel", psy: "Repel" }
+    affinities: {
+      phys: "Weak", fire: "Repel", wind: "Repel", water: "Repel", earth: "Repel", ice: "Repel", elec: "Repel", nuclear: "Repel", bless: "Repel",
+      curse: "Repel", psy: "Repel"
+    }
   },
   {
     id: "helios",
@@ -330,7 +358,7 @@ export const personaDB = [
     originGame: "P2",
     description: "I am the mapper of the stars, Astria. Stars change, but they also show one's fate. Know that your way is before you.",
     images: ["Astria - P2 Art"],
-    affinities: { wind: "Null", earth: "Weak", ice: "Resist",  elec: "Resist",  nuclear: "Resist", bless: "Null", curse: "Resist", psy: "Repel" }
+    affinities: { wind: "Null", earth: "Weak", ice: "Resist", elec: "Resist", nuclear: "Resist", bless: "Null", curse: "Resist", psy: "Repel" }
   },
 
   // --- PERSONA 3 ---
@@ -640,7 +668,7 @@ export const personaDB = [
     originGame: "P4",
     description: "The demon king of the Sixth Heaven in Buddhist tradition. A powerful tempter who seeks to obstruct those pursuing enlightenment and represents worldly desire and temptation.",
     images: ["Rokuten Maoh - P4 Art"],
-    affinities: { elec: "Null",  wind: "Weak" }
+    affinities: { elec: "Null", wind: "Weak" }
   },
   {
     id: "takeji-zaiten",
@@ -759,8 +787,10 @@ export const personaDB = [
     originGame: "P5",
     description: "An archangel who is said to be the form of Satan before he fell from Heaven. The second son of God, he rebelled against Him for freedom and bestowed free will and chaos upon humanity.",
     images: ["Satanael - Persona 5 Royal Cutin"],
-    affinities: { bless: "Null", curse: "Repel", phys: "Resist", gun: "Resist", fire: "Resist", ice: "Resist", elec: "Resist", 
-    wind: "Resist", psy: "Resist", nuclear: "Resist" }
+    affinities: {
+      bless: "Null", curse: "Repel", phys: "Resist", gun: "Resist", fire: "Resist", ice: "Resist", elec: "Resist",
+      wind: "Resist", psy: "Resist", nuclear: "Resist"
+    }
   },
   {
     id: "raoul",
@@ -805,7 +835,7 @@ export const personaDB = [
     originGame: "P5",
     description: "A Persona of another story. She is the daughter of Minos, the king of Crete. She helped Theseus defeat the Minotaur and gave him a ball of yarn so he could escape the labyrinth.",
     images: ["Ariadne Picaro - P5 Art"],
-    affinities: { gun: "Resist", psy: "Weak",  nuclear: "Null", bless: "Resist" }
+    affinities: { gun: "Resist", psy: "Weak", nuclear: "Null", bless: "Resist" }
   },
   {
     id: "tsukiyomi-picaro",
@@ -1130,7 +1160,7 @@ export const personaDB = [
     originGame: "Spinoffs",
     description: "She is the daughter of Minos, the king of Crete. She helped Theseus defeat the Minotaur and gave him a ball of yarn so he could escape the labyrinth.",
     images: ["Ariadne - Persona Arena Art"],
-    affinities: { gun: "Resist", psy: "Weak",  nuclear: "Null", bless: "Resist" }
+    affinities: { gun: "Resist", psy: "Weak", nuclear: "Null", bless: "Resist" }
   },
   {
     id: "tsukiyomi",
@@ -1236,8 +1266,7 @@ export const personaDB = [
     name: "Gentileschi (P5X)",
     arcana: "Magician",
     originGame: "Spinoffs",
-    description: "Hirano's Persona in Persona 5 X.",
-    images: ["Gentileschi - P5X Art"],
+    description: "A pioneering 17th-century Baroque painter who defied rigid gender norms to become one of history's most celebrated artists. Heavily influenced by Caravaggio, she channeled dramatic tension into visceral paintings centered on female heroes. Having overcome severe personal adversity and public scandal, she broke barriers as the first woman inducted into Florence's Academy of Art, forging an enduring legacy of unyielding resilience.", images: ["Gentileschi - P5X Art"],
     affinities: { curse: "Resist", bless: "Weak" }
   },
 
@@ -1483,7 +1512,7 @@ export const personaDB = [
     originGame: "P3",
     description: "One of the four aspects of Shinto thought, it works gently to help maintain a calm mind. It is said to aid in one's relations and sociability, and can lead one in a positive direction.",
     images: ["Nigi Mitama - Persona Art"],
-    affinities: { elec: "Weak",curse: "Resist", bless: "Resist" }
+    affinities: { elec: "Weak", curse: "Resist", bless: "Resist" }
   },
   {
     id: "kusi-mitama",
@@ -1546,7 +1575,7 @@ export const personaDB = [
     originGame: "P3",
     description: "The German name of the hero in the epic poem, 'The Nibelungenlied.' The dragon Fafnir's blood made him invincible, but a single leaf on his back resulted in a weak spot.",
     images: ["Siegfried - Persona Art"],
-    affinities: { phys: "Null", gun: "Resist", elec:"Null ", ice: "Resist", nuclear: "Weak" }
+    affinities: { phys: "Null", gun: "Resist", elec: "Null ", ice: "Resist", nuclear: "Weak" }
   },
   {
     id: "loki",
@@ -1645,7 +1674,7 @@ export const personaDB = [
     originGame: "P3",
     description: "The 'Destroyer' and 'Angel of the Bottomless Pit,' as described in ancient scriptures. He controls locusts and uses them to cause massive destruction to villages.",
     images: ["Abaddon - Persona Art"],
-    affinities: { phys: "Drain", gun:"Drain", psy: "Weak", nuclear: "Weak", curse: "Drain" }
+    affinities: { phys: "Drain", gun: "Drain", psy: "Weak", nuclear: "Weak", curse: "Drain" }
   },
   {
     id: "beelzebub",
