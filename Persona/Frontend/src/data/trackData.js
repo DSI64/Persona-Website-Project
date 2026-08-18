@@ -296,9 +296,9 @@ export const TRACK_DATA = [
   { id: 866, title: "Found a Light", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "5uKdSuZcPj8", boxArt: "/images/CD Art/P5-Anime.png" },
   
   // - P4 Reincarnation Album
-  { id: 867, title: "Heaven (Reincarnation)", game: "Persona 4", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "Fpk_HhEdDO4", boxArt: "/images/CD Art/P4Rein.png" },
-  { id: 868, title: "Heartbeat, Heartbreak (Reincarnation)", game: "Persona 4", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "0GuRc_0OXVA", boxArt: "/images/CD Art/P4Rein.png" },
-  { id: 869, title: "Signs of Love (Reincarnation)", game: "Persona 4", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "oJiOO1D2YB8", boxArt: "/images/CD Art/P4Rein.png" },
+  { id: 867, title: "Heaven (Reincarnation)", game: "Persona 4 Reincarnation", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "Fpk_HhEdDO4", boxArt: "/images/CD Art/P4Rein.png" },
+  { id: 868, title: "Heartbeat, Heartbreak (Reincarnation)", game: "Persona 4 Reincarnation", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "0GuRc_0OXVA", boxArt: "/images/CD Art/P4Rein.png" },
+  { id: 869, title: "SMILE (Reincarnation)", game: "Persona 4 Reincarnation", category: "Other", artist: "Atsushi Kitajoh", themeClass: "p4-theme", embedId: "ywQrMWtF8Mk", boxArt: "/images/CD Art/P4Rein.png" },
 
   // --- 20th Anniversary Playlist Tracks ---
   { id: 870, title: "Legends Awaken (20th Anniversary)", game: "Persona 20th Anniversary", category: "Other", artist: "ATLUS Sound Team", themeClass: "p1-theme", embedId: "MtXUIRTc5QY", boxArt: "/images/CD Art/P-20th.png" },
