@@ -7,15 +7,17 @@ export default function Home() {
   const [dailyCharacter, setDailyCharacter] = useState(null);
 
   useEffect(() => {
-    const today = new Date(); // Get the current date
+    const today = new Date();
 
     // Calculates the total number of full days since Jan 1, 1970
-    // (getTime() returns milliseconds, so we divide by milliseconds in a day)
     const daysSinceEpoch = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
 
+    // Uses Math.sin() with the daysSinceEpoch to create a deterministic "random" seed
+    // Multiplying by a large number (like 10000) gives us a workable integer
+    const randomSeed = Math.abs(Math.sin(daysSinceEpoch) * 10000);
+
     // Uses modulo to find a valid index within your array bounds
-    // This loops back to the start of the array when it reaches the end
-    const dailyIndex = daysSinceEpoch % characterDB.length;
+    const dailyIndex = Math.floor(randomSeed) % characterDB.length;
 
     // Sets the character
     setDailyCharacter(characterDB[dailyIndex]);

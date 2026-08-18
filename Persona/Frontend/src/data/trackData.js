@@ -53,7 +53,7 @@ export const TRACK_DATA = [
   // PERSONA 3
   // ============================================================
   { id: 306, title: "Mass Destruction", game: "Persona 3", category: "Persona 3", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "dZBJwlI2tK4", boxArt: "/images/CD Art/P3.png" },
-  { id: 307, title: "Burn My Dread", game: "Persona 3", category: "Persona 3", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "MCq-334EzlU", boxArt: "/images/CD Art/P3.png" },
+  { id: 307, title: "Burn My Dread", game: "Persona 3", category: "Persona 3", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "o12xO6_Yu7c", boxArt: "/images/CD Art/P3.png" },
   { id: 308, title: "When The Moon's Reaching Out Stars", game: "Persona 3", category: "Persona 3", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "br0y4juSbDY", boxArt: "/images/CD Art/P3.png" },
   { id: 309, title: "Changing Seasons", game: "Persona 3", category: "Persona 3", artist: "Shoji Meguro", themeClass: "p3-theme", embedId: "ONsRqzQUeoo", boxArt: "/images/CD Art/P3.png" },
   { id: 310, title: "Kimi no Kioku (Memories of You)", game: "Persona 3", category: "Persona 3", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "64MULq62RHE", boxArt: "/images/CD Art/P3.png" },
@@ -134,6 +134,8 @@ export const TRACK_DATA = [
   { id: 429, title: "Memory", game: "Persona 4 Golden", category: "Persona 4", artist: "Shoji Meguro", themeClass: "p4-theme", embedId: "ZEr-06Z1RP4", boxArt: "/images/CD Art/P4G.png" },
   { id: 430, title: "Midnight Trivia Miracle Quiz", game: "Persona 4 Golden", category: "Persona 4", artist: "Shoji Meguro", themeClass: "p4-theme", embedId: "sF9PRh8D4co", boxArt: "/images/CD Art/P4G.png" },
   { id: 431, title: "A Corner of Memories", game: "Persona 4 Golden", category: "Persona 4", artist: "Shoji Meguro", themeClass: "p4-theme", embedId: "1hzakHazpP4", boxArt: "/images/CD Art/P4G.png" },
+  { id: 432, title: "I'll Face Myself -Battle- (Reincarnation)", game: "Persona 4 Golden", category: "Persona 4", artist: "Shoji Meguro", themeClass: "p4-theme", embedId: "EDr_krEQNrU", boxArt: "/images/CD Art/P4G.png" },
+  { id: 433, title: "Never More (Reincarnation)", game: "Persona 4 Golden", category: "Persona 4", artist: "Shoji Meguro", themeClass: "p4-theme", embedId: "JQmZi94cjL4", boxArt: "/images/CD Art/P4G.png" },
 
   // ============================================================
   // PERSONA 5
@@ -234,7 +236,7 @@ export const TRACK_DATA = [
 
   // --- Persona 4: Dancing All Night ---
   { id: 725, title: "Dance!", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "497kvOLTH4A", boxArt: "/images/CD Art/P4-Dancing.png" },
-  { id: 726, title: "Signs of Love (Never More Cover)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "ofj5FIzuUDE", boxArt: "/images/CD Art/P4-Dancing.png" },
+  { id: 726, title: "Signs of Love (Reincarnation)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "ofj5FIzuUDE", boxArt: "/images/CD Art/P4-Dancing.png" },
   { id: 727, title: "Your Affection (Daisuke Asakura Remix)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "59xlHV41Zhw", boxArt: "/images/CD Art/P4-Dancing.png" },
   { id: 728, title: "Pursuing My True Self (ATLUS Kozuka Remix)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "SpNdQyvlMIE", boxArt: "/images/CD Art/P4-Dancing.png" },
   { id: 729, title: "Backside Of The TV (Lotus Juice Remix)", game: "Persona 4: Dancing All Night", category: "Spinoffs", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "qFH9BBnMUCk", boxArt: "/images/CD Art/P4-Dancing.png" },
@@ -278,18 +280,25 @@ export const TRACK_DATA = [
   { id: 850, title: "Breakin' through", game: "Persona -trinity soul-", category: "Other", artist: "Shuhei Kita", themeClass: "p3-theme", embedId: "gd3YTSJt2ec", boxArt: "/images/CD Art/PTrinitySoul.png" },
   { id: 851, title: "Burning Men's Soul", game: "Persona -trinity soul-", category: "Other", artist: "Taku Iwasaki / Lotus Juice", themeClass: "p3-theme", embedId: "6plVf2T6AOo", boxArt: "/images/CD Art/PTrinitySoul.png" },
   { id: 852, title: "Reverse the Destiny", game: "Persona -trinity soul-", category: "Other", artist: "Taku Iwasaki", themeClass: "p3-theme", embedId: "yjKor43tf6w", boxArt: "/images/CD Art/PTrinitySoul.png" },
-  { id: 853, title: "More Than One Heart", game: "Persona 3 The Movie #1", category: "Other", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "KLXWQa5_ydY", boxArt: "/images/CD Art/P3-Movie1.png" },
-  { id: 854, title: "Fate is In Our Hands", game: "Persona 3 The Movie #2", category: "Other", artist: "Lotus Juice", themeClass: "p3-theme", embedId: "j6i6_LOvHVw", boxArt: "/images/CD Art/P3-Movie2.png" },
-  { id: 855, title: "Light in Starless Sky", game: "Persona 3 The Movie #3", category: "Other", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "9kJ03vfKb8w", boxArt: "/images/CD Art/P3-Movie3.png" },
-  { id: 856, title: "My Testimony", game: "Persona 3 The Movie #4", category: "Other", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "lPhG0_VlyA", boxArt: "/images/CD Art/P3-Movie4.png" },
-  { id: 857, title: "sky's the limit", game: "Persona 4 The Animation", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "O0cI9N5rfrg", boxArt: "/images/CD Art/P4-Anime.png" },
-  { id: 858, title: "Beauty of Destiny", game: "Persona 4 The Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "8qZm-tAIjgk", boxArt: "/images/CD Art/P4-Anime.png" },
-  { id: 859, title: "Ying Yang", game: "Persona 4 The Golden Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "OIsrm7ZFH1U", boxArt: "/images/CD Art/P4G-Anime.png" },
-  { id: 860, title: "BREAK IN TO BREAK OUT", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "WHyXZQE7-bQ", boxArt: "/images/CD Art/P5-Anime.png" },
-  { id: 861, title: "INFINITY", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "slsePSVB0Fs", boxArt: "/images/CD Art/P5-Anime.png" },
-  { id: 862, title: "Dark Sun...", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "D4qurAKMebM", boxArt: "/images/CD Art/P5-Anime.png" },
-  { id: 863, title: "Autonomy", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "LOXEWmJ4Js8", boxArt: "/images/CD Art/P5-Anime.png" },
-  { id: 864, title: "Found a Light", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "5uKdSuZcPj8", boxArt: "/images/CD Art/P5-Anime.png" },
+  { id: 853, title: "More Than One Heart", game: "Persona 3 The Movie #1: Spring of Birth", category: "Other", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "KLXWQa5_ydY", boxArt: "/images/CD Art/P3-Movie1.png" },
+  { id: 854, title: "Fate is In Our Hands", game: "Persona 3 The Movie #2: Midsummer Knight's Dream", category: "Other", artist: "Lotus Juice", themeClass: "p3-theme", embedId: "j6i6_LOvHVw", boxArt: "/images/CD Art/P3-Movie2.png" },
+  { id: 855, title: "Mass Destruction (Lotus Juice Remix)", game: "Persona 3 The Movie #2: Midsummer Knight's Dream", category: "Other", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "3DDwrvMAoIg", boxArt: "/images/CD Art/P3-Movie2.png" },
+  { id: 856, title: "Light in Starless Sky", game: "Persona 3 The Movie: #3 Falling Down", category: "Other", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "9kJ03vfKb8w", boxArt: "/images/CD Art/P3-Movie3.png" },
+  { id: 857, title: "My Testimony", game: "Persona 3 The Movie: #4 Winter of Rebirth", category: "Other", artist: "Yumi Kawamura", themeClass: "p3-theme", embedId: "r_Uz2DcKeEI", boxArt: "/images/CD Art/P3-Movie4.png" },
+  { id: 858, title: "Burn My Dread -Last Battle- (Future Arrange)", game: "Persona 3 The Movie: #4 Winter of Rebirth", category: "Other", artist: "Lotus Juice / Yumi Kawamura", themeClass: "p3-theme", embedId: "FQ0llHxF3-A", boxArt: "/images/CD Art/P3-Movie4.png" },
+  { id: 859, title: "sky's the limit", game: "Persona 4 The Animation", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "O0cI9N5rfrg", boxArt: "/images/CD Art/P4-Anime.png" },
+  { id: 860, title: "Beauty of Destiny", game: "Persona 4 The Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "8qZm-tAIjgk", boxArt: "/images/CD Art/P4-Anime.png" },
+  { id: 861, title: "Ying Yang", game: "Persona 4 The Golden Animation", category: "Other", artist: "Shihoko Hirata / Lotus Juice", themeClass: "p4-theme", embedId: "OIsrm7ZFH1U", boxArt: "/images/CD Art/P4G-Anime.png" },
+  { id: 862, title: "BREAK IN TO BREAK OUT", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "WHyXZQE7-bQ", boxArt: "/images/CD Art/P5-Anime.png" },
+  { id: 863, title: "INFINITY", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "slsePSVB0Fs", boxArt: "/images/CD Art/P5-Anime.png" },
+  { id: 864, title: "Dark Sun...", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "D4qurAKMebM", boxArt: "/images/CD Art/P5-Anime.png" },
+  { id: 865, title: "Autonomy", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "LOXEWmJ4Js8", boxArt: "/images/CD Art/P5-Anime.png" },
+  { id: 866, title: "Found a Light", game: "Persona 5 The Animation", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "5uKdSuZcPj8", boxArt: "/images/CD Art/P5-Anime.png" },
+  
+  // - P4 Reincarnation Album
+  { id: 867, title: "Heaven (Reincarnation)", game: "Persona 4", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "Fpk_HhEdDO4", boxArt: "/images/CD Art/P4Rein.png" },
+  { id: 868, title: "Heartbeat, Heartbreak (Reincarnation)", game: "Persona 4", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "0GuRc_0OXVA", boxArt: "/images/CD Art/P4Rein.png" },
+  { id: 869, title: "Signs of Love (Reincarnation)", game: "Persona 4", category: "Other", artist: "Shihoko Hirata", themeClass: "p4-theme", embedId: "oJiOO1D2YB8", boxArt: "/images/CD Art/P4Rein.png" },
 
   // --- 20th Anniversary Playlist Tracks ---
   { id: 870, title: "Legends Awaken (20th Anniversary)", game: "Persona 20th Anniversary", category: "Other", artist: "ATLUS Sound Team", themeClass: "p1-theme", embedId: "MtXUIRTc5QY", boxArt: "/images/CD Art/P-20th.png" },
@@ -307,13 +316,13 @@ export const TRACK_DATA = [
   { id: 880, title: "Ghost Rule", game: "Persona 5: The Phantom X", category: "Other", artist: "DECO*27 /Hatsune Miku", themeClass: "p5-theme", embedId: "KushW6zvazM", boxArt: "/images/CD Art/Ghost.png" },
   
   // Other Game Collabs
-  { id: 881, title: "Life Will Change feat. Hatsune Miku", game: "Project SEKAI: Colorful Stage", category: "Other", artist: "Hatsune Miku", themeClass: "p5-theme", embedId: "Yv5NJOtahYI", boxArt: "/images/CD Art/Miku_Colorful_Stage_LFC.png" },
-  { id: 882, title: "Kimi no Kioku (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "Roselia", themeClass: "p3-theme", embedId: "ADlJZsiXOKs", boxArt: "/images/CD Art/Bang_Dream-Kimi_no_Kioku.png" },
-  { id: 883, title: "Reach Out To The Truth (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "Afterglow", themeClass: "p4-theme", embedId: "ufMWpo-RKpQ", boxArt: "/images/CD Art/ROTT-Afterglow.png" },
-  { id: 884, title: "Life Will Change (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "PoppinParty", themeClass: "p5-theme", embedId: "0JpPDYC_1Ow", boxArt: "/images/CD Art/LWC-Poppin.png" },
-  { id: 885, title: "Dominion Black Dragon", game: "Granblue Fantasy ", category: "Other", artist: "Taro Kobayashi", themeClass: "p5-theme", embedId: "5R7fL5wjZG0", boxArt: "/images/CD Art/P5xGBF.png" },
-  { id: 886, title: "Stab Unjust feat. Lotus Juice", game: "Star Ocean Anamnesis", category: "Other", artist: "Lotus Juice", themeClass: "p5-theme", embedId: "RFPwoRVTZ9s", boxArt: "/images/CD Art/Star_Ocean_Anamnesis.png" },
-  { id: 887, title: "Take Your Heart (Season 6)", game: "Call of Duty: Mobile", category: "Other", artist: "ATLUS Sound Team", themeClass: "p5-theme", embedId: "Vg7QJfb9x14", boxArt: "/images/CD Art/P5xCOD_Mobile.png" },
+  { id: 883, title: "Life Will Change feat. Hatsune Miku", game: "Project SEKAI: Colorful Stage", category: "Other", artist: "Hatsune Miku", themeClass: "p5-theme", embedId: "Yv5NJOtahYI", boxArt: "/images/CD Art/Miku_Colorful_Stage_LFC.png" },
+  { id: 884, title: "Kimi no Kioku (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "Roselia", themeClass: "p3-theme", embedId: "ADlJZsiXOKs", boxArt: "/images/CD Art/Bang_Dream-Kimi_no_Kioku.png" },
+  { id: 885, title: "Reach Out To The Truth (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "Afterglow", themeClass: "p4-theme", embedId: "ufMWpo-RKpQ", boxArt: "/images/CD Art/ROTT-Afterglow.png" },
+  { id: 886, title: "Life Will Change (Cover)", game: "BanG Dream! Girls Band Party! ", category: "Other", artist: "PoppinParty", themeClass: "p5-theme", embedId: "0JpPDYC_1Ow", boxArt: "/images/CD Art/LWC-Poppin.png" },
+  { id: 887, title: "Dominion Black Dragon", game: "Granblue Fantasy ", category: "Other", artist: "Taro Kobayashi", themeClass: "p5-theme", embedId: "5R7fL5wjZG0", boxArt: "/images/CD Art/P5xGBF.png" },
+  { id: 889, title: "Stab Unjust feat. Lotus Juice", game: "Star Ocean Anamnesis", category: "Other", artist: "Lotus Juice", themeClass: "p5-theme", embedId: "RFPwoRVTZ9s", boxArt: "/images/CD Art/Star_Ocean_Anamnesis.png" },
+  { id: 889, title: "Take Your Heart (Season 6)", game: "Call of Duty: Mobile", category: "Other", artist: "ATLUS Sound Team", themeClass: "p5-theme", embedId: "Vg7QJfb9x14", boxArt: "/images/CD Art/P5xCOD_Mobile.png" },
 
   // Nikke Collab
   { id: 900, title: "ON FRONTLINE", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Cosmograph / Kate Kim", themeClass: "p5-theme", embedId: "ankEhGlVoTk", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
