@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { socialLinkDB } from '../data/socialLinkDB';
+import { socialLinkDB } from '../data/socialLinkDB.js';
 import "../pages-css/SocialLinkDetail.css";
 
 export default function SocialLinkDetail() {

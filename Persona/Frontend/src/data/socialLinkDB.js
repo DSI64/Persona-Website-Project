@@ -1,4 +1,4 @@
-import { characterDB } from '../data/characterDB';
+import { characterDB } from '../data/characterDB.js';
 
 export const socialLinkDB = [
 // ==========================================

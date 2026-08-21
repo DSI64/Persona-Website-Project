@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { socialLinkDB } from '../data/socialLinkDB';
+import { socialLinkDB } from '../data/socialLinkDB.js';
 import "../pages-css/SocialLinks.css";
 
 const allArcanas = [...new Set(socialLinkDB.map(s => s.arcana))].sort();
