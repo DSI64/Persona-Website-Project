@@ -1,3 +1,5 @@
+import "dotenv/config";
+import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../generated/prisma/client.js";
 
 import { characterDB } from "../../Frontend/src/data/characterDB.js";
@@ -5,7 +7,11 @@ import { personaDB } from "../../Frontend/src/data/personaDB.js";
 import { socialLinkDB } from "../../Frontend/src/data/socialLinkDB.js";
 import { TRACK_DATA } from "../../Frontend/src/data/trackData.js";
 
-const prisma = new PrismaClient();
+const adapter = new PrismaPg({
+  connectionString: process.env.DATABASE_URL,
+});
+
+const prisma = new PrismaClient({ adapter });
 
 async function main() {
   console.log("Starting database seed...");
