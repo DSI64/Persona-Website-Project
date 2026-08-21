@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+
+model Character {
+  id          Int      @id
+  name        String
+  game        String
+  arcana      String
+  image       String
+  title       String
+  birthday    String
+  appearances String
+  personas    String
+  voiceActors String
+  likes       String
+  dislikes    String
+  profile     String
+  images      String[]
+}
+
+model Persona {
+  id          String   @id
+  name        String
+  arcana      String
+  originGame  String
+  description String
+  images      String[]
+  affinities  Json
+}
+
+model SocialLink {
+  id           String @id
+  name         String
+  game         String
+  arcana       String
+  title        String
+  image        String
+  bio          String @db.Text 
+  availability String
+  requirements String
+}
+
+model Track {
+  id         Int     @id
+  title      String
+  game       String
+  category   String
+  artist     String
+  themeClass String
+  embedId    String
+  boxArt     String
+}
