@@ -1,66 +1,143 @@
-import { useParams, useNavigate } from 'react-router-dom';
-import { socialLinkDB } from '../data/socialLinkDB.js';
+import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { apiFetch } from "../api/api";
 import "../pages-css/SocialLinkDetail.css";
 
 export default function SocialLinkDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  
-  // Case-insensitive lookup safeguard
-  const character = socialLinkDB.find(
-    (c) => c.id?.toLowerCase() === id?.toLowerCase()
-  );
 
-  if (!character) {
+  const [socialLink, setSocialLink] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadSocialLink() {
+      try {
+        setLoading(true);
+        setError("");
+
+        const data = await apiFetch(
+          `/api/social-links/${encodeURIComponent(id)}`
+        );
+
+        if (!cancelled) {
+          setSocialLink(data);
+        }
+      } catch (err) {
+        if (!cancelled) {
+          setSocialLink(null);
+          setError(
+            err.message || "Social link could not be loaded."
+          );
+        }
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    }
+
+    loadSocialLink();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [id]);
+
+  if (loading) {
     return (
       <div className="not-found-page">
-        <h2>Character not found!</h2>
-        <button onClick={() => navigate('/social-links')}>Back to Roster</button>
+        <h2>Loading social link...</h2>
+      </div>
+    );
+  }
+
+  if (!socialLink) {
+    return (
+      <div className="not-found-page">
+        <h2>Social Link not found!</h2>
+
+        {error && <p>{error}</p>}
+
+        <button
+          onClick={() => navigate("/social-links")}
+        >
+          Back to Roster
+        </button>
       </div>
     );
   }
 
   return (
-    <div className="detail-page" data-game={character.game}>
+    <div
+      className="detail-page"
+      data-game={socialLink.game}
+    >
       <div className="detail-nav-bar">
-        <button className="back-btn" onClick={() => navigate('/social-links')}>
+        <button
+          className="back-btn"
+          onClick={() => navigate("/social-links")}
+        >
           ← Back to Roster
         </button>
       </div>
 
       <div className="detail-container">
-        {/* LEFT COLUMN: Image Box */}
         <div className="detail-left-column">
           <div className="detail-image-box">
-            {/* Render img tag if image is a path, or fallback text/emoji */}
-            {character.image?.includes('/') || character.image?.includes('.') ? (
-              <img src={character.image} alt={character.name} />
+            {socialLink.image?.includes("/") ||
+            socialLink.image?.includes(".") ? (
+              <img
+                src={socialLink.image}
+                alt={socialLink.name}
+              />
             ) : (
-              <span>{character.image}</span>
+              <span>{socialLink.image}</span>
             )}
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Profile & Details */}
         <div className="detail-right-column">
           <div className="ranks-header-wrap">
-            <span className="detail-arcana-tag">{character.arcana} Arcana</span>
-            <h1 className="detail-name">{character.name}</h1>
-            <p className="detail-subtitle">{character.title}</p>
+            <span className="detail-arcana-tag">
+              {socialLink.arcana} Arcana
+            </span>
+
+            <h1 className="detail-name">
+              {socialLink.name}
+            </h1>
+
+            <p className="detail-subtitle">
+              {socialLink.title}
+            </p>
           </div>
 
           <div className="detail-bio-box">
             <ul className="detail-meta-list">
-              <li><strong>Game:</strong> {character.game}</li>
-              <li><strong>Availability:</strong> {character.availability}</li>
-              <li><strong>Requirements:</strong> {character.requirements}</li>
+              <li>
+                <strong>Game:</strong>{" "}
+                {socialLink.game}
+              </li>
+
+              <li>
+                <strong>Availability:</strong>{" "}
+                {socialLink.availability}
+              </li>
+
+              <li>
+                <strong>Requirements:</strong>{" "}
+                {socialLink.requirements}
+              </li>
             </ul>
 
             <hr className="detail-divider" />
 
             <div className="detail-bio-block">
               <h3>Biography</h3>
-              <p>{character.bio}</p>
+              <p>{socialLink.bio}</p>
             </div>
           </div>
         </div>

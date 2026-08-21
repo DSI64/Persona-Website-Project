@@ -1,94 +1,245 @@
-import { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { characterDB } from '../data/characterDB'; // Adjust path if necessary
+import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { apiFetch } from "../api/api";
 import "../pages-css/CharacterDetail.css";
 
 export default function CharacterDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  
-  // Safely find character matching either number or string ID types
-  const character = characterDB.find(c => c.id.toString() === id);
+
+  const [character, setCharacter] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadCharacter() {
+      try {
+        setLoading(true);
+        setError("");
+
+        const data = await apiFetch(
+          `/api/characters/${encodeURIComponent(id)}`
+        );
+
+        if (!cancelled) {
+          setCharacter(data);
+          setCurrentImageIndex(0);
+        }
+      } catch (err) {
+        if (!cancelled) {
+          setCharacter(null);
+          setError(
+            err.message || "Character could not be loaded."
+          );
+        }
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    }
+
+    loadCharacter();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [id]);
+
+  if (loading) {
+    return (
+      <div className="not-found-page">
+        <h2>Loading character file...</h2>
+      </div>
+    );
+  }
 
   if (!character) {
     return (
       <div className="not-found-page">
         <h2>Character file not found in the database.</h2>
-        <button className="back-btn" onClick={() => navigate('/characters')}>Back to Operatives</button>
+
+        {error && <p>{error}</p>}
+
+        <button
+          className="back-btn"
+          onClick={() => navigate("/characters")}
+        >
+          Back to Operatives
+        </button>
       </div>
     );
   }
 
+  const images =
+    character.images?.length > 0
+      ? character.images
+      : character.image
+        ? [character.image]
+        : [];
+
   const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % character.images.length);
+    if (images.length === 0) return;
+
+    setCurrentImageIndex(
+      (prev) => (prev + 1) % images.length
+    );
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + character.images.length) % character.images.length);
+    if (images.length === 0) return;
+
+    setCurrentImageIndex(
+      (prev) =>
+        (prev - 1 + images.length) % images.length
+    );
   };
+
+  const personaNames = character.personas
+    ? character.personas
+        .split(",")
+        .map((name) => name.trim())
+        .filter(Boolean)
+    : [];
 
   return (
     <div className="detail-page" data-game={character.game}>
       <div className="detail-nav-bar">
-        <button className="back-btn" onClick={() => navigate('/characters')}>
+        <button
+          className="back-btn"
+          onClick={() => navigate("/characters")}
+        >
           ← Back to Operatives
         </button>
       </div>
 
       <div className="detail-container">
-        {/* LEFT COLUMN: Image Carousel */}
         <div className="detail-left-column">
           <div className="detail-image-carousel-box">
-            <button className="carousel-arrow left" onClick={prevImage}>❮</button>
+            {images.length > 1 && (
+              <button
+                className="carousel-arrow left"
+                onClick={prevImage}
+              >
+                ❮
+              </button>
+            )}
+
             <div className="carousel-image-display">
-              <img 
-                src={character.images[currentImageIndex]} 
-                alt={`${character.name} view ${currentImageIndex + 1}`} 
-                className="carousel-img-element"
-              />
+              {images.length > 0 ? (
+                <img
+                  src={images[currentImageIndex]}
+                  alt={`${character.name} view ${
+                    currentImageIndex + 1
+                  }`}
+                  className="carousel-img-element"
+                />
+              ) : (
+                <div>No image available.</div>
+              )}
             </div>
-            <button className="carousel-arrow right" onClick={nextImage}>❯</button>
+
+            {images.length > 1 && (
+              <button
+                className="carousel-arrow right"
+                onClick={nextImage}
+              >
+                ❯
+              </button>
+            )}
           </div>
-          <div className="carousel-counter" style={{ textAlign: 'center' }}>
-            {currentImageIndex + 1} / {character.images.length}
-          </div>
+
+          {images.length > 0 && (
+            <div
+              className="carousel-counter"
+              style={{ textAlign: "center" }}
+            >
+              {currentImageIndex + 1} / {images.length}
+            </div>
+          )}
         </div>
 
-        {/* RIGHT COLUMN: Character Profile & Details */}
         <div className="detail-right-column">
           <div className="ranks-header-wrap">
-            <span className="detail-arcana-tag">{character.arcana} Arcana</span>
-            <h1 className="detail-name">{character.name}</h1>
-            <p className="detail-subtitle">{character.title}</p>
+            <span className="detail-arcana-tag">
+              {character.arcana} Arcana
+            </span>
+
+            <h1 className="detail-name">
+              {character.name}
+            </h1>
+
+            <p className="detail-subtitle">
+              {character.title}
+            </p>
           </div>
 
           <div className="detail-bio-box">
             <ul className="detail-meta-list">
-              <li><strong>Arcana:</strong> {character.arcana}</li>
-              <li><strong>Birthday:</strong> {character.birthday}</li>
+              <li>
+                <strong>Arcana:</strong>{" "}
+                {character.arcana}
+              </li>
+
+              <li>
+                <strong>Birthday:</strong>{" "}
+                {character.birthday || "N/A"}
+              </li>
+
               <li>
                 <strong>Persona(s):</strong>{" "}
-                {character.personas ? (
-                  character.personas.split(', ').map((personaName, idx) => (
-                    <span key={idx}>
-                      <button 
-                        className="persona-link-tag" 
-                        onClick={() => navigate(`/compendium?search=${encodeURIComponent(personaName)}`)}
+                {personaNames.length > 0 ? (
+                  personaNames.map((personaName, index) => (
+                    <span key={`${personaName}-${index}`}>
+                      <button
+                        className="persona-link-tag"
+                        onClick={() =>
+                          navigate(
+                            `/compendium?search=${encodeURIComponent(
+                              personaName
+                            )}`
+                          )
+                        }
                       >
                         {personaName}
                       </button>
-                      {idx < character.personas.split(', ').length - 1 ? ', ' : ''}
+
+                      {index < personaNames.length - 1
+                        ? ", "
+                        : ""}
                     </span>
                   ))
                 ) : (
                   "N/A"
                 )}
               </li>
-              <li><strong>Appearances:</strong> {character.appearances}</li>
-              <li><strong>Voice Actors:</strong> {character.voiceActors || "N/A"}</li>
-              {character.likes && <li><strong>Likes:</strong> {character.likes}</li>}
-              {character.dislikes && <li><strong>Dislikes:</strong> {character.dislikes}</li>}
+
+              <li>
+                <strong>Appearances:</strong>{" "}
+                {character.appearances || "N/A"}
+              </li>
+
+              <li>
+                <strong>Voice Actors:</strong>{" "}
+                {character.voiceActors || "N/A"}
+              </li>
+
+              {character.likes && (
+                <li>
+                  <strong>Likes:</strong>{" "}
+                  {character.likes}
+                </li>
+              )}
+
+              {character.dislikes && (
+                <li>
+                  <strong>Dislikes:</strong>{" "}
+                  {character.dislikes}
+                </li>
+              )}
             </ul>
 
             <hr className="detail-divider" />

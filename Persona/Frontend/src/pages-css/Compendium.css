@@ -14,6 +14,10 @@
 .compendium-detail[data-game="P5"],
 .lightbox-content[data-game="P5"] { --game-accent: #ff003c; --badge-text: #ffffff; }
 
+.compendium-detail[data-game="Spinoffs"],
+.lightbox-content[data-game="Spinoffs"] { --game-accent: #3bf1d2; --badge-text: #ffffff; }
+
+
 .compendium-page {
   padding: 2rem 5%;
   background-color: var(--p5-black, #0f0f0f);
@@ -84,6 +88,7 @@
 .persona-list-item[data-game="P3"].active, .persona-list-item[data-game="P3"]:hover { border-color: #00a2ff; }
 .persona-list-item[data-game="P4"].active, .persona-list-item[data-game="P4"]:hover { border-color: #ffd700; }
 .persona-list-item[data-game="P5"].active, .persona-list-item[data-game="P5"]:hover { border-color: #ff003c; }
+.persona-list-item[data-game="Spinoffs"].active, .persona-list-item[data-game="Spinoffs"]:hover { border-color: #3bf1d2; }
 
 .persona-list-arcana {
   font-size: 0.85rem;

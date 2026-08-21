@@ -1,148 +1,638 @@
-import { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import { personaDB } from '../data/personaDB';
+import {
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
+import { useSearchParams } from "react-router-dom";
+import { apiFetch } from "../api/api";
+import { PERSONA_IMAGES } from "../data/personaImages";
 import "../pages-css/Compendium.css";
 
+// ============================================================
+// PERSONA IMAGE
+// ============================================================
+
+function PersonaImage({ persona }) {
+  const imagePath =
+    persona?.id
+      ? PERSONA_IMAGES[persona.id]
+      : null;
+
+  return (
+    <img
+      src={
+        imagePath ||
+        "/images/default-placeholder.png"
+      }
+      alt={
+        persona?.name || "Persona"
+      }
+      className="persona-artwork"
+      onError={(event) => {
+        // Prevent an infinite loop if the placeholder itself
+        // cannot be loaded.
+        if (
+          event.currentTarget.src.endsWith(
+            "/images/default-placeholder.png"
+          )
+        ) {
+          return;
+        }
+
+        event.currentTarget.src =
+          "/images/default-placeholder.png";
+      }}
+    />
+  );
+}
+
+// ============================================================
+// MAIN COMPENDIUM
+// ============================================================
+
 export default function Compendium() {
-  const [searchParams] = useSearchParams();
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedGame, setSelectedGame] = useState("All");
-  const [selectedPersona, setSelectedPersona] = useState(personaDB[0]);
+  // ============================================================
+  // URL PARAMETERS
+  // ============================================================
+
+  const [searchParams] =
+    useSearchParams();
+
+  // ============================================================
+  // STATE
+  // ============================================================
+
+  const [personas, setPersonas] =
+    useState([]);
+
+  const [searchTerm, setSearchTerm] =
+    useState("");
+
+  const [selectedGame, setSelectedGame] =
+    useState("All");
+
+  const [selectedPersona, setSelectedPersona] =
+    useState(null);
+
+  const [loading, setLoading] =
+    useState(true);
+
+  const [error, setError] =
+    useState("");
+
+  // ============================================================
+  // LOAD PERSONAS FROM BACKEND
+  // ============================================================
 
   useEffect(() => {
-    const query = searchParams.get("search");
+    let cancelled = false;
+
+    async function loadPersonas() {
+      try {
+        setLoading(true);
+        setError("");
+
+        const data =
+          await apiFetch(
+            "/api/personas"
+          );
+
+        if (cancelled) {
+          return;
+        }
+
+        if (!Array.isArray(data)) {
+          throw new Error(
+            "The Persona API returned invalid data."
+          );
+        }
+
+        setPersonas(data);
+      } catch (err) {
+        if (!cancelled) {
+          console.error(
+            "Failed to load Personas:",
+            err
+          );
+
+          setError(
+            err.message ||
+              "Failed to load Persona database."
+          );
+        }
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    }
+
+    loadPersonas();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // ============================================================
+  // HANDLE URL SEARCH
+  // ============================================================
+
+  useEffect(() => {
+    if (personas.length === 0) {
+      setSelectedPersona(null);
+      return;
+    }
+
+    const query =
+      searchParams.get("search");
+
     if (query) {
       setSearchTerm(query);
-      const match = personaDB.find(p => p.name.toLowerCase() === query.toLowerCase());
-      if (match) setSelectedPersona(match);
+
+      // Exact name match
+      const exactMatch =
+        personas.find(
+          (persona) =>
+            String(
+              persona.name || ""
+            ).toLowerCase() ===
+            query.toLowerCase()
+        );
+
+      if (exactMatch) {
+        setSelectedPersona(
+          exactMatch
+        );
+
+        return;
+      }
+
+      // Partial name match
+      const partialMatch =
+        personas.find(
+          (persona) =>
+            String(
+              persona.name || ""
+            )
+              .toLowerCase()
+              .includes(
+                query.toLowerCase()
+              )
+        );
+
+      setSelectedPersona(
+        partialMatch ||
+          personas[0]
+      );
+
+      return;
     }
-  }, [searchParams]);
 
-  const filteredPersonas = personaDB.filter(p => {
-    const matchesName = p.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesGame = selectedGame === "All" || p.originGame === selectedGame;
-    return matchesName && matchesGame;
-  });
+    // Preserve the current Persona if it still exists.
+    setSelectedPersona(
+      (current) => {
+        if (
+          current &&
+          personas.some(
+            (persona) =>
+              persona.id ===
+              current.id
+          )
+        ) {
+          return current;
+        }
 
-  // Helper function to map element keys to display labels
-  const formatElementLabel = (elem) => {
-    const key = elem.toLowerCase();
-    if (key === 'curse' || key === 'dark') return 'CURSE / DARK';
-    if (key === 'bless' || key === 'light') return 'BLESS / LIGHT';
-    return elem.toUpperCase();
-  };
+        return personas[0];
+      }
+    );
+  }, [
+    personas,
+    searchParams,
+  ]);
 
-  // Helper function to handle fallback image extensions if .png fails
-  const handleImageError = (e, persona) => {
-    const currentSrc = e.target.src;
-    if (currentSrc.endsWith('.png')) {
-      e.target.src = `/images/Persona Artwork/${persona.originGame}/${persona.id}.webp`;
-    } else if (currentSrc.endsWith('.webp')) {
-      e.target.src = `/images/Persona Artwork/${persona.originGame}/${persona.id}.jpg`;
-    }
-  };
+  // ============================================================
+  // FILTER PERSONAS
+  // ============================================================
 
-  // Filter out neutral ('-') affinities
-  const activeAffinities = selectedPersona
-    ? Object.entries(selectedPersona.affinities).filter(([_, type]) => type !== "-")
-    : [];
+  const filteredPersonas =
+    useMemo(() => {
+      const lowerSearch =
+        searchTerm
+          .toLowerCase()
+          .trim();
+
+      return personas.filter(
+        (persona) => {
+          const name =
+            String(
+              persona.name || ""
+            ).toLowerCase();
+
+          const matchesSearch =
+            !lowerSearch ||
+            name.includes(
+              lowerSearch
+            );
+
+          const matchesGame =
+            selectedGame ===
+              "All" ||
+            persona.originGame ===
+              selectedGame;
+
+          return (
+            matchesSearch &&
+            matchesGame
+          );
+        }
+      );
+    }, [
+      personas,
+      searchTerm,
+      selectedGame,
+    ]);
+
+  // ============================================================
+  // GAME OPTIONS
+  // ============================================================
+
+  const gameOptions =
+    useMemo(() => {
+      const games = new Set();
+
+      personas.forEach(
+        (persona) => {
+          if (
+            persona.originGame
+          ) {
+            games.add(
+              persona.originGame
+            );
+          }
+        }
+      );
+
+      return Array.from(
+        games
+      ).sort();
+    }, [personas]);
+
+  // ============================================================
+  // ELEMENT LABEL
+  // ============================================================
+
+  const formatElementLabel =
+    (element) => {
+      const key =
+        String(element)
+          .toLowerCase()
+          .trim();
+
+      if (
+        key === "curse" ||
+        key === "dark"
+      ) {
+        return "CURSE / DARK";
+      }
+
+      if (
+        key === "bless" ||
+        key === "light"
+      ) {
+        return "BLESS / LIGHT";
+      }
+
+      return String(
+        element
+      ).toUpperCase();
+    };
+
+  // ============================================================
+  // AFFINITIES
+  // ============================================================
+
+  const activeAffinities =
+    selectedPersona
+      ? Object.entries(
+          selectedPersona.affinities ||
+            {}
+        ).filter(
+          ([, type]) =>
+            type !== "-" &&
+            type !== null &&
+            type !== undefined &&
+            String(type).trim() !== ""
+        )
+      : [];
+
+  // ============================================================
+  // LOADING
+  // ============================================================
+
+  if (loading) {
+    return (
+      <div className="compendium-page">
+        <h1 className="compendium-title">
+          Velvet Room Compendium
+        </h1>
+
+        <div className="compendium-loading">
+          Loading Persona records...
+        </div>
+      </div>
+    );
+  }
+
+  // ============================================================
+  // ERROR
+  // ============================================================
+
+  if (error) {
+    return (
+      <div className="compendium-page">
+        <h1 className="compendium-title">
+          Velvet Room Compendium
+        </h1>
+
+        <div className="compendium-error">
+          <p>
+            Unable to load the Persona database.
+          </p>
+
+          <p>{error}</p>
+        </div>
+      </div>
+    );
+  }
+
+  // ============================================================
+  // MAIN PAGE
+  // ============================================================
 
   return (
     <div className="compendium-page">
-      <h1 className="compendium-title">Velvet Room Compendium</h1>
+
+      {/* ========================================================
+          TITLE
+          ======================================================== */}
+
+      <h1 className="compendium-title">
+        Velvet Room Compendium
+      </h1>
+
+      {/* ========================================================
+          MAIN LAYOUT
+          ======================================================== */}
 
       <div className="compendium-layout">
-        {/* Sidebar */}
+
+        {/* ======================================================
+            SIDEBAR
+            ====================================================== */}
+
         <div className="compendium-sidebar">
+
+          {/* ====================================================
+              FILTERS
+              ==================================================== */}
+
           <div className="filter-controls">
-            <input 
-              type="text" 
-              placeholder="Search Persona..." 
+
+            <input
+              id="persona-search"
+              name="persona-search"
+              type="text"
+              placeholder="Search Persona..."
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(event) =>
+                setSearchTerm(
+                  event.target.value
+                )
+              }
               className="compendium-search"
             />
 
-            <select 
-              value={selectedGame} 
-              onChange={(e) => setSelectedGame(e.target.value)}
+            <select
+              id="persona-game-filter"
+              name="persona-game-filter"
+              value={selectedGame}
+              onChange={(event) =>
+                setSelectedGame(
+                  event.target.value
+                )
+              }
               className="compendium-select"
             >
-              <option value="All">All Games</option>
-              <option value="P1">Persona 1</option>
-              <option value="P2">Persona 2</option>
-              <option value="P3">Persona 3</option>
-              <option value="P4">Persona 4</option>
-              <option value="P5">Persona 5</option>
+              <option value="All">
+                All Games
+              </option>
+
+              {gameOptions.map(
+                (game) => (
+                  <option
+                    key={game}
+                    value={game}
+                  >
+                    {game}
+                  </option>
+                )
+              )}
             </select>
+
           </div>
 
+          {/* ====================================================
+              PERSONA LIST
+              ==================================================== */}
+
           <div className="persona-list">
-            {filteredPersonas.length > 0 ? (
-              filteredPersonas.map(persona => (
-                <button 
-                  key={persona.id}
-                  className={`persona-list-item ${selectedPersona?.id === persona.id ? 'active' : ''}`}
-                  onClick={() => setSelectedPersona(persona)}
-                  data-game={persona.originGame}
-                >
-                  <span className="persona-list-name">{persona.name}</span>
-                  <span className="persona-list-arcana">{persona.arcana}</span>
-                </button>
-              ))
+
+            {filteredPersonas.length >
+            0 ? (
+              filteredPersonas.map(
+                (persona) => (
+                  <button
+                    key={
+                      persona.id
+                    }
+                    type="button"
+                    className={`persona-list-item ${
+                      selectedPersona?.id ===
+                      persona.id
+                        ? "active"
+                        : ""
+                    }`}
+                    onClick={() =>
+                      setSelectedPersona(
+                        persona
+                      )
+                    }
+                    data-game={
+                      persona.originGame
+                    }
+                  >
+                    <span className="persona-list-name">
+                      {
+                        persona.name
+                      }
+                    </span>
+
+                    <span className="persona-list-arcana">
+                      {
+                        persona.arcana
+                      }
+                    </span>
+                  </button>
+                )
+              )
             ) : (
-              <div className="no-personas-found">No Personas found.</div>
+              <div className="no-personas-found">
+                No Personas found.
+              </div>
             )}
+
           </div>
         </div>
 
-        {/* Detailed View - Dynamically themed by Persona's Origin Game */}
+        {/* ======================================================
+            DETAIL PANEL
+            ====================================================== */}
+
         {selectedPersona && (
-          <div className="compendium-detail" data-game={selectedPersona.originGame}>
-            {/* Persona Header Image (Non-clickable container) */}
+          <div
+            className="compendium-detail"
+            data-game={
+              selectedPersona.originGame
+            }
+          >
+
+            {/* ==================================================
+                PERSONA HEADER
+                ================================================== */}
+
             <div className="persona-header-container">
+
+              {/* =================================================
+                  IMAGE
+                  ================================================= */}
+
               <div className="persona-image-box">
-                <img 
-                  src={`/images/Persona Artwork/${selectedPersona.originGame}/${selectedPersona.id}.png`} 
-                  alt={selectedPersona.name} 
-                  onError={(e) => handleImageError(e, selectedPersona)}
-                  className="persona-artwork"
+                <PersonaImage
+                  persona={
+                    selectedPersona
+                  }
                 />
               </div>
 
+              {/* =================================================
+                  HEADER TEXT
+                  ================================================= */}
+
               <div className="persona-header-text">
+
                 <div className="persona-badges">
-                  <span className="persona-arcana-badge">{selectedPersona.arcana} Arcana</span>
-                  <span className="persona-game-badge">Debut: {selectedPersona.originGame}</span>
+
+                  <span className="persona-arcana-badge">
+                    {
+                      selectedPersona.arcana
+                    }{" "}
+                    Arcana
+                  </span>
+
+                  <span className="persona-game-badge">
+                    Debut:{" "}
+                    {
+                      selectedPersona.originGame
+                    }
+                  </span>
+
                 </div>
-                <h2>{selectedPersona.name}</h2>
+
+                <h2>
+                  {
+                    selectedPersona.name
+                  }
+                </h2>
+
               </div>
             </div>
 
-            {/* Elemental Affinities Table */}
+            {/* ==================================================
+                AFFINITIES
+                ================================================== */}
+
             <div className="compendium-block">
-              <h3>Elemental Affinities</h3>
-              {activeAffinities.length > 0 ? (
+
+              <h3>
+                Elemental Affinities
+              </h3>
+
+              {activeAffinities.length >
+              0 ? (
                 <div className="affinity-table">
-                  {activeAffinities.map(([elem, type]) => (
-                    <div key={elem} className={`affinity-cell ${type.toLowerCase()}`}>
-                      <span className="affinity-label">{formatElementLabel(elem)}</span>
-                      <span className="affinity-value">{type}</span>
-                    </div>
-                  ))}
+
+                  {activeAffinities.map(
+                    ([
+                      element,
+                      type,
+                    ]) => (
+                      <div
+                        key={
+                          element
+                        }
+                        className={`affinity-cell ${String(
+                          type
+                        ).toLowerCase()}`}
+                      >
+
+                        <span className="affinity-label">
+                          {formatElementLabel(
+                            element
+                          )}
+                        </span>
+
+                        <span className="affinity-value">
+                          {
+                            type
+                          }
+                        </span>
+
+                      </div>
+                    )
+                  )}
+
                 </div>
               ) : (
-                <p className="no-affinities">No special elemental strengths or weaknesses.</p>
+                <p className="no-affinities">
+                  No special elemental strengths or weaknesses.
+                </p>
               )}
+
             </div>
 
-            {/* In-Game Bio Section */}
+            {/* ==================================================
+                DESCRIPTION
+                ================================================== */}
+
             <div className="compendium-block">
-              <h3>Persona Bio</h3>
-              <p className="persona-bio-text">{selectedPersona.description}</p>
+
+              <h3>
+                Persona Bio
+              </h3>
+
+              <p className="persona-bio-text">
+                {
+                  selectedPersona.description ||
+                  "No compendium description available."
+                }
+              </p>
+
             </div>
+
           </div>
         )}
+
       </div>
     </div>
   );
