@@ -21,7 +21,7 @@ export default function CharacterDetail() {
         setError("");
 
         const data = await apiFetch(
-          `/api/characters/${encodeURIComponent(id)}`
+          `/api/characters/${encodeURIComponent(id)}`,
         );
 
         if (!cancelled) {
@@ -31,9 +31,7 @@ export default function CharacterDetail() {
       } catch (err) {
         if (!cancelled) {
           setCharacter(null);
-          setError(
-            err.message || "Character could not be loaded."
-          );
+          setError(err.message || "Character could not be loaded.");
         }
       } finally {
         if (!cancelled) {
@@ -64,10 +62,7 @@ export default function CharacterDetail() {
 
         {error && <p>{error}</p>}
 
-        <button
-          className="back-btn"
-          onClick={() => navigate("/characters")}
-        >
+        <button className="back-btn" onClick={() => navigate("/characters")}>
           Back to Operatives
         </button>
       </div>
@@ -84,18 +79,13 @@ export default function CharacterDetail() {
   const nextImage = () => {
     if (images.length === 0) return;
 
-    setCurrentImageIndex(
-      (prev) => (prev + 1) % images.length
-    );
+    setCurrentImageIndex((prev) => (prev + 1) % images.length);
   };
 
   const prevImage = () => {
     if (images.length === 0) return;
 
-    setCurrentImageIndex(
-      (prev) =>
-        (prev - 1 + images.length) % images.length
-    );
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
   const personaNames = character.personas
@@ -108,10 +98,7 @@ export default function CharacterDetail() {
   return (
     <div className="detail-page" data-game={character.game}>
       <div className="detail-nav-bar">
-        <button
-          className="back-btn"
-          onClick={() => navigate("/characters")}
-        >
+        <button className="back-btn" onClick={() => navigate("/characters")}>
           ← Back to Operatives
         </button>
       </div>
@@ -120,10 +107,7 @@ export default function CharacterDetail() {
         <div className="detail-left-column">
           <div className="detail-image-carousel-box">
             {images.length > 1 && (
-              <button
-                className="carousel-arrow left"
-                onClick={prevImage}
-              >
+              <button className="carousel-arrow left" onClick={prevImage}>
                 ❮
               </button>
             )}
@@ -132,9 +116,7 @@ export default function CharacterDetail() {
               {images.length > 0 ? (
                 <img
                   src={images[currentImageIndex]}
-                  alt={`${character.name} view ${
-                    currentImageIndex + 1
-                  }`}
+                  alt={`${character.name} view ${currentImageIndex + 1}`}
                   className="carousel-img-element"
                 />
               ) : (
@@ -143,20 +125,14 @@ export default function CharacterDetail() {
             </div>
 
             {images.length > 1 && (
-              <button
-                className="carousel-arrow right"
-                onClick={nextImage}
-              >
+              <button className="carousel-arrow right" onClick={nextImage}>
                 ❯
               </button>
             )}
           </div>
 
           {images.length > 0 && (
-            <div
-              className="carousel-counter"
-              style={{ textAlign: "center" }}
-            >
+            <div className="carousel-counter" style={{ textAlign: "center" }}>
               {currentImageIndex + 1} / {images.length}
             </div>
           )}
@@ -164,80 +140,64 @@ export default function CharacterDetail() {
 
         <div className="detail-right-column">
           <div className="ranks-header-wrap">
-            <span className="detail-arcana-tag">
-              {character.arcana} Arcana
-            </span>
+            <span className="detail-arcana-tag">{character.arcana} Arcana</span>
 
-            <h1 className="detail-name">
-              {character.name}
-            </h1>
+            <h1 className="detail-name">{character.name}</h1>
 
-            <p className="detail-subtitle">
-              {character.title}
-            </p>
+            <p className="detail-subtitle">{character.title}</p>
           </div>
 
           <div className="detail-bio-box">
             <ul className="detail-meta-list">
               <li>
-                <strong>Arcana:</strong>{" "}
-                {character.arcana}
+                <strong>Arcana:</strong> {character.arcana}
               </li>
 
               <li>
-                <strong>Birthday:</strong>{" "}
-                {character.birthday || "N/A"}
+                <strong>Birthday:</strong> {character.birthday || "N/A"}
               </li>
 
               <li>
                 <strong>Persona(s):</strong>{" "}
-                {personaNames.length > 0 ? (
-                  personaNames.map((personaName, index) => (
-                    <span key={`${personaName}-${index}`}>
-                      <button
-                        className="persona-link-tag"
-                        onClick={() =>
-                          navigate(
-                            `/compendium?search=${encodeURIComponent(
-                              personaName
-                            )}`
-                          )
-                        }
-                      >
-                        {personaName}
-                      </button>
+                {personaNames.length > 0
+                  ? personaNames.map((personaName, index) => (
+                      <span key={`${personaName}-${index}`}>
+                        <button
+                          className="persona-link-tag"
+                          onClick={() =>
+                            navigate(
+                              `/compendium?search=${encodeURIComponent(
+                                personaName,
+                              )}`,
+                            )
+                          }
+                        >
+                          {personaName}
+                        </button>
 
-                      {index < personaNames.length - 1
-                        ? ", "
-                        : ""}
-                    </span>
-                  ))
-                ) : (
-                  "N/A"
-                )}
+                        {index < personaNames.length - 1 ? ", " : ""}
+                      </span>
+                    ))
+                  : "N/A"}
               </li>
 
               <li>
-                <strong>Appearances:</strong>{" "}
-                {character.appearances || "N/A"}
+                <strong>Appearances:</strong> {character.appearances || "N/A"}
               </li>
 
               <li>
-                <strong>Voice Actors:</strong>{" "}
-                {character.voiceActors || "N/A"}
+                <strong>Voice Actors:</strong> {character.voiceActors || "N/A"}
               </li>
 
               {character.likes && (
                 <li>
-                  <strong>Likes:</strong>{" "}
-                  {character.likes}
+                  <strong>Likes:</strong> {character.likes}
                 </li>
               )}
 
               {character.dislikes && (
                 <li>
-                  <strong>Dislikes:</strong>{" "}
-                  {character.dislikes}
+                  <strong>Dislikes:</strong> {character.dislikes}
                 </li>
               )}
             </ul>

@@ -27,9 +27,7 @@ export default function SocialLinks() {
         }
       } catch (err) {
         if (!cancelled) {
-          setError(
-            err.message || "Failed to load social links."
-          );
+          setError(err.message || "Failed to load social links.");
         }
       } finally {
         if (!cancelled) {
@@ -47,22 +45,16 @@ export default function SocialLinks() {
 
   const allArcanas = useMemo(() => {
     return [
-      ...new Set(
-        socialLinks
-          .map((link) => link.arcana)
-          .filter(Boolean)
-      ),
+      ...new Set(socialLinks.map((link) => link.arcana).filter(Boolean)),
     ].sort();
   }, [socialLinks]);
 
   const filteredLinks = useMemo(() => {
     return socialLinks.filter((link) => {
-      const matchGame =
-        filterGame === "All" || link.game === filterGame;
+      const matchGame = filterGame === "All" || link.game === filterGame;
 
       const matchArcana =
-        filterArcana === "All" ||
-        link.arcana === filterArcana;
+        filterArcana === "All" || link.arcana === filterArcana;
 
       return matchGame && matchArcana;
     });
@@ -105,9 +97,7 @@ export default function SocialLinks() {
             >
               <option value="All">All Games</option>
               <option value="P3">Persona 3 Reload</option>
-              <option value="P3P">
-                Persona 3 Portable
-              </option>
+              <option value="P3P">Persona 3 Portable</option>
               <option value="P4G">Persona 4 Golden</option>
               <option value="P5">Persona 5 Royal</option>
             </select>
@@ -118,9 +108,7 @@ export default function SocialLinks() {
 
             <select
               value={filterArcana}
-              onChange={(e) =>
-                setFilterArcana(e.target.value)
-              }
+              onChange={(e) => setFilterArcana(e.target.value)}
             >
               <option value="All">All Arcanas</option>
 
@@ -141,37 +129,25 @@ export default function SocialLinks() {
               key={link.id}
               className="roster-card"
               data-game={link.game}
-              onClick={() =>
-                navigate(`/social-links/${link.id}`)
-              }
+              onClick={() => navigate(`/social-links/${link.id}`)}
             >
               <div className="card-image-placeholder">
-                {link.image?.includes("/") ||
-                link.image?.includes(".") ? (
-                  <img
-                    src={link.image}
-                    alt={link.name}
-                  />
+                {link.image?.includes("/") || link.image?.includes(".") ? (
+                  <img src={link.image} alt={link.name} />
                 ) : (
                   <span>{link.image}</span>
                 )}
               </div>
 
               <div className="card-info">
-                <span className="card-arcana">
-                  {link.arcana}
-                </span>
+                <span className="card-arcana">{link.arcana}</span>
 
-                <h3 className="card-name">
-                  {link.name}
-                </h3>
+                <h3 className="card-name">{link.name}</h3>
               </div>
             </div>
           ))
         ) : (
-          <div className="no-results">
-            No social links match this filter.
-          </div>
+          <div className="no-results">No social links match this filter.</div>
         )}
       </div>
     </div>

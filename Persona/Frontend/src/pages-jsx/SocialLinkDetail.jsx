@@ -20,7 +20,7 @@ export default function SocialLinkDetail() {
         setError("");
 
         const data = await apiFetch(
-          `/api/social-links/${encodeURIComponent(id)}`
+          `/api/social-links/${encodeURIComponent(id)}`,
         );
 
         if (!cancelled) {
@@ -29,9 +29,7 @@ export default function SocialLinkDetail() {
       } catch (err) {
         if (!cancelled) {
           setSocialLink(null);
-          setError(
-            err.message || "Social link could not be loaded."
-          );
+          setError(err.message || "Social link could not be loaded.");
         }
       } finally {
         if (!cancelled) {
@@ -62,9 +60,7 @@ export default function SocialLinkDetail() {
 
         {error && <p>{error}</p>}
 
-        <button
-          onClick={() => navigate("/social-links")}
-        >
+        <button onClick={() => navigate("/social-links")}>
           Back to Roster
         </button>
       </div>
@@ -72,15 +68,9 @@ export default function SocialLinkDetail() {
   }
 
   return (
-    <div
-      className="detail-page"
-      data-game={socialLink.game}
-    >
+    <div className="detail-page" data-game={socialLink.game}>
       <div className="detail-nav-bar">
-        <button
-          className="back-btn"
-          onClick={() => navigate("/social-links")}
-        >
+        <button className="back-btn" onClick={() => navigate("/social-links")}>
           ← Back to Roster
         </button>
       </div>
@@ -90,10 +80,7 @@ export default function SocialLinkDetail() {
           <div className="detail-image-box">
             {socialLink.image?.includes("/") ||
             socialLink.image?.includes(".") ? (
-              <img
-                src={socialLink.image}
-                alt={socialLink.name}
-              />
+              <img src={socialLink.image} alt={socialLink.name} />
             ) : (
               <span>{socialLink.image}</span>
             )}
@@ -106,30 +93,23 @@ export default function SocialLinkDetail() {
               {socialLink.arcana} Arcana
             </span>
 
-            <h1 className="detail-name">
-              {socialLink.name}
-            </h1>
+            <h1 className="detail-name">{socialLink.name}</h1>
 
-            <p className="detail-subtitle">
-              {socialLink.title}
-            </p>
+            <p className="detail-subtitle">{socialLink.title}</p>
           </div>
 
           <div className="detail-bio-box">
             <ul className="detail-meta-list">
               <li>
-                <strong>Game:</strong>{" "}
-                {socialLink.game}
+                <strong>Game:</strong> {socialLink.game}
               </li>
 
               <li>
-                <strong>Availability:</strong>{" "}
-                {socialLink.availability}
+                <strong>Availability:</strong> {socialLink.availability}
               </li>
 
               <li>
-                <strong>Requirements:</strong>{" "}
-                {socialLink.requirements}
+                <strong>Requirements:</strong> {socialLink.requirements}
               </li>
             </ul>
 

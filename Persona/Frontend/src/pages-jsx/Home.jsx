@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { characterDB } from '../data/characterDB';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { characterDB } from "../data/characterDB";
 import "../pages-css/Home.css";
 
 export default function Home() {
@@ -32,12 +32,17 @@ export default function Home() {
         <p className="eyebrow">Welcome to the Velvet Room</p>
         <h1>Persona Compendium</h1>
         <p className="hero-copy">
-          Your ultimate database for Personas, Social Links, and Velvet Room records across the modern universe.
+          Your ultimate database for Personas, Social Links, and Velvet Room
+          records across the modern universe.
         </p>
 
         <div className="hero-actions">
-          <Link to="/music" className="primary-action">Listen to Music</Link>
-          <Link to="/characters" className="secondary-action">View Characters</Link>
+          <Link to="/music" className="primary-action">
+            Listen to Music
+          </Link>
+          <Link to="/characters" className="secondary-action">
+            View Characters
+          </Link>
         </div>
       </main>
 
@@ -57,17 +62,26 @@ export default function Home() {
             <h2>{dailyCharacter.name}</h2>
 
             <ul className="char-stats">
-              <li><strong>Game:</strong> {dailyCharacter.appearances}</li>
-              <li><strong>Birthday:</strong> {dailyCharacter.birthday}</li>
-              <li><strong>Arcana:</strong> {dailyCharacter.arcana}</li>
-              <li><strong>Personas:</strong> {dailyCharacter.personas}</li>
+              <li>
+                <strong>Game:</strong> {dailyCharacter.appearances}
+              </li>
+              <li>
+                <strong>Birthday:</strong> {dailyCharacter.birthday}
+              </li>
+              <li>
+                <strong>Arcana:</strong> {dailyCharacter.arcana}
+              </li>
+              <li>
+                <strong>Personas:</strong> {dailyCharacter.personas}
+              </li>
             </ul>
 
-            <p className="char-desc">
-              {dailyCharacter.profile}
-            </p>
+            <p className="char-desc">{dailyCharacter.profile}</p>
 
-            <Link to={`/characters/${dailyCharacter.id}`} className="primary-action char-btn">
+            <Link
+              to={`/characters/${dailyCharacter.id}`}
+              className="primary-action char-btn"
+            >
               View Full Profile
             </Link>
           </div>
@@ -84,7 +98,10 @@ export default function Home() {
           >
             <span className="spotlight-tag">Database</span>
             <h2>Personas & Skills</h2>
-            <p>Explore and learn elemental affinities as well as their debut origins in the Compendium.</p>
+            <p>
+              Explore and learn elemental affinities as well as their debut
+              origins in the Compendium.
+            </p>
           </Link>
 
           <Link
@@ -94,7 +111,10 @@ export default function Home() {
           >
             <span className="spotlight-tag">Bonds</span>
             <h2>Social Links</h2>
-            <p>Learn more about your favorite Protagonist's confidants across the Persona series.</p>
+            <p>
+              Learn more about your favorite Protagonist's confidants across the
+              Persona series.
+            </p>
           </Link>
 
           <Link
@@ -104,7 +124,10 @@ export default function Home() {
           >
             <span className="spotlight-tag">Mini-Game</span>
             <h2>Midnight Quiz Show</h2>
-            <p>Test your knowledge across Persona titles with Teddie's timed trivia challenge!</p>
+            <p>
+              Test your knowledge across Persona titles with Teddie's timed
+              trivia challenge!
+            </p>
           </Link>
         </div>
       </section>

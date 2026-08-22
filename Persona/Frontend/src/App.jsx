@@ -1,4 +1,4 @@
-// Can run site doing npm run dev
+// Can run site (both frontend and backend) doing npm run dev
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Home from './pages-jsx/Home';
