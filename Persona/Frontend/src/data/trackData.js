@@ -332,10 +332,10 @@ export const TRACK_DATA = [
   { id: 903, title: "HoldUP!", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "seibin", themeClass: "p4-theme", embedId: "LvSGvzT4w3U", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
   { id: 904, title: "Action-Ambush!", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "seibin", themeClass: "p5-theme", embedId: "p7W5mye0bj0", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
   { id: 905, title: "The Harvester (Luxurious Spider Remix)", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Cosmograph / Ellarin Firestar", themeClass: "p5-theme", embedId: "-71ndxndTWg", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
-  { id: 906, title: "MIDNIGHT PHANTOM", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Cosmograph", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
-  { id: 907, title: "PARADIS", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "roop", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
-  { id: 908, title: "LONDELL", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "roop", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
-  { id: 909, title: "ASSOCIATE", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "tigerlily", themeClass: "p3-theme", embedId: "PlaceHolder", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 906, title: "MIDNIGHT PHANTOM", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "Cosmograph", themeClass: "p5-theme", embedId: "04RPfhnKOjs", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 907, title: "PARADIS", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "roop", themeClass: "p3-theme", embedId: "S6Qjbry-kf8", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 908, title: "LONDELL", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "roop", themeClass: "p4-theme", embedId: "GqszipHuVMU", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
+  { id: 909, title: "ASSOCIATE", game: "GODDESS OF VICTORY: NIKKE", category: "Other", artist: "tigerlily", themeClass: "p4-theme", embedId: "_Y9ojnMLKqU", boxArt: "/images/CD Art/P5-On-Frontline-Nikke.png" },
 
   // SSBU Crossover
   { id: 911, title: "Beneath the Mask (New Remix)", game: "Super Smash Bros Ultimate", category: "Other", artist: "Lyn Inaizumi", themeClass: "p5-theme", embedId: "J6zRpRrqn1I", boxArt: "/images/CD Art/SSBU.png" },
